@@ -7,10 +7,3 @@ Documentation du Logiciel EVA
 
    Introduction-à-EVA/index
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
