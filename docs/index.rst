@@ -3,7 +3,7 @@ Documentation du Logiciel EVA
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contenus:
 
    Introduction-à-EVA/index
 
