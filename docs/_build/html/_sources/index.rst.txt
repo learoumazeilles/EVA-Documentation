@@ -1,9 +1,29 @@
 Documentation du Logiciel EVA
-============================================
+=============================
+
+**********************
+**Table des matières**
+**********************
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contenus:
+   :caption: Premiers pas
 
    Introduction-à-EVA/index
+   Tutorial-débutants/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Documentation utilisateur
+
+   Fonctionnalités-générales/index
+   Fonctionnalités-par-modules/index
+   Fonctionnalités-avancées/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Documentation référent EVA
+
+   Gestion-des-utilisateurs/index
+
 
