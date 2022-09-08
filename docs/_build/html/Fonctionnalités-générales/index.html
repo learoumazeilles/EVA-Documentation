@@ -52,14 +52,18 @@
 <li class="toctree-l2"><a class="reference internal" href="#tableaux">Tableaux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#ajout">Ajout</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#imports">Imports</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#procedure-generale">Procédure générale</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#utilisateurs">Utilisateurs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#procedure-generale">Procédure générale</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#quelles-colonnes-pour-chaque-import">Quelles colonnes pour chaque import ?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-utilisateurs">Import utilisateurs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#procedure-budget">Procédure budget</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-par-modules/index.html">Fonctionnalités par modules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-avanc%C3%A9es/index.html">Fonctionnalités par modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-avanc%C3%A9es/index.html">Fonctionnalités avancées</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
 <ul>
@@ -102,9 +106,89 @@
 <h2>Imports<a class="headerlink" href="#imports" title="Lien permanent vers cette rubrique"></a></h2>
 <section id="procedure-generale">
 <h3>Procédure générale<a class="headerlink" href="#procedure-generale" title="Lien permanent vers cette rubrique"></a></h3>
+<p>La précédure pour les imports est similaire dans la majorité des cas (exeption des imports budgets et territoires) et suit la logique suivante :</p>
+<ol class="arabic simple">
+<li><p>Créer un fichier tableur avec l’outil de tableur privilégié (Excel, Numbers, Google Sheet, Calc…) et remplir les données avec les en-têtes de colonnes correspondantes</p></li>
+<li><p>Sauvegarder au format csv</p></li>
+<li><p>Importer dans EVA</p></li>
+</ol>
+<section id="quelles-colonnes-pour-chaque-import">
+<h4>Quelles colonnes pour chaque import ?<a class="headerlink" href="#quelles-colonnes-pour-chaque-import" title="Lien permanent vers cette rubrique"></a></h4>
+<ul class="simple">
+<li><p>Des exemples de fichiers Excel et csv sont disponibles <a class="reference external" href="https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP">ici</a></p></li>
+<li><p>L’ordre des colonnes n’a pas d’importance, certaines cases peuvent être vides si elles ne sont pas dans les colonnes de champs obligatoires.</p></li>
+<li><p>Dans certaines colonnes, on peut indiquer un texte librement, pour d’autres seulement certains mots sont acceptés (indiqué en <strong>gras</strong> dans les tableaux ci-dessous) ou seulement des chiffres, les majuscules/minuscules sont importantes</p></li>
+<li><p>Les mots clés et référentiels peuvent s’ajouter dans des colonnes supplémentaires s’ils ont été paramétrés précédemment</p></li>
+</ul>
 </section>
-<section id="utilisateurs">
-<h3>Utilisateurs<a class="headerlink" href="#utilisateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<section id="import-utilisateurs">
+<h4>Import utilisateurs<a class="headerlink" href="#import-utilisateurs" title="Lien permanent vers cette rubrique"></a></h4>
+<p>Colonnes obligatoires : Prénom, Nom, Nom d’utilisateur, Rôle, Mot de passe
+Autres colonnes possibles : Civilité, Adresse email, Couleur
++ les mots clés</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 16%" />
+<col style="width: 19%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Nom*</p></th>
+<th class="head"><p>Prénom*</p></th>
+<th class="head"><p>Nom</p>
+<p>d’utilisateur*</p>
+</th>
+<th class="head"><p>Rôle</p></th>
+<th class="head"><p>Mot de</p>
+<p>passe</p>
+</th>
+<th class="head"><p>Civilités</p></th>
+<th class="head"><p>Adresse</p>
+<p>email</p>
+</th>
+<th class="head"><p>Couleur</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p>Nom du rôle</p>
+<p>prédéfini dans</p>
+<p>le module admin</p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><strong>Mr.</strong> ou</p>
+<p><strong>Mme</strong></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>format</em></p>
+<p><em>email</em></p>
+</td>
+<td><p>Code hex</p>
+<p>example :</p>
+<p>#fcba03</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="procedure-budget">
+<h3>Procédure budget<a class="headerlink" href="#procedure-budget" title="Lien permanent vers cette rubrique"></a></h3>
 </section>
 </section>
 </section>

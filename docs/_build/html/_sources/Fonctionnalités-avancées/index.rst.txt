@@ -1,5 +1,5 @@
-Fonctionnalités par modules
-===========================
+Fonctionnalités avancées
+========================
 
 En construction
 ---------------
