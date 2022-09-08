@@ -25,5 +25,6 @@ Documentation du Logiciel EVA
    :caption: Documentation référent EVA
 
    Gestion-des-utilisateurs/index
+   Référentiels-et-mots-clés/index
 
 
