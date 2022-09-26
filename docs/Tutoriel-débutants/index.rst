@@ -1,4 +1,4 @@
-Tutorial débutants
+Tutoriel débutants
 ==================
 
 Se connecter à EVA

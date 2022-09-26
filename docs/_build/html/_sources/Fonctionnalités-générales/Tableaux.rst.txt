@@ -1,0 +1,4 @@
+.. include:: ../substitutions.rst
+Tableaux
+--------
+

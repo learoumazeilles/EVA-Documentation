@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imports &mdash; Documentation Documentation EVA 1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Fonctionnalités par modules" href="../Fonctionnalit%C3%A9s-par-modules/index.html" />
+    <link rel="prev" title="Ajouts" href="Ajouts.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #27A26B" >
+            <a href="../index.html" class="icon icon-home"> Documentation EVA
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Premiers pas</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Introduction-%C3%A0-EVA/index.html">Introdution à EVA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tutorial-d%C3%A9butants/index.html">Tutorial débutants</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation utilisateur</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Fonctionnalités générales</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Tableaux.html">Tableaux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ajouts.html">Ajouts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Imports</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#procedure-generale">Procédure générale</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#quelles-colonnes-pour-chaque-import">Quelles colonnes pour chaque import ?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-utilisateurs">Import utilisateurs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-indicateurs">Import indicateurs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-contacts">Import contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-structures">Import structures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-fiches">Import fiches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sauvegarder-au-format-csv">Sauvegarder au format csv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#importer-dans-eva">Importer dans EVA</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#procedure-budget">Procédure budget</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-par-modules/index.html">Fonctionnalités par modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-avanc%C3%A9es/index.html">Fonctionnalités avancées</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Gestion-des-utilisateurs/index.html">Gestion des utilisateurs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../R%C3%A9f%C3%A9rentiels-et-mots-cl%C3%A9s/index.html">Référentiels et mots clés</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #27A26B" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentation EVA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Fonctionnalités générales</a> &raquo;</li>
+      <li>Imports</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Fonctionnalités-générales/Imports.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="imports">
+<h1>Imports<a class="headerlink" href="#imports" title="Lien permanent vers cette rubrique"></a></h1>
+<section id="procedure-generale">
+<h2>Procédure générale<a class="headerlink" href="#procedure-generale" title="Lien permanent vers cette rubrique"></a></h2>
+<p>La précédure pour les imports est similaire dans la majorité des cas (exeption des imports budgets et territoires) et suit la logique suivante :</p>
+<ol class="arabic simple">
+<li><p>Créer un fichier tableur avec l’outil de tableur privilégié (Excel, Numbers, Google Sheet, Calc…) et remplir les données avec les en-têtes de colonnes correspondantes</p></li>
+<li><p>Sauvegarder au format csv</p></li>
+<li><p>Importer dans EVA</p></li>
+</ol>
+<section id="quelles-colonnes-pour-chaque-import">
+<h3>Quelles colonnes pour chaque import ?<a class="headerlink" href="#quelles-colonnes-pour-chaque-import" title="Lien permanent vers cette rubrique"></a></h3>
+<ul class="simple">
+<li><p>Des exemples de fichiers Excel et csv sont disponibles <a class="reference external" href="https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP">ici</a></p></li>
+<li><p>L’ordre des colonnes n’a pas d’importance, certaines cases peuvent être vides si elles ne sont pas dans les colonnes de champs obligatoires.</p></li>
+<li><p>Dans certaines colonnes, on peut indiquer un texte librement, pour d’autres seulement certains mots sont acceptés (indiqué en <strong>gras</strong> dans les tableaux ci-dessous) ou seulement des chiffres, les majuscules/minuscules sont importantes.</p></li>
+<li><p>Les mots clés et référentiels peuvent s’ajouter dans des colonnes supplémentaires s’ils ont été paramétrés précédemment.</p></li>
+</ul>
+</section>
+<section id="import-utilisateurs">
+<h3>Import utilisateurs<a class="headerlink" href="#import-utilisateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Prénom, Nom, Nom d’utilisateur, Rôle, Mot de passe</p>
+<p>Autres colonnes possibles : Civilité, Adresse email, Couleur</p>
+<p>+ les mots clés</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 16%" />
+<col style="width: 19%" />
+<col style="width: 10%" />
+<col style="width: 11%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Nom*</p></th>
+<th class="head"><p>Prénom*</p></th>
+<th class="head"><p>Nom</p>
+<p>d’utilisateur*</p>
+</th>
+<th class="head"><p>Rôle</p></th>
+<th class="head"><p>Mot de</p>
+<p>passe</p>
+</th>
+<th class="head"><p>Civilités</p></th>
+<th class="head"><p>Adresse</p>
+<p>email</p>
+</th>
+<th class="head"><p>Couleur</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p>Nom du rôle</p>
+<p>prédéfini dans</p>
+<p>le module admin</p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><strong>Mr.</strong> ou</p>
+<p><strong>Mme</strong></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>format</em></p>
+<p><em>email</em></p>
+</td>
+<td><p>Code hex</p>
+<p>example :</p>
+<p>#fcba03</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="import-indicateurs">
+<h3>Import indicateurs<a class="headerlink" href="#import-indicateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Nom, Type, Opérateur de synthèse annuelle</p>
+<p>Autres colonnes possibles : Archivé (oui ou non), Description, Définition, Méthode, Interprétation, Unité de mesure</p>
+<p>+ les mots clés</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Ne pas indiquer la colonne « Valeurs » (provoque un bug).</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 15%" />
+<col style="width: 20%" />
+<col style="width: 14%" />
+<col style="width: 20%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Nom*</p></th>
+<th class="head"><p>Type*</p></th>
+<th class="head"><p>Opérateur</p>
+<p>de synthèse</p>
+<p>annuelle*</p>
+</th>
+<th class="head"><p>Archivé</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Unité</p>
+<p>de</p>
+<p>mesure</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><strong>Libre</strong></p>
+<p><strong>Liste</strong></p>
+</td>
+<td><p><strong>Somme</strong></p>
+<p><strong>Moyenne</strong></p>
+<p><strong>Médiane</strong></p>
+<p><strong>Maximum</strong></p>
+<p><strong>Minimum</strong></p>
+</td>
+<td><p><strong>Oui</strong></p>
+<p><strong>Non</strong></p>
+<p>(défaut</p>
+<p>non)</p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="import-contacts">
+<h3>Import contacts<a class="headerlink" href="#import-contacts" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Prénom, Nom</p>
+<p>Autres colonnes possibles : Adresse email, Téléphone, Portable, Adresse, ligne 1, Adresse, ligne 2, Code postal, Ville, Pays</p>
+<p>+ les mots clés et groupe de champs additionnels</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Bien choisir le « Nom » avec astérisque dans l’interface EVA pour la colonne Nom* et pas celui sans astérisque.</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Civilité</p></th>
+<th class="head"><p>Prénom*</p></th>
+<th class="head"><p>Nom*</p></th>
+<th class="head"><p>Adresse</p>
+<p>email</p>
+</th>
+<th class="head"><p>Téléphone</p></th>
+<th class="head"><p>Adresse</p>
+<p>ligne 1</p>
+</th>
+<th class="head"><p>Code</p>
+<p>postal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>m</strong> ou</p>
+<p><strong>mme</strong></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="import-structures">
+<h3>Import structures<a class="headerlink" href="#import-structures" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Nom</p>
+<p>Autres colonnes possibles : AAdresse email, Sigle, Numéro de téléphone, SIRET, Site web, « Adresse, ligne 1 », « Adresse, ligne 2 », Code postal, Ville, Pays</p>
+<p>+ les mots clés</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Ne pas indiquer la colonne « Téléphone secondaire », elle ne fonctionne pas.</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Nom*</p></th>
+<th class="head"><p>Adresse</p>
+<p>email</p>
+</th>
+<th class="head"><p>Sigle</p></th>
+<th class="head"><p>SIRET</p></th>
+<th class="head"><p>Numéro de</p>
+<p>téléphone</p>
+</th>
+<th class="head"><p>Adresse</p>
+<p>ligne 1</p>
+</th>
+<th class="head"><p>Code</p>
+<p>postal</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="import-fiches">
+<h3>Import fiches<a class="headerlink" href="#import-fiches" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Titre</p>
+<p>Autres colonnes possibles (en fonction des paramètres) : Statut, Code analytique, Chef(s) de projet, Validateur(s), (+ autre rôle si paramétré), Rattachement arboresence initiale (fiche qui doit déjà exister), Objectifs, Etat d’avancement du projet, Contexte et motif, Activité et livrables (en fonction du paramétrage des blocs dans les fiches), Maîtrise d’ouvrage externe, Accessible au réseau, Modèle de fiche (le nombre présent dans l’URL lorsque l’on consulte ce modèle), Statut financier (ID), Date de programmation, Date de démarrage prévue, Date de fin prévue, Date de démarrage effective, Date de fin effective, Territoires</p>
+<p>+ les mots clés</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Le niveau sera déduit en fonction du rattachement à l’arborescence initiale.
+Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membres de l’équipe.</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 16%" />
+<col style="width: 12%" />
+<col style="width: 20%" />
+<col style="width: 18%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Statut</p></th>
+<th class="head"><p>Code</p>
+<p>Analytique</p>
+</th>
+<th class="head"><p>Titre*</p></th>
+<th class="head"><p>Chef(s)</p>
+<p>de</p>
+<p>projet</p>
+</th>
+<th class="head"><p>Rattachement</p>
+<p>arborescence</p>
+</th>
+<th class="head"><p>Objectifs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Brouillon</strong></p>
+<p><strong>A valider</strong></p>
+<p><strong>Validée</strong></p>
+<p><strong>Votée</strong></p>
+<p><strong>Refusée</strong></p>
+<p><strong>Archivée</strong></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p>Nom de</p>
+<p>l’utilisateur</p>
+<p>--</p>
+<p>Autre nom</p>
+</td>
+<td><p>Nom exact</p>
+<p>d’une fiche</p>
+<p>qui doit</p>
+<p>déjà</p>
+<p>exister</p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 20%" />
+<col style="width: 15%" />
+<col style="width: 25%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Maîtrise</p>
+<p>d’ouvrage</p>
+<p>externe</p>
+</th>
+<th class="head"><p>Accessible</p>
+<p>au</p>
+<p>réseau</p>
+</th>
+<th class="head"><p>Modèle</p>
+<p>de</p>
+<p>fiche</p>
+</th>
+<th class="head"><p>Date</p>
+<p>de</p>
+<p>programmation</p>
+</th>
+<th class="head"><p>Territoires</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Oui</strong></p>
+<p><strong>Non</strong></p>
+<p>(défaut</p>
+<p>non)</p>
+</td>
+<td><p><strong>Oui</strong></p>
+<p><strong>Non</strong></p>
+<p>(défaut</p>
+<p>non)</p>
+</td>
+<td><p>Nombre</p>
+<p>présent</p>
+<p>dans</p>
+<p>URL</p>
+<p>(ID)</p>
+</td>
+<td><p>Date au</p>
+<p>format</p>
+<p>JJ/MM/AAAA</p>
+</td>
+<td><p>Nom exact</p>
+<p>du</p>
+<p>territoire</p>
+<p>dans</p>
+<p>EVA</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>Exemple URL du modèle de fiche : dans « Administration » puis « Modèles de fiches », cliquer sur le modèle souhaité, l’URL qui s’affiche ressemble à celui-ci « parc.evaparc.net/project/template/form/20 », dans ce cas indiquer « 20 » dans la case modèle de fiche.</em></p>
+</section>
+<section id="sauvegarder-au-format-csv">
+<h3>Sauvegarder au format csv<a class="headerlink" href="#sauvegarder-au-format-csv" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Enregistrer le tableau au format <strong>csv</strong> avec des séparateurs en <strong>points-virgules</strong>. Le format <strong>CSV UTF-8</strong> est à privilégier.</p>
+<p>Vous pouvez vérifier le format en ouvrant le fichier csv avec un éditeur de texte simple (ex : TextEdit, WordPad, NotePad…).</p>
+<p>Les colonnes doivent être séparées par des points-virgules, les lignes par des retours à la ligne.</p>
+<p>Ex :
+<code class="docutils literal notranslate"><span class="pre">Statut;Code</span> <span class="pre">analytique;Titre</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Brouillon;001;Fiche</span> <span class="pre">numéro</span> <span class="pre">1</span></code></p>
+</section>
+<section id="importer-dans-eva">
+<h3>Importer dans EVA<a class="headerlink" href="#importer-dans-eva" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Dans EVA, cliquer sur le bouton rouge dans le coin inférieur droit pour importer les csv <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a>.</p>
+<p>Choisir le fichier csv préparé précédemment, le délimiteur point-virgule, et cocher « La première ligne contient les en-têtes des colonnes ? » puis cliquer sur « <strong>Envoyer</strong> ».</p>
+<a class="reference internal image-reference" href="../_images/interface_import.png"><img alt="../_images/interface_import.png" src="../_images/interface_import.png" style="width: 400px;" /></a>
+<p>Les données devraient apparaître, chaque ligne correspondant à chaque élément.</p>
+<a class="reference internal image-reference" href="../_images/tableau_import.png"><img alt="../_images/tableau_import.png" src="../_images/tableau_import.png" style="width: 600px;" /></a>
+<p>Vérifier les en-têtes des colonnes, certains auront déjà été trouvés, d’autres non, il faudra les indiquer grâce au menu déroulant.</p>
+<a class="reference internal image-reference" href="../_images/déroulé_import.png"><img alt="../_images/déroulé_import.png" src="../_images/déroulé_import.png" style="width: 200px;" /></a>
+<p>Dans les suggestions d’en-tête du menu déroulant, on peut vérifier quels mots clés et référentiels peuvent être associés. Cliquer sur « <strong>Vérifier ou Valider</strong> ».</p>
+<p>Si votre tableau est correct il sera surligné en vert, les lignes incorrects seront rouges.</p>
+<a class="reference internal image-reference" href="../_images/tableau_import_rouge.png"><img alt="../_images/tableau_import_rouge.png" src="../_images/tableau_import_rouge.png" style="width: 600px;" /></a>
+<p>(Ici par exemple il faut indiquer « Mme. » au lieu de « mm » dans la colonne civilité pour corriger la ligne)</p>
+<p>Vous pouvez les corriger ou si vous ne souhaitez pas importer ces lignes cliquer sur « <strong>Importer</strong> ». Seules les lignes qui étaient surlignées en vert seront importées dans EVA.</p>
+<p><strong>Une bonne pratique est de vérifier si l’import a bien eu lieu correctement.</strong></p>
+</section>
+</section>
+<section id="procedure-budget">
+<h2>Procédure budget<a class="headerlink" href="#procedure-budget" title="Lien permanent vers cette rubrique"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="Ajouts.html" class="btn btn-neutral float-left" title="Ajouts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="../Fonctionnalit%C3%A9s-par-modules/index.html" class="btn btn-neutral float-right" title="Fonctionnalités par modules" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Lea Roumazeilles.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
