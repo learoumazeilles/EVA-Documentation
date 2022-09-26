@@ -2,3 +2,82 @@
 Tableaux
 --------
 
+
+Généralités
+~~~~~~~~~~~
+
+
+* Les entrées en **vert** sont cliquables, elles renvoient vers la page associée.
+
+* Le crayon |crayon_modif_ligne| s'affiche dans certaines cases pour modifier directement dans le tableau, ne pas oublier d'enregistrer les modifications à la fin de la ligne |enregistrer_ligne| ou cliquer sur |croix_ligne| pour annuler.
+
+* Des outils sont présents en fin de ligne (en fonction des droits) :
+	* Modifier |modifier_ligne| -> renvoie au formulaire
+	* Duppliquer |duppliquer_ligne| -> dupplique l'élément
+	* Supprimer |supprimer_ligne| -> supprime l'élément
+	* Archiver |archiver_ligne| -> l'élément n'est plus disponible à la sélection mais les données associées sont toujours présentes
+
+* La colonne ID est une colonne créee automatiquement dans EVA qui permet d'identifier chaque élément d'un tableau de façon unique dans la base de données.
+
+* Un décompte des éléments du tableau est présent en haut de certains tableaux.
+
+* Accès au différentes pages du tableau en bas à droite |pages_tableau| 
+
+
+
+Filtres, colonnes et requêtes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Filtres
+#######
+
+|filtres|
+
+Les filtres permettent de trier ce qui apparaît à l'écran. Plusieurs filtres sont cumulables.
+
+Il est possible de chercher dans les contenus des éléments en tapant dans la case **Recherche**.
+
+Le bouton |filtres_déroulé|  permet de dérouler le menu des filtres. Les filtres peuvent être sélectionnés grâce au menu déroulant |selectionner_filtres|.
+
+Les critères du filtre peuvent ensuite être sélectionnées, souvent en deux étapes (la condition et la référence). 
+
+Par exemple :
+
+.. image:: images/Exemple_filtres.png
+	:width: 300
+
+Les filtres sont enlevés grâce à la croix |croix_ligne|.
+
+Ne pas oublier de cliquer sur |appliquer| quand vous avez fini de parametrer vos filtres ou |réinitialiser| pour enlever tous les filtres.
+
+.. warning::
+	Dans certains modules, un filtre existe par défaut (par exemple dans les fiches, le filtre statut ne contient pas à archiver). Ne pas hésitez à dérouler le menu des filtres et à réinitialiser dans le doute.
+
+Requêtes
+########
+
+|requêtes|
+
+Si vous utilisez beaucoup certains filtres, vous pouvez enregistrer votre combinaison de filtres dans une requête.
+
+Pour cela cliquer sur le bouton **Requêtes** puis donner un nom à votre requête et cliquer sur |enregistrer|. Votre requête appraît maintenant dans la liste et vous n'avez qu'à cliquer dessus pour appliquer vos filtres.
+
+Si vous souhaitez que cette requête soit accessible aux autres utilisateurs de votre EVA, vous pouvez cocher la case |requete_partagé|. Cette requête apparaîtra également pour les autres utilisateurs. Les requêtes partagées sont identifiées avec ce sigle |partagée_sigle|.
+
+Pour supprimer une requête, vous pouvez cliquer sur la corbeille à côté de la requête |supprimer_ligne|.
+
+
+Colonnes
+########
+
+|colonnes|
+
+En appuyant sur le bouton colonne, vous aurez accès à toutes les colonnes à cocher ou décocher en fonction de ce que vous voulez faire appraître dans votre tableau.
+
+
+Gomme et actualisation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Exports
+~~~~~~~
+
