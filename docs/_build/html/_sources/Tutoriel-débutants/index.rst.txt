@@ -33,7 +33,7 @@ Pour accéder à vos informations, deux solutions :
 * Par le module Administration > Utilisateurs > Cliquez sur votre profil
 * En cliquant sur votre profil directement en haut à droite
 
-.. image:: images/Accès_info_utilisateurs.png
+.. image:: images/Acces_info_utilisateurs.png
   :width: 600
 
 Vous pouvez ensuite changer votre mot de passe, sans oublier d'enregistrer les modifications !
