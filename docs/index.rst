@@ -10,7 +10,7 @@ Documentation du Logiciel EVA
    :caption: Premiers pas
 
    Introduction-à-EVA/index
-   Tutoriel-débutants/index
+   Tutoriel-débuts-dans-EVA/index
 
 .. toctree::
    :maxdepth: 2

@@ -58,4 +58,14 @@
 .. |partagée_sigle| image:: /_static/images/Partagée_sigle.png
 	:width: 30
 
+.. |icone_top_tableau| image:: /_static/images/Icone_top_tableau.png
+	:width: 150
 
+.. |gomme_tableau| image:: /_static/images/Gomme_tableau.png
+	:width: 30
+
+.. |export_tableau| image:: /_static/images/Export_tableau.png
+	:width: 30
+
+.. |actualisation_tableau| image:: /_static/images/Actualisation_tableau.png
+	:width: 30

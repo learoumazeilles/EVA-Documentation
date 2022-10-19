@@ -1,5 +1,5 @@
-Tutoriel débutants
-==================
+Tutoriel débuts dans EVA
+========================
 
 Se connecter à EVA
 ------------------
@@ -41,8 +41,7 @@ Vous pouvez ensuite changer votre mot de passe, sans oublier d'enregistrer les m
 .. image:: images/Info_utilisateur.png
   :width: 600
 
-Créer une première fiche
-------------------------
+Pour la suite
+-------------
 
-
-*En cours de rédaction*
+Consulter la partie **Fonctionnalités générales**

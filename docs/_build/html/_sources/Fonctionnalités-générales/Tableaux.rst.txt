@@ -74,10 +74,44 @@ Colonnes
 
 En appuyant sur le bouton colonne, vous aurez accès à toutes les colonnes à cocher ou décocher en fonction de ce que vous voulez faire appraître dans votre tableau.
 
+Vous pouvez réorganiser les colonnes par ordre alphabétique en cliquant sur les flèches à côté des en-tête de colonne.
+
+.. image:: images/Flèche_colonne_up.png
+	:width: 80
+.. image:: images/Flèche_colonne_down.png
+	:width: 80
 
 Gomme et actualisation
 ~~~~~~~~~~~~~~~~~~~~~~
 
+|icone_top_tableau|
+
+En haut des tableaux, on peut trouver les îcones gomme |gomme_tableau|, export |export_tableau| et actualisation |actualisation_tableau|.
+
+La gomme |gomme_tableau| s'applique aux cases cochées dans le tableau. Elle **retire les éléments de la vue tableau mais sans les supprimer**. Cela est utile car la vue conditionne l'export, donc si vous voulez exporter toutes les fiches sauf une, vous pouvez la cocher et appuyer sur la gomme.
+
+.. image:: images/Case_à_cocher.png
+	:width: 30
+
+Pour la faire réapparaître, il suffit de cliquer sur l'actualisation |actualisation_tableau|.
+
+
 Exports
 ~~~~~~~
+
+Les tableaux peuvent s'exporter au format Excel en appuyant sur le bouton export Excel en haut |export_tableau|. 
+
+L'export correspond à ce que vous voyez affiché à l'écran :
+- il reprend les filtres appliqués
+- il contient les colonnes affichées uniquement 
+- il ignore les lignes retirées avec la gomme
+
+Si votre tableau tient sur plusieurs pages dans EVA après l'application de vos filtres ect, toutes les pages seront exportées. 
+
+Vous pouvez aussi choisir d'exporter seulement certaines lignes, en les cochant. Dans ce cas seul les lignes cochées seront exportées.
+
+.. image:: images/Case_à_cocher.png
+	:width: 30
+
+
 
