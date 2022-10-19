@@ -25,7 +25,7 @@ Généralités
 
 
 
-Filtres, colonnes et requêtes
+Filtres, requêtes et colonnes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Filtres
