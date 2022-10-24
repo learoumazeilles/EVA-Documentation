@@ -95,6 +95,8 @@ La gomme |gomme_tableau| s'applique aux cases cochées dans le tableau. Elle **r
 
 Pour la faire réapparaître, il suffit de cliquer sur l'actualisation |actualisation_tableau|.
 
+.. warning::
+	Dans certains modules, la gomme ne s'affiche que lorsque l'on coche au moins une case, elle s'affiche en haut de la colonne de case à cocher. C'est le cas dans les modules : Fiches, Budget -> comptes, Cartographie, Administration -> Fonctions
 
 Exports
 ~~~~~~~
