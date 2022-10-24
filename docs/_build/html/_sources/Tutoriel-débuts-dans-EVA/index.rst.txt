@@ -44,4 +44,4 @@ Vous pouvez ensuite changer votre mot de passe, sans oublier d'enregistrer les m
 Pour la suite
 -------------
 
-Consulter la partie **Fonctionnalités générales**
+Consulter la partie :ref:`Fonctionnalités générales`

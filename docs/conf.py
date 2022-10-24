@@ -16,7 +16,7 @@ release = '1'
 
 import sphinx_rtd_theme
 
-extensions = ['myst_parser','sphinx_rtd_theme']
+extensions = ['myst_parser','sphinx_rtd_theme','sphinx.ext.autosectionlabel']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
