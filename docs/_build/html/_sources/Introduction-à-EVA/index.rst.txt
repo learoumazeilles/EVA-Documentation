@@ -24,6 +24,8 @@ Le logiciel EVA
 
 .. note::
    La note stratégique du logiciel EVA est accessible via ce `lien <https://fpnrf-my.sharepoint.com/:b:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/Efbp-hQNHmdGp7yXoB1vNpwBj5ehxqzVOIBI3A1evkJ9Mw?e=pINo6V>`_.
+   
+   Le code source du logiciel est disponible en Open Source sur la `plateforme GitLab <https://gitlab.com/logiciel-eva/logiciel-eva/>`_.
 
 Finalités du logiciel
 #####################

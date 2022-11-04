@@ -1,0 +1,22 @@
+Développements Novembre 2022
+============================
+
+Contexte
+--------
+
+Ce déploiement des développements en cours sur le logiciel EVA a eu lieu le XX. Il comprend des résolutions d’anomalies, des améliorations ergonomiques, l’ajout de nouvelles fonctionnalités et une évolution pour conformité avec le cadre Open Source.
+
+Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé (il faut un compte pour le consulter) et un mode d’emploi pour les nouveautés.
+
+Il y a deux points d’attention :
+	* Le changement de la librairie des exports peut avoir un **impact sur les exports Word paramétrés**. Si vous êtes impactés, l’assistance saura vous aider.
+	* La résolution des **envois d’alertes mails automatiques** : je vous invite à **vérifier les envois** de ces alertes et à me notifier si le problème persiste.
+
+
+Anomalies résolues
+------------------
+
+1. Ticket #81 : Anomalie droit d’ajout des territoires
+Dans certains cas les utilisateurs ne parvenaient pas à renseigner des territoires dans les fiches. C’était une anomalie au niveau du rôle de l'utilisateur pour « Créer » des fiches : si ce droit était désactivé dans le rôle, il était impossible d'ajouter des territoires alors que la possibilité d’ajouter des territoires aurait dû être associée au droit de « Modifier » les fiches.
+
+**Corrigé** : les utilisateurs qui ont le droit de modifier les fiches ont le droit d’ajouter des territoires

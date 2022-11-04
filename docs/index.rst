@@ -26,3 +26,9 @@ Documentation du Logiciel EVA
 
    Gestion-des-utilisateurs/index
    Référentiels-et-mots-clés/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Suivi des développements
+
+   Développements/Développements-Novembre-2022/index

@@ -2,6 +2,7 @@
 Tableaux
 --------
 
+Les données sont représentées dans EVA sous forme de tableaux, chaque ligne représentant une entrée et chaque colonne une caractéristique.
 
 Généralités
 ~~~~~~~~~~~
@@ -60,7 +61,7 @@ Requêtes
 
 Si vous utilisez beaucoup certains filtres, vous pouvez enregistrer votre combinaison de filtres dans une requête.
 
-Pour cela cliquer sur le bouton **Requêtes** puis donner un nom à votre requête et cliquer sur |enregistrer|. Votre requête appraît maintenant dans la liste et vous n'avez qu'à cliquer dessus pour appliquer vos filtres.
+Pour cela cliquer sur le bouton **Requêtes**, après avoir appliqué vos filtres, puis donner un nom à votre requête et cliquer sur |enregistrer|. Votre requête appraît maintenant dans la liste et vous n'avez qu'à cliquer dessus pour appliquer vos filtres.
 
 Si vous souhaitez que cette requête soit accessible aux autres utilisateurs de votre EVA, vous pouvez cocher la case |requete_partagé|. Cette requête apparaîtra également pour les autres utilisateurs. Les requêtes partagées sont identifiées avec ce sigle |partagée_sigle|.
 

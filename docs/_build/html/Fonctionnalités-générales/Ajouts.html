@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ajouts &mdash; Documentation Documentation EVA 1</title>
+  <title>Ajouts/Création &mdash; Documentation Documentation EVA 1</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.png"/>
@@ -50,7 +50,12 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Fonctionnalités générales</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Tableaux.html">Tableaux</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Ajouts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Ajouts/Création</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#via-le-point-rouge">Via le point rouge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#via-le-plus">Via le plus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ajout-de-relation-entre-les-donnees">Ajout de relation entre les données</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Imports.html">Imports</a></li>
 </ul>
 </li>
@@ -61,6 +66,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Gestion-des-utilisateurs/index.html">Gestion des utilisateurs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../R%C3%A9f%C3%A9rentiels-et-mots-cl%C3%A9s/index.html">Référentiels et mots clés</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-Novembre-2022/index.html">Développements Novembre 2022</a></li>
 </ul>
 
         </div>
@@ -78,7 +87,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="index.html">Fonctionnalités générales</a> &raquo;</li>
-      <li>Ajouts</li>
+      <li>Ajouts/Création</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/Fonctionnalités-générales/Ajouts.rst.txt" rel="nofollow"> Afficher la source de la page</a>
       </li>
@@ -88,8 +97,94 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ajouts">
-<h1>Ajouts<a class="headerlink" href="#ajouts" title="Lien permanent vers cette rubrique"></a></h1>
+  <section id="ajouts-creation">
+<h1>Ajouts/Création<a class="headerlink" href="#ajouts-creation" title="Lien permanent vers cette rubrique"></a></h1>
+<p>Les ajouts/créations de nouvelles entrées (nouvelle fiche, nouveau contact, nouveau compte…) s’effectue de façon assez similaire dans tout le logiciel. Il est possible d’ajouter des entrées en remplissant des formulaires ou par l’import (traité plus loin dans la partie <a class="reference internal" href="Imports.html#imports"><span class="std std-ref">Imports</span></a>).</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Les possibilités d’ajout diffèrent en fonction des droits associés à chaque utilisateur, si vous ne voyez pas la possibilité de création ou d’ajout, c’est que ce droit est désactivé pour votre profil.</p>
+</div>
+<section id="via-le-point-rouge">
+<h2>Via le point rouge<a class="headerlink" href="#via-le-point-rouge" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Dans la plupart des cas, on peut créer une nouvelle entité en cliquant sur le point rouge en bas à droite de l’écran <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a>.
+Il suffit ensuite de choisir l’option qui convient puis de remplir le formulaire qui s’affiche à l’écran sans oublier d’enregistrer.</p>
+<dl class="simple">
+<dt>Valables pour les modules :</dt><dd><ul class="simple">
+<li><p>Annuaire</p></li>
+<li><p>Fiche</p></li>
+<li><p>Tâche</p></li>
+<li><p>Temps (liste de feuilles de temps, synchronisation, export)</p></li>
+<li><p>Indicateurs</p></li>
+<li><p>Budget</p></li>
+<li><p>Conventions</p></li>
+<li><p>Cartographie</p></li>
+<li><p>Utilisateurs</p></li>
+<li><p>Rôles</p></li>
+<li><p>Alertes</p></li>
+<li><p>Fonctions</p></li>
+<li><p>Exports</p></li>
+<li><p>Modèles de fiches</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="via-le-plus">
+<h2>Via le plus<a class="headerlink" href="#via-le-plus" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Dans d’autres modules, la fonctionnalité d’ajout se fait en cliquant sur un bouton plus en haut à droite du tableau correspondant <a class="reference internal" href="../_images/Ajout_plus.png"><img alt="ajout_plus" src="../_images/Ajout_plus.png" style="width: 50px;" /></a>. Il suffit ensuite de remplir le formulaire qui s’affiche à l’écran sans oublier d’enregistrer.</p>
+<dl class="simple">
+<dt>Bouton en haut à droite des tableaux dans les modules suivants :</dt><dd><ul class="simple">
+<li><p>Dans référentiels et mots clés pour les créer (spécifique à chaque onglet)</p></li>
+<li><p>Dans un contact pour ajouter une fonction et sa structure (ajout de relation)</p></li>
+<li><p>Dans structure pour ajouter un employé et sa fonction (ajout de relation)</p></li>
+<li><p>Dans la liste des types d’absence pour créer un nouveau temps d’absence</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="ajout-de-relation-entre-les-donnees">
+<h2>Ajout de relation entre les données<a class="headerlink" href="#ajout-de-relation-entre-les-donnees" title="Lien permanent vers cette rubrique"></a></h2>
+<p>A l’intérieur de certains modules, on peut lier des données entre elles (par exemple associer des acteurs à une fiche), dans ce cas l’ajout se fait via un bouton spécifique composé d’un plus et du nom de la donnée (ex : <a class="reference internal" href="../_images/Ajout_acteur.png"><img alt="ajout_acteur" src="../_images/Ajout_acteur.png" style="width: 100px;" /></a>) ou via le signe plus à côté du champs à remplir <a class="reference internal" href="../_images/Petit_plus.png"><img alt="petit_plus" src="../_images/Petit_plus.png" style="width: 15px;" /></a>.</p>
+<dl class="simple">
+<dt>Bouton spécifique :</dt><dd><ul class="simple">
+<li><p>Dans une fiche pour créer des notes (cliquer sur l’icône notes d’abord)</p></li>
+<li><p>Dans une fiche pour ajouter des membres</p></li>
+<li><p>Dans une fiche pour ajouter un acteur</p></li>
+<li><p>Dans une fiche pour créer une feuille de temps</p></li>
+<li><p>Dans une fiche pour créer une mesure</p></li>
+<li><p>Dans une fiche pour créer des postes de dépenses et recette et des codes financier</p></li>
+<li><p>Dans une fiche pour créer un avancement</p></li>
+<li><p>Dans une fiche pour créer une tâche</p></li>
+<li><p>Dans une fiche pour créer un emplacement document</p></li>
+<li><p>Dans un indicateur pour créer une mesure</p></li>
+<li><p>Dans une convention pour ajouter une ligne reliée à une fiche</p></li>
+<li><p>Dans une convention pour créer un emplacement document</p></li>
+<li><p>Dans le module champs pour créer des groupe de champs</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Quand il s’agit d”<strong>ajouter</strong> des relations, il faut que l’entité ait préalablement été créé dans son module. Par exemple, pour ajouter un acteur dans une fiche, il faut d’abord avoir ajouté l’acteur dans le module annuaire -&gt; structure, puis on pourra le choisir dans le module fiche via le bouton <a class="reference internal" href="../_images/Ajout_acteur.png"><img alt="ajout_acteur" src="../_images/Ajout_acteur.png" style="width: 100px;" /></a>
+Quand il s’agit de <strong>créer</strong> une entité reliée, dans ce cas elle peut être créé via le bouton spécifique.</p>
+</div>
+<dl class="simple">
+<dt>Signe plus (liste non exhaustive) :</dt><dd><ul class="simple">
+<li><p>Liaison des mots clés et référentiels dans les modules</p></li>
+<li><p>Dans une fiche pour rattacher à l’arborescence initiale</p></li>
+<li><p>Dans une fiche pour ajouter des chefs de projet et des validateurs</p></li>
+<li><p>Dans une fiche pour ajouter des territoires</p></li>
+<li><p>Dans une tâche pour ajouter une fiche</p></li>
+<li><p>Dans une feuille de temps pour ajouter un utilisateur</p></li>
+<li><p>Dans enveloppe pour ajouter un financeur</p></li>
+<li><p>Rattachement aux parents</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ce plus <a class="reference internal" href="../_images/Petit_plus.png"><img alt="petit_plus" src="../_images/Petit_plus.png" style="width: 15px;" /></a> sera toujours présenté pour ajouter un élément d’une liste existante, créé en amont dans un autre module ou paramétré par défaut.</p>
+</div>
+</section>
 </section>
 
 

@@ -4,6 +4,15 @@
 .. |bouton_3_traits| image:: /_static/images/Bouton_3_traits.png
 	:width: 40
 
+.. |ajout_plus| image:: /_static/images/Ajout_plus.png
+	:width: 50
+
+.. |ajout_acteur| image:: /_static/images/Ajout_acteur.png
+	:width: 100
+
+.. |petit_plus| image:: /_static/images/Petit_plus.png
+	:width: 15
+
 .. |crayon_modif_ligne| image:: /_static/images/Crayon_modif_ligne.png
 	:width: 30
 

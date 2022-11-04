@@ -2,10 +2,12 @@
 Imports
 =======
 
+Si vous avez une large base de données à ajouter, il est utile de recourir aux imports qui permettent d'insérer plusieurs entrées d'un coup grâce à un format tableur. 
+
 Procédure générale
 ~~~~~~~~~~~~~~~~~~
 
-La précédure pour les imports est similaire dans la majorité des cas (exeption des imports budgets et territoires) et suit la logique suivante :
+La précédure pour les imports est similaire dans la majorité des cas (exeption des imports budgets, territoires et mots clés et référentiels) et suit la logique suivante :
 
 1. Créer un fichier tableur avec l’outil de tableur privilégié (Excel, Numbers, Google Sheet, Calc…) et remplir les données avec les en-têtes de colonnes correspondantes
 2. Sauvegarder au format csv
@@ -100,7 +102,7 @@ Import structures
 
 Colonnes obligatoires : Nom
 
-Autres colonnes possibles : AAdresse email, Sigle, Numéro de téléphone, SIRET, Site web, « Adresse, ligne 1 », « Adresse, ligne 2 », Code postal, Ville, Pays
+Autres colonnes possibles : Adresse email, Sigle, Numéro de téléphone, SIRET, Site web, « Adresse, ligne 1 », « Adresse, ligne 2 », Code postal, Ville, Pays
 
 \+ les mots clés 
 
@@ -225,4 +227,50 @@ Vous pouvez les corriger ou si vous ne souhaitez pas importer ces lignes cliquer
 
 Procédure budget
 ~~~~~~~~~~~~~~~~
+
+La précédure pour les imports budget suit la logique suivante :
+
+1. Créer un fichier tableur avec l’outil de tableur privilégié (Excel, Numbers, Google Sheet, Calc…) et remplir les données avec les en-têtes de colonnes correspondantes
+2. Sauvegarder au format csv
+3. Importer dans EVA
+
+* Des exemples de fichiers Excel et csv sont disponibles `ici <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP>`_
+* L’ordre des colonnes n’a pas d’importance, certaines cases peuvent être vides si elles ne sont pas dans les colonnes de champs obligatoires.
+* Dans certaines colonnes, on peut indiquer un texte librement, pour d’autres seulement certains mots sont acceptés (indiqué en **gras** dans les tableaux ci-dessous) ou seulement des chiffres, les majuscules/minuscules sont importantes.
+* Les montants doivent être au format numérique sans espace
+
+Import budget en général
+########################
+
+Il faut préparer des fichiers csv séparés pour les recettes et dépenses et pour chaque type, par exemple prévu, engagé, payé. Il faut avoir défini au préalable les comptes auxquels rattacher les recettes et dépenses, qui peuvent eux aussi être importés. Les enveloppes peuvent elles aussi être importées.
+
+Import Comptes
+##############
+
+Colonnes obligatoires : Code, Nom, Type de mouvement
+
+Autres colonnes possibles : Description, Parent, Par défaut
+
+
+.. warning::
+	Attention pour le parent à bien donner un compte parent recette si le type de mouvement est recette et un compte parent dépense si le type de mouvement est dépense. Le logiciel ne peut pas le vérifier au moment de l’import mais cela produit des bugs plus tard.
+
++---------+---------+-------------+------------+--------+--------+
+| Code*   | Nom*    | Type de     | Description| Parent | Par    |
+|         |         |             |            |        |        |
+|         |         | Mouvement*  |            |        | défaut |
++=========+=========+=============+============+========+========+
+| *Texte* | *Texte* | **Recette** | *Texte*    | ID du  | *Texte*|
+|         |         |             |            |        |        |
+| *libre* | *libre* | **Dépense** | *libre*    | parent | *libre*|
++---------+---------+-------------+------------+--------+--------+
+
+.. Note::
+	Par défaut
+
+
+En construction
+Procédure mots clés et référentiels
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 

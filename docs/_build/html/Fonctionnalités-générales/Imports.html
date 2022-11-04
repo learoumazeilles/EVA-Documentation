@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Fonctionnalités par modules" href="../Fonctionnalit%C3%A9s-par-modules/index.html" />
-    <link rel="prev" title="Ajouts" href="Ajouts.html" /> 
+    <link rel="prev" title="Ajouts/Création" href="Ajouts.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -50,7 +50,7 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Fonctionnalités générales</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Tableaux.html">Tableaux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Ajouts.html">Ajouts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Ajouts.html">Ajouts/Création</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Imports</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#procedure-generale">Procédure générale</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#quelles-colonnes-pour-chaque-import">Quelles colonnes pour chaque import ?</a></li>
@@ -63,7 +63,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#importer-dans-eva">Importer dans EVA</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#procedure-budget">Procédure budget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#procedure-budget">Procédure budget</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#import-budget-en-general">Import budget en général</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-comptes">Import Comptes</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -75,6 +79,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Gestion-des-utilisateurs/index.html">Gestion des utilisateurs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../R%C3%A9f%C3%A9rentiels-et-mots-cl%C3%A9s/index.html">Référentiels et mots clés</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Novembre-2022/index.html">Développements Novembre 2022</a></li>
 </ul>
 
         </div>
@@ -104,9 +112,10 @@
              
   <section id="imports">
 <h1>Imports<a class="headerlink" href="#imports" title="Lien permanent vers cette rubrique"></a></h1>
+<p>Si vous avez une large base de données à ajouter, il est utile de recourir aux imports qui permettent d’insérer plusieurs entrées d’un coup grâce à un format tableur.</p>
 <section id="procedure-generale">
 <h2>Procédure générale<a class="headerlink" href="#procedure-generale" title="Lien permanent vers cette rubrique"></a></h2>
-<p>La précédure pour les imports est similaire dans la majorité des cas (exeption des imports budgets et territoires) et suit la logique suivante :</p>
+<p>La précédure pour les imports est similaire dans la majorité des cas (exeption des imports budgets, territoires et mots clés et référentiels) et suit la logique suivante :</p>
 <ol class="arabic simple">
 <li><p>Créer un fichier tableur avec l’outil de tableur privilégié (Excel, Numbers, Google Sheet, Calc…) et remplir les données avec les en-têtes de colonnes correspondantes</p></li>
 <li><p>Sauvegarder au format csv</p></li>
@@ -311,7 +320,7 @@
 <section id="import-structures">
 <h3>Import structures<a class="headerlink" href="#import-structures" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Nom</p>
-<p>Autres colonnes possibles : AAdresse email, Sigle, Numéro de téléphone, SIRET, Site web, « Adresse, ligne 1 », « Adresse, ligne 2 », Code postal, Ville, Pays</p>
+<p>Autres colonnes possibles : Adresse email, Sigle, Numéro de téléphone, SIRET, Site web, « Adresse, ligne 1 », « Adresse, ligne 2 », Code postal, Ville, Pays</p>
 <p>+ les mots clés</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
@@ -525,6 +534,82 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 </section>
 <section id="procedure-budget">
 <h2>Procédure budget<a class="headerlink" href="#procedure-budget" title="Lien permanent vers cette rubrique"></a></h2>
+<p>La précédure pour les imports budget suit la logique suivante :</p>
+<ol class="arabic simple">
+<li><p>Créer un fichier tableur avec l’outil de tableur privilégié (Excel, Numbers, Google Sheet, Calc…) et remplir les données avec les en-têtes de colonnes correspondantes</p></li>
+<li><p>Sauvegarder au format csv</p></li>
+<li><p>Importer dans EVA</p></li>
+</ol>
+<ul class="simple">
+<li><p>Des exemples de fichiers Excel et csv sont disponibles <a class="reference external" href="https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP">ici</a></p></li>
+<li><p>L’ordre des colonnes n’a pas d’importance, certaines cases peuvent être vides si elles ne sont pas dans les colonnes de champs obligatoires.</p></li>
+<li><p>Dans certaines colonnes, on peut indiquer un texte librement, pour d’autres seulement certains mots sont acceptés (indiqué en <strong>gras</strong> dans les tableaux ci-dessous) ou seulement des chiffres, les majuscules/minuscules sont importantes.</p></li>
+<li><p>Les montants doivent être au format numérique sans espace</p></li>
+</ul>
+<section id="import-budget-en-general">
+<h3>Import budget en général<a class="headerlink" href="#import-budget-en-general" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Il faut préparer des fichiers csv séparés pour les recettes et dépenses et pour chaque type, par exemple prévu, engagé, payé. Il faut avoir défini au préalable les comptes auxquels rattacher les recettes et dépenses, qui peuvent eux aussi être importés. Les enveloppes peuvent elles aussi être importées.</p>
+</section>
+<section id="import-comptes">
+<h3>Import Comptes<a class="headerlink" href="#import-comptes" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Code, Nom, Type de mouvement</p>
+<p>Autres colonnes possibles : Description, Parent, Par défaut</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Attention pour le parent à bien donner un compte parent recette si le type de mouvement est recette et un compte parent dépense si le type de mouvement est dépense. Le logiciel ne peut pas le vérifier au moment de l’import mais cela produit des bugs plus tard.</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 22%" />
+<col style="width: 20%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code*</p></th>
+<th class="head"><p>Nom*</p></th>
+<th class="head"><p>Type de</p>
+<p>Mouvement*</p>
+</th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Parent</p></th>
+<th class="head"><p>Par</p>
+<p>défaut</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><strong>Recette</strong></p>
+<p><strong>Dépense</strong></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p>ID du</p>
+<p>parent</p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Par défaut</p>
+</div>
+<p>En construction
+Procédure mots clés et référentiels
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+</section>
 </section>
 </section>
 
@@ -532,7 +617,7 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
-        <a href="Ajouts.html" class="btn btn-neutral float-left" title="Ajouts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="Ajouts.html" class="btn btn-neutral float-left" title="Ajouts/Création" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
         <a href="../Fonctionnalit%C3%A9s-par-modules/index.html" class="btn btn-neutral float-right" title="Fonctionnalités par modules" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
