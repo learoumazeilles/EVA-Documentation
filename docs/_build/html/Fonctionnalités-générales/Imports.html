@@ -66,6 +66,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#procedure-budget">Procédure budget</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#import-budget-en-general">Import budget en général</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-comptes">Import Comptes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-enveloppes">Import Enveloppes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-recettes">Import Recettes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-depenses">Import Dépenses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-budget-dans-eva">Import Budget dans EVA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exporter-depuis-un-logicel-comptable-pour-import-dans-eva">Exporter depuis un logicel comptable pour import dans EVA</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#procedure-mots-cles-et-referentiels">Procédure mots clés et référentiels</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#preparer-le-csv-des-mots-cles-et-referentiels">Préparer le csv des mots clés et référentiels</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-dans-eva-des-mots-cles-et-referentiels">Import dans EVA des mots clés et référentiels</a></li>
 </ul>
 </li>
 </ul>
@@ -132,8 +142,8 @@
 </section>
 <section id="import-utilisateurs">
 <h3>Import utilisateurs<a class="headerlink" href="#import-utilisateurs" title="Lien permanent vers cette rubrique"></a></h3>
-<p>Colonnes obligatoires : Prénom, Nom, Nom d’utilisateur, Rôle, Mot de passe</p>
-<p>Autres colonnes possibles : Civilité, Adresse email, Couleur</p>
+<p>Colonnes obligatoires : Prénom, Nom, Nom d’utilisateur, Rôle, Mot de passe, Adresse email</p>
+<p>Autres colonnes possibles : Civilité, Couleur</p>
 <p>+ les mots clés</p>
 <table class="docutils align-default">
 <colgroup>
@@ -158,7 +168,7 @@
 </th>
 <th class="head"><p>Civilités</p></th>
 <th class="head"><p>Adresse</p>
-<p>email</p>
+<p>email*</p>
 </th>
 <th class="head"><p>Couleur</p></th>
 </tr>
@@ -263,7 +273,7 @@
 <p>+ les mots clés et groupe de champs additionnels</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
-<p>Bien choisir le « Nom » avec astérisque dans l’interface EVA pour la colonne Nom* et pas celui sans astérisque.</p>
+<p>Bien choisir le « Nom » avec astérisque dans l’interface EVA pour la colonne Nom* et ne pas choisir « Nom-Prénom ».</p>
 </div>
 <table class="docutils align-default">
 <colgroup>
@@ -383,7 +393,7 @@
 <section id="import-fiches">
 <h3>Import fiches<a class="headerlink" href="#import-fiches" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Titre</p>
-<p>Autres colonnes possibles (en fonction des paramètres) : Statut, Code analytique, Chef(s) de projet, Validateur(s), (+ autre rôle si paramétré), Rattachement arboresence initiale (fiche qui doit déjà exister), Objectifs, Etat d’avancement du projet, Contexte et motif, Activité et livrables (en fonction du paramétrage des blocs dans les fiches), Maîtrise d’ouvrage externe, Accessible au réseau, Modèle de fiche (le nombre présent dans l’URL lorsque l’on consulte ce modèle), Statut financier (ID), Date de programmation, Date de démarrage prévue, Date de fin prévue, Date de démarrage effective, Date de fin effective, Territoires</p>
+<p>Autres colonnes possibles (en fonction des paramètres) : Statut, Code analytique, Chef(s) de projet, Validateur(s), Membres de l’équipe (+ rôle si paramétré), Acteurs (+ rôle si paramétré), Rattachement arboresence initiale (fiche qui doit déjà exister), Objectifs, Etat d’avancement du projet, Contexte et motif, Activité et livrables (en fonction du paramétrage des blocs dans les fiches), Maîtrise d’ouvrage externe, Accessible au réseau, Modèle de fiche (le nombre présent dans l’URL lorsque l’on consulte ce modèle), Statut financier (ID), Date de programmation, Date de démarrage prévue, Date de fin prévue, Date de démarrage effective, Date de fin effective, Territoires</p>
 <p>+ les mots clés</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
@@ -504,7 +514,67 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 </tr>
 </tbody>
 </table>
-<p><em>Exemple URL du modèle de fiche : dans « Administration » puis « Modèles de fiches », cliquer sur le modèle souhaité, l’URL qui s’affiche ressemble à celui-ci « parc.evaparc.net/project/template/form/20 », dans ce cas indiquer « 20 » dans la case modèle de fiche.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Exemple URL du modèle de fiche : dans « Administration » puis « Modèles de fiches », cliquer sur le modèle souhaité, l’URL qui s’affiche ressemble à celui-ci « parc.evaparc.net/project/template/form/20 », dans ce cas indiquer « 20 » dans la case modèle de fiche. On peut maintenant aussi obtenir les ID dans une colonne dédiée.</p>
+</div>
+<p>La fonctionnalité d’importer les <strong>membres de l’équipe</strong> et les <strong>acteurs</strong> est nouvelle. Voici comment procéder :</p>
+<p>Ils peuvent être ajoutés avec leur rôle. Deux séparateurs sont donc nécessaires : la virgule et les tirets. La virgule permet de séparer le nom du rôle et les tirets de séparer deux entités différentes. Une erreur apparaitra si les noms, prénoms et rôles ne correspondent pas aux données dans EVA.</p>
+<p>Le « rôle » est ici défini dans les mots clés : mot clé rattaché à « Membre » et mot clé rattaché à « Acteur ». Il est recommandé de rattacher un seul mot clé à membre. Si aucun rôle n’est spécifié, le rôle « membre » sera associé aux membres de l’équipe par défaut et aucun rôle ne sera associé aux acteurs.</p>
+<p>Ces colonnes doivent être formatées comme ceci :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 12%" />
+<col style="width: 43%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p>
+<p>Analytique</p>
+</th>
+<th class="head"><p>Titre*</p></th>
+<th class="head"><p>Membres de</p>
+<p>l’équipe</p>
+</th>
+<th class="head"><p>Acteurs</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p>Nom et prénom d’un utilisateur,</p>
+<p>rôle --  Nom et prénom d’un</p>
+<p>utilisateur, rôle</p>
+</td>
+<td><p>Nom d’un acteur, rôle</p>
+<p>-- Nom d’un acteur,</p>
+<p>rôle</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Par exemple le fichier csv peut ressembler à celui-ci :</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Code analytique;Titre;Chef(s) de projet;Validateur(s);Membres de l’Équipe;Acteurs</div>
+<div class="line">IMPTESTACTMEMB;Test import fiches acteurs membres;Lea Roumazeilles;Lea Roumazeilles – Anne Levacher;Marie Berlon,Coordination – Louis BALDON,Assistance Technique – Antoine Mellager – Isabelle Dadon; Communes,Financeur – Conseil départemental,Appui Technique – FPNRF</div>
+</div>
+</div></blockquote>
+<dl class="simple">
+<dt>Dans cet exemple, on importe une fiche « Test import fiches acteurs membres » avec comme membre de l’équipe :</dt><dd><ul class="simple">
+<li><p>Chef(s) de projet : Léa Roumazeilles</p></li>
+<li><p>Validateur(s) : Léa Roumazeilles et Anne Levacher</p></li>
+<li><p>Membres de l’équipe : Marie Berlon (rôle de coordination), Louis Baldon (rôle d’assistance technique), Antoine Mellager (rôle de membre par défaut), Isabelle Dadon (rôle de membre par défaut)</p></li>
+<li><p>Acteurs : Communes (rôle de financeur), Conseil départemental (rôle d’appui technique), FPNRF (pas de rôle attitré)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Les rôles « coordination » et « assistance technique » sont des mots clés associés à membres, les rôles « financeur » et « appui technique » sont des mots clés associés à acteurs. (Attention le rôle financeur ici est différent de la case à cocher financeur dans les acteurs)</p>
 </section>
 <section id="sauvegarder-au-format-csv">
 <h3>Sauvegarder au format csv<a class="headerlink" href="#sauvegarder-au-format-csv" title="Lien permanent vers cette rubrique"></a></h3>
@@ -553,19 +623,18 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 <section id="import-comptes">
 <h3>Import Comptes<a class="headerlink" href="#import-comptes" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Code, Nom, Type de mouvement</p>
-<p>Autres colonnes possibles : Description, Parent, Par défaut</p>
+<p>Autres colonnes possibles : Description, Parent</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
 <p>Attention pour le parent à bien donner un compte parent recette si le type de mouvement est recette et un compte parent dépense si le type de mouvement est dépense. Le logiciel ne peut pas le vérifier au moment de l’import mais cela produit des bugs plus tard.</p>
 </div>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 15%" />
-<col style="width: 15%" />
-<col style="width: 22%" />
-<col style="width: 20%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+<col style="width: 24%" />
+<col style="width: 16%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Code*</p></th>
@@ -575,9 +644,6 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 </th>
 <th class="head"><p>Description</p></th>
 <th class="head"><p>Parent</p></th>
-<th class="head"><p>Par</p>
-<p>défaut</p>
-</th>
 </tr>
 </thead>
 <tbody>
@@ -596,19 +662,360 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 <td><p>ID du</p>
 <p>parent</p>
 </td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="import-enveloppes">
+<h3>Import Enveloppes<a class="headerlink" href="#import-enveloppes" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Nom, Financeur
+Autres colonnes possibles : Code, Début, Fin, Montant</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les financeurs sont ajoutés via le module structure.</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Nom*</p></th>
+<th class="head"><p>Financeur*</p></th>
+<th class="head"><p>Début</p></th>
+<th class="head"><p>Fin</p></th>
+<th class="head"><p>Montant</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
 <td><p><em>Texte</em></p>
 <p><em>libre</em></p>
+</td>
+<td><p>ID</p>
+<p>Financeur</p>
+</td>
+<td><p>Date format</p>
+<p>JJ/MM/AAAA</p>
+</td>
+<td><p>Date format</p>
+<p>JJ/MM/AAAA</p>
+</td>
+<td><p>Format numérique</p>
+<p>sans espace</p>
 </td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="import-recettes">
+<h3>Import Recettes<a class="headerlink" href="#import-recettes" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Code analytique, Compte, Date, Montant
+Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du mandatement, Mandat, Engagement, Compléments, Évolution, Unité de gestion, Série, Convention (numéro de la convention)</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 0%" />
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 12%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Code</p>
+<p>Analytique*</p>
+</th>
+<th class="head"><p>Compte*</p></th>
+<th class="head"><p>Date*</p></th>
+<th class="head"><p>Montant*</p></th>
+<th class="head"><p>Nom</p></th>
+<th class="head"><p>Montant HT</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="2"><p>Code de</p>
+<p>la fiche</p>
+</td>
+<td><p>Code du</p>
+<p>compte</p>
+</td>
+<td><p>Date format</p>
+<p>JJ/MM/AAAA</p>
+</td>
+<td><p>Format numérique</p>
+<p>sans espace</p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p>Format numérique</p>
+<p>sans espace</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="import-depenses">
+<h3>Import Dépenses<a class="headerlink" href="#import-depenses" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Code analytique, Compte, Date, Montant
+Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du mandatement, Mandat, Engagement, Compléments, Évolution, Unité de gestion, Date facture.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 0%" />
+<col style="width: 12%" />
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 12%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Code</p>
+<p>Analytique*</p>
+</th>
+<th class="head"><p>Compte*</p></th>
+<th class="head"><p>Date*</p></th>
+<th class="head"><p>Montant*</p></th>
+<th class="head"><p>Nom</p></th>
+<th class="head"><p>Montant HT</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="2"><p>Code de</p>
+<p>la fiche</p>
+</td>
+<td><p>Code du</p>
+<p>compte</p>
+</td>
+<td><p>Date format</p>
+<p>JJ/MM/AAAA</p>
+</td>
+<td><p>Format numérique</p>
+<p>sans espace</p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p>Format numérique</p>
+<p>sans espace</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="import-budget-dans-eva">
+<h3>Import Budget dans EVA<a class="headerlink" href="#import-budget-dans-eva" title="Lien permanent vers cette rubrique"></a></h3>
+<p>La procédure d’import dans EVA est similaire à celle décrite dans la procédure générale, certains aspects sont légèrement différents.</p>
+<p>Dans EVA cliquer sur « <strong>Budget</strong> » puis « <strong>Import financier</strong> ».</p>
+<p>Choisir le type de mouvement : recette ou dépense.</p>
+<p><strong>Import Recettes</strong></p>
+<p>Choisir le type de recette (sollicité, notifié, attribué ou perçu) et le type d’import (ajout, écrasement total, écrasement des fiches concernées).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Par défaut</p>
+<p>Pour les écrasements, il faudra préciser l’année ou « toutes les années ».</p>
 </div>
-<p>En construction
-Procédure mots clés et référentiels
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+<a class="reference internal image-reference" href="../_images/import_recette_EVA.png"><img alt="../_images/import_recette_EVA.png" src="../_images/import_recette_EVA.png" style="width: 400px;" /></a>
+<p><strong>Import Dépenses</strong></p>
+<p>Choisir le type de dépense (prévu, engagé, payé, libéré, engagé payé, AE ouvert, AE prévu, AE engagé, CP prévu, CP ouvert, CP mandaté) et le type d’import (ajout, écrasement total, écrasement des fiches concernées).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pour les écrasements, il faudra préciser l’année ou « toutes les années ».</p>
+</div>
+<a class="reference internal image-reference" href="../_images/import_dépense_EVA.png"><img alt="../_images/import_dépense_EVA.png" src="../_images/import_dépense_EVA.png" style="width: 600px;" /></a>
+<p><strong>Dans les deux cas</strong></p>
+<p>Choisir le fichier csv préparé précédemment, le délimiteur point-virgule, et cocher « La première ligne contient les en-têtes des colonnes ? » puis cliquer sur « <strong>Envoyer</strong> ».</p>
+<a class="reference internal image-reference" href="../_images/interface_import.png"><img alt="../_images/interface_import.png" src="../_images/interface_import.png" style="width: 400px;" /></a>
+<p>Les données devraient apparaître, chaque ligne correspondant à chaque élément.</p>
+<a class="reference internal image-reference" href="../_images/tableau_import.png"><img alt="../_images/tableau_import.png" src="../_images/tableau_import.png" style="width: 600px;" /></a>
+<p>Vérifier les en-têtes des colonnes, certains auront déjà été trouvés, d’autres non, il faudra les indiquer grâce au menu déroulant.</p>
+<p>Les colonnes choisies peuvent être enregistrées pour un prochain import.</p>
+<a class="reference internal image-reference" href="../_images/Choix_colonnes_import_budget.png"><img alt="../_images/Choix_colonnes_import_budget.png" src="../_images/Choix_colonnes_import_budget.png" style="width: 500px;" /></a>
+<p>Cliquer sur « <strong>Valider</strong> ».</p>
+<p>Si votre tableau est correct il sera surligné en vert, les lignes incorrects seront rouges.</p>
+<a class="reference internal image-reference" href="../_images/tableau_import_rouge.png"><img alt="../_images/tableau_import_rouge.png" src="../_images/tableau_import_rouge.png" style="width: 600px;" /></a>
+<p>Les lignes peuvent apparaître rouges pour plusieurs raisons :
+*       Un champ obligatoire n’est pas rempli
+*       Un code analytique n’existe pas
+*       Un format n’est pas respecté</p>
+<p>Vous pouvez les corriger ou si vous ne souhaitez pas importer ces lignes cliquer sur « <em>Importer</em> ». Seules les lignes qui étaient surlignées en vert seront importées dans EVA. Les lignes avec un montant vide ou égal à zéro ne sont pas importées.
+Une bonne pratique est de vérifier si l’import a bien eu lieu correctement.</p>
+</section>
+<section id="exporter-depuis-un-logicel-comptable-pour-import-dans-eva">
+<h3>Exporter depuis un logicel comptable pour import dans EVA<a class="headerlink" href="#exporter-depuis-un-logicel-comptable-pour-import-dans-eva" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Il est possible d’exporter des fichiers dans un format tableur pour les dépenses et les recettes depuis votre logiciel comptable. La procédure a été expérimentée avec le logiciel <strong>Berger-Levrault</strong>, mais elle devrait être possible avec d’autres logiciels comptables. Les agents peuvent indiquer leur budget prévisionnel et l’équipe comptable peut par la suite importer les données du logiciel comptable dans EVA, ce qui facilite le suivi du budget par les agents. Cette partie permet d’élaborer les tableurs pour les <strong>imports recettes et dépenses</strong> comme décrit plus haut.</p>
+<p><strong>Pré-requis :</strong></p>
+<ul class="simple">
+<li><p>Un <em>code</em> de rattachement aux fiches donc le code de la fiche doit se retrouver dans les lignes comptables (code analytique).</p></li>
+<li><p>Avoir créé ou importé les différents <em>comptes et enveloppes</em> utilisés.</p></li>
+</ul>
+<p><strong>Dans le logiciel comptable :</strong></p>
+<p>Depuis votre logiciel, faîte un premier tri de ce que vous souhaitez importer dans EVA, par exemple : une certaine période, tri en fonction des objets, du statut de la dépense… Faîtes un export du tableau qui vous convient, il doit à minima contenir les colonnes indiquées comme obligatoire dans la partie import dépenses et recettes de ce guide.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Conseil</em> : importer dans EVA seulement les mouvements financiers stabilisés (par exemple les dépenses soldées) pour éviter d’avoir à modifier par la suite.</p>
+<p><em>Colonnes obligatoires pour recettes</em> : Code analytique, Compte, Date, Montant</p>
+<p><em>Colonnes obligatoires pour dépenses</em> : Code analytique, Compte, Date, Montant</p>
+</div>
+<p><strong>Dans Excel (ou autre outil de tableur) :</strong></p>
+<p>L’export du tableau depuis le logiciel comptable ne sera surement pas directement importable dans EVA, il faudra le modifier pour que les colonnes correspondent à la description faite plus haut (dans la partie import recettes et import dépenses).
+Il faudra sauvegarder le fichier en csv.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Conseil</em> : utiliser la fonction de tri d’Excel s’il y a des lignes à modifier par bloc.</p>
+</div>
+<p><strong>Dans EVA :</strong></p>
+<p>Importer le csv dans EVA en choisissant le type de mouvement, le type de dépense ou recette et le type d’import (dans ce cas souvent un ajout).</p>
+<p>Les lignes importées vont se répartir sur les différentes fiches (grâce au code) et dans les différents comptes.</p>
+</section>
+</section>
+<section id="procedure-mots-cles-et-referentiels">
+<h2>Procédure mots clés et référentiels<a class="headerlink" href="#procedure-mots-cles-et-referentiels" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Pour faciliter la création des nouveaux mots clés et référentiels, une fonction d’import en csv est maintenant disponible comme dans les autres modules. Le bouton rouge en bas à droite permet d’importer les mots clés ou référentiels.</p>
+<a class="reference internal image-reference" href="../_images/Imports_motsclés.png"><img alt="../_images/Imports_motsclés.png" src="../_images/Imports_motsclés.png" style="width: 300px;" /></a>
+<section id="preparer-le-csv-des-mots-cles-et-referentiels">
+<h3>Préparer le csv des mots clés et référentiels<a class="headerlink" href="#preparer-le-csv-des-mots-cles-et-referentiels" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Le csv doit être construit comme suit (CVS UTF-8 délimité par des points virgules) :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 14%" />
+<col style="width: 27%" />
+<col style="width: 23%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Nom Premier référentiel</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><ol class="arabic simple">
+<li><p>Axe 1</p></li>
+</ol>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>1.1 Orientation 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td></td>
+<td><p>1.1.1 Mesure 1</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p>1.1.2 Mesure 2</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>1.2 Orientation 2</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td><p>1.2.1 Mesure 3</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><ol class="arabic simple" start="2">
+<li><p>Axe 2</p></li>
+</ol>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Nom Deuxième référentiel</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><ol class="arabic simple">
+<li><p>QE 1</p></li>
+</ol>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><ol class="arabic simple" start="2">
+<li><p>QE 2</p></li>
+</ol>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td></td>
+<td></td>
+<td><p>Sous QE 2.1</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>Sous QE 2.1 2</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl>
+<dt>Le csv resesemble donc à ceci :</dt><dd><div class="line-block">
+<div class="line">Nom Premier référentiel;;;</div>
+<div class="line">;1. Axe 1;;</div>
+<div class="line">;;1.1 Orientation 1;</div>
+<div class="line">;;;1.1.1 Mesure 1</div>
+<div class="line">;;;1.1.2 Mesure 2</div>
+<div class="line">;;1.2 Orientation 2;</div>
+<div class="line">;;;1.2.1 Mesure 3</div>
+<div class="line">;2. Axe 2;;</div>
+<div class="line">Nom Deuxième référentiel;;;</div>
+<div class="line">;1. QE 1;;</div>
+<div class="line">;2. QE 2;;</div>
+<div class="line">;;Sous QE 2.1;</div>
+<div class="line">;;Sous QE 2.2;</div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="import-dans-eva-des-mots-cles-et-referentiels">
+<h3>Import dans EVA des mots clés et référentiels<a class="headerlink" href="#import-dans-eva-des-mots-cles-et-referentiels" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Choisir le fichier csv préparé précédemment et le délimiteur point-virgule puis cliquer sur « <strong>Envoyer</strong> ».</p>
+<a class="reference internal image-reference" href="../_images/interface_import_motsclés.png"><img alt="../_images/interface_import_motsclés.png" src="../_images/interface_import_motsclés.png" style="width: 400px;" /></a>
+<p>Si votre fichier a été bien paramétré, vos référentiels ou mots clés s’affichent (vous pouvez les déployer en appuyant sur les dossiers) :</p>
+<a class="reference internal image-reference" href="../_images/import_référentiel.png"><img alt="../_images/import_référentiel.png" src="../_images/import_référentiel.png" style="width: 300px;" /></a>
+<p>Si tout est conforme à vos attentes, cliquer ensuite sur « <strong>Importer</strong> ».</p>
+<p>Vos référentiels ou mots clés sont importés dans les tableaux correspondants.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Les référentiels et mots clés importés ne s’efface pas de l’écran comme indiqué dans le message EVA.</p>
+</div>
+<p>Il vous reste simplement à choisir s’ils peuvent être multiples ou non et l’association aux différents modules pour les mots clés.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Multiples</strong> ou non réfère au fait de pouvoir associer plusieurs parties d’un référentiel ou mot clé (exemple : axe 1 et mesure 3), cette option est à cocher lorsque l’on modifie un mot clé ou référentiel (cliquer sur le crayon en fin de ligne du référentiel ou mot clé à modifier).</p>
+</div>
 </section>
 </section>
 </section>
