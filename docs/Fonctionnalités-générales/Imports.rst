@@ -543,5 +543,7 @@ Il vous reste simplement à choisir s’ils peuvent être multiples ou non et l�
 	**Multiples** ou non réfère au fait de pouvoir associer plusieurs parties d’un référentiel ou mot clé (exemple : axe 1 et mesure 3), cette option est à cocher lorsque l’on modifie un mot clé ou référentiel (cliquer sur le crayon en fin de ligne du référentiel ou mot clé à modifier).
 
 
+.. warning::
+	Pour les référentiels et mots clés des instances réseaux (OFB, FPNRF), pour qu'ils se propagent aux comptes EVA rattachés il faut aller les enregistrer une nouvelle fois dans les paramètres.
 
 
