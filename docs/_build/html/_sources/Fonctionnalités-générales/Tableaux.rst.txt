@@ -47,6 +47,18 @@ Par exemple :
 .. image:: images/Exemple_filtres.png
 	:width: 300
 
+Pour les **filtres de référentiels et mots clés** il est possible de cocher ou décocher une case qui permettra de désactiver la recherche arborescente. Si on décoche la case et choisit un niveau supérieur, les fiches rattachées aux niveaux inférieurs ne ressortiront pas.
+
+.. image:: images/Filtres_casecoché.png
+	:width: 300
+
+.. note::
+	Entre les critères de recherche la règle et « ET » et entre les termes d’un même critères la règle et « OU ». Dans l’exemple ci-dessous, on obtiendra les fiches qui ont l’acteurs FSE OU FPNRF ET le statut archivée.
+
+.. image:: images/Exemple_combi_filtre.png
+	:width: 300
+
+
 Les filtres sont enlevés grâce à la croix |croix_ligne|.
 
 Ne pas oublier de cliquer sur |appliquer| quand vous avez fini de parametrer vos filtres ou |réinitialiser| pour enlever tous les filtres.
