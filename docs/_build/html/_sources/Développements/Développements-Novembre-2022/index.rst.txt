@@ -4,7 +4,7 @@ Développements Novembre 2022
 Contexte
 --------
 
-Ce déploiement des développements en cours sur le logiciel EVA a eu lieu le XX. Il comprend des résolutions d’anomalies, des améliorations ergonomiques, l’ajout de nouvelles fonctionnalités et une évolution pour conformité avec le cadre Open Source.
+Ce déploiement des développements en cours sur le logiciel EVA a eu lieu le 9/11/2022. Il comprend des résolutions d’anomalies, des améliorations ergonomiques, l’ajout de nouvelles fonctionnalités et une évolution pour conformité avec le cadre Open Source.
 
 Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé (il faut un compte pour le consulter) et un mode d’emploi pour les nouveautés.
 

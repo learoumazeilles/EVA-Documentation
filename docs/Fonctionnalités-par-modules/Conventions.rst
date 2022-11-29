@@ -1,0 +1,3 @@
+.. include:: ../substitutions.rst
+Conventions
+===========

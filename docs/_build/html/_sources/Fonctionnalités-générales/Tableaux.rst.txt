@@ -117,9 +117,12 @@ Exports
 Les tableaux peuvent s'exporter au format Excel en appuyant sur le bouton export Excel en haut |export_tableau|. 
 
 L'export correspond à ce que vous voyez affiché à l'écran :
-- il reprend les filtres appliqués
-- il contient les colonnes affichées uniquement 
-- il ignore les lignes retirées avec la gomme
+
+* il reprend les filtres appliqués
+
+* il contient les colonnes affichées uniquement 
+
+* il ignore les lignes retirées avec la gomme
 
 Si votre tableau tient sur plusieurs pages dans EVA après l'application de vos filtres ect, toutes les pages seront exportées. 
 
