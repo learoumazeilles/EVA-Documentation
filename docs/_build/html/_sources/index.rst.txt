@@ -1,9 +1,7 @@
 Documentation du Logiciel EVA
 =============================
 
-********************
 *Table des matières*
-********************
 
 .. toctree::
    :maxdepth: 2
