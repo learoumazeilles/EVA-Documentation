@@ -15,6 +15,8 @@ La table des matières est accessible sur la droite de l'écran et en cliquant s
 
 Vous pouvez rechercher un élément de documentation en particulier en cherchant par mots clés dans la barre de recherche à gauche sous le logo EVA.
 
+Vous pouvez l'exporter au format pdf en cliquant en bas à gauche sur v:latest et dans téléchargement sur pdf ou epub.
+
 
 Le logiciel EVA
 ~~~~~~~~~~~~~~~
