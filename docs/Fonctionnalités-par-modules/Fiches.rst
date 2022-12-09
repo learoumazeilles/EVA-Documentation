@@ -2,6 +2,14 @@
 Fiches
 ======
 
+Module fiche - intro
+--------------------
+
+Les fiches représentent le module central dans EVA. La liaison avec d'autres données suppose d'avoir rempli les autres modules associés en amont.
+
+.. image:: images/Détails_fiches.png
+  :width: 700
+
 Particularités du tableau des fiches
 ------------------------------------
 
@@ -20,7 +28,7 @@ Case cochée
 
 En cochant une case devant une ligne de fiche, on peut faire apparaître, deux fonctionnalités : |gomme_tableau| et |crayon_modif_ligne|.
 
-La |gomme_tableau| permet comme dans les autres tableaux de masquer à la vue et à l'export une ligne du tableau. Le crayon permet de modifier le statut de plusieurs fiches en même temps via une boîte de dialogue. Pour que le statut soit bien changer il faut cocher la case "Utiliser".
+La |gomme_tableau| permet comme dans les autres tableaux de masquer à la vue et à l'export une ligne du tableau. Le |crayon_modif_ligne| permet de modifier le statut de plusieurs fiches en même temps via une boîte de dialogue. Pour que le statut soit bien changer il faut cocher la case "Utiliser".
 
 .. Warning::
 	Le message de validation indique une erreur même s'il n'y en a pas.
@@ -292,7 +300,7 @@ Cet onglet permet d'ajouter des mesures à des indicateurs. Les indicateurs peuv
 Une boîte de dialogue s'ouvre en cliquant sur :
 
 .. image:: images/Créer_mesure.png
-  :width: 200
+  :width: 150
 
 L'indicateur est à choisir :
 * Soit commencez à rentrer le nom de l'indicateur, les indicateurs s'affichent par auto-complétion, choissisez celui qui vous convient.

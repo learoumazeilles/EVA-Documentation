@@ -8,6 +8,7 @@ Documentation du Logiciel EVA
    :caption: Premiers pas
 
    Introduction-à-EVA/index
+   FAQ/index
    Tutoriel-débuts-dans-EVA/index
 
 .. toctree::

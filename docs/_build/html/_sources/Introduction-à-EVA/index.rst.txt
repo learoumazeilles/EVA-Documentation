@@ -41,8 +41,8 @@ Les finalités premières du logiciel EVA sont un **appui à l’évaluation et 
 Définition du logiciel
 ######################
 
-- **Définition  générale  :** EVA  est  un  logiciel  modulable  de  gestion  de  projet  adapté  aux aires protégées (PNR, PNx, PNM). EVA a été conçu pour faciliter l’évaluation de la mise en œuvre des chartes ou plans de  gestion des  parcs. Comme indiquer dans le diagramme précédent, à l’usage le logiciel EVA permet de piloter les chartes et plans de gestion et de capitaliser les données.
-- **Définition pratique (cf. Diagramme 2) :** Le logiciel EVA est construit autour du principe des fiches projet/action, qui recensent les informations nécessaires sur les activités menées par le parc. Un système de référentiels et de mots clés permet un classement en arborescence des fiches. Un module analyse permet de réaliser des analyses simples et interactives dans le logiciel.  La  grande  capacité  de  personnalisation  du  logiciel  par  les  paramétrages  permet  de répondre  aux  spécificités  de  chaque  parc. Les  données  peuvent  concerner  des  données  de suivi du terrain avec les indicateurs mais également des données de suivi de la gestion, avec les actions menées et leurs moyens humains et financiers associés. Les données sont remplies à la main, par des imports de tableurs ou par des liaisons avec d’autres logiciels (cf. Liste des liaisons logiciels). Elles peuvent être exportées sous différents formats.
+- **Définition  générale  :** EVA  est  un  logiciel  modulable  de  gestion  de  projet  adapté  aux aires protégées (PNR, PNx, PNM). EVA a été conçu pour faciliter l’évaluation de la mise en œuvre des chartes ou plans de  gestion des  parcs. Comme indiqué dans le diagramme précédent, à l’usage le logiciel EVA permet de piloter les chartes et plans de gestion et de capitaliser les données.
+- **Définition pratique (cf. Diagramme 2) :** Les fiches projet/action sont le module central du logiciel EVA, elles recensent les informations nécessaires sur les activités menées par le parc. Un système de référentiels et de mots clés permet un classement des fiches. Les autres modules principaux vont permettre de renseigner différents types de données qui peuvent ensuite être rattachés aux fiches. Les  données  peuvent  concerner  des  données  de suivi du terrain avec les indicateurs mais également des données de suivi de la gestion, avec les actions menées et leurs moyens humains et financiers associés. Les données peuvent être insérées de trois façons : en remplissant des formulaire, par des imports de tableurs ou par des liaisons avec d’autres logiciels (cf. Liste des liaisons logiciels).  Les données peuvent être exportées sous différents formats (tableur ou texte). Un module d'analyse permet de réaliser des analyses simples et interactives dans le logiciel.  La  grande  capacité  de  personnalisation  du  logiciel  par  les  paramétrages  permet  de répondre  aux  spécificités  de  chaque  parc. 
 - **Utilisateurs :** Les  utilisateurs  sont  les  chargés  de  mission  des  parcs  avec  un  rôle renforcé pour les référents EVA qui sont responsable de la mise en place et de l’animation du logiciel au sein de leur parc.
 
 .. figure:: images/Diagramme_modules.png
@@ -50,11 +50,27 @@ Définition du logiciel
 
    Diagramme 2 : Représentation  du  logiciel  EVA,  montrant  les  modules  en  rouges  et  leur fonction.
 
+Relation Fiches-Référentiels
+############################
+
+La concept de Fiches-Référentiels est au coeur du logiciel. 
+
+**Les référentiels** concernent les ambitions et enjeux, ils font donc généralement référence à des documents comme les chartes et plans de gestion, ils concernent principalement les directeurs et élus qui suivent ces enjeux. 
+
+**Les fiches** sont le côté opérationnel d’EVA, elles permettent de suivre les actions et sont à destination des chargés de mission qui les remplissent. 
+
+Le référent EVA et la direction sont responsables de faire le lien entre ces deux univers pour que tout ce qui est remonté par les chargés de missions dans les fiches se retrouvent dans les bons enjeux et ambitions du référentiel initial. C’est la même logique avec les mots clés qui permettent d’appréhender/de classer les mêmes éléments dans plusieurs dimensions. 
+
+La force du logiciel EVA est de pouvoir associer plusieurs référentiels à une même fiche, car certaines actions du parc peuvent contribuer à plusieurs finalités (mesure de la charte, Natura 2000...)
+
+.. figure:: images/Fiches_référentiels.png
+   :width: 700
+
+
 Liaisons avec d'autres logiciels
-##########################################
+################################
 
 - **AGE par Elap Finances :** outil comptable pour les Parc Nationaux. Une liaison à l’entrepôt de données donne accès aux données financières à j+1 par un accès en lecture seule.
 - **.ICS calendrier en ligne :** liaison aux calendriers partagés en lecture seule via le protocole ICS. Elle  est  paramétrée pour  chaque  utilisateur  depuis  l'interface  EVA  et  fonctionne  pour OUTLOOK, ZIMBRA, Google Calendar, Phenix.
 - **ZIMBRA  API-REST  serveur  ATEN  (OFB) :** solution  de  messagerie  et  de  calendrier  de  l'ATEN maintenue par l'OFB.
-
 
