@@ -1,7 +1,7 @@
 FAQ
 ===
 
-*Foire aux questions*
+*Une question ? Envoyer moi un mail (lroumazeilles[at]parcs-naturels-regionaux.fr) ou solliciter l'assistance, je rajouterai la réponse à votre question dans cette liste.*
 
 Taille des colonnes
 -------------------
@@ -39,4 +39,15 @@ Les modèles et niveaux sont dissociés dans les fiches EVA, un modèle ne s’a
 - **Modèles de fiches** : Les modèles permettent de choisir le contenu à saisir pour certains types de projet et non pour d’autres. Par exemple des champs spécifiques pour les fiches Natura 2000 qui ne seront pas dans les fiches par défaut. Ils sont paramétrables dans la partie administration
 
 - **Niveaux de fiches** : Les niveaux de fiche s’appliquent automatiquement en fonction du rattachement à un parent fiche (rattachement arborescence initiale dans la fiche). Par exemple si on a des niveaux tels que : Projet > Action > Sous-action. Une fiche créée sera par défaut un projet, elle deviendra une action si elle est rattachée à une fiche projet.
+
+
+Rattachement d'une fiche à plusieurs mesures
+--------------------------------------------
+Si on rattache une fiche à plusieurs mesures, comment les éléments sont-ils comptabilisés ? Par exemple si on a une fiche avec un budget à 10 000 euros rattachés à deux mesures de la charte, dans les analyses comment est comptabilisé le budget pour chaque mesure ?
+
+Par défaut les éléments vont être répétés dans les deux mesures, donc les 10 000 euros sont comptabilisés deux fois, pour bien faire apparaître les proportions. Par contre dans les totaux, on ne les comptabilise pas deux fois.
+
+Lors de certaines analyses, il y a la possibilité de diviser les éléments à parité lorsqu’ils sont rattachés à plusieurs entités d’un référentiel (dans l’exemple attribuer 5 000 euros à chaque mesure), il faut cocher une case pour l’indiquer.
+
+
 

@@ -1,7 +1,7 @@
 FAQ
 ===
 
-*Foire aux questions*
+*Une question ? Envoyer moi un mail (lroumazeilles[at]parcs-naturels-regionaux.fr) ou solliciter l'assistance, je rajouterai la réponse à votre question dans cette liste.*
 
 Taille des colonnes
 -------------------
