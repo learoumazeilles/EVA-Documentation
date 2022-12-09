@@ -28,7 +28,7 @@ language = 'fr'
 html_logo = '_static/images/logo.png'
 
 # Dernière mise à jour de la page
-html_last_updated_fmt = '%b %d, %Y %H:%M'
+html_last_updated_fmt = '%d %b %Y'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
