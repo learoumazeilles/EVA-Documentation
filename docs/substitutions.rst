@@ -139,6 +139,9 @@
 .. |annuaire| image:: /_static/images/Annuaire.png
 	:width: 30
 
+.. |contacts| image:: /_static/images/Contacts.png
+	:width: 30
+
 .. |structures| image:: /_static/images/Structures.png
 	:width: 30
 
@@ -179,4 +182,7 @@
 	:width: 30
 
 .. |notes| image:: /_static/images/Notes.png
+	:width: 30
+
+.. |fonctions| image:: /_static/images/Fonctions.png
 	:width: 30

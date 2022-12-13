@@ -51,6 +51,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#difference-entre-referentiels-et-mots-cles">Différence entre référentiels et mots clés</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#difference-entre-modeles-de-fiche-et-niveaux-de-fiches">Différence entre modèles de fiche et niveaux de fiches</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rattachement-d-une-fiche-a-plusieurs-mesures">Rattachement d’une fiche à plusieurs mesures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#suppression-impossible">Suppression impossible</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Tutoriel-d%C3%A9buts-dans-EVA/index.html">Tutoriel débuts dans EVA</a></li>
@@ -137,6 +138,13 @@
 <p>Par défaut les éléments vont être répétés dans les deux mesures, donc les 10 000 euros sont comptabilisés deux fois, pour bien faire apparaître les proportions. Par contre dans les totaux, on ne les comptabilise pas deux fois.</p>
 <p>Lors de certaines analyses, il y a la possibilité de diviser les éléments à parité lorsqu’ils sont rattachés à plusieurs entités d’un référentiel (dans l’exemple attribuer 5 000 euros à chaque mesure), il faut cocher une case pour l’indiquer.</p>
 </section>
+<section id="suppression-impossible">
+<h2>Suppression impossible<a class="headerlink" href="#suppression-impossible" title="Lien permanent vers cette rubrique"></a></h2>
+<p>La suppression d’un élément (requête, mots clés…) est parfois impossible même si l’on a les droits, une erreur (cadre rouge) est générée.</p>
+<p>Si l’erreur mentionne quelque chose comme : <em>« An exception occurred while executing […] Integrity constraint violation: […] Cannot delete or update a parent row: a foreign key constraint fails… »</em> Cela veut dire que l’élément est utilisé quelque part dans le logiciel donc il y a une sécurité pour éviter de supprimer l’élément.</p>
+<p>Par exemple une requête peut être associée pour un affichage de l’accueil ou dans une alerte. Un mot clé ou référentiel peut être rattaché à une fiche, indicateur ou d’autres éléments.</p>
+<p>Il faudra donc supprimer les associations à l’élément que vous souhaitez supprimer pour que la suppression puisse avoir lieu. Pour les mots clés et référentiels, par sécurité s’ils ont été utilisés et même s’ils ne le sont plus, on ne pourra pas les supprimer, par contre ils peuvent être archivés ou vous pouvez demander à l’assistance de les supprimer si besoin.</p>
+</section>
 </section>
 
 
@@ -151,7 +159,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le déc. 09, 2022 17:03.
+      <span class="lastupdated">Mis à jour le 13 déc. 2022.
       </span></p>
   </div>
 

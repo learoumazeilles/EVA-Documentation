@@ -461,7 +461,15 @@ Une note peut être ajoutée à la fiche en cliquant en haut à droite sur :
 .. image:: images/Ajout_notes.png
   :width: 100
 
-Cela permet de faire passer des messages aux autres membres de la fiche par exemple lorsque l'on change de statut.
+Cela permet de faire passer des messages aux autres membres de la fiche par exemple lorsque l'on change de statut, on peut y ajouter un fichier. Une fois la note ajoutée, le nombre de note apparaît sur le logo note :
+
+.. image:: images/Note_ajoutée.png
+  :width: 100
+
+Les notes que l'on a créé peuvent être supprimées en cliquant sur le logo des notes et le logo poubelle en rouge.
+
+.. image:: images/Suppression_note.png
+  :width: 300
 
 Toutes les notes peuvent être retrouvée dans le module |notes|, elles sont datées et indiquent l'utilisateur qui a créé la note.
 

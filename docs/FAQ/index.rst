@@ -50,4 +50,14 @@ Par défaut les éléments vont être répétés dans les deux mesures, donc les
 Lors de certaines analyses, il y a la possibilité de diviser les éléments à parité lorsqu’ils sont rattachés à plusieurs entités d’un référentiel (dans l’exemple attribuer 5 000 euros à chaque mesure), il faut cocher une case pour l’indiquer.
 
 
+Suppression impossible
+----------------------
+La suppression d'un élément (requête, mots clés...) est parfois impossible même si l'on a les droits, une erreur (cadre rouge) est générée. 
+
+Si l'erreur mentionne quelque chose comme : *"An exception occurred while executing [...] Integrity constraint violation: [...] Cannot delete or update a parent row: a foreign key constraint fails..."* Cela veut dire que l'élément est utilisé quelque part dans le logiciel donc il y a une sécurité pour éviter de supprimer l'élément. 
+
+Par exemple une requête peut être associée pour un affichage de l'accueil ou dans une alerte. Un mot clé ou référentiel peut être rattaché à une fiche, indicateur ou d'autres éléments.
+
+Il faudra donc supprimer les associations à l'élément que vous souhaitez supprimer pour que la suppression puisse avoir lieu. Pour les mots clés et référentiels, par sécurité s'ils ont été utilisés et même s'ils ne le sont plus, on ne pourra pas les supprimer, par contre ils peuvent être archivés ou vous pouvez demander à l'assistance de les supprimer si besoin.
+
 
