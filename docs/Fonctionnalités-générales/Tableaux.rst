@@ -10,7 +10,7 @@ Généralités
 
 * Les entrées en **vert** sont cliquables, elles renvoient vers la page associée.
 
-* Le crayon |crayon_modif_ligne| s'affiche dans certaines cases pour modifier directement dans le tableau, ne pas oublier d'enregistrer les modifications à la fin de la ligne |enregistrer_ligne| ou cliquer sur |croix_ligne| pour annuler.
+* Le crayon |crayon_modif_ligne| s'affiche dans certaines cases pour modifier directement dans le tableau, ne pas oublier d'enregistrer les modifications à la fin de la ligne |enregistrer_ligne| ou cliquer sur |croix_ligne| pour annuler. Cela permet d'éditer plus facilement le tableau si besoin d'éditer plusieurs lignes : il faudra éditer chaque ligne l'une après l'autre mais au moins cela permet de ne pas avoir à rentrer dans l'élément à chaque fois et rester en vue tableau.
 
 * Des outils sont présents en fin de ligne (en fonction des droits) :
 	* Modifier |modifier_ligne| -> renvoie au formulaire

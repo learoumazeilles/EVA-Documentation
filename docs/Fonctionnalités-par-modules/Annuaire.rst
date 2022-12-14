@@ -2,6 +2,8 @@
 Annuaire
 ========
 
+L'annuaire permet de répertorier les contacts et structures partenaires. Les contacts et structures peuvent être liés par les fonctions (voir plus bas). Les contacts peuvent être supprimés pour respecter la demande de suppression des données personnelles. Les structures peuvent être répertoriées en tant que financeur et être rattachées aux fiches dans l'onglet **acteurs**. Pour éviter des pertes de données, une fois rattachée (à des enveloppes ou fiches), les stcutures ne pourront pas être supprimées (cf :ref:`FAQ`).
+
 Contacts
 --------
 

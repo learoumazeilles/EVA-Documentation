@@ -186,3 +186,15 @@
 
 .. |fonctions| image:: /_static/images/Fonctions.png
 	:width: 30
+
+.. |temps_param| image:: /_static/images/Temps_param.png
+	:width: 30
+
+.. |icone_tag| image:: /_static/images/Icone_tag.png
+	:width: 30
+
+.. |icone_lieu| image:: /_static/images/Icone_lieu.png
+	:width: 30
+
+.. |signet| image:: /_static/images/Signet.png
+	:width: 30
