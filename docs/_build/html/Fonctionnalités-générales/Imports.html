@@ -59,6 +59,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#import-indicateurs">Import indicateurs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-contacts">Import contacts</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-structures">Import structures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-temps">Import temps</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-fiches">Import fiches</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sauvegarder-au-format-csv">Sauvegarder au format csv</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#importer-dans-eva">Importer dans EVA</a></li>
@@ -386,6 +387,69 @@
 </td>
 <td><p><em>Texte</em></p>
 <p><em>libre</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="import-temps">
+<h3>Import temps<a class="headerlink" href="#import-temps" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Utilisateur, Début, Fin, Heures, Type, Fiche</p>
+<p>Autres colonnes possibles : Titre, Description, Territoire</p>
+<p>+ les mots clés</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<ul class="simple">
+<li><p>La fiche n’est pas indiquée comme obligatoire mais elle l’est dans le formulaire par la suite.</p></li>
+<li><p>Tout comme le type d’absence s’il est paramétré dans votre EVA (le champ ne marche pas du tout à l’import).</p></li>
+<li><p>Si les heures de début et de fin ne sont pas insérées, EVA prendra l’heure à laquelle l’import est effectué.</p></li>
+<li><p>Si les heures ne sont pas indiquées, EVA indiquera 0h par défaut</p></li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Le nombre d’heures peut être différent de la différence entre début et fin (moins élevé comme plus élevé)</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 15%" />
+<col style="width: 10%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 10%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Titre</p></th>
+<th class="head"><p>Utilisateur*</p></th>
+<th class="head"><p>Fiche*</p></th>
+<th class="head"><p>Début*</p></th>
+<th class="head"><p>Fin*</p></th>
+<th class="head"><p>Heures*</p></th>
+<th class="head"><p>Type*</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p>Prénom</p>
+<p>Nom</p>
+</td>
+<td><p>Code ou</p>
+<p>titre</p>
+</td>
+<td><p>Date au format</p>
+<p>JJ/MM/AA HH:MM</p>
+</td>
+<td><p>Date au format</p>
+<p>JJ/MM/AA HH:MM</p>
+</td>
+<td><p>Chiffre</p></td>
+<td><p><strong>Temps passé</strong></p>
+<p><strong>Temps d’absence</strong></p>
+<p><strong>Temps prévu</strong></p>
 </td>
 </tr>
 </tbody>
@@ -1037,7 +1101,7 @@ Il faudra sauvegarder le fichier en csv.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 14 déc. 2022.
+      <span class="lastupdated">Mis à jour le 15 déc. 2022.
       </span></p>
   </div>
 

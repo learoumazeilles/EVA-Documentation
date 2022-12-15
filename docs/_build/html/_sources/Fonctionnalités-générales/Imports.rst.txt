@@ -120,6 +120,35 @@ Autres colonnes possibles : Adresse email, Sigle, Numéro de téléphone, SIRET,
 +---------+---------+---------+---------+-----------+-----------+---------+
 
 
+Import temps
+############
+
+Colonnes obligatoires : Utilisateur, Début, Fin, Heures, Type, Fiche
+
+Autres colonnes possibles : Titre, Description, Territoire
+
+\+ les mots clés 
+
+.. warning::
+	- La fiche n'est pas indiquée comme obligatoire mais elle l'est dans le formulaire par la suite. 
+	- Tout comme le type d'absence s'il est paramétré dans votre EVA (le champ ne marche pas du tout à l'import). 
+	- Si les heures de début et de fin ne sont pas insérées, EVA prendra l'heure à laquelle l'import est effectué.
+	- Si les heures ne sont pas indiquées, EVA indiquera 0h par défaut
+
+.. note::
+	Le nombre d'heures peut être différent de la différence entre début et fin (moins élevé comme plus élevé)
+
++---------+--------------+---------+----------------+----------------+---------+---------------------+
+| Titre   | Utilisateur* | Fiche*  | Début*         | Fin*           | Heures* | Type*               |
++=========+==============+=========+================+================+=========+=====================+
+| *Texte* | Prénom       | Code ou | Date au format | Date au format | Chiffre | **Temps passé**     |
+|         |              |         |                |                |         |                     |
+|         |              |         |                |                |         | **Temps d'absence** |
+|         |              |         |                |                |         |                     |
+| *libre* | Nom          | titre   | JJ/MM/AA HH:MM | JJ/MM/AA HH:MM |         | **Temps prévu**     |
++---------+--------------+---------+----------------+----------------+---------+---------------------+
+
+
 Import fiches
 #############
 

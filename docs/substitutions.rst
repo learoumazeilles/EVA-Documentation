@@ -198,3 +198,12 @@
 
 .. |signet| image:: /_static/images/Signet.png
 	:width: 30
+
+.. |ajout_hebdo_module| image:: /_static/images/Ajout_hebdo_module.png
+	:width: 30
+
+.. |synchro_module| image:: /_static/images/Synchro_module.png
+	:width: 30
+
+.. |bouton_synchro| image:: /_static/images/Bouton_synchro.png
+	:width: 30
