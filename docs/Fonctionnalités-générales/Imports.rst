@@ -138,15 +138,15 @@ Autres colonnes possibles : Titre, Description, Territoire
 .. note::
 	Le nombre d'heures peut être différent de la différence entre début et fin (moins élevé comme plus élevé)
 
-+---------+--------------+---------+----------------+----------------+---------+---------------------+
-| Titre   | Utilisateur* | Fiche*  | Début*         | Fin*           | Heures* | Type*               |
-+=========+==============+=========+================+================+=========+=====================+
-| *Texte* | Prénom       | Code ou | Date au format | Date au format | Chiffre | **Temps passé**     |
-|         |              |         |                |                |         |                     |
-|         |              |         |                |                |         | **Temps d'absence** |
-|         |              |         |                |                |         |                     |
-| *libre* | Nom          | titre   | JJ/MM/AA HH:MM | JJ/MM/AA HH:MM |         | **Temps prévu**     |
-+---------+--------------+---------+----------------+----------------+---------+---------------------+
++---------+--------------+---------+------------------+------------------+---------+---------------------+
+| Titre   | Utilisateur* | Fiche*  | Début*           | Fin*             | Heures* | Type*               |
++=========+==============+=========+==================+==================+=========+=====================+
+| *Texte* | Prénom       | Code ou | Date au format   | Date au format   | Chiffre | **Temps passé**     |
+|         |              |         |                  |                  |         |                     |
+|         |              |         |                  |                  |         | **Temps d'absence** |
+|         |              |         |                  |                  |         |                     |
+| *libre* | Nom          | titre   | JJ/MM/AAAA HH:MM | JJ/MM/AAAA HH:MM |         | **Temps prévu**     |
++---------+--------------+---------+------------------+------------------+---------+---------------------+
 
 
 Import fiches
