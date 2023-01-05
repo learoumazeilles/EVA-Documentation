@@ -134,7 +134,7 @@ Indiquer l'utilisateur à qui rattacher les temps (un seul possible), puis véri
 
 Dans l'exemple, voici la ligne qui apparaît :
 
-.. image:: images/Synchro_EVA_ex.png
+.. image:: images/Synchro_eva_ex.png
   :width: 700
 
 Seul les temps rattachés à une fiche seront importés, donc si vous avez des temps personnels indiqués dans votre agenda (type RDV médicaux) s'ils ne contiennent pas de code fiche, il ne seront pas conservés.
@@ -261,7 +261,7 @@ Vérifier ensuite les temps importés dans le tableau en dessous :
 
 Dans l'exemple, voici la ligne qui apparaît :
 
-.. image:: images/Synchro_EVA_ex.png
+.. image:: images/Synchro_eva_ex.png
   :width: 700
 
 Seul les temps rattachés à une fiche seront importés, donc si vous avez des temps personnels indiqués dans votre agenda (type RDV médicaux) s'ils ne contiennent pas de code fiche, il ne seront pas conservés.

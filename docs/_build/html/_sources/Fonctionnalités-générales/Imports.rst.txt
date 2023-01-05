@@ -133,10 +133,10 @@ Autres colonnes possibles : Titre, Description, Territoire
 	- La fiche n'est pas indiquée comme obligatoire mais elle l'est dans le formulaire par la suite. 
 	- Tout comme le type d'absence s'il est paramétré dans votre EVA (le champ ne marche pas du tout à l'import). 
 	- Si les heures de début et de fin ne sont pas insérées, EVA prendra l'heure à laquelle l'import est effectué.
-	- Si les heures ne sont pas indiquées, EVA indiquera 0h par défaut
+	- Si le nombre d'heure n'est pas indiqué, EVA indiquera 0h par défaut
 
 .. note::
-	Le nombre d'heures peut être différent de la différence entre début et fin (moins élevé comme plus élevé)
+	- Le nombre d'heures peut être différent de la différence entre début et fin (moins élevé comme plus élevé)
 
 +---------+--------------+---------+------------------+------------------+---------+---------------------+
 | Titre   | Utilisateur* | Fiche*  | Début*           | Fin*             | Heures* | Type*               |
