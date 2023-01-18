@@ -319,7 +319,7 @@ Dans le formulaire d'export temps les champs sont les suivants :
 
 * **Nombre d'heures par jour** : dans EVA, les temps sont ajoutés à l'heure, si on préfère avoir le décompte en nombre de jour on peut indiquer la conversion ici
 
-* **Coût horaire brut** : indiquer le coût ici, c'est un champ obligatoire mais qui ne sera pas forcément exporter (en fonctino du choix suivant)
+* **Coût horaire brut** : indiquer le coût ici, c'est un champ obligatoire mais qui ne sera pas forcément exporter (en fonction du choix suivant)
 
 * **Total en** : Heures, Jours ou Coût. Choisir ici comment indiquer le total, cela aura un effet sur le total indiqué sur la dernière colonne et la dernière ligne
 
@@ -327,8 +327,14 @@ Dans le formulaire d'export temps les champs sont les suivants :
 
 * **Trier les fiches par** : Nom ou Code. Par Nom les fiches seront triées par ordre alphabétique du nom des fiches, par Code, les fiches seront triées par ordre alphabétique de leur code.
 
+* **Ajouter les jours manquants** : Si la case est cochée et celle de l'affichage du mois complet ne l'est pas, les jours où il y a zéro heure renseignée seront affichés dans l'affichage par jour
+
+* **Afficher les mois complets** : Si la case est cochée et celle de l'affichage des jours manquants ne l'est pas, les jours où il y a zéro heure renseignée seront affichés dans l'affichage par jour
+
+* **Commencer le 1er janvier et terminer le 31 décembre** : Si la case n'est pas coché, la première et dernière date de l'export dépendra des feuilles de temps présentes dans l'export, si elle est cochée elle commencera au premier janvier et terminera au 31 décembre.
+
 .. note ::
-  L'export paramétré exporte tous les temps qui résulte des filtres, peut importe s'ils ont été cochés ou non ou s'ils ont été effacés avec la gomme.
+  L'export paramétré exporte tous les temps qui résulte des filtres, peu importe s'ils ont été cochés ou non ou s'ils ont été effacés avec la gomme. Les années exportées dépendront des feuilles de temps présentes dans l'export.
 
 
 
