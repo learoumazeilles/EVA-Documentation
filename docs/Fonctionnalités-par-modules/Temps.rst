@@ -4,11 +4,11 @@ Temps
 
 Les temps sont necessairement rattachés aux fiches, ils peuvent être ajoutés de plusieurs façon :
 
-* En remplissant un formulaire
-* En faisant un import de tableur
-* En important des feuilles de temps via fichier .ics
-* En remplissant des semaines types (ajout hebdomadaire)
-* En paramétrant une synchronisation avec un autre agenda (synchronisation automatique ou manuelle).
+- En remplissant un formulaire
+- En faisant un import de tableur
+- En important des feuilles de temps via fichier .ics
+- En remplissant des semaines types (ajout hebdomadaire)
+- En paramétrant une synchronisation avec un autre agenda (synchronisation automatique ou manuelle).
 
 Feuilles de temps
 -----------------
