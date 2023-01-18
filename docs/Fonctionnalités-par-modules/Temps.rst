@@ -4,19 +4,20 @@ Temps
 
 Les temps sont necessairement rattachés aux fiches, ils peuvent être ajoutés de plusieurs façon :
 
-- En remplissant un formulaire
-- En faisant un import de tableur
-- En important des feuilles de temps via fichier .ics
-- En remplissant des semaines types (ajout hebdomadaire)
-- En paramétrant une synchronisation avec un autre agenda (synchronisation automatique ou manuelle).
+* En remplissant un formulaire
+* En faisant un import de tableur
+* En important des feuilles de temps via fichier .ics
+* En remplissant des semaines types (ajout hebdomadaire)
+* En paramétrant une synchronisation avec un autre agenda (synchronisation automatique ou manuelle).
 
 Feuilles de temps
----------------------------
+-----------------
 
 La liste des feuilles de temps s'affichent par défaut en vue calendrier avec un double filtre temps passés et utilisateur courant. Pour avoir accès à la vue tableau il faut cliquer sur |vue_liste| en haut et sur |vue_calendrier| pour revenir en vue calendrier. Les requêtes et filtres sont les mêmes en vue calendrier et liste.
 
 .. image:: images/Filtre_temps.png
   :width: 500
+
 
 Vue Calendrier
 ~~~~~~~~~~~~~~
@@ -40,12 +41,13 @@ Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie :ref
 
 Dans cette vue liste il y a quelques particularités de tableau :
 
-- En cochant la case des lignes, on a la possibilité de **supprimer** plusieurs feuilles de temps d'un coup, l'icône |supprimer_ligne| apparaît au dessus des cases à cocher
-- En cochant la case des lignes on a la possibilité de **modifier** plusieurs lignes d'un coup l'icône |crayon_modif_ligne| apparaît au dessus des cases à cocher, on peut modifier le **type** (passé, prévu ou absence) et le nombre d'heures. (Il faut cocher la case *Utiliser* de chaque champ si on veut les modifier).
-- Dans ce module, il y a la particularité d'avoir accès aux **mots clés et référentiels reliés aux fiches** auxquelles sont reliées les feuilles de temps. Donc si on préfère ajouter les mots clés au niveau des fiches plutôt qu'au niveau de chaque feuille de temps, on peut les retrouver en sélectionnant les colonnes correspondantes (pas de filtre possible mais on peut voir à quels mots clés et référentiels sont reliées les fiches des feuilles de temps)
+* En cochant la case des lignes, on a la possibilité de **supprimer** plusieurs feuilles de temps d'un coup, l'icône |supprimer_ligne| apparaît au dessus des cases à cocher
+* En cochant la case des lignes on a la possibilité de **modifier** plusieurs lignes d'un coup l'icône |crayon_modif_ligne| apparaît au dessus des cases à cocher, on peut modifier le **type** (passé, prévu ou absence) et le nombre d'heures. (Il faut cocher la case *Utiliser* de chaque champ si on veut les modifier).
+* Dans ce module, il y a la particularité d'avoir accès aux **mots clés et référentiels reliés aux fiches** auxquelles sont reliées les feuilles de temps. Donc si on préfère ajouter les mots clés au niveau des fiches plutôt qu'au niveau de chaque feuille de temps, on peut les retrouver en sélectionnant les colonnes correspondantes (pas de filtre possible mais on peut voir à quels mots clés et référentiels sont reliées les fiches des feuilles de temps)
 
 .. image:: images/Tableau_temps.png
   :width: 700
+
 
 Formulaire ajout feuille de temps
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -55,17 +57,18 @@ Les champs utilisateur, fiche rattachée, dates de début et de fin, nombre d'he
 .. image:: images/Formulaire_temps.png
   :width: 700
 
-- Le champs **Utilisateur** est rempli par défaut avec l'utilisateur courant mais on peut le modifier
-- Le champ **Fiche** permet d'attribuer le temps à une fiche
-- On peut renseigner les dates de **début** et de **fin** en les écrivant ou en cliquant sur le |vue_calendrier| pour choisir un jour.
-- Une fois les dates de début et de fin remplies, en appuyant sur |calculatrice|, le nombre d'**heures** est calculée automatiquement (différence entre date de début et de fin), s'il n'est pas le bon, on peut insérer un nombre différent. Le nombre d'heures peut être différent de la différence entre début et fin (moins élevé comme plus élevé).
-- Le champ **Type** permet de choisir entre **temps passé**, **temps prévu** et **temps d'absence**.
-- En choisissant **temps d'absence**, un autre champ s'affiche avec le **Type d'absence** s'il a été paramétré. Il peut être paramétré dans |administration| > |temps_param|.
-- Des **mots clés** peuvent être ajoutés aux feuilles de temps, la case "Feuille de temps" doit être cochée dans le mot clé
-- Des **Territoires** peuvent aussi être ajoutés aux temps
+* Le champs **Utilisateur** est rempli par défaut avec l'utilisateur courant mais on peut le modifier
+* Le champ **Fiche** permet d'attribuer le temps à une fiche
+* On peut renseigner les dates de **début** et de **fin** en les écrivant ou en cliquant sur le |vue_calendrier| pour choisir un jour.
+* Une fois les dates de début et de fin remplies, en appuyant sur |calculatrice|, le nombre d'**heures** est calculée automatiquement (différence entre date de début et de fin), s'il n'est pas le bon, on peut insérer un nombre différent. Le nombre d'heures peut être différent de la différence entre début et fin (moins élevé comme plus élevé).
+* Le champ **Type** permet de choisir entre **temps passé**, **temps prévu** et **temps d'absence**.
+* En choisissant **temps d'absence**, un autre champ s'affiche avec le **Type d'absence** s'il a été paramétré. Il peut être paramétré dans |administration| > |temps_param|.
+* Des **mots clés** peuvent être ajoutés aux feuilles de temps, la case "Feuille de temps" doit être cochée dans le mot clé
+* Des **Territoires** peuvent aussi être ajoutés aux temps
 
 .. warning::
 	Si le pramétrage des types d'absence n'a pas été paramétré, l'ajout des temps d'absence ne fonctionnera pas.
+
 
 Formulaire import avec fichier .ics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -79,9 +82,9 @@ Les fichiers .ics peuvent être exportés depuis vos agendas type google, outloo
 
 Les temps dans les agendas doivent pouvoir être reliés aux fiches, ce sont les champs **Jointure à la fiche** qui permettent de les relier :
 
-- **Champ utilisé** correspond au champ dans votre agenda ou il y aura l'élément de rattachement à la fiche : titre, description, localisation, tags pour Zimbra
-- **Caractère(s) d'entourage** correspond aux caractères entourant l'élément de rattachement à la fiche : crochet [] ou hashtag # ou aucun. Il est préférable de choisir les [].
-- **Champs de jointure fiche** correspond au champ dans la fiche qui permet de faire le rattachement, il doit être un champ unique pour chaque fiche : Code, Titre, Champ personnalisé (personalisé dans |administration| > |champs|), Aucun (ne rattachera pas les fiches)
+* **Champ utilisé** correspond au champ dans votre agenda ou il y aura l'élément de rattachement à la fiche : titre, description, localisation, tags pour Zimbra
+* **Caractère(s) d'entourage** correspond aux caractères entourant l'élément de rattachement à la fiche : crochet [] ou hashtag # ou aucun. Il est préférable de choisir les [].
+* **Champs de jointure fiche** correspond au champ dans la fiche qui permet de faire le rattachement, il doit être un champ unique pour chaque fiche : Code, Titre, Champ personnalisé (personalisé dans |administration| > |champs|), Aucun (ne rattachera pas les fiches)
 
 .. warning::
 	Catégories pour Outlook ne fonctionnent plus car Outlook ne les exporte plus.
@@ -90,8 +93,8 @@ Les temps dans les agendas doivent pouvoir être reliés aux fiches, ce sont les
 	Si le **hashtag** est utlisé comme caractère d'entourage, il ne peut pas y avoir d'espace dans l'élément rattaché car le rattachement s'arrête au premier espace.
 	Si **Aucun** est utilisé comme caractère d'entourage, l'élément de rattachement devra être présent seul dans le titre, localisation ou tags et pourra être accompagné d'autres éléments dans la description.
 
-Dans les agendas
-################
+
+**Dans les agendas**
 
 Donc dans les agendas, il faut indiquer un élément de rattachement à la fiche avec les caractères d'entourage.
 
@@ -105,8 +108,10 @@ Exemple de temps inséré dans l'agenda google pour import :
 .. image:: images/Ex_agenda_google.png
   :width: 300
 
-Dans EVA
-########
+
+
+**Dans EVA**
+
 
 Remplir **champ utilisé**, **caractère(s) d'entourage** et **champ de jointure** (champs détaillés plus haut).
 
@@ -127,10 +132,10 @@ Cliquer sur **Importer**.
 
 Indiquer l'utilisateur à qui rattacher les temps (un seul possible), puis vérifier les temps importés dans le tableau en dessous :
 
-- Le **type** sera par défaut temps passé mais on peut le modifier ici
-- Si la **fiche** n'a pas pu être trouvé dans le rattachement automatique, vous pouvez la rattacher ici
-- Vérifier les **heures de début et de fin** et le nombre d'**heures** total
-- Vérifier les **mots clés** et **territoires**
+* Le **type** sera par défaut temps passé mais on peut le modifier ici
+* Si la **fiche** n'a pas pu être trouvé dans le rattachement automatique, vous pouvez la rattacher ici
+* Vérifier les **heures de début et de fin** et le nombre d'**heures** total
+* Vérifier les **mots clés** et **territoires**
 
 Dans l'exemple, voici la ligne qui apparaît :
 
@@ -141,13 +146,14 @@ Seul les temps rattachés à une fiche seront importés, donc si vous avez des t
 
 Pour les **mots clés** et **territoires**, on peut les rajouter dans cette interface également :
 
-- soit sur chaque ligne en cliquant sur |icone_tag| ou |icone_lieu| pour en ajouter ou remplacer
-- soit pour éditer plusieurs lignes avec les mêmes mots clés ou territoires, cocher les cases des lignes concernées puis en haut du tableau cliquer sur |icone_tag| ou |icone_lieu| pour ajouter (ou remplacer) les mêmes mots clés ou territoires sur toutes les lignes cochées
+* soit sur chaque ligne en cliquant sur |icone_tag| ou |icone_lieu| pour en ajouter ou remplacer
+* soit pour éditer plusieurs lignes avec les mêmes mots clés ou territoires, cocher les cases des lignes concernées puis en haut du tableau cliquer sur |icone_tag| ou |icone_lieu| pour ajouter (ou remplacer) les mêmes mots clés ou territoires sur toutes les lignes cochées
 
 Une fois importée, vous pouvez vérifier la ligne dans l'onglet temps de la fiche associée, par exemple (mode d'intervention est le mot clé) :
 
 .. image:: images/Temps_synchro_fiche.png
   :width: 700
+
 
 Ajout hebdomadaire
 ------------------
@@ -163,8 +169,8 @@ Lorsque l'on appuie sur ajouter une ligne, on peut ajouter des feuilles de temps
 
 Pour les **mots clés** et **territoires**, on peut les rajouter de deux façons :
 
-- soit sur chaque ligne en cliquant sur |icone_tag| ou |icone_lieu| pour en ajouter, remplacer ou enlever
-- soit pour éditer plusieurs lignes avec les mêmes mots clés ou territoires, cocher les cases des lignes concernées puis en haut du tableau cliquer sur |icone_tag| ou |icone_lieu| pour ajouter (ou remplacer ou enlever) les mêmes mots clés ou territoires sur toutes les lignes cochées
+* soit sur chaque ligne en cliquant sur |icone_tag| ou |icone_lieu| pour en ajouter, remplacer ou enlever
+* soit pour éditer plusieurs lignes avec les mêmes mots clés ou territoires, cocher les cases des lignes concernées puis en haut du tableau cliquer sur |icone_tag| ou |icone_lieu| pour ajouter (ou remplacer ou enlever) les mêmes mots clés ou territoires sur toutes les lignes cochées
 
 La ligne peut être **supprimée** grâce au bouton poubelle rouge en bout de ligne.
 
@@ -173,11 +179,11 @@ Sur la partie du haut de l'interface :
 .. image:: images/Ajout_hebdo_haut.png
   :width: 700
 
-- On peut choisir la **requête** de fiche que l'on souhaite afficher, ces requêtes correspondent à celles enregistrées dans le module fiche. Ceci permet d'afficher toutes les fiches qui répondent à cette requête si on a besoin d'ajouter du temps pour un certain type de fiche.
-- On peut faire **défiler** les semaines concernés par l'ajout
-- On peut choisir **l'utilisateur** concerné par l'ajout hebdomadaire (par défaut utilisateur courant)
-- En cliquant sur |signet| après avoir calibré une semaine, on peut **sauvegarder** cette semaine en appuyant sur "+ enregistrer la semaine" (il faut recharger la page après pour la voir apparaître). Cela permet de pouvoir appliquer des **modèles de semaines type**, car en cliquant sur le nom de la semaine enregistrée, on peut ensuite la réappliquer.
-- Pour enregistrer les feuilles de temps, cliquer sur |Enregistrer_ligne|.
+* On peut choisir la **requête** de fiche que l'on souhaite afficher, ces requêtes correspondent à celles enregistrées dans le module fiche. Ceci permet d'afficher toutes les fiches qui répondent à cette requête si on a besoin d'ajouter du temps pour un certain type de fiche.
+* On peut faire **défiler** les semaines concernés par l'ajout
+* On peut choisir **l'utilisateur** concerné par l'ajout hebdomadaire (par défaut utilisateur courant)
+* En cliquant sur |signet| après avoir calibré une semaine, on peut **sauvegarder** cette semaine en appuyant sur "+ enregistrer la semaine" (il faut recharger la page après pour la voir apparaître). Cela permet de pouvoir appliquer des **modèles de semaines type**, car en cliquant sur le nom de la semaine enregistrée, on peut ensuite la réappliquer.
+* Pour enregistrer les feuilles de temps, cliquer sur |Enregistrer_ligne|.
 
 En dessous s'affiche le temps passé déjà renseigné pour la semaine affichée, s'il y en a (Historique temps passé).
 
@@ -190,8 +196,9 @@ La synchronisation est utile pour importer automatiquement plusieurs feuilles de
 
 Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie :ref:`Fonctionnalités générales`.
 
-Dans EVA
-########
+
+**Dans EVA**
+
 
 .. image:: images/Ajout_synchro.png
   :width: 700
@@ -202,9 +209,9 @@ Choisissez ensuite le **type** en fonction de votre agenda (Google, Phénix, Zim
 
 Les temps dans les agendas doivent pouvoir être reliés aux fiches, ce sont les champs **Jointure à la fiche** qui permettent de les relier :
 
-- **Champ utilisé** correspond au champ dans votre agenda ou il y aura l'élément de rattachement à la fiche : titre, description, localisation, tags pour Zimbra
-- **Caractère(s) d'entourage** correspond aux caractères entourant l'élément de rattachement à la fiche : crochet [] ou hashtag # ou aucun. Il est préférable de choisir les [].
-- **Champs de jointure fiche** correspond au champ dans la fiche qui permet de faire le rattachement, il doit être un champ unique pour chaque fiche : Code, Titre, Champ personnalisé (personalisé dans |administration| > |champs|), Aucun (ne rattachera pas les fiches)
+* **Champ utilisé** correspond au champ dans votre agenda ou il y aura l'élément de rattachement à la fiche : titre, description, localisation, tags pour Zimbra
+* **Caractère(s) d'entourage** correspond aux caractères entourant l'élément de rattachement à la fiche : crochet [] ou hashtag # ou aucun. Il est préférable de choisir les [].
+* **Champs de jointure fiche** correspond au champ dans la fiche qui permet de faire le rattachement, il doit être un champ unique pour chaque fiche : Code, Titre, Champ personnalisé (personalisé dans |administration| > |champs|), Aucun (ne rattachera pas les fiches)
 
 .. warning::
   Catégories pour Outlook ne fonctionnent plus car Outlook ne les exporte plus.
@@ -213,8 +220,10 @@ Les temps dans les agendas doivent pouvoir être reliés aux fiches, ce sont les
   Si le **hashtag** est utlisé comme caractère d'entourage, il ne peut pas y avoir d'espace dans l'élément rattaché car le rattachement s'arrête au premier espace.
   Si **Aucun** est utilisé comme caractère d'entourage, l'élément de rattachement devra être présent seul dans le titre, localisation ou tags et pourra être accompagné d'autres éléments dans la description.
 
-Dans les agendas
-################
+
+
+**Dans les agendas**
+
 
 Donc dans les agendas, il faut indiquer un élément de rattachement à la fiche avec les caractères d'entourage.
 
@@ -228,8 +237,10 @@ Exemple de temps inséré dans l'agenda google pour import :
 .. image:: images/Ex_agenda_google.png
   :width: 300
 
-Dans EVA
-########
+
+
+**Dans EVA**
+
 
 Remplir **champ utilisé**, **caractère(s) d'entourage** et **champ de jointure** (champs détaillés plus haut).
 
@@ -254,10 +265,10 @@ Il faudra alors choisir la **période** à synchroniser et l'**utilisateur** con
 
 Vérifier ensuite les temps importés dans le tableau en dessous :
 
-- Le **type** sera par défaut temps passé mais on peut le modifier ici
-- Si la **fiche** n'a pas pu être trouvé dans le rattachement automatique, vous pouvez la rattacher ici
-- Vérifier les **heures de début et de fin** et le nombre d'**heures** total
-- Vérifier les **mots clés** et **territoires**
+* Le **type** sera par défaut temps passé mais on peut le modifier ici
+* Si la **fiche** n'a pas pu être trouvé dans le rattachement automatique, vous pouvez la rattacher ici
+* Vérifier les **heures de début et de fin** et le nombre d'**heures** total
+* Vérifier les **mots clés** et **territoires**
 
 Dans l'exemple, voici la ligne qui apparaît :
 
@@ -270,14 +281,57 @@ La **Description** de votre rendez-vous est aussi récupérée et insérée dans
 
 Pour les **mots clés** et **territoires**, on peut les rajouter dans cette interface également :
 
-- soit sur chaque ligne en cliquant sur |icone_tag| ou |icone_lieu| pour en ajouter ou remplacer
-- soit pour éditer plusieurs lignes avec les mêmes mots clés ou territoires, cocher les cases des lignes concernées puis en haut du tableau cliquer sur |icone_tag| ou |icone_lieu| pour ajouter (ou remplacer) les mêmes mots clés ou territoires sur toutes les lignes cochées
+* soit sur chaque ligne en cliquant sur |icone_tag| ou |icone_lieu| pour en ajouter ou remplacer
+* soit pour éditer plusieurs lignes avec les mêmes mots clés ou territoires, cocher les cases des lignes concernées puis en haut du tableau cliquer sur |icone_tag| ou |icone_lieu| pour ajouter (ou remplacer) les mêmes mots clés ou territoires sur toutes les lignes cochées
 
 Une fois importée, vous pouvez vérifier la ligne dans l'onglet temps de la fiche associée, par exemple (mode d'intervention est le mot clé) :
 
 .. image:: images/Temps_synchro_fiche.png
   :width: 700
 
+
 Exports temps
 -------------
+
+Un type d'export temps au format tableur est paramétré par défaut dans le menu des temps, mais on peut également paraméter ses propres exports temps dans le sous-menu |exports_temps|. Pour des exports temps encore plus poussés (type export Life), il faudra se référer à l'assistance pour qu'ils soient paramétrer en base de données.
+
+Export par défaut
+~~~~~~~~~~~~~~~~~
+
+
+L'export par défaut exporte un tableur des feuilles de temps sélectionnées dans le module temps, avec une ligne pour chaque feuille de temps et les colonnes affichées à l'écran au moment de l'export.
+
+.. warning:: 
+  Le **type** apparaît en anglais dans l'export (temps passé = done, temps prévu = target, temps d'absence = absence). 
+
+
+
+Export à paramétrer
+~~~~~~~~~~~~~~~~~~~
+
+Les exports paramétrables permettent de regrouper les temps par fiches et par période.
+
+Dans le formulaire d'export temps les champs sont les suivants :
+
+* **Nom** : donnez un nom à votre export pour le retrouver dans la liste par la suite
+
+* **Orientation** : Portrait ou Paysage. Portrait exporte les dates sur les lignes et les fiches sur les colonnes et Paysage l'inverse. En Paysage, les fiches étant des lignes, il y a une ligne pour chaque fiche et une ligne en plus pour les fiche parent qui regroupe tous les temps des fiches enfants.
+
+* **Nombre d'heures par jour** : dans EVA, les temps sont ajoutés à l'heure, si on préfère avoir le décompte en nombre de jour on peut indiquer la conversion ici
+
+* **Coût horaire brut** : indiquer le coût ici, c'est un champ obligatoire mais qui ne sera pas forcément exporter (en fonctino du choix suivant)
+
+* **Total en** : Heures, Jours ou Coût. Choisir ici comment indiquer le total, cela aura un effet sur le total indiqué sur la dernière colonne et la dernière ligne
+
+* **Grouper par** : Années, Mois, Semaines, Jours. Choisir ici comment regrouper les temps, cela aura un effet sur le regroupement des temps et donc le nombre de dates affichées.
+
+* **Trier les fiches par** : Nom ou Code. Par Nom les fiches seront triées par ordre alphabétique du nom des fiches, par Code, les fiches seront triées par ordre alphabétique de leur code.
+
+.. note ::
+  L'export paramétré exporte tous les temps qui résulte des filtres, peut importe s'ils ont été cochés ou non ou s'ils ont été effacés avec la gomme.
+
+
+
+
+
 

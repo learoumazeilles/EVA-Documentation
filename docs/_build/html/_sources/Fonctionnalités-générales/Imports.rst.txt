@@ -39,7 +39,7 @@ Autres colonnes possibles : Civilité, Couleur
 |         |         |                |                  |          |           |            |            |
 |         |         |                | prédéfini dans   |          |           | *format*   | example :  |
 |         |         |                |                  |          |           |            |            |
-| *libre* | *libre* | *libre*        | le module admin  | *libre*  | **Mme**   | *email*    | #fcba03    |
+| *libre* | *libre* | *libre*        | le module admin  | *libre*  | **Mme.**  | *email*    | #fcba03    |
 +---------+---------+----------------+------------------+----------+-----------+------------+------------+
 
 

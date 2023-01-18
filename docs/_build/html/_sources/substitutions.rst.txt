@@ -207,3 +207,6 @@
 
 .. |bouton_synchro| image:: /_static/images/Bouton_synchro.png
 	:width: 30
+
+.. |exports_temps| image:: /_static/images/Exports_temps.png
+	:width: 30
