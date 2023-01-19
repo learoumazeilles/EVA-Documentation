@@ -417,6 +417,15 @@ Choisir le type de dépense (prévu, engagé, payé, libéré, engagé payé, AE
 
 **Dans les deux cas**
 
+Choisir le Statut financier des fiches modidiées : si on choisit un statut ici (défini dans |budget| > |statuts_financiers|), les fiches qui sont modifiées par l'import seront ensuite passées au statut choisi.
+
+Si l'on coche la case "Les mouvements se mettent dans les postes ayant un compte parent si aucun poste ayant le même compte n'est présent" : les mouvements se mettent en effet sous un poste avec un compte parent du compte indiqué s'il y en a un dans la fiche. 
+S'il n'y en a pas ou la case n'est pas cochée, les mouvements qui n'ont pas encore de poste de dépense/recette seront rajoutés dans un nouveau poste de dépense/recette nommé par le nom du compte.
+Si un poste de dépense/recette existe avec le même compte, le mouvement sera rattaché sous ce poste de dépense/recette.
+
+.. image:: images/Imports_budget_param.png
+  :width: 400
+
 Choisir le fichier csv préparé précédemment, le délimiteur point-virgule, et cocher « La première ligne contient les en-têtes des colonnes ? » puis cliquer sur « **Envoyer** ».
 
 .. image:: images/interface_import.png

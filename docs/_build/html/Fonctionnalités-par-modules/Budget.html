@@ -57,7 +57,13 @@
 <li class="toctree-l2"><a class="reference internal" href="T%C3%A2ches.html">Tâches</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Temps.html">Temps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Indicateurs.html">Indicateurs</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Budget</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Budget</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#enveloppes">Enveloppes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comptes">Comptes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#statuts-financiers">Statuts financiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#imports-budget">Imports budget</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Conventions.html">Conventions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Cartographie.html">Cartographie</a></li>
 </ul>
@@ -101,6 +107,71 @@
              
   <section id="budget">
 <h1>Budget<a class="headerlink" href="#budget" title="Lien permanent vers cette rubrique"></a></h1>
+<p>Pour mettre en place le module budget, il faut avoir les fiches rattachées à des codes (analytiques, code unique pour chaque fiche), ensuite créer les différents comptes (dépenses et recette) puis les financeurs (dans le module <a class="reference internal" href="../_images/Annuaire.png"><img alt="annuaire" src="../_images/Annuaire.png" style="width: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Structures.png"><img alt="structures" src="../_images/Structures.png" style="width: 50px;" /></a>) et les rattacher à leurs enveloppes.</p>
+<a class="reference internal image-reference" href="../_images/Budget_eva.png"><img alt="../_images/Budget_eva.png" src="../_images/Budget_eva.png" style="width: 500px;" /></a>
+<section id="enveloppes">
+<h2>Enveloppes<a class="headerlink" href="#enveloppes" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Les enveloppes permettent de définir des financements fléchés par les financeurs.</p>
+<p>Pour créer une enveloppe, il faut cliquer sur le <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a> en bas à droite ou faire un import comme indiqué dans dans la partie <a class="reference internal" href="../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html#fonctionnalites-generales"><span class="std std-ref">Fonctionnalités générales</span></a>.</p>
+<p>Le formulaire demande les informations suivantes :</p>
+<ul class="simple">
+<li><p><strong>Code</strong> : code de l’enveloppe si c’est utile pour votre comptabilité</p></li>
+<li><p><strong>Nom</strong> (obligatoire) : le nom de l’enveloppe</p></li>
+<li><p><strong>Financeur</strong> (obligatoire) : associer le financeur grâce aux champs déroulants, les financeurs se trouvent dans le module <a class="reference internal" href="../_images/Annuaire.png"><img alt="annuaire" src="../_images/Annuaire.png" style="width: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Structures.png"><img alt="structures" src="../_images/Structures.png" style="width: 50px;" /></a> avec la case financeur cochée</p></li>
+<li><p><strong>Début</strong> : début de validité de l’enveloppe</p></li>
+<li><p><strong>Fin</strong> : fin de validité de l’enveloppe</p></li>
+<li><p><strong>Montant</strong> : montant de l’enveloppe</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les dates de l’enveloppe ne sont pas contraignantes, on peut rattacher des montants en dehors de ces dates.</p>
+</div>
+<p>Un tableau s’affiche sur le côté avec les postes de dépense et de recette qui sont rattachés à l’enveloppe.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Dans une même fiche, une enveloppe ne peut être rattachée qu’une seule fois à un poste de recette. Si la même enveloppe est rattachée à un autre poste de recette cela ne sera pas pris en compte dans le bilan de l’enveloppe (tableau poste de recette)</p></li>
+<li><p>Pour les dépenses rattachées aux fiches, si on indique un poste de dépense après avoir indiqué un poste de recette rattaché à une enveloppe, le montant du poste de dépense sera proportionnel au montant que représente le poste de recette de cette fiche par rapport au montant total de l’enveloppe. <em>Par exemple si on a une enveloppe à 100 euros en tout, si on a un poste de recette dans la fiche à 50 euros (=moitié), la moitié du total des postes de dépense de cette fiche apparaîtra dans cette enveloppe.</em></p></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<ul class="simple">
+<li><p>Les montants sont arrondis à la virgule donc parfois comme on a un petit % ça donne zéro.</p></li>
+<li><p>Si le montant total de l’enveloppe est à zéro (non rempli), le montant total des postes de dépense des fiches associées à l’enveloppe dans les postes de recette sera attribué</p></li>
+<li><p>Dans une fiche si on indique un montant de poste de recette plus élevé que le montant de l’enveloppe à laquelle elle est rattachée un message rouge non bloquant apparaîtra sous le montant.</p></li>
+</ul>
+</div>
+</section>
+<section id="comptes">
+<h2>Comptes<a class="headerlink" href="#comptes" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Les comptes sont séparés entre comptes de dépense (haut du tableau) et comptes de recette (bas du tableau). Ils permettent de refléter les différents comptes de la comptabilité.</p>
+<p>Pour créer un compte, il faut cliquer sur le <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a> en bas à droite ou faire un import comme indiqué dans dans la partie <a class="reference internal" href="../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html#fonctionnalites-generales"><span class="std std-ref">Fonctionnalités générales</span></a>.</p>
+<p>Le formulaire demande les informations suivantes :</p>
+<ul class="simple">
+<li><p><strong>Code</strong> (obligatoire) : code du compte selon votre comptabilité</p></li>
+<li><p><strong>Nom</strong> (obligatoire) : le nom du compte</p></li>
+<li><p><strong>case par dédaut</strong> : ?</p></li>
+<li><p><strong>Description</strong> : Indiquer la description du compte ici</p></li>
+<li><p><strong>Parent</strong> : On peut indiquer le compte parent ici, sachant que l’on peut avoir des comptes enfants, petits-enfants…</p></li>
+<li><p><strong>Type de mouvement</strong> (obligatoire) : dépense ou recette (ce champ se remplit automatiquement si on indique un parent, car le type de mouvement doit être le même que le parent)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Dans les fiches, les données rattachées a un compte enfant d’un autre compte ne remonte pas dans le compte parent</p>
+</div>
+</section>
+<section id="statuts-financiers">
+<h2>Statuts financiers<a class="headerlink" href="#statuts-financiers" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Les statuts financiers sont définis ici et peuvent être associés aux fiches. Ils permettent de qualifier les fiches en fonction de leur statut financier (pour faire des filtres, alertes…).</p>
+<p>Lors de la création d’un statut financier, on peut choisir de cocher la case <strong>Verouille le module budget</strong>, lorsqu’une fiche est associée à un statut qui verouille, l’onglet budget de la fiche n’est plus modifiable. Ceci est visible grâce au symbole de cadenas à côté. L’onglet reste accessible et visible mais il ne peut plus être modifié.</p>
+<a class="reference internal image-reference" href="../_images/Verouille_budget.png"><img alt="../_images/Verouille_budget.png" src="../_images/Verouille_budget.png" style="width: 150px;" /></a>
+<p>Les statuts financiers peuvent être utilisés lors dans import financier également : en choisissant un statut au moment de l’import, les fiches qui sont modifiées par l’import seront ensuite passées au statut choisi.</p>
+</section>
+<section id="imports-budget">
+<h2>Imports budget<a class="headerlink" href="#imports-budget" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Les imports budget sont traités dans la partie <a class="reference internal" href="../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html#fonctionnalites-generales"><span class="std std-ref">Fonctionnalités générales</span></a>.</p>
+</section>
 </section>
 
 
@@ -115,7 +186,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 18 janv. 2023.
+      <span class="lastupdated">Mis à jour le 19 janv. 2023.
       </span></p>
   </div>
 

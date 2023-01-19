@@ -898,6 +898,11 @@ Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du manda
 </div>
 <a class="reference internal image-reference" href="../_images/import_dépense_EVA.png"><img alt="../_images/import_dépense_EVA.png" src="../_images/import_dépense_EVA.png" style="width: 600px;" /></a>
 <p><strong>Dans les deux cas</strong></p>
+<p>Choisir le Statut financier des fiches modidiées : si on choisit un statut ici (défini dans <a class="reference internal" href="../_images/Budget.png"><img alt="budget" src="../_images/Budget.png" style="width: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Statuts_financiers.png"><img alt="statuts_financiers" src="../_images/Statuts_financiers.png" style="width: 50px;" /></a>), les fiches qui sont modifiées par l’import seront ensuite passées au statut choisi.</p>
+<p>Si l’on coche la case « Les mouvements se mettent dans les postes ayant un compte parent si aucun poste ayant le même compte n’est présent » : les mouvements se mettent en effet sous un poste avec un compte parent du compte indiqué s’il y en a un dans la fiche.
+S’il n’y en a pas ou la case n’est pas cochée, les mouvements qui n’ont pas encore de poste de dépense/recette seront rajoutés dans un nouveau poste de dépense/recette nommé par le nom du compte.
+Si un poste de dépense/recette existe avec le même compte, le mouvement sera rattaché sous ce poste de dépense/recette.</p>
+<a class="reference internal image-reference" href="../_images/Imports_budget_param.png"><img alt="../_images/Imports_budget_param.png" src="../_images/Imports_budget_param.png" style="width: 400px;" /></a>
 <p>Choisir le fichier csv préparé précédemment, le délimiteur point-virgule, et cocher « La première ligne contient les en-têtes des colonnes ? » puis cliquer sur « <strong>Envoyer</strong> ».</p>
 <a class="reference internal image-reference" href="../_images/interface_import.png"><img alt="../_images/interface_import.png" src="../_images/interface_import.png" style="width: 400px;" /></a>
 <p>Les données devraient apparaître, chaque ligne correspondant à chaque élément.</p>
@@ -1103,7 +1108,7 @@ Il faudra sauvegarder le fichier en csv.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 18 janv. 2023.
+      <span class="lastupdated">Mis à jour le 19 janv. 2023.
       </span></p>
   </div>
 

@@ -116,13 +116,13 @@
 	:width: 50
 
 .. |budget| image:: /_static/images/Budget.png
-	:width: 30
+	:width: 50
 
 .. |statuts_financiers| image:: /_static/images/Statuts_financiers.png
-	:width: 40
+	:width: 50
 
 .. |utilisateurs| image:: /_static/images/Utilisateurs.png
-	:width: 30
+	:width: 50
 
 .. |administration| image:: /_static/images/Administration.png
 	:width: 50
@@ -137,19 +137,19 @@
 	:width: 30
 
 .. |annuaire| image:: /_static/images/Annuaire.png
-	:width: 30
+	:width: 50
 
 .. |contacts| image:: /_static/images/Contacts.png
-	:width: 30
+	:width: 50
 
 .. |structures| image:: /_static/images/Structures.png
-	:width: 30
+	:width: 50
 
 .. |cartographie| image:: /_static/images/Cartographie.png
-	:width: 40
+	:width: 50
 
 .. |territoires| image:: /_static/images/Territoires.png
-	:width: 40
+	:width: 50
 
 .. |loupe| image:: /_static/images/Loupe.png
 	:width: 30
@@ -161,31 +161,31 @@
 	:width: 30
 
 .. |temps| image:: /_static/images/Temps.png
-	:width: 30
+	:width: 50
 
 .. |indicateurs| image:: /_static/images/Indicateurs.png
-	:width: 30
+	:width: 50
 
 .. |comptes| image:: /_static/images/Comptes.png
-	:width: 30
+	:width: 50
 
 .. |graphique| image:: /_static/images/Graphique.png
 	:width: 30
 
 .. |enveloppes| image:: /_static/images/Enveloppes.png
-	:width: 30
+	:width: 50
 
 .. |conventions| image:: /_static/images/Conventions.png
-	:width: 30
+	:width: 50
 
 .. |tâches| image:: /_static/images/Tâches.png
-	:width: 30
+	:width: 50
 
 .. |notes| image:: /_static/images/Notes.png
-	:width: 30
+	:width: 50
 
 .. |fonctions| image:: /_static/images/Fonctions.png
-	:width: 30
+	:width: 50
 
 .. |temps_param| image:: /_static/images/Temps_param.png
 	:width: 30
@@ -209,4 +209,7 @@
 	:width: 30
 
 .. |exports_temps| image:: /_static/images/Exports_temps.png
-	:width: 30
+	:width: 50
+
+.. |ajout_ligne| image:: /_static/images/Ajout_ligne.png
+	:width: 100

@@ -334,7 +334,10 @@ Une boîte de dialogue s'ouvre en cliquant sur :
 
 Ce poste de dépense peut être rattaché à un compte (de dépense) qui est à définir dans le module |budget| > |comptes|.
 
-Le rattachement à un parent propose des postes de dépenses (avec le code du compte rattaché) qui viennent de la fiche parent. Toutes les dépenses remontent à la fiche parent.
+Le rattachement à un parent propose des postes de dépenses (avec le code du compte rattaché) qui viennent de la fiche parent. Toutes les dépenses remontent à la fiche parent. 
+
+.. warning :: 
+  Quand on rattache à un poste parent, le "montant" global du poste enfant ne remonte pas dans le poste parent, seulement les lignes.
 
 Une fois le poste de dépense créé, on peut ajouter les lignes en cliquant sur le |ajout_plus| en fin de ligne. Cela permet d'ajouter une ligne par dépense dans le même poste de dépense. On peut choisir le type de dépense mais aussi plus de détails (Tiers, exercice, Bordereau du mandatement, Mandat, Engagement, Compléments, Date Facture) accessible dans l'onglet "détails" de la boîte de dialogue.
 
@@ -365,6 +368,9 @@ Ce poste de recette peut être rattaché à un compte (de recette) qui est à d�
 Le rattachement à un parent propose des postes de recette (avec le code du compte rattaché) qui viennent de la fiche parent. Toutes les recettes remontent à la fiche parent. 
 
 Il peut aussi être rattaché à une enveloppe qui est à définir dans le module |budget| > |enveloppes|. 
+
+.. warning :: 
+  Dans une même fiche, une enveloppe ne peut être rattachée qu'une seule fois à un poste de recette. Si la même enveloppe est rattachée à un autre poste de recette cela ne sera pas pris en compte dans le bilan de l'enveloppe.
 
 Une fois le poste de recette créé, on peut ajouter les lignes en cliquant sur le |ajout_plus| en fin de ligne. Cela permet d'ajouter une ligne par recette dans le même poste de recette. On peut choisir le type de recette mais aussi plus de détails (les dates de caducité, d'envoi du dossier, informations sur l'arrêté, délibération, montant subventionable) accessible dans l'onglet "détails" de la boîte de dialogue.
 
