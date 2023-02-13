@@ -213,3 +213,6 @@
 
 .. |ajout_ligne| image:: /_static/images/Ajout_ligne.png
 	:width: 100
+
+.. |assistance| image:: /_static/images/Assistance.png
+	:width: 100

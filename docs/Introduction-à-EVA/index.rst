@@ -1,3 +1,4 @@
+.. include:: ../substitutions.rst
 Introduction
 ============
 
@@ -75,4 +76,14 @@ Liaisons avec d'autres logiciels
 - **AGE par Elap Finances :** outil comptable pour les Parc Nationaux. Une liaison à l’entrepôt de données donne accès aux données financières à j+1 par un accès en lecture seule.
 - **.ICS calendrier en ligne :** liaison aux calendriers partagés en lecture seule via le protocole ICS. Elle  est  paramétrée pour  chaque  utilisateur  depuis  l'interface  EVA  et  fonctionne  pour OUTLOOK, ZIMBRA, Google Calendar, Phenix.
 - **ZIMBRA  API-REST  serveur  ATEN  (OFB) :** solution  de  messagerie  et  de  calendrier  de  l'ATEN maintenue par l'OFB.
+
+
+
+Les liens utiles et ressources
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Le code source du logiciel est disponible en Open Source sur la `plateforme GitLab <https://gitlab.com/logiciel-eva/logiciel-eva/>`_
+- Le groupe collaboratif sur l'intranet de la Fédération : `Lien du groupe <https://www.parcs-naturels-regionaux.fr/espace-membres/groupes/projet-eva-referents-eva>`_
+- L'assistance est disponible par le tchat en bas à droite de votre écran pour des besoins ponctuels ou des questions sur le fonctionnement |assistance|
+- Pour remonter des anomalies ou des besoins plus complexes, il faut déposer un ticket, les tickets sont aussi accessibles sur GitLab. Il faut un compte et avoir rejoint le projet, la procédure est détaillée sur ce `document <https://fpnrf-my.sharepoint.com/:b:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/EViYOXP4pClEjkTjAU7px_8BJz_qI-OrnIAQjD4jpAz2uA?e=Eh80gZ>`_
 

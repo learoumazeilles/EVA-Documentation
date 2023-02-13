@@ -243,6 +243,10 @@ La **répartition par utilisateur** reprend les temps passés, temps prévus et 
 
 La **répartition par fiche** reprend le budget temps prévu général, le total temps passé et le total temps prévus affectés par fiches enfants, s'il y en a.
 
+.. warning::
+  Attention il est possible de rattacher des temps d'une personne qui n'est pas inclue dans le sous-onglet "équipe" ce qui peut porter à confusion, si vous avez des filtres sur les membres de l'équipe. 
+  Ex : Monsieur Martin enregistre du temps sur le projet A1 mais n'est pas enregistré comme membre de l'équipe -> le filtre sur "fiche qui a comme membre de l'équipe Monsieur Martin" ne ressortira pas la fiche où Monsieur Martin a enregistré du temps s'il n'a pas aussi été associé comme membre de l'équipe.
+
 Sous-onglet temps passé
 #######################
 
