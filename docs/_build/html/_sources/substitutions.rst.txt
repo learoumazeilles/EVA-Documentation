@@ -92,7 +92,7 @@
 	:width: 30
 
 .. |exports| image:: /_static/images/Exports.png
-	:width: 30
+	:width: 100
 
 .. |statut_brouillon| image:: /_static/images/Statut_brouillon.png
 	:width: 70
@@ -116,16 +116,16 @@
 	:width: 50
 
 .. |budget| image:: /_static/images/Budget.png
-	:width: 50
+	:width: 100
 
 .. |statuts_financiers| image:: /_static/images/Statuts_financiers.png
-	:width: 50
+	:width: 100
 
 .. |utilisateurs| image:: /_static/images/Utilisateurs.png
-	:width: 50
+	:width: 100
 
 .. |administration| image:: /_static/images/Administration.png
-	:width: 50
+	:width: 100
 
 .. |écrou| image:: /_static/images/Écrou.png
 	:width: 30
@@ -134,22 +134,22 @@
 	:width: 30
 
 .. |champs| image:: /_static/images/Champs.png
-	:width: 30
+	:width: 100
 
 .. |annuaire| image:: /_static/images/Annuaire.png
-	:width: 50
+	:width: 100
 
 .. |contacts| image:: /_static/images/Contacts.png
-	:width: 50
+	:width: 100
 
 .. |structures| image:: /_static/images/Structures.png
-	:width: 50
+	:width: 100
 
 .. |cartographie| image:: /_static/images/Cartographie.png
-	:width: 50
+	:width: 100
 
 .. |territoires| image:: /_static/images/Territoires.png
-	:width: 50
+	:width: 100
 
 .. |loupe| image:: /_static/images/Loupe.png
 	:width: 30
@@ -161,19 +161,19 @@
 	:width: 30
 
 .. |temps| image:: /_static/images/Temps.png
-	:width: 50
+	:width: 100
 
 .. |indicateurs| image:: /_static/images/Indicateurs.png
 	:width: 50
 
 .. |comptes| image:: /_static/images/Comptes.png
-	:width: 50
+	:width: 100
 
 .. |graphique| image:: /_static/images/Graphique.png
 	:width: 30
 
 .. |enveloppes| image:: /_static/images/Enveloppes.png
-	:width: 50
+	:width: 100
 
 .. |conventions| image:: /_static/images/Conventions.png
 	:width: 50
@@ -185,10 +185,10 @@
 	:width: 50
 
 .. |fonctions| image:: /_static/images/Fonctions.png
-	:width: 50
+	:width: 100
 
 .. |temps_param| image:: /_static/images/Temps_param.png
-	:width: 30
+	:width: 100
 
 .. |icone_tag| image:: /_static/images/Icone_tag.png
 	:width: 30
@@ -200,19 +200,22 @@
 	:width: 30
 
 .. |ajout_hebdo_module| image:: /_static/images/Ajout_hebdo_module.png
-	:width: 30
+	:width: 100
 
 .. |synchro_module| image:: /_static/images/Synchro_module.png
-	:width: 30
+	:width: 100
 
 .. |bouton_synchro| image:: /_static/images/Bouton_synchro.png
 	:width: 30
 
 .. |exports_temps| image:: /_static/images/Exports_temps.png
-	:width: 50
+	:width: 100
 
 .. |ajout_ligne| image:: /_static/images/Ajout_ligne.png
 	:width: 100
 
 .. |assistance| image:: /_static/images/Assistance.png
+	:width: 100
+
+.. |configuration| image:: /_static/images/Configuration.png
 	:width: 100

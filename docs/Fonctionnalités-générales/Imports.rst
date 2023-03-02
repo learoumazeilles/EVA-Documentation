@@ -30,18 +30,20 @@ Autres colonnes possibles : Civilité, Couleur
 
 \+ les mots clés
 
-+---------+---------+----------------+------------------+----------+-----------+------------+------------+
-|Nom*     | Prénom* | Nom            | Rôle             | Mot de   | Civilités | Adresse    | Couleur    |
-|         |         |                |                  |          |           |            |            |
-|         |         | d'utilisateur* |                  | passe    |           | email*     |            |
-+=========+=========+================+==================+==========+===========+============+============+
-| *Texte* | *Texte* | *Texte*        | Nom du rôle      | *Texte*  | **Mr.** ou| *Texte*    | Code hex   |
-|         |         |                |                  |          |           |            |            |
-|         |         |                | prédéfini dans   |          |           | *format*   | example :  |
-|         |         |                |                  |          |           |            |            |
-| *libre* | *libre* | *libre*        | le module admin  | *libre*  | **Mme.**  | *email*    | #fcba03    |
-+---------+---------+----------------+------------------+----------+-----------+------------+------------+
++---------+---------+----------------+------------------+----------+----------------+------------+------------+
+|Nom*     | Prénom* | Nom            | Rôle             | Mot de   | Civilités      | Adresse    | Couleur    |
+|         |         |                |                  |          |                |            |            |
+|         |         | d'utilisateur* |                  | passe    |                | email*     |            |
++=========+=========+================+==================+==========+================+============+============+
+| *Texte* | *Texte* | *Texte*        | Nom du rôle      | *Texte*  | **Mr.** ou     | *Texte*    | Code hex   |
+|         |         |                |                  |          |                |            |            |
+|         |         |                | prédéfini dans   |          | **Non binaire**| *format*   | example :  |
+|         |         |                |                  |          |                |            |            |
+| *libre* | *libre* | *libre*        | le module admin  | *libre*  | ou **Mme.**    | *email*    | #fcba03    |
++---------+---------+----------------+------------------+----------+----------------+------------+------------+
 
+.. Note::
+	La couleur est utile pour l'affichage de l'agenda par exemple.
 
 Import indicateurs
 ##################
@@ -86,15 +88,17 @@ Autres colonnes possibles : Adresse email, Téléphone, Portable, Adresse, ligne
 .. warning::
 	Bien choisir le "Nom" avec astérisque dans l'interface EVA pour la colonne Nom* et ne pas choisir "Nom-Prénom".
 
-+---------+---------+---------+---------+-----------+-----------+---------+
-|Civilité | Prénom* | Nom*    | Adresse | Téléphone | Adresse   | Code    |
-|         |         |         |         |           |           |         |
-|         |         |         | email   |           | ligne 1   | postal  |
-+=========+=========+=========+=========+===========+===========+=========+
-| **m** ou| *Texte* | *Texte* | *Texte* | *Texte*   | *Texte*   | *Texte* |
-|         |         |         |         |           |           |         |
-| **mme** | *libre* | *libre* | *libre* | *libre*   | *libre*   | *libre* |
-+---------+---------+---------+---------+-----------+-----------+---------+
++----------------+---------+---------+---------+-----------+-----------+---------+
+|Civilité        | Prénom* | Nom*    | Adresse | Téléphone | Adresse   | Code    |
+|                |         |         |         |           |           |         |
+|                |         |         | email   |           | ligne 1   | postal  |
++================+=========+=========+=========+===========+===========+=========+
+| **M.** ou      | *Texte* | *Texte* | *Texte* | *Texte*   | *Texte*   | *Texte* |
+|                |         |         |         |           |           |         |
+| **Mme.** ou    | *libre* | *libre* | *libre* | *libre*   | *libre*   | *libre* |
+|                |         |         |         |           |           |         |
+| **Non binaire**|         |         |         |           |           |         |
++----------------+---------+---------+---------+-----------+-----------+---------+
 
 
 Import structures
@@ -211,6 +215,9 @@ Ils peuvent être ajoutés avec leur rôle. Deux séparateurs sont donc nécessa
 
 Le « rôle » est ici défini dans les mots clés : mot clé rattaché à « Membre » et mot clé rattaché à « Acteur ». Il est recommandé de rattacher un seul mot clé à membre. Si aucun rôle n’est spécifié, le rôle « membre » sera associé aux membres de l’équipe par défaut et aucun rôle ne sera associé aux acteurs.
 
+.. Note::
+	Les variables Chefs de projet ou Validateur qui sont nommées par défaut dans le logiciel ont pu être renommées pour le parc en Pilote par exemple pour Chef de projet. Dans ce cas, l’import permet maintenant d’indiquer le nouveau terme (depuis février 2023).
+
 Ces colonnes doivent être formatées comme ceci :
 
 +------------+---------+---------------------------------+-----------------------+
@@ -238,6 +245,25 @@ Dans cet exemple, on importe une fiche « Test import fiches acteurs membres » 
 
 Les rôles « coordination » et « assistance technique » sont des mots clés associés à membres, les rôles « financeur » et « appui technique » sont des mots clés associés à acteurs. (Attention le rôle financeur ici est différent de la case à cocher financeur dans les acteurs)
 
+Import convention
+#################
+
+Colonnes obligatoires : Nom
+
+Autres colonnes possibles : Contractant, Accessible réseau, Description, N°, N° arrêté, Début, Fin, Avancement, Date de décision, Date de notification, Montant, Montant subventionnable, Membres, ID Fiches, Type de convention, Territoire
+
+\+ les mots clés 
+
++---------+-------------+-------------+------------------+------------------+---------+------------+
+| Nom*    | Contractant | Description | Début            | Fin              | Montant | ID Fiches  |
++=========+=============+=============+==================+==================+=========+============+
+| *Texte* | Nom ou      | *Texte*     | Date au format   | Date au format   | Chiffre | ID1 -- ID2 |
+|         |             |             |                  |                  |         |            |
+| *libre* | ID          | *libre*     | JJ/MM/AAAA HH:MM | JJ/MM/AAAA HH:MM |         |            |
++---------+-------------+-------------+------------------+------------------+---------+------------+
+
+.. Note::
+	Les fiches rattachées en import seront affectées automatiquement à 100% à la convention. Pour rattacher plusieurs fiches, il faut indiquer dans la colonne ID Fiches ID1 -- ID2 (deux ID séparés par deux tirets et un espace de chaque côté des tirets).
 
 Sauvegarder au format csv
 #########################
@@ -584,4 +610,129 @@ Il vous reste simplement à choisir s’ils peuvent être multiples ou non et l�
 .. warning::
 	Pour les référentiels et mots clés des instances réseaux (OFB, FPNRF), pour qu'ils se propagent aux comptes EVA rattachés il faut aller les enregistrer une nouvelle fois dans les paramètres.
 
+Procédure lien contact structure
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Il fortement recommandé **d’UTILISER LES ID** pour cet import même si les noms exacts peuvent aussi être utilisés. En effet, pour les contacts, il est souvent le cas que deux personnes se nomment de la même façon (nom et prénom) ou bien que l’on ait enregistré la même structure deux fois et dans ce cas, l’import se fera aléatoirement pour l’une des deux structures. Cela permet aussi de résoudre tous les problèmes de correspondance qui arrivent avec les typos. Pour les ID, il faut manipuler les tableurs en amont dans Excel pour bien préparer l’import.
+
+Les ID sont accessibles dans les colonnes de chaque tableau de données dans EVA et sont présentes à l’export également. C’est un nombre attribué automatiquement par le logiciel en base de données mais qui est unique pour chaque élément.
+
+Création du fichier csv
+##########################
+
+Pour créer un fichier csv, partons d’un cas d’usage. Vous souhaitez importer vos contacts et vos structures et le lien entre elles via un fichier Excel qui regroupe toutes ces informations. Ceci est votre fichier cible :
+
++--------------+--------+------------------+-----------------------------------------+
+| Nom          | Prénom | Fonction         | Structure                               |
++==============+========+==================+=========================================+
+| Roumazeilles | Léa    | Chargé de mission| Fédération des parcs naturels régionaux |
++--------------+--------+------------------+-----------------------------------------+
+| Durand       | Jean   | Géomaticien      | PNRPC                                   |
++--------------+--------+------------------+-----------------------------------------+
+| Dupont       | Jeanne | Directeur        | PN Cévennes                             |
++--------------+--------+------------------+-----------------------------------------+
+
+**Il faut d’abord importer toutes les informations qui concernent les contacts avec l’import contacts et toutes les informations qui concernent les structures avec l’import structures** (voir la `documentation plus haut <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#import-contacts>`_ à ce sujet). **Vous devez également, soit créer les fonctions à la main si elles sont peu nombreuses soit les importer également.**
+
+Si vous avez un nombre faible de liaison à importer, vous pouvez rechercher à la main, l’ID correspondant à vos contacts, structures et fonctions. Ils sont présents dans la première colonne.
+
+Si vous avez un nombre conséquent de liaison à faire il y a deux façons de procéder : les ID (conseillé) ou les intitulés.
+
+**Méthode recommandée avec les ID :**
+
+1. Dans EVA afficher les colonnes ID et Nom et Prénom pour contact, les colonnes ID et Nom pour structure et ID et Fonction pour fonction. Exporter vos contacts, structures et fonctions via l’icône Excel en haut des tableaux |export_tableau| 
+
+Vous obtenez trois tableaux Excel
+
+**Contact**
+
++-------------+--------------+--------+
+| Identifiant | Nom          | Prénom |
++=============+==============+========+
+| 2111        | Dupont       | Jeanne |
++-------------+--------------+--------+
+| 2110        | Durand       | Jean   |
++-------------+--------------+--------+
+| 25          | Roumazeilles | Léa    |
++-------------+--------------+--------+
+
+**Structure**
+
++-------------+-----------------------------------------+
+| Identifiant | Nom                                     |
++=============+=========================================+
+| 11          | PNRPC                                   |
++-------------+-----------------------------------------+
+| 21          | PN Cévennes                             |
++-------------+-----------------------------------------+
+| 24          | Fédération des parcs naturels régionaux |
++-------------+-----------------------------------------+
+
+**Fonction**
+
++-------------+-------------------+
+| Identifiant | Fonction          |
++=============+===================+
+| 5           | Chargé de mission |
++-------------+-------------------+
+| 12          | Directeur         |
++-------------+-------------------+
+| 13          | Géomaticien       |
++-------------+-------------------+
+
+2. Quelques réorganisations des fichiers est nécessaire : 
+
+- Il faut concaténer le nom et le prénom pour les contacts en mettant bien le prénom en premier -> sur Excel utiliser 
+
+``=CONCAT(Cellule-Prénom;" ";Cellule-Nom)``
+
+Cette concaténation est aussi à effectuer dans le fichier cible.
+
+-	Couper-coller en première colonne la colonne Prénom-Nom des contacts, Nom des structures et Fonction des fonctions, en laissant la colonne ID en deuxième colonne
+
+3. Faire la liaison entre ID et noms dans votre fichier cible-> sur Excel utiliser 
+
+``=RECHERCHV(Cellule Prénom-Nom;Matrice du fichier contact;2;FAUX)``
+
+Cette fonction recherche dans la première colonne de la matrice du fichier contact exportée le Prénom Nom correspondant au Prénom Nom dans le fichier cible et insère l’ID correspond (qui se trouve en colonne 2). Faîtes de même pour les structures et fonction.
+Vous obtenez ceci dans votre fichier cible :
+
++--------------+--------+------------------+--------------------------+------------------+-------------+---------------+--------------+
+| Nom          | Prénom | Fonction         | Structure                | Prénom Nom       | Contact EVA | Structure EVA | Fonction EVA |
++==============+========+==================+==========================+==================+=============+===============+==============+
+| Roumazeilles | Léa    | Chargé de mission| Fédération des parcs ... | Léa Roumazeilles | 25          | 24            | 5            | 
++--------------+--------+------------------+--------------------------+------------------+-------------+---------------+--------------+
+| Durand       | Jean   | Géomaticien      | PNRPC                    | Jean Durand      | 2110        | 11            | 13           | 
++--------------+--------+------------------+--------------------------+------------------+-------------+---------------+--------------+
+| Dupont       | Jeanne | Directeur        | PN Cévennes              | Jeanne Dupont    | 2111        | 21            | 12           | 
++--------------+--------+------------------+--------------------------+------------------+-------------+---------------+--------------+
+
+Les trois dernières colonnes sont les colonnes avec les ID à transformer en fichier Excel puis csv et importer.
+
+**Méthode avec les intitulés :**
+
+Si votre fichier Excel initial est déjà bien calibré, que vous ne pensez pas avoir de doublons ou de typos, vous pouvez essayer d’importer avec les intitulés exacts. Pour cela dans votre fichier initial il faudra tout de même concaténer les noms et prénoms en une colonne « Prénom Nom » (voir point 2 de la méthode précédente). Puis transformer en format csv les trois colonnes Prénom Nom, Fonction et Structure.
+
+**Méthode mixte :**
+
+Il est aussi possible de faire un mixte ID et intitulés, par exemple, utiliser les ID pour les contacts et structures et les intitulés pour les fonctions.
+
+Importer le fichier csv
+#######################
+
+Pour importer le fichier csv de lien entre contact et structure, dans le module annuaire, cliquer sur « Importer des liens entre contacts – structures – fonctions » via la pastille rouge en bas à droite.
+
+.. image:: images/Import_liaison_annuaire.png
+  :width: 500
+
+Choisissez votre csv, le délimiteur et cocher la case des en-têtes et cliquer sur « Envoyer ».
+
+.. image:: images/interface_import.png
+  :width: 400
+
+Vos données apparaissent, cliquer ensuite sur Valider pour bien vérifier les correspondances. Si vous essayer d’importer plusieurs fois les mêmes liens contacts-structures, cela sera notifié par une erreur.
+
+.. image:: images/erreur_import_annuaire.png
+  :width: 600
+
+Si vous êtes satisfait, cliquer sur « importer ».

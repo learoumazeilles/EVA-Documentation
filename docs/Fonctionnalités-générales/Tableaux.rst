@@ -14,7 +14,7 @@ Généralités
 
 * Des outils sont présents en fin de ligne (en fonction des droits) :
 	* Modifier |modifier_ligne| -> renvoie au formulaire
-	* Duppliquer |duppliquer_ligne| -> dupplique l'élément
+	* Dupliquer |duppliquer_ligne| -> duplique l'élément
 	* Supprimer |supprimer_ligne| -> supprime l'élément
 	* Archiver |archiver_ligne| -> l'élément n'est plus disponible à la sélection mais les données associées sont toujours présentes
 

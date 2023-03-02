@@ -61,6 +61,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#import-structures">Import structures</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-temps">Import temps</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-fiches">Import fiches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-convention">Import convention</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sauvegarder-au-format-csv">Sauvegarder au format csv</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#importer-dans-eva">Importer dans EVA</a></li>
 </ul>
@@ -80,6 +81,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#import-dans-eva-des-mots-cles-et-referentiels">Import dans EVA des mots clés et référentiels</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#procedure-lien-contact-structure">Procédure lien contact structure</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#creation-du-fichier-csv">Création du fichier csv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#importer-le-fichier-csv">Importer le fichier csv</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -95,6 +101,7 @@
 <p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Novembre-2022/index.html">Développements Novembre 2022</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-F%C3%A9vrier-2023/index.html">Développements Février 2023</a></li>
 </ul>
 
         </div>
@@ -152,9 +159,9 @@
 <col style="width: 9%" />
 <col style="width: 9%" />
 <col style="width: 16%" />
-<col style="width: 19%" />
+<col style="width: 18%" />
 <col style="width: 10%" />
-<col style="width: 11%" />
+<col style="width: 16%" />
 <col style="width: 12%" />
 <col style="width: 12%" />
 </colgroup>
@@ -193,7 +200,8 @@
 <p><em>libre</em></p>
 </td>
 <td><p><strong>Mr.</strong> ou</p>
-<p><strong>Mme.</strong></p>
+<p><strong>Non binaire</strong></p>
+<p>ou <strong>Mme.</strong></p>
 </td>
 <td><p><em>Texte</em></p>
 <p><em>format</em></p>
@@ -206,6 +214,10 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La couleur est utile pour l’affichage de l’agenda par exemple.</p>
+</div>
 </section>
 <section id="import-indicateurs">
 <h3>Import indicateurs<a class="headerlink" href="#import-indicateurs" title="Lien permanent vers cette rubrique"></a></h3>
@@ -279,13 +291,13 @@
 </div>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 13%" />
+<col style="width: 22%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 12%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Civilité</p></th>
@@ -304,8 +316,9 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>m</strong> ou</p>
-<p><strong>mme</strong></p>
+<tr class="row-even"><td><p><strong>M.</strong> ou</p>
+<p><strong>Mme.</strong> ou</p>
+<p><strong>Non binaire</strong></p>
 </td>
 <td><p><em>Texte</em></p>
 <p><em>libre</em></p>
@@ -588,6 +601,10 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 <p>La fonctionnalité d’importer les <strong>membres de l’équipe</strong> et les <strong>acteurs</strong> est nouvelle. Voici comment procéder :</p>
 <p>Ils peuvent être ajoutés avec leur rôle. Deux séparateurs sont donc nécessaires : la virgule et les tirets. La virgule permet de séparer le nom du rôle et les tirets de séparer deux entités différentes. Une erreur apparaitra si les noms, prénoms et rôles ne correspondent pas aux données dans EVA.</p>
 <p>Le « rôle » est ici défini dans les mots clés : mot clé rattaché à « Membre » et mot clé rattaché à « Acteur ». Il est recommandé de rattacher un seul mot clé à membre. Si aucun rôle n’est spécifié, le rôle « membre » sera associé aux membres de l’équipe par défaut et aucun rôle ne sera associé aux acteurs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les variables Chefs de projet ou Validateur qui sont nommées par défaut dans le logiciel ont pu être renommées pour le parc en Pilote par exemple pour Chef de projet. Dans ce cas, l’import permet maintenant d’indiquer le nouveau terme (depuis février 2023).</p>
+</div>
 <p>Ces colonnes doivent être formatées comme ceci :</p>
 <table class="docutils align-default">
 <colgroup>
@@ -642,6 +659,57 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 </dd>
 </dl>
 <p>Les rôles « coordination » et « assistance technique » sont des mots clés associés à membres, les rôles « financeur » et « appui technique » sont des mots clés associés à acteurs. (Attention le rôle financeur ici est différent de la case à cocher financeur dans les acteurs)</p>
+</section>
+<section id="import-convention">
+<h3>Import convention<a class="headerlink" href="#import-convention" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Nom</p>
+<p>Autres colonnes possibles : Contractant, Accessible réseau, Description, N°, N° arrêté, Début, Fin, Avancement, Date de décision, Date de notification, Montant, Montant subventionnable, Membres, ID Fiches, Type de convention, Territoire</p>
+<p>+ les mots clés</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 10%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Nom*</p></th>
+<th class="head"><p>Contractant</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Début</p></th>
+<th class="head"><p>Fin</p></th>
+<th class="head"><p>Montant</p></th>
+<th class="head"><p>ID Fiches</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p>Nom ou</p>
+<p>ID</p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+<td><p>Date au format</p>
+<p>JJ/MM/AAAA HH:MM</p>
+</td>
+<td><p>Date au format</p>
+<p>JJ/MM/AAAA HH:MM</p>
+</td>
+<td><p>Chiffre</p></td>
+<td><p>ID1 – ID2</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les fiches rattachées en import seront affectées automatiquement à 100% à la convention. Pour rattacher plusieurs fiches, il faut indiquer dans la colonne ID Fiches ID1 – ID2 (deux ID séparés par deux tirets et un espace de chaque côté des tirets).</p>
+</div>
 </section>
 <section id="sauvegarder-au-format-csv">
 <h3>Sauvegarder au format csv<a class="headerlink" href="#sauvegarder-au-format-csv" title="Lien permanent vers cette rubrique"></a></h3>
@@ -898,7 +966,7 @@ Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du manda
 </div>
 <a class="reference internal image-reference" href="../_images/import_dépense_EVA.png"><img alt="../_images/import_dépense_EVA.png" src="../_images/import_dépense_EVA.png" style="width: 600px;" /></a>
 <p><strong>Dans les deux cas</strong></p>
-<p>Choisir le Statut financier des fiches modidiées : si on choisit un statut ici (défini dans <a class="reference internal" href="../_images/Budget.png"><img alt="budget" src="../_images/Budget.png" style="width: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Statuts_financiers.png"><img alt="statuts_financiers" src="../_images/Statuts_financiers.png" style="width: 50px;" /></a>), les fiches qui sont modifiées par l’import seront ensuite passées au statut choisi.</p>
+<p>Choisir le Statut financier des fiches modidiées : si on choisit un statut ici (défini dans <a class="reference internal" href="../_images/Budget.png"><img alt="budget" src="../_images/Budget.png" style="width: 100px;" /></a> &gt; <a class="reference internal" href="../_images/Statuts_financiers.png"><img alt="statuts_financiers" src="../_images/Statuts_financiers.png" style="width: 100px;" /></a>), les fiches qui sont modifiées par l’import seront ensuite passées au statut choisi.</p>
 <p>Si l’on coche la case « Les mouvements se mettent dans les postes ayant un compte parent si aucun poste ayant le même compte n’est présent » : les mouvements se mettent en effet sous un poste avec un compte parent du compte indiqué s’il y en a un dans la fiche.
 S’il n’y en a pas ou la case n’est pas cochée, les mouvements qui n’ont pas encore de poste de dépense/recette seront rajoutés dans un nouveau poste de dépense/recette nommé par le nom du compte.
 Si un poste de dépense/recette existe avec le même compte, le mouvement sera rattaché sous ce poste de dépense/recette.</p>
@@ -1094,6 +1162,213 @@ Il faudra sauvegarder le fichier en csv.</p>
 </div>
 </section>
 </section>
+<section id="procedure-lien-contact-structure">
+<h2>Procédure lien contact structure<a class="headerlink" href="#procedure-lien-contact-structure" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Il fortement recommandé <strong>d’UTILISER LES ID</strong> pour cet import même si les noms exacts peuvent aussi être utilisés. En effet, pour les contacts, il est souvent le cas que deux personnes se nomment de la même façon (nom et prénom) ou bien que l’on ait enregistré la même structure deux fois et dans ce cas, l’import se fera aléatoirement pour l’une des deux structures. Cela permet aussi de résoudre tous les problèmes de correspondance qui arrivent avec les typos. Pour les ID, il faut manipuler les tableurs en amont dans Excel pour bien préparer l’import.</p>
+<p>Les ID sont accessibles dans les colonnes de chaque tableau de données dans EVA et sont présentes à l’export également. C’est un nombre attribué automatiquement par le logiciel en base de données mais qui est unique pour chaque élément.</p>
+<section id="creation-du-fichier-csv">
+<h3>Création du fichier csv<a class="headerlink" href="#creation-du-fichier-csv" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Pour créer un fichier csv, partons d’un cas d’usage. Vous souhaitez importer vos contacts et vos structures et le lien entre elles via un fichier Excel qui regroupe toutes ces informations. Ceci est votre fichier cible :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 10%" />
+<col style="width: 22%" />
+<col style="width: 51%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Nom</p></th>
+<th class="head"><p>Prénom</p></th>
+<th class="head"><p>Fonction</p></th>
+<th class="head"><p>Structure</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Roumazeilles</p></td>
+<td><p>Léa</p></td>
+<td><p>Chargé de mission</p></td>
+<td><p>Fédération des parcs naturels régionaux</p></td>
+</tr>
+<tr class="row-odd"><td><p>Durand</p></td>
+<td><p>Jean</p></td>
+<td><p>Géomaticien</p></td>
+<td><p>PNRPC</p></td>
+</tr>
+<tr class="row-even"><td><p>Dupont</p></td>
+<td><p>Jeanne</p></td>
+<td><p>Directeur</p></td>
+<td><p>PN Cévennes</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Il faut d’abord importer toutes les informations qui concernent les contacts avec l’import contacts et toutes les informations qui concernent les structures avec l’import structures</strong> (voir la <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#import-contacts">documentation plus haut</a> à ce sujet). <strong>Vous devez également, soit créer les fonctions à la main si elles sont peu nombreuses soit les importer également.</strong></p>
+<p>Si vous avez un nombre faible de liaison à importer, vous pouvez rechercher à la main, l’ID correspondant à vos contacts, structures et fonctions. Ils sont présents dans la première colonne.</p>
+<p>Si vous avez un nombre conséquent de liaison à faire il y a deux façons de procéder : les ID (conseillé) ou les intitulés.</p>
+<p><strong>Méthode recommandée avec les ID :</strong></p>
+<ol class="arabic simple">
+<li><p>Dans EVA afficher les colonnes ID et Nom et Prénom pour contact, les colonnes ID et Nom pour structure et ID et Fonction pour fonction. Exporter vos contacts, structures et fonctions via l’icône Excel en haut des tableaux <a class="reference internal" href="../_images/Export_tableau.png"><img alt="export_tableau" src="../_images/Export_tableau.png" style="width: 30px;" /></a></p></li>
+</ol>
+<p>Vous obtenez trois tableaux Excel</p>
+<p><strong>Contact</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 40%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Identifiant</p></th>
+<th class="head"><p>Nom</p></th>
+<th class="head"><p>Prénom</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2111</p></td>
+<td><p>Dupont</p></td>
+<td><p>Jeanne</p></td>
+</tr>
+<tr class="row-odd"><td><p>2110</p></td>
+<td><p>Durand</p></td>
+<td><p>Jean</p></td>
+</tr>
+<tr class="row-even"><td><p>25</p></td>
+<td><p>Roumazeilles</p></td>
+<td><p>Léa</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Structure</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 76%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Identifiant</p></th>
+<th class="head"><p>Nom</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>PNRPC</p></td>
+</tr>
+<tr class="row-odd"><td><p>21</p></td>
+<td><p>PN Cévennes</p></td>
+</tr>
+<tr class="row-even"><td><p>24</p></td>
+<td><p>Fédération des parcs naturels régionaux</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fonction</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Identifiant</p></th>
+<th class="head"><p>Fonction</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Chargé de mission</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>Directeur</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>Géomaticien</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="2">
+<li><p>Quelques réorganisations des fichiers est nécessaire :</p></li>
+</ol>
+<ul class="simple">
+<li><p>Il faut concaténer le nom et le prénom pour les contacts en mettant bien le prénom en premier -&gt; sur Excel utiliser</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">=CONCAT(Cellule-Prénom;&quot;</span> <span class="pre">&quot;;Cellule-Nom)</span></code></p>
+<p>Cette concaténation est aussi à effectuer dans le fichier cible.</p>
+<ul class="simple">
+<li><p>Couper-coller en première colonne la colonne Prénom-Nom des contacts, Nom des structures et Fonction des fonctions, en laissant la colonne ID en deuxième colonne</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Faire la liaison entre ID et noms dans votre fichier cible-&gt; sur Excel utiliser</p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">=RECHERCHV(Cellule</span> <span class="pre">Prénom-Nom;Matrice</span> <span class="pre">du</span> <span class="pre">fichier</span> <span class="pre">contact;2;FAUX)</span></code></p>
+<p>Cette fonction recherche dans la première colonne de la matrice du fichier contact exportée le Prénom Nom correspondant au Prénom Nom dans le fichier cible et insère l’ID correspond (qui se trouve en colonne 2). Faîtes de même pour les structures et fonction.
+Vous obtenez ceci dans votre fichier cible :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 6%" />
+<col style="width: 14%" />
+<col style="width: 21%" />
+<col style="width: 14%" />
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Nom</p></th>
+<th class="head"><p>Prénom</p></th>
+<th class="head"><p>Fonction</p></th>
+<th class="head"><p>Structure</p></th>
+<th class="head"><p>Prénom Nom</p></th>
+<th class="head"><p>Contact EVA</p></th>
+<th class="head"><p>Structure EVA</p></th>
+<th class="head"><p>Fonction EVA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Roumazeilles</p></td>
+<td><p>Léa</p></td>
+<td><p>Chargé de mission</p></td>
+<td><p>Fédération des parcs …</p></td>
+<td><p>Léa Roumazeilles</p></td>
+<td><p>25</p></td>
+<td><p>24</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Durand</p></td>
+<td><p>Jean</p></td>
+<td><p>Géomaticien</p></td>
+<td><p>PNRPC</p></td>
+<td><p>Jean Durand</p></td>
+<td><p>2110</p></td>
+<td><p>11</p></td>
+<td><p>13</p></td>
+</tr>
+<tr class="row-even"><td><p>Dupont</p></td>
+<td><p>Jeanne</p></td>
+<td><p>Directeur</p></td>
+<td><p>PN Cévennes</p></td>
+<td><p>Jeanne Dupont</p></td>
+<td><p>2111</p></td>
+<td><p>21</p></td>
+<td><p>12</p></td>
+</tr>
+</tbody>
+</table>
+<p>Les trois dernières colonnes sont les colonnes avec les ID à transformer en fichier Excel puis csv et importer.</p>
+<p><strong>Méthode avec les intitulés :</strong></p>
+<p>Si votre fichier Excel initial est déjà bien calibré, que vous ne pensez pas avoir de doublons ou de typos, vous pouvez essayer d’importer avec les intitulés exacts. Pour cela dans votre fichier initial il faudra tout de même concaténer les noms et prénoms en une colonne « Prénom Nom » (voir point 2 de la méthode précédente). Puis transformer en format csv les trois colonnes Prénom Nom, Fonction et Structure.</p>
+<p><strong>Méthode mixte :</strong></p>
+<p>Il est aussi possible de faire un mixte ID et intitulés, par exemple, utiliser les ID pour les contacts et structures et les intitulés pour les fonctions.</p>
+</section>
+<section id="importer-le-fichier-csv">
+<h3>Importer le fichier csv<a class="headerlink" href="#importer-le-fichier-csv" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Pour importer le fichier csv de lien entre contact et structure, dans le module annuaire, cliquer sur « Importer des liens entre contacts – structures – fonctions » via la pastille rouge en bas à droite.</p>
+<a class="reference internal image-reference" href="../_images/Import_liaison_annuaire.png"><img alt="../_images/Import_liaison_annuaire.png" src="../_images/Import_liaison_annuaire.png" style="width: 500px;" /></a>
+<p>Choisissez votre csv, le délimiteur et cocher la case des en-têtes et cliquer sur « Envoyer ».</p>
+<a class="reference internal image-reference" href="../_images/interface_import.png"><img alt="../_images/interface_import.png" src="../_images/interface_import.png" style="width: 400px;" /></a>
+<p>Vos données apparaissent, cliquer ensuite sur Valider pour bien vérifier les correspondances. Si vous essayer d’importer plusieurs fois les mêmes liens contacts-structures, cela sera notifié par une erreur.</p>
+<a class="reference internal image-reference" href="../_images/erreur_import_annuaire.png"><img alt="../_images/erreur_import_annuaire.png" src="../_images/erreur_import_annuaire.png" style="width: 600px;" /></a>
+<p>Si vous êtes satisfait, cliquer sur « importer ».</p>
+</section>
+</section>
 </section>
 
 
@@ -1108,7 +1383,7 @@ Il faudra sauvegarder le fichier en csv.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 13 févr. 2023.
+      <span class="lastupdated">Mis à jour le 22 févr. 2023.
       </span></p>
   </div>
 

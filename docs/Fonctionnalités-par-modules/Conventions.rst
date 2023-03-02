@@ -50,7 +50,6 @@ Dans le tableau :
 
 - Le **Montant total de la fiche** correspond au montant total sollicité dans les recettes de la fiche.
 
-
 - La **Répartition par financeur** indique si d'autres financeurs sont présents sur la même fiche. Par exemple si des recettes sont rattachées à des enveloppes d'autres financeurs.
 
 - La colonne **Total** dans répartition financeur correspond au % de la  fiche pour la convention multiplié par le "Montant total de la fiche" = total sollicité.
@@ -61,12 +60,31 @@ Dans le tableau :
 
 - Les différentes colonnes **Dépenses** correspondent aux % de la fiche portée par la convention rapportée aux totaux des différentes colonnes dans les dépenses des fiches associées.
 
+Dupliquer convention
+####################
 
+Dans le module convention, pour dupliquer une seule convention, cliquer sur l’icône dupliquer en fin de ligne.
 
+.. image:: images/Dupliquer_convention.png
+  :width: 600
 
+Pour dupliquer plusieurs conventions d’un coup, il faut cocher les conventions que l’on veut dupliquer, puis cliquer sur dupliquer en haut des cases à cocher.
 
+.. image:: images/Convention_cocher.png
+  :width: 400
 
+Après la duplication la fenêtre se réactualise. Les conventions dupliquées auront le même nom avec « (copie) » à la suite. Les éléments dupliqués sont les suivants :
 
+- Nom
+- Contractant
+- N°
+- N° arrêté
+- Description
+- Membres
+- Mots clés
+- Territoires
+- Fiches rattachées
 
+Tout sauf les dates, montant et l’avancement.
 
 

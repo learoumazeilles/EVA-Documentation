@@ -2,7 +2,7 @@
 Annuaire
 ========
 
-L'annuaire permet de répertorier les contacts et structures partenaires. Les contacts et structures peuvent être liés par les fonctions (voir plus bas). Les contacts peuvent être supprimés pour respecter la demande de suppression des données personnelles. Les structures peuvent être répertoriées en tant que financeur et être rattachées aux fiches dans l'onglet **acteurs**. Pour éviter des pertes de données, une fois rattachée (à des enveloppes ou fiches), les stcutures ne pourront pas être supprimées (cf :ref:`FAQ`).
+L'annuaire permet de répertorier les contacts et structures partenaires. Les contacts et structures peuvent être liés par les fonctions (voir plus bas). Les contacts peuvent être supprimés pour respecter la demande de suppression des données personnelles. Les structures peuvent être répertoriées en tant que financeur et être rattachées aux fiches dans l'onglet **acteurs**. Pour éviter des pertes de données, une fois rattachée (à des enveloppes ou fiches), les strutures ne pourront pas être supprimées (cf :ref:`FAQ`).
 
 Contacts
 --------
@@ -70,4 +70,69 @@ Les employés peuvent être rajoutés dans la **Liste des employés**. C'est cet
 	Le champs "Liste des employés" apparaît seulement après avoir enregistré une première fois le contact.
 
 
+Recherche de doublons
+---------------------
 
+1. Dans le menu des colonnes, choisissez les colonnes à afficher qui seront celles à comparer pour les doublons
+2. Cocher la case recherche de doublons
+3. L’affichage s’actualise avec les lignes qui ont un contenu identique dans les colonnes sélectionnées
+
+.. image:: images/Recherche_doublons.png
+  :width: 700
+
+.. warning ::
+  - Les colonnes ID, Créé le, Modifié le ainsi que les mots clés et la fonction qui relie contacts et structures ne font pas partie du périmètre de recherche pour doublons. Ces colonnes même cochées ne seront pas comparées pour établir les doublons.
+
+.. Note ::
+  - Il faut décocher et recocher la case après chaque changement du choix des colonnes à comparer pour refaire la recherche de doublons.
+  - La fonctionnalité permet de rechercher des doublons avec une correspondance complète mais les majuscules et minuscules sont considérées égales.
+
+  Exemple : "Structure test" et "structure test" sont considérées comme des doublons mais "structure test 1" ne sera pas un doublon de "structure test"
+
+
+Fusion
+------
+
+1. Cliquer sur l’icône « Fusionner » en fin de ligne de l’élément que vous souhaitez fusionner (la source)
+
+.. image:: images/Fusionner.png
+  :width: 300
+
+2. Une boîte de dialogue s’ouvre dans laquelle vous pouvez sélectionner le type de fusion. « Dupliquer » copie le rattachement contact-structure de la source vers la cible dans supprimer la source alors que « Transférer » supprime la source.
+
+3. Indiquer le contact vers lequel fusionner qui la cible : soit en remplissant les premières lettres et par autocomplétions soit en recherchant via le plus.
+
+4. Cliquer sur fusionner
+
+.. image:: images/Fusionner_fenêtre.png
+  :width: 300
+
+L’ID (ici 2111 et 2112) permet de faire la différence entre des contacts qui ont les mêmes noms et prénoms.
+
+
+Liaison PostParc
+----------------
+
+Une liaison automatique entre l’annuaire et le logiciel PostParc (https://www.postparc.fr/) est disponible.
+
+Pour l’utiliser, il faut : 
+
+- avoir un compte postparc
+- demander un compte API aupres de l'équipe de POSTPARC (PROBESYS)
+- demander le raccordement par l’assistance qui doit se faire en base de données.
+
+La synchronisation automatique s’effectue tous les dimanches matins.
+
+Dans |administration| -> |configuration|, onglet Commandes vous pouvez lancer la synchronisation manuellement.
+
+
+.. image:: images/synchro_postparc.png
+  :width: 600
+
+Caractéristiques de la liaison :
+
+- Toutes les données des structures et contacts remontent automatiquement de PostParc à EVA (et seulement dans ce sens) ainsi que les rattachements contact-structures. 
+- La case financeur est cochée « non » par défaut, la fonction de rattachement contact-structure si elle n’a pas été définie dans PostParc sera « membre » par défaut. 
+- Une colonne « IMPORT POSTPARC » indique si le contact ou la structure a été importée de PostParc « SYNC-POSTPARC », supprimé dans PostParc « SUPP-POSTPARC », s’il a été créé dans EVA cette colonne sera vide. Ainsi si un contact a été supprimé dans PostParc, il ne sera pas supprimé automatiquement dans EVA pour éviter des pertes de données.
+- L’appartenance des structures à des groupes et types d’organisme définis dans PostParc remontent dans les mots clés, ces mots clés ne sont pas administrables dans EVA, ils n’apparaissent pas dans les mots clés de l’administration EVA mais ils peuvent être utilisés en filtres comme les autres mots clés.
+- L’appartenance des contacts à des groupes fonctionne comme pour les structures.
