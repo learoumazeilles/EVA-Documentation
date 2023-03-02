@@ -61,7 +61,7 @@ Améliorations des fonctionnalités d'import et d'export
 
 **Corrigé** : Il est maintenant possible d’importer cette liaison entre contact et structure qui s’effectue par la fonction.
 
-Mode d'emploi dans la documentation.
+Mode d'emploi dans la `documentation import <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-lien-contact-structure>`_
 
 6. Amélioration du lien entre export et import tableur
 ######################################################
@@ -110,7 +110,7 @@ Nouvelles fonctionnalités !
 #############
 `Ticket 306 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/306>`_ : Les conventions sont maintenant duplicables. 
 
-Mode d’emploi dans la documentation.
+Mode d’emploi dans la `documentation convention <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Conventions.html#dupliquer-convention>`_
 
 9. Annuaire
 ###########
@@ -121,7 +121,10 @@ Mode d’emploi dans la documentation.
 - Il est désormais possible d’ajouter un champ personnalisable dans les structures (comme dans fiches et contact).
 - Civilité non binaire
 
-Mode d'emploi dans la documentation.
+Mode d'emploi dans la documentation annuaire : 
+
+- `Recherche de doublons <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Annuaire.html#recherche-de-doublons>`_
+- `Fusion <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Annuaire.html#fusion>`_
 
 Liaison logiciel PostParc
 ~~~~~~~~~~~~~~~~~~~~~~~~~
