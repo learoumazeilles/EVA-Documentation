@@ -341,6 +341,8 @@ Colonnes obligatoires : Code, Nom, Type de mouvement
 
 Autres colonnes possibles : Description, Parent
 
+.. note::
+	S'il y a une arborescence dans les comptes, il faudra d'abord importer tous les comptes parents, puis tous le niveau d'arborescence suivant et ainsi de suite pour pouvoir les rattacher.
 
 .. warning::
 	Attention pour le parent à bien donner un compte parent recette si le type de mouvement est recette et un compte parent dépense si le type de mouvement est dépense. Le logiciel ne peut pas le vérifier au moment de l’import mais cela produit des bugs plus tard.
@@ -435,7 +437,10 @@ Choisir le type de recette (sollicité, notifié, attribué ou perçu) et le typ
 Choisir le type de dépense (prévu, engagé, payé, libéré, engagé payé, AE ouvert, AE prévu, AE engagé, CP prévu, CP ouvert, CP mandaté) et le type d’import (ajout, écrasement total, écrasement des fiches concernées). 
 
 .. note::
-	Pour les écrasements, il faudra préciser l’année ou « toutes les années ».
+	Pour les écrasements, il faudra préciser l’année ou « toutes les années ». L’écrasement n’écrase que les écritures précédemment importées, si un agent a fait des saisies manuelles, elles ne seront pas supprimées par l’import. Si une donnée importée a été modifiée, elle ne sera pas supprimée non plus.
+
+.. warning::
+	ATTENTION : l'écrasement total écrasera toutes les données importées précédemment même sur d'autres fiches.
 
 .. image:: images/import_dépense_EVA.png
   :width: 600

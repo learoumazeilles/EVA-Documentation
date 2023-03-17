@@ -101,7 +101,7 @@
 <p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Novembre-2022/index.html">Développements Novembre 2022</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-F%C3%A9vrier-2023/index.html">Développements Février 2023</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Mars-2023/index.html">Développements Mars 2023</a></li>
 </ul>
 
         </div>
@@ -759,6 +759,10 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 <h3>Import Comptes<a class="headerlink" href="#import-comptes" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Code, Nom, Type de mouvement</p>
 <p>Autres colonnes possibles : Description, Parent</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>S’il y a une arborescence dans les comptes, il faudra d’abord importer tous les comptes parents, puis tous le niveau d’arborescence suivant et ainsi de suite pour pouvoir les rattacher.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
 <p>Attention pour le parent à bien donner un compte parent recette si le type de mouvement est recette et un compte parent dépense si le type de mouvement est dépense. Le logiciel ne peut pas le vérifier au moment de l’import mais cela produit des bugs plus tard.</p>
@@ -962,7 +966,11 @@ Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du manda
 <p>Choisir le type de dépense (prévu, engagé, payé, libéré, engagé payé, AE ouvert, AE prévu, AE engagé, CP prévu, CP ouvert, CP mandaté) et le type d’import (ajout, écrasement total, écrasement des fiches concernées).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Pour les écrasements, il faudra préciser l’année ou « toutes les années ».</p>
+<p>Pour les écrasements, il faudra préciser l’année ou « toutes les années ». L’écrasement n’écrase que les écritures précédemment importées, si un agent a fait des saisies manuelles, elles ne seront pas supprimées par l’import. Si une donnée importée a été modifiée, elle ne sera pas supprimée non plus.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>ATTENTION : l’écrasement total écrasera toutes les données importées précédemment même sur d’autres fiches.</p>
 </div>
 <a class="reference internal image-reference" href="../_images/import_dépense_EVA.png"><img alt="../_images/import_dépense_EVA.png" src="../_images/import_dépense_EVA.png" style="width: 600px;" /></a>
 <p><strong>Dans les deux cas</strong></p>
@@ -1383,7 +1391,7 @@ Vous obtenez ceci dans votre fichier cible :</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 22 févr. 2023.
+      <span class="lastupdated">Mis à jour le 17 mars 2023.
       </span></p>
   </div>
 

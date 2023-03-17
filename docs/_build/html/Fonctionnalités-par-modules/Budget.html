@@ -78,7 +78,7 @@
 <p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Novembre-2022/index.html">Développements Novembre 2022</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-F%C3%A9vrier-2023/index.html">Développements Février 2023</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Mars-2023/index.html">Développements Mars 2023</a></li>
 </ul>
 
         </div>
@@ -108,7 +108,9 @@
              
   <section id="budget">
 <h1>Budget<a class="headerlink" href="#budget" title="Lien permanent vers cette rubrique"></a></h1>
-<p>Pour mettre en place le module budget, il faut avoir les fiches rattachées à des codes (analytiques, code unique pour chaque fiche), ensuite créer les différents comptes (dépenses et recette) puis les financeurs (dans le module <a class="reference internal" href="../_images/Annuaire.png"><img alt="annuaire" src="../_images/Annuaire.png" style="width: 100px;" /></a> &gt; <a class="reference internal" href="../_images/Structures.png"><img alt="structures" src="../_images/Structures.png" style="width: 100px;" /></a>) et les rattacher à leurs enveloppes.</p>
+<p>Ambition du module Budget : Suivre tout le budget du parc, du dialogue de gestion à la clôture.</p>
+<p>Le <strong>dialogue de gestion</strong> pourra avoir lieu dans les fiches, chaque chargé de mission sera amené à prévoir le budget nécessaire à son action. Les échanges jusque validation du budget sont rythmés par les <strong>statuts des fiches</strong> et les <strong>statuts financiers</strong>. Les statuts et dates de caducité peuvent être couplés aux <strong>alertes</strong> (envoi mail automatique), ce qui permet un <strong>suivi de la réalisation financière</strong> des projets. Les <strong>données comptables</strong> peuvent être remontées automatiquement depuis le logiciel de comptabilité (si compatible) ou par export/import à une périodicité choisie.</p>
+<p>Pour mettre en place le module budget, il faut avoir les fiches rattachées à des <strong>codes</strong> (analytiques, code unique pour chaque fiche), ensuite créer les différents <strong>comptes</strong> (dépenses et recette) puis les <strong>financeurs</strong> (dans le module <a class="reference internal" href="../_images/Annuaire.png"><img alt="annuaire" src="../_images/Annuaire.png" style="width: 100px;" /></a> &gt; <a class="reference internal" href="../_images/Structures.png"><img alt="structures" src="../_images/Structures.png" style="width: 100px;" /></a>) et les rattacher à leurs <strong>enveloppes</strong>.</p>
 <a class="reference internal image-reference" href="../_images/Budget_eva.png"><img alt="../_images/Budget_eva.png" src="../_images/Budget_eva.png" style="width: 500px;" /></a>
 <section id="enveloppes">
 <h2>Enveloppes<a class="headerlink" href="#enveloppes" title="Lien permanent vers cette rubrique"></a></h2>
@@ -157,6 +159,11 @@
 <li><p><strong>Parent</strong> : On peut indiquer le compte parent ici, sachant que l’on peut avoir des comptes enfants, petits-enfants…</p></li>
 <li><p><strong>Type de mouvement</strong> (obligatoire) : dépense ou recette (ce champ se remplit automatiquement si on indique un parent, car le type de mouvement doit être le même que le parent)</p></li>
 </ul>
+<p>La <strong>Description</strong> peut être utile à renseigner car par la suite lorsque l’on cherche un compte depuis la partie budget d’une fiche par exemple, le moteur de recherche pourra retrouver le compte grâce à la description. Cela permet d’avoir des titres de comptes assez succincts mais de garder un certain nombre d’information accessible dans les descriptions.</p>
+<p>Exemple :
+Compte 6078 avec description papier, si l’on cherche le mot papier dans la boîte de sélection des comptes, on pourra retrouver ce compte 6078.</p>
+<a class="reference internal image-reference" href="../_images/Creer_compte_ex.png"><img alt="../_images/Creer_compte_ex.png" src="../_images/Creer_compte_ex.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/Rechercher_compte_ex.png"><img alt="../_images/Rechercher_compte_ex.png" src="../_images/Rechercher_compte_ex.png" style="width: 500px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Dans les fiches, les données rattachées a un compte enfant d’un autre compte ne remonte pas dans le compte parent</p>
@@ -167,7 +174,7 @@
 <p>Les statuts financiers sont définis ici et peuvent être associés aux fiches. Ils permettent de qualifier les fiches en fonction de leur statut financier (pour faire des filtres, alertes…).</p>
 <p>Lors de la création d’un statut financier, on peut choisir de cocher la case <strong>Verouille le module budget</strong>, lorsqu’une fiche est associée à un statut qui verouille, l’onglet budget de la fiche n’est plus modifiable. Ceci est visible grâce au symbole de cadenas à côté. L’onglet reste accessible et visible mais il ne peut plus être modifié.</p>
 <a class="reference internal image-reference" href="../_images/Verouille_budget.png"><img alt="../_images/Verouille_budget.png" src="../_images/Verouille_budget.png" style="width: 150px;" /></a>
-<p>Les statuts financiers peuvent être utilisés lors dans import financier également : en choisissant un statut au moment de l’import, les fiches qui sont modifiées par l’import seront ensuite passées au statut choisi.</p>
+<p>Les statuts financiers peuvent être utilisés lors d’import financier également : en choisissant un statut au moment de l’import, les fiches qui sont modifiées par l’import seront ensuite passées au statut choisi.</p>
 </section>
 <section id="imports-budget">
 <h2>Imports budget<a class="headerlink" href="#imports-budget" title="Lien permanent vers cette rubrique"></a></h2>
@@ -187,7 +194,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 22 févr. 2023.
+      <span class="lastupdated">Mis à jour le 17 mars 2023.
       </span></p>
   </div>
 

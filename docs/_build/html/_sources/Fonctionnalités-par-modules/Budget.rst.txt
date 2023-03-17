@@ -2,7 +2,11 @@
 Budget
 ======
 
-Pour mettre en place le module budget, il faut avoir les fiches rattachées à des codes (analytiques, code unique pour chaque fiche), ensuite créer les différents comptes (dépenses et recette) puis les financeurs (dans le module |annuaire| > |structures|) et les rattacher à leurs enveloppes. 
+Ambition du module Budget : Suivre tout le budget du parc, du dialogue de gestion à la clôture. 
+
+Le **dialogue de gestion** pourra avoir lieu dans les fiches, chaque chargé de mission sera amené à prévoir le budget nécessaire à son action. Les échanges jusque validation du budget sont rythmés par les **statuts des fiches** et les **statuts financiers**. Les statuts et dates de caducité peuvent être couplés aux **alertes** (envoi mail automatique), ce qui permet un **suivi de la réalisation financière** des projets. Les **données comptables** peuvent être remontées automatiquement depuis le logiciel de comptabilité (si compatible) ou par export/import à une périodicité choisie.
+
+Pour mettre en place le module budget, il faut avoir les fiches rattachées à des **codes** (analytiques, code unique pour chaque fiche), ensuite créer les différents **comptes** (dépenses et recette) puis les **financeurs** (dans le module |annuaire| > |structures|) et les rattacher à leurs **enveloppes**. 
 
 .. image:: images/Budget_eva.png
   :width: 500
@@ -64,6 +68,19 @@ Le formulaire demande les informations suivantes :
 
 * **Type de mouvement** (obligatoire) : dépense ou recette (ce champ se remplit automatiquement si on indique un parent, car le type de mouvement doit être le même que le parent)
 
+La **Description** peut être utile à renseigner car par la suite lorsque l’on cherche un compte depuis la partie budget d’une fiche par exemple, le moteur de recherche pourra retrouver le compte grâce à la description. Cela permet d’avoir des titres de comptes assez succincts mais de garder un certain nombre d’information accessible dans les descriptions.
+
+Exemple : 
+Compte 6078 avec description papier, si l'on cherche le mot papier dans la boîte de sélection des comptes, on pourra retrouver ce compte 6078.
+
+
+.. image:: images/Creer_compte_ex.png
+  :width: 500
+
+.. image:: images/Rechercher_compte_ex.png
+  :width: 500
+
+
 .. note ::
 	Dans les fiches, les données rattachées a un compte enfant d'un autre compte ne remonte pas dans le compte parent
 
@@ -79,7 +96,7 @@ Lors de la création d'un statut financier, on peut choisir de cocher la case **
 .. image:: images/Verouille_budget.png
   :width: 150
 
-Les statuts financiers peuvent être utilisés lors dans import financier également : en choisissant un statut au moment de l'import, les fiches qui sont modifiées par l’import seront ensuite passées au statut choisi.
+Les statuts financiers peuvent être utilisés lors d'import financier également : en choisissant un statut au moment de l'import, les fiches qui sont modifiées par l’import seront ensuite passées au statut choisi.
 
 
 Imports budget

@@ -373,10 +373,13 @@ Le rattachement à un parent propose des postes de recette (avec le code du comp
 
 Il peut aussi être rattaché à une enveloppe qui est à définir dans le module |budget| > |enveloppes|. 
 
+On peut choisir plus de détails dans l'onglet "détails" de la boîte de dialogue de création d'un compte (les dates de caducité, d'envoi du dossier, informations sur l'arrêté, délibération, montant subventionable).
+
+
 .. warning :: 
   Dans une même fiche, une enveloppe ne peut être rattachée qu'une seule fois à un poste de recette. Si la même enveloppe est rattachée à un autre poste de recette cela ne sera pas pris en compte dans le bilan de l'enveloppe.
 
-Une fois le poste de recette créé, on peut ajouter les lignes en cliquant sur le |ajout_plus| en fin de ligne. Cela permet d'ajouter une ligne par recette dans le même poste de recette. On peut choisir le type de recette mais aussi plus de détails (les dates de caducité, d'envoi du dossier, informations sur l'arrêté, délibération, montant subventionable) accessible dans l'onglet "détails" de la boîte de dialogue.
+Une fois le poste de recette créé, on peut ajouter les lignes en cliquant sur le |ajout_plus| en fin de ligne. Cela permet d'ajouter une ligne par recette dans le même poste de recette. On peut choisir le type de recette mais aussi plus de détails Tiers, exercice, mandat...) accessible dans l'onglet "détails" de la boîte de dialogue.
 
 Les lignes qui remontent des fiches enfants sont affichées bleutées.
 

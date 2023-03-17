@@ -98,7 +98,7 @@ Fusion
 .. image:: images/Fusionner.png
   :width: 300
 
-2. Une boîte de dialogue s’ouvre dans laquelle vous pouvez sélectionner le type de fusion. « Dupliquer » copie le rattachement contact-structure de la source vers la cible dans supprimer la source alors que « Transférer » supprime la source.
+2. Une boîte de dialogue s’ouvre dans laquelle vous pouvez sélectionner le type de fusion. « Dupliquer » copie le rattachement contact-structure de la source vers la cible sans supprimer la source alors que « Transférer » supprime la source.
 
 3. Indiquer le contact vers lequel fusionner qui la cible : soit en remplissant les premières lettres et par autocomplétions soit en recherchant via le plus.
 
