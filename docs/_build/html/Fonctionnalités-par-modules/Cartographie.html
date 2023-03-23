@@ -59,20 +59,25 @@
 <li class="toctree-l2"><a class="reference internal" href="Indicateurs.html">Indicateurs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Budget.html">Budget</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Conventions.html">Conventions</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Cartographie</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cartographie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fusion-des-territoires">Fusion des territoires</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ajout-des-territoires">Ajout des territoires</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-avanc%C3%A9es/index.html">Fonctionnalités avancées</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Gestion-des-utilisateurs/index.html">Gestion des utilisateurs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../R%C3%A9f%C3%A9rentiels-et-mots-cl%C3%A9s/index.html">Référentiels et mots clés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-essentiels/index.html">Paramétrages essentiels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-simples/index.html">Paramétrages simples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-avanc%C3%A9s/index.html">Paramétrages avancés</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Novembre-2022/index.html">Développements Novembre 2022</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-F%C3%A9vrier-2023/index.html">Développements Février 2023</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Mars-2023/index.html">Développements Mars 2023</a></li>
 </ul>
 
         </div>
@@ -103,7 +108,39 @@
   <section id="cartographie">
 <h1>Cartographie<a class="headerlink" href="#cartographie" title="Lien permanent vers cette rubrique"></a></h1>
 <p>Le module cartographie permet de renseigner les territoires dans EVA, ils pourront ensuite être renseignés dans les différents modules.</p>
-<p>(en cours de rédaction)</p>
+<p>Les fonctionnalités de tableau et d’ajout sont détaillées dans la partie <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#">Tableaux</a> des fonctionnalités générales.</p>
+<p>Quelques spécifités du tableau des territoires :</p>
+<ul class="simple">
+<li><p>Le tableau des territoires peut être vu en vue arborescente en cliquant en haut à droite sur <a class="reference internal" href="../_images/Arborescence_fiche.png"><img alt="arbo_fiches" src="../_images/Arborescence_fiche.png" style="width: 30px;" /></a>. Il faut déplier les territoires en cliquant sur <a class="reference internal" href="../_images/Dossier.png"><img alt="dossier" src="../_images/Dossier.png" style="width: 30px;" /></a> pour voir les territoires enfants.</p></li>
+<li><p>En cochant une case d’un territoire, les options de retirer de la liste <a class="reference internal" href="../_images/Gomme_tableau.png"><img alt="gomme_tableau" src="../_images/Gomme_tableau.png" style="width: 30px;" /></a>  et fusionner <a class="reference internal" href="../_images/Fusion.png"><img alt="fusion" src="../_images/Fusion.png" style="width: 30px;" /></a> apparaissent.</p></li>
+</ul>
+<section id="fusion-des-territoires">
+<h2>Fusion des territoires<a class="headerlink" href="#fusion-des-territoires" title="Lien permanent vers cette rubrique"></a></h2>
+<p>En cochant une case, on peut avoir accès à la fonction de fusionner. Cette action ouvre une boîte de dialogue dans laquelle on peut choisir le territoire cible de la fusion.</p>
+<a class="reference internal image-reference" href="../_images/Territoire_cible.png"><img alt="../_images/Territoire_cible.png" src="../_images/Territoire_cible.png" style="width: 500px;" /></a>
+<p>La fusion ici va supprimer le ou les territoire(s) coché(s), pour ne conserver que le territoire cible. Les informations précédemment rattachées au(x) territoire(s) coché(s) seront rattachées au territoire cible (fiche, temps…).</p>
+</section>
+<section id="ajout-des-territoires">
+<h2>Ajout des territoires<a class="headerlink" href="#ajout-des-territoires" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Avec la pastille rouge en bas à droite <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a>, on peut créér ou importer un territoire :</p>
+<p><strong>Créer</strong></p>
+<p>Créer permet de créer un territoire en indiquant :</p>
+<ul class="simple">
+<li><p>un nom</p></li>
+<li><p>un code (code insee par exemple)</p></li>
+<li><p>les contours du territoire en utilisant un fichier (.geojson, .json, .kml, .gpx), ici le fichier n’est pas obligatoire mais s’il n’y a pas de fichier les données rattachées à ce territoire ne seront pas géolocalisées non plus mais seront attachées au nom du territoire</p></li>
+<li><p>des territoires enfants</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Le rattachement entre territoires enfants et parents n’est pas opéré de façon géographique, les fichiers géolocalisés des enfants ne sont pas combinés pour donner des parents. Cette option permet de faire remonter les informations dans les analyses temps et budget par exemple mais pas dans l’analyse cartographie. Exemple : des communes sont territoires enfants d’une EPCI, on a passé du temps dans plusieurs communes de cette EPCI, l’analyse temps va pouvoir combiner les temps passés dans les communes pour remonter le temps total dans l’EPCI.</p>
+</div>
+<p><strong>Importer</strong></p>
+<p>Importer des territoires permet d’importer plusieurs territoires depuis un fichier (.geojson, .json, .kml, .gpx). EVA lit les différents attributs du fichier et les répercute dans des colonnes.</p>
+<p>On peut ensuite choisir quel territoire importer, en supprimant ceux que l’on se souhaite pas importer en cliquant sur <a class="reference internal" href="../_images/Supprimer_ligne.png"><img alt="supprimer_ligne" src="../_images/Supprimer_ligne.png" style="width: 30px;" /></a> en fin de ligne.</p>
+<p>Il faut cocher quelle colonne doit être retenue pour le nom du territoire et le code.</p>
+<a class="reference internal image-reference" href="../_images/Import_carto.png"><img alt="../_images/Import_carto.png" src="../_images/Import_carto.png" style="width: 700px;" /></a>
+</section>
 </section>
 
 
@@ -118,7 +155,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 27 févr. 2023.
+      <span class="lastupdated">Mis à jour le 23 mars 2023.
       </span></p>
   </div>
 

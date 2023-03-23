@@ -25,6 +25,9 @@
 .. |archiver_ligne| image:: /_static/images/Archiver_ligne.png
 	:width: 30
 
+.. |reactive| image:: /_static/images/Reactive.png
+	:width: 30
+
 .. |duppliquer_ligne| image:: /_static/images/Duppliquer_ligne.png
 	:width: 30
 
@@ -218,4 +221,10 @@
 	:width: 100
 
 .. |configuration| image:: /_static/images/Configuration.png
+	:width: 100
+
+.. |fusion| image:: /_static/images/Fusion.png
+	:width: 30
+
+.. |mots_cles| image:: /_static/images/Mots_clés.png
 	:width: 100

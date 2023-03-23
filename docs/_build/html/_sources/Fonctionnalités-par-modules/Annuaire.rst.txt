@@ -100,7 +100,7 @@ Fusion
 
 2. Une boîte de dialogue s’ouvre dans laquelle vous pouvez sélectionner le type de fusion. « Dupliquer » copie le rattachement contact-structure de la source vers la cible sans supprimer la source alors que « Transférer » supprime la source.
 
-3. Indiquer le contact vers lequel fusionner qui la cible : soit en remplissant les premières lettres et par autocomplétions soit en recherchant via le plus.
+3. Indiquer le contact vers lequel fusionner qui sera la cible : soit en remplissant les premières lettres et par autocomplétions soit en recherchant via le plus.
 
 4. Cliquer sur fusionner
 

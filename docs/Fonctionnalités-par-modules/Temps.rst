@@ -205,7 +205,7 @@ Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie :ref
 
 Il faut donner un **titre** à la synchronisation et ajouter le **lien** qui permettra de récupérer les données. Ce lien peut être trouvé dans les paramètre de partage de votre boîte mail (sous le nom d'adresse privée ou lien de partage, en .ics ou .ical...).
 
-Choisissez ensuite le **type** en fonction de votre agenda (Google, Phénix, Zimbra, Outlook) et voter fuseau horaire.
+Choisissez ensuite le **type** en fonction de votre agenda (Google, Phénix, Zimbra, Outlook) et votre fuseau horaire.
 
 Les temps dans les agendas doivent pouvoir être reliés aux fiches, ce sont les champs **Jointure à la fiche** qui permettent de les relier :
 
@@ -254,7 +254,10 @@ Il est ensuite possible d' **enregistrer** la synchronisation telle quelle ou bi
 Dans ce cas il faudra indiquer l'**utilisateur** auquel appartient le calendrier à synchroniser et la **cadence** de synchronisation : quotidienne, hebdomadaire, mensuelle ou trimestrielle puis enregistrer.
 
 .. image:: images/Synchro_auto.png
-  :width: 200
+  :width: 300
+
+.. note::
+  Pour les synchronisations automatique,le logiciel vérifie chaque jour la dernière date de synchronisation (manuelle ou automatique), si elle est plus ancienne que la cadence cible, la synchronisation est lancée.
 
 Dans les deux cas (synchronisation automatique remplie ou non), on peut lancer la synchronisation manuellement depuis le tableau des synchronisations, en cochant la synchronisation à lancer et en cliquant sur |bouton_synchro| en haut du tableau.
 
@@ -290,10 +293,57 @@ Une fois importée, vous pouvez vérifier la ligne dans l'onglet temps de la fic
   :width: 700
 
 
+Synchronisations des absences
+-----------------------------
+
+Les temps d'absences peuvent être paramétrés dans le module |administration| > |temps_param|.
+En cliquant sur le |ajout_plus|, on peut ajouter des temps d'absences avec une abbréviation (Lettres initiales).
+
+.. image:: images/Creation_type_abs.png
+  :width: 500
+
+.. warning::
+  Le logiciel reconnaît les noms complets et pas les abbréviations, il faut que ces noms soient sans espace pour qu'ils puissent être reconnu. Par exemple : écrivez plutôt **congés_payés** plutôt que **congés payés**.
+
+.. image:: images/Types_abs.png
+  :width: 700
+
+**Dans les agendas**
+
+Lorsque l'on créé un temps d'absence dans l'agenda, il faut bien indiquer, le type d'absence dans le titre du rendez-vous et indiquer le code la fiche comme précédemment.
+
+.. image:: images/Absence_agenda.png
+  :width: 300
+
+.. note::
+  Certains parcs ont créé une fiche absence à laquelle ils rattachent tous les temps d'absence pour plus de simplicité. 
+
+
+**Dans EVA**
+
+La seule différence avec les paramétrages précédents est la suivante :
+Il faut cocher la case **Analyser le titre** dans les paramètres de synchronisation.
+
+.. image:: images/Analyse_titre.png
+  :width: 400
+
+.. warning:: 
+  Attention, quand on coche la case « analyser le titre », tous les titres vont être analyser (pas seulement temps d’absence) et ça peut prendre du temps si jamais on a des titres à rallonge, donc il faut encourager à ne pas avoir des titres complexes dans les agendas pour ne pas surcharger le serveur si possible.
+
+Au moment de la synchronisation, les événements vont remonter avec le type temps d’absence et le bon type d’absence automatiquement.
+
+.. image:: images/Temps_absences.png
+  :width: 700
+
+Ces temps d'absences peuvent être utilisés par la suite dans les exports temps, par exemple pour les exports life pour justifier les absences et leur type.
+
+.. warning :: 
+  Si un temps d'absence est paramétré sur la journée complète et non sur une plage horaire (comme cela peut arriver pour une semaine de congés par exemple), il faudra bien corriger dans EVA le nombre d'heure car EVA assignera 24h par journée.
+
 Exports temps
 -------------
 
-Un type d'export temps au format tableur est paramétré par défaut dans le menu des temps, mais on peut également paraméter ses propres exports temps dans le sous-menu |exports_temps|. Pour des exports temps encore plus poussés (type export Life), il faudra se référer à l'assistance pour qu'ils soient paramétrer en base de données.
+Un type d'export temps au format tableur est paramétré par défaut dans le menu des temps, mais on peut également paraméter ses propres exports temps dans le sous-menu |exports_temps|. Pour des exports temps encore plus poussés (type export Life), il faudra se référer à l'assistance pour qu'ils soient paramétrés en base de données.
 
 Export par défaut
 ~~~~~~~~~~~~~~~~~

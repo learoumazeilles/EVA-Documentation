@@ -23,8 +23,9 @@ Documentation du Logiciel EVA
    :maxdepth: 2
    :caption: Documentation référent EVA
 
-   Gestion-des-utilisateurs/index
-   Référentiels-et-mots-clés/index
+   Paramétrages-essentiels/index
+   Paramétrages-simples/index
+   Paramétrages-avancés/index
 
 .. toctree::
    :maxdepth: 2

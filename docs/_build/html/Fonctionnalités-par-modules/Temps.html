@@ -65,6 +65,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#ajout-hebdomadaire">Ajout hebdomadaire</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#synchronisations">Synchronisations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#synchronisations-des-absences">Synchronisations des absences</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#exports-temps">Exports temps</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#export-par-defaut">Export par défaut</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#export-a-parametrer">Export à paramétrer</a></li>
@@ -82,13 +83,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Gestion-des-utilisateurs/index.html">Gestion des utilisateurs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../R%C3%A9f%C3%A9rentiels-et-mots-cl%C3%A9s/index.html">Référentiels et mots clés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-essentiels/index.html">Paramétrages essentiels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-simples/index.html">Paramétrages simples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-avanc%C3%A9s/index.html">Paramétrages avancés</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Novembre-2022/index.html">Développements Novembre 2022</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-F%C3%A9vrier-2023/index.html">Développements Février 2023</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Mars-2023/index.html">Développements Mars 2023</a></li>
 </ul>
 
         </div>
@@ -258,7 +260,7 @@ Si <strong>Aucun</strong> est utilisé comme caractère d’entourage, l’élé
 <p><strong>Dans EVA</strong></p>
 <a class="reference internal image-reference" href="../_images/Ajout_synchro.png"><img alt="../_images/Ajout_synchro.png" src="../_images/Ajout_synchro.png" style="width: 700px;" /></a>
 <p>Il faut donner un <strong>titre</strong> à la synchronisation et ajouter le <strong>lien</strong> qui permettra de récupérer les données. Ce lien peut être trouvé dans les paramètre de partage de votre boîte mail (sous le nom d’adresse privée ou lien de partage, en .ics ou .ical…).</p>
-<p>Choisissez ensuite le <strong>type</strong> en fonction de votre agenda (Google, Phénix, Zimbra, Outlook) et voter fuseau horaire.</p>
+<p>Choisissez ensuite le <strong>type</strong> en fonction de votre agenda (Google, Phénix, Zimbra, Outlook) et votre fuseau horaire.</p>
 <p>Les temps dans les agendas doivent pouvoir être reliés aux fiches, ce sont les champs <strong>Jointure à la fiche</strong> qui permettent de les relier :</p>
 <ul class="simple">
 <li><p><strong>Champ utilisé</strong> correspond au champ dans votre agenda ou il y aura l’élément de rattachement à la fiche : titre, description, localisation, tags pour Zimbra</p></li>
@@ -289,7 +291,11 @@ Si <strong>Aucun</strong> est utilisé comme caractère d’entourage, l’élé
 <a class="reference internal image-reference" href="../_images/Jointure_fiche_ex.png"><img alt="../_images/Jointure_fiche_ex.png" src="../_images/Jointure_fiche_ex.png" style="width: 500px;" /></a>
 <p>Il est ensuite possible d” <strong>enregistrer</strong> la synchronisation telle quelle ou bien de paramétrer la partie de <strong>synchronisation automatique</strong>.</p>
 <p>Dans ce cas il faudra indiquer l”<strong>utilisateur</strong> auquel appartient le calendrier à synchroniser et la <strong>cadence</strong> de synchronisation : quotidienne, hebdomadaire, mensuelle ou trimestrielle puis enregistrer.</p>
-<a class="reference internal image-reference" href="../_images/Synchro_auto.png"><img alt="../_images/Synchro_auto.png" src="../_images/Synchro_auto.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../_images/Synchro_auto.png"><img alt="../_images/Synchro_auto.png" src="../_images/Synchro_auto.png" style="width: 300px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pour les synchronisations automatique,le logiciel vérifie chaque jour la dernière date de synchronisation (manuelle ou automatique), si elle est plus ancienne que la cadence cible, la synchronisation est lancée.</p>
+</div>
 <p>Dans les deux cas (synchronisation automatique remplie ou non), on peut lancer la synchronisation manuellement depuis le tableau des synchronisations, en cochant la synchronisation à lancer et en cliquant sur <a class="reference internal" href="../_images/Bouton_synchro.png"><img alt="bouton_synchro" src="../_images/Bouton_synchro.png" style="width: 30px;" /></a> en haut du tableau.</p>
 <p>Il faudra alors choisir la <strong>période</strong> à synchroniser et l”<strong>utilisateur</strong> concerné et cliquer sur <strong>synchroniser</strong>.</p>
 <a class="reference internal image-reference" href="../_images/Synchro_période.png"><img alt="../_images/Synchro_période.png" src="../_images/Synchro_période.png" style="width: 500px;" /></a>
@@ -312,9 +318,42 @@ Si <strong>Aucun</strong> est utilisé comme caractère d’entourage, l’élé
 <p>Une fois importée, vous pouvez vérifier la ligne dans l’onglet temps de la fiche associée, par exemple (mode d’intervention est le mot clé) :</p>
 <a class="reference internal image-reference" href="../_images/Temps_synchro_fiche.png"><img alt="../_images/Temps_synchro_fiche.png" src="../_images/Temps_synchro_fiche.png" style="width: 700px;" /></a>
 </section>
+<section id="synchronisations-des-absences">
+<h2>Synchronisations des absences<a class="headerlink" href="#synchronisations-des-absences" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Les temps d’absences peuvent être paramétrés dans le module <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="width: 100px;" /></a> &gt; <a class="reference internal" href="../_images/Temps_param.png"><img alt="temps_param" src="../_images/Temps_param.png" style="width: 100px;" /></a>.
+En cliquant sur le <a class="reference internal" href="../_images/Ajout_plus.png"><img alt="ajout_plus" src="../_images/Ajout_plus.png" style="width: 50px;" /></a>, on peut ajouter des temps d’absences avec une abbréviation (Lettres initiales).</p>
+<a class="reference internal image-reference" href="../_images/Creation_type_abs.png"><img alt="../_images/Creation_type_abs.png" src="../_images/Creation_type_abs.png" style="width: 500px;" /></a>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Le logiciel reconnaît les noms complets et pas les abbréviations, il faut que ces noms soient sans espace pour qu’ils puissent être reconnu. Par exemple : écrivez plutôt <strong>congés_payés</strong> plutôt que <strong>congés payés</strong>.</p>
+</div>
+<a class="reference internal image-reference" href="../_images/Types_abs.png"><img alt="../_images/Types_abs.png" src="../_images/Types_abs.png" style="width: 700px;" /></a>
+<p><strong>Dans les agendas</strong></p>
+<p>Lorsque l’on créé un temps d’absence dans l’agenda, il faut bien indiquer, le type d’absence dans le titre du rendez-vous et indiquer le code la fiche comme précédemment.</p>
+<a class="reference internal image-reference" href="../_images/Absence_agenda.png"><img alt="../_images/Absence_agenda.png" src="../_images/Absence_agenda.png" style="width: 300px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Certains parcs ont créé une fiche absence à laquelle ils rattachent tous les temps d’absence pour plus de simplicité.</p>
+</div>
+<p><strong>Dans EVA</strong></p>
+<p>La seule différence avec les paramétrages précédents est la suivante :
+Il faut cocher la case <strong>Analyser le titre</strong> dans les paramètres de synchronisation.</p>
+<a class="reference internal image-reference" href="../_images/Analyse_titre.png"><img alt="../_images/Analyse_titre.png" src="../_images/Analyse_titre.png" style="width: 400px;" /></a>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Attention, quand on coche la case « analyser le titre », tous les titres vont être analyser (pas seulement temps d’absence) et ça peut prendre du temps si jamais on a des titres à rallonge, donc il faut encourager à ne pas avoir des titres complexes dans les agendas pour ne pas surcharger le serveur si possible.</p>
+</div>
+<p>Au moment de la synchronisation, les événements vont remonter avec le type temps d’absence et le bon type d’absence automatiquement.</p>
+<a class="reference internal image-reference" href="../_images/Temps_absences.png"><img alt="../_images/Temps_absences.png" src="../_images/Temps_absences.png" style="width: 700px;" /></a>
+<p>Ces temps d’absences peuvent être utilisés par la suite dans les exports temps, par exemple pour les exports life pour justifier les absences et leur type.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Si un temps d’absence est paramétré sur la journée complète et non sur une plage horaire (comme cela peut arriver pour une semaine de congés par exemple), il faudra bien corriger dans EVA le nombre d’heure car EVA assignera 24h par journée.</p>
+</div>
+</section>
 <section id="exports-temps">
 <h2>Exports temps<a class="headerlink" href="#exports-temps" title="Lien permanent vers cette rubrique"></a></h2>
-<p>Un type d’export temps au format tableur est paramétré par défaut dans le menu des temps, mais on peut également paraméter ses propres exports temps dans le sous-menu <a class="reference internal" href="../_images/Exports_temps.png"><img alt="exports_temps" src="../_images/Exports_temps.png" style="width: 100px;" /></a>. Pour des exports temps encore plus poussés (type export Life), il faudra se référer à l’assistance pour qu’ils soient paramétrer en base de données.</p>
+<p>Un type d’export temps au format tableur est paramétré par défaut dans le menu des temps, mais on peut également paraméter ses propres exports temps dans le sous-menu <a class="reference internal" href="../_images/Exports_temps.png"><img alt="exports_temps" src="../_images/Exports_temps.png" style="width: 100px;" /></a>. Pour des exports temps encore plus poussés (type export Life), il faudra se référer à l’assistance pour qu’ils soient paramétrés en base de données.</p>
 <section id="export-par-defaut">
 <h3>Export par défaut<a class="headerlink" href="#export-par-defaut" title="Lien permanent vers cette rubrique"></a></h3>
 <p>L’export par défaut exporte un tableur des feuilles de temps sélectionnées dans le module temps, avec une ligne pour chaque feuille de temps et les colonnes affichées à l’écran au moment de l’export.</p>
@@ -359,7 +398,7 @@ Si <strong>Aucun</strong> est utilisé comme caractère d’entourage, l’élé
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 22 févr. 2023.
+      <span class="lastupdated">Mis à jour le 23 mars 2023.
       </span></p>
   </div>
 
