@@ -43,6 +43,7 @@ Pour créer un mot clé il faut cliquer sur le |ajout_plus| en haut à droite, p
 
 
 Lors de la création d'un mot clé, on indique :
+
 - s'il est multiple en cochant la case, cela permet de rattacher un même élément à plusieurs attribut du mot clé. Par exemple, si une fiche traite de plusieurs thématiques, si le mot clé **Thématiques** est multiple on pourra rattacher la fiche à plusieurs thématiques
 
 .. warning ::
@@ -93,20 +94,188 @@ Il est possible de :
 
 - supprimer avec |supprimer_ligne|
 
-- fusionner en cliquant sur |fusion| : Une boîte de dialogue s’ouvre
+- fusionner en cliquant sur |fusion| : Une boîte de dialogue s’ouvre, la fusion permet de réassocier tous les éléments d'un attribut à un autre. Cela est utile dans le cas où trop d'attribut aurait été définit pour un mot, à un niveau trop fin et le mot clé n'est pas rempli à ce niveau de finesse. Par exemple Biodiversité marine et Biodiversité terrestre ont été associées au début aux fiches puis les utilisateurs ont préféré associer uniquement Biodiversité. Dans ce cas on peut rapatrier toutes les associations avec Biodiversité marine et Biodiversité terrestre en fusionnant ces deux attributs vers Biodiversité. On peut ensuite les supprimer ou les archiver.
 
-Documentation en cours de construction
+Onglet référentiels
+~~~~~~~~~~~~~~~~~~~
+
+Les référentiels se présentent sous forme de tableau avec l'intitulé du référentiel dans la colonne **Nom**. En cliquant sur |dossier|, on peut déroulé l'intitulé pour voir les attributs du référentiel :
+
+Exemple ici pour le référentiel **Charte DEMO** :
+
+.. image:: images/Référentiel_ex.png
+	:width: 400
+
+
+Pour créer un référentiel il faut cliquer sur le |ajout_plus| en haut à droite (même s'il indique "créer un mot clé"), pour importer un référentiel il faut cliquer sur |bouton_3_traits| (voir `documentation import mots clés <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-mots-cles-et-referentiels>`_)
+
+
+.. image:: images/Référentiel_creation.png
+	:width: 500
+
+
+Lors de la création d'un référentiel, on indique :
+
+- s'il est multiple en cochant la case, cela permet de rattacher un même élément à plusieurs attribut du référentiel. Par exemple, si une fiche est rattachées à plusieurs mesures d'une charte, si le référentiel **Charte** est multiple on pourra rattacher la fiche à plusieurs mesures.
+
+.. warning ::
+	Quand un référentiel est multiple et une fiche est rattachée à plusieurs attributs il faut faire attention dans les analyse car la totalité de l'action sera prise en compte pour chaque attribut :
+	Par exemple si on a une fiche avec un budget à 10 000 euros rattachés à deux mesures dans les analyses comment est comptabilisé le budget pour chaque mesure ?
+	-> Par défaut les éléments vont être répétés dans les deux mesures, donc les 10 000 euros sont comptabilisés deux fois, pour bien faire apparaître les proportions. Par contre dans les totaux, on ne les comptabilise pas deux fois.
+	Lors des analyses, il y a la possibilité de diviser les éléments à parité lorsqu’ils sont rattachés à plusieurs entités d’un mot clé ou référentiel (dans l’exemple attribuer 5 000 euros à chaque mesure), il faut cocher une case pour l’indiquer.
+
+
+- le nom du référentiel (le nom chapeau donc par exemple "Charte du parc")
+
+
+Après enregistrement de ces éléments le référentiel apparaît dans la liste des référentiels.
+
+.. warning ::
+	Après le premier enregistrement, il apparaît tout en bas de la page, puis il apparaitra dans l'ordre alphabétique.
+
+Il est possible de :
+
+- modifier le référentiel avec |crayon_modif_ligne|
+
+- archiver le référentiel avec |archiver_ligne|, cela le retire de la liste de choix dans les fiches et indicateurs mais ne supprime pas l’historique des données rattachées et le laisse dans la liste des référentiels pour pouvoir le réactiver plus tard si besoin en cliquant sur |reactive|.
+
+- supprimer avec |supprimer_ligne|
+
+- On peut lui ajouter des attributs (exemple : les différents axes et mesures de la charte) en cliquant sur le |ajout_plus| à côté du nom.
+
+Les attributs sont définis par :
+
+- un nom
+
+- une description
+
+- Un parent : les référentiels étant arborescents on peux rattacher des attributs d'un niveau inférieur à un niveau supérieur, par exemple dans le référentiel Charte on peut avoir des axes, qui sont sous-divisés en orientations, qui sont sous-divisées en mesures...
+
+- L'ordre dans lequel il doit appraître, sachant que le premier à apparaître sera celui avec un ordre 0. Si plusieurs référentiels ont un ordre 0, l'ordre sera par ordre alphabétique.
+
+
+Après enregistrement de l'attribut il apparaît dans la liste si on clique sur le |dossier|.
+
+Il est possible de :
+
+- modifier l'attribut avec |crayon_modif_ligne|
+
+- archiver l'attribut avec |archiver_ligne|, cela le retire de la liste de choix lors du remplissage du référentel mais ne supprime pas l’historique des données rattachées et le laisse dans la liste pour pouvoir le réactiver plus tard si besoin en cliquant sur |reactive|.
+
+- supprimer avec |supprimer_ligne|
+
+- fusionner en cliquant sur |fusion| : Une boîte de dialogue s’ouvre, la fusion permet de réassocier tous les éléments d'un attribut à un autre. Cela est utile dans le cas où trop d'attribut aurait été définit pour un référentiel, à un niveau trop fin et le référentiel n'est pas rempli à ce niveau de finesse. Par exemple des sous-mesures ont été créé  et ont été associées au début aux fiches puis les utilisateurs ont préféré associer uniquement les mesures. Dans ce cas on peut rapatrier toutes les associations avec Bles sous-mesures en fusionnant ces attributs vers la mesure. On peut ensuite les supprimer ou les archiver.
 
 
 Exemples de mots clés et référentiels
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Liste non-exhaustive d'exemple de mots-clés et référentiels à adapter aux besoins de chacun. Pour les mots clés il est indiqué à quel type d'élément ils peuvent être associés.
+
+**Mots clés** :
+
+- Thématiques (Agriculture, Alimentation , Biodiversité, Bâti, Climat, Culture, Economie, Economie sociale et solidaire (ESS), Education, Energie, Forêt , Gouvernance partagée, Mobilité, Paysages, Tourisme, Transition, Urbanisme...) associé aux fiches
+
+- Rôle du parc (Maîtrise d'oeuvre, Maîtrise d'ouvrage, Conseil, Opérateur, Rédacteur d'avis, Partenaire...) associé aux fiches
+
+- Public cible (Agents du parc, Agriculteurs, Associations, Élus, Jeunes, Habitants, Institutions, Professionels, Scolaires, Séniors, Touristes, Usagers...) associé aux fiches
+
+- Communication autour de l'action (Affichage, Presse écrite, Radio, Réseaux des parcs, Réseaux locaux, Réseaux sociaux, Site internet du Parc, Site internet dédié, Supports imprimés, Télévision...) associé aux fiches
+
+- Instances de gouvernance (Bureau, COPIL, COTECH, Commision...) associé aux fiches 
+
+- Pôles ou Services associé aux fiches et utilisateurs
+
+- Rôle partenaire (Appui technique, Bénéficiaire, Financeur, Maîtrise d'oeuvre, Partenaire, Prestataire...) associé aux acteurs dans les fiches
+
+- Groupes de contacts (Acteurs du tourisme, Agriculteurs, Commission, Conseil scientifique, Observatoires...) associé aux contacts dans l'annuaire
+
+- Types d'activité (Administratif, Communication, Conseil, Gouvernance, Inventaire...) associé aux feuilles de temps
+
+- Type d'indicateur (État, Pression, Réalisation, Résultat, Impact...) associé aux indicateurs
+
+- Échelle territoriale (Agglomération, Commune, EPCI, Site Natura...) associé aux territoires
+
+...
 
 
+**Référentiels** :
+
+- Charte du parc ou plan de gestion avec l'arborescence
+
+- Contrat de parc avec les régions
+
+- Programme d'action
+
+- Référentiel d'évaluation avec Enjeux et Questions Évaluatives
+
+...
 
 
-Création de comptes utilisateurs
---------------------------------
+Les utilisateurs
+----------------
+
+Chaque parc a son propre EVA définit par un URL au nom du parc. Dans un parc, chaque utilisateur se connecte via un identifiant unique. La création d'utilisateur, au-delà de permettre un accès à EVA permet de rattacher des informations aux utilisateurs. Lorsqu'il est connecté, l'utilisateur insère des données en son nom par défaut.
+
+Il existe différentes possibilités d'accès au logiciel qui sont gérés dans les rôles, si vous souhaitez rattacher vos utilisateurs à des rôles autres que les rôles dajà créés, il faudra d'abord créer les nouveaux rôles avant de créer l'utilisateur.
+
+Création des utilisateurs
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Les utilisateurs sont accessibles dans le module |administration| > |utilisateurs|.
+
+Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie `Tableaux <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#>`_ et `Ajouts <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Ajouts.html>`_ des fonctionnalités générales.
+
+Pour les imports de contacts voir : `Import Utilisateurs <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#import-utilisateurs>`_
+
+En cliquant sur le Nom d'utilisateur on accède aux détails de l'utilisateur.
+
+Les champs obligatoires sont :
+
+- Civilité (Mme. Mr. ou Non binaire)
+
+- Prénom
+
+- Nom
+
+- Adresse email
+
+- Nom d'utilisateur
+
+- Mot de passe
+
+- Rôle (voir plus bas)
+
+- Couleur : la couleur est importante pour les agendas, lorsque vous affichez plusieurs agendas, chaque utilisateur apparaîtra avec sa couleur (qui est la même par défaut)
+
+.. note::
+	Le mot de passe affiche une longue série de points lorsqu'il est masqué mais cela ne veut pas dire qu'il est aussi long.
+
+Les options sont :
+
+- rattacher des mots clés.
+
+- L'option **Inactif** en haut à droite. Cette option est utile lorsqu'un collaborateur quitte la structure pour retirer les accès aux comptes sans perdre les données associées.
+
+.. image:: images/Inactif.png
+	:width: 200
+
+- L'option tableau redimensionnable : si la case est cochée, lorsque la souris survolent des colonnes dans EVA, elles s'agrandiront pour afficher le contenu entier. Il est souvent préféré visuellement de garder une taille de colonne fixe mais cela est à l'appréciation de chacun.
+
+.. note::
+	Lorsque l'utilisateur est créé, il ne reçoit pas automatiquement un email de création de compte. Il faut donc l'informer de son nom d'utilisateur et de son mot de passe, qu'il pourra aller modifier par la suite. Voir `Tutoriels début dans EVA <https://documentation-eva.readthedocs.io/fr/latest/Tutoriel-d%C3%A9buts-dans-EVA/index.html#>`_
+
 
 Gestion des rôles
------------------
+~~~~~~~~~~~~~~~~~
+
+Les rôles permette de contrôler les accès au logiciel pour les utilisateurs, on peut ainsi créer des rôles de types administrateur avec accès partout, un rôle utilisateur avec quelques accès restreint, un rôle en consultation pour les externes au parc...
+
+Les rôles peuvent être créés dans le module |administration| > |roles|.
+
+Les rôles sont définis par des accès "Créer", "Voir", "Modifier" et "Supprimer"
+
+
+*Documentation en cours de rédaction*
+
+

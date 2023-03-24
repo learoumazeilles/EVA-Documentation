@@ -59,11 +59,15 @@
 <li class="toctree-l2"><a class="reference internal" href="#mots-cles-et-referentiels">Mots clés et référentiels</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#parametrages">Paramétrages</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#onglet-mots-cles">Onglet Mots-clés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#onglet-referentiels">Onglet référentiels</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#exemples-de-mots-cles-et-referentiels">Exemples de mots clés et référentiels</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#creation-de-comptes-utilisateurs">Création de comptes utilisateurs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#gestion-des-roles">Gestion des rôles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#les-utilisateurs">Les utilisateurs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creation-des-utilisateurs">Création des utilisateurs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gestion-des-roles">Gestion des rôles</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-simples/index.html">Paramétrages simples</a></li>
@@ -123,8 +127,10 @@
 <p>Les autres colonnes indiquent à quel élément du logiciel le mot clé est rattaché. Si la colonne fiche pour un mot clé est coché alors ce mot clé sera accessible dans les fiches.</p>
 <p>Pour créer un mot clé il faut cliquer sur le <a class="reference internal" href="../_images/Ajout_plus.png"><img alt="ajout_plus" src="../_images/Ajout_plus.png" style="width: 50px;" /></a> en haut à droite, pour importer un mot clé il faut cliquer sur <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a> (voir <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-mots-cles-et-referentiels">documentation import mots clés</a>)</p>
 <a class="reference internal image-reference" href="../_images/Mots_clés_creation.png"><img alt="../_images/Mots_clés_creation.png" src="../_images/Mots_clés_creation.png" style="width: 500px;" /></a>
-<p>Lors de la création d’un mot clé, on indique :
-- s’il est multiple en cochant la case, cela permet de rattacher un même élément à plusieurs attribut du mot clé. Par exemple, si une fiche traite de plusieurs thématiques, si le mot clé <strong>Thématiques</strong> est multiple on pourra rattacher la fiche à plusieurs thématiques</p>
+<p>Lors de la création d’un mot clé, on indique :</p>
+<ul class="simple">
+<li><p>s’il est multiple en cochant la case, cela permet de rattacher un même élément à plusieurs attribut du mot clé. Par exemple, si une fiche traite de plusieurs thématiques, si le mot clé <strong>Thématiques</strong> est multiple on pourra rattacher la fiche à plusieurs thématiques</p></li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
 <p>Quand un mot clé est multiple et une fiche est rattachée à plusieurs attributs il faut faire attention dans les analyse car la totalité de l’action sera prise en compte pour chaque attribut :
@@ -161,19 +167,132 @@ Lors des analyses, il y a la possibilité de diviser les éléments à parité l
 <li><p>modifier l’attribut avec <a class="reference internal" href="../_images/Crayon_modif_ligne.png"><img alt="crayon_modif_ligne" src="../_images/Crayon_modif_ligne.png" style="width: 30px;" /></a></p></li>
 <li><p>archiver l’attribut avec <a class="reference internal" href="../_images/Archiver_ligne.png"><img alt="archiver_ligne" src="../_images/Archiver_ligne.png" style="width: 30px;" /></a>, cela le retire de la liste de choix lors du remplissage du mot clé mais ne supprime pas l’historique des données rattachées et le laisse dans la liste pour pouvoir le réactiver plus tard si besoin en cliquant sur <a class="reference internal" href="../_images/Reactive.png"><img alt="reactive" src="../_images/Reactive.png" style="width: 30px;" /></a>.</p></li>
 <li><p>supprimer avec <a class="reference internal" href="../_images/Supprimer_ligne.png"><img alt="supprimer_ligne" src="../_images/Supprimer_ligne.png" style="width: 30px;" /></a></p></li>
-<li><p>fusionner en cliquant sur <a class="reference internal" href="../_images/Fusion.png"><img alt="fusion" src="../_images/Fusion.png" style="width: 30px;" /></a> : Une boîte de dialogue s’ouvre</p></li>
+<li><p>fusionner en cliquant sur <a class="reference internal" href="../_images/Fusion.png"><img alt="fusion" src="../_images/Fusion.png" style="width: 30px;" /></a> : Une boîte de dialogue s’ouvre, la fusion permet de réassocier tous les éléments d’un attribut à un autre. Cela est utile dans le cas où trop d’attribut aurait été définit pour un mot, à un niveau trop fin et le mot clé n’est pas rempli à ce niveau de finesse. Par exemple Biodiversité marine et Biodiversité terrestre ont été associées au début aux fiches puis les utilisateurs ont préféré associer uniquement Biodiversité. Dans ce cas on peut rapatrier toutes les associations avec Biodiversité marine et Biodiversité terrestre en fusionnant ces deux attributs vers Biodiversité. On peut ensuite les supprimer ou les archiver.</p></li>
 </ul>
-<p>Documentation en cours de construction</p>
+</section>
+<section id="onglet-referentiels">
+<h3>Onglet référentiels<a class="headerlink" href="#onglet-referentiels" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Les référentiels se présentent sous forme de tableau avec l’intitulé du référentiel dans la colonne <strong>Nom</strong>. En cliquant sur <a class="reference internal" href="../_images/Dossier.png"><img alt="dossier" src="../_images/Dossier.png" style="width: 30px;" /></a>, on peut déroulé l’intitulé pour voir les attributs du référentiel :</p>
+<p>Exemple ici pour le référentiel <strong>Charte DEMO</strong> :</p>
+<a class="reference internal image-reference" href="../_images/Référentiel_ex.png"><img alt="../_images/Référentiel_ex.png" src="../_images/Référentiel_ex.png" style="width: 400px;" /></a>
+<p>Pour créer un référentiel il faut cliquer sur le <a class="reference internal" href="../_images/Ajout_plus.png"><img alt="ajout_plus" src="../_images/Ajout_plus.png" style="width: 50px;" /></a> en haut à droite (même s’il indique « créer un mot clé »), pour importer un référentiel il faut cliquer sur <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a> (voir <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-mots-cles-et-referentiels">documentation import mots clés</a>)</p>
+<a class="reference internal image-reference" href="Paramétrages-essentiels/images/Référentiel_creation.png"><img alt="Paramétrages-essentiels/images/Référentiel_creation.png" src="Paramétrages-essentiels/images/Référentiel_creation.png" style="width: 500px;" /></a>
+<p>Lors de la création d’un référentiel, on indique :</p>
+<ul class="simple">
+<li><p>s’il est multiple en cochant la case, cela permet de rattacher un même élément à plusieurs attribut du référentiel. Par exemple, si une fiche est rattachées à plusieurs mesures d’une charte, si le référentiel <strong>Charte</strong> est multiple on pourra rattacher la fiche à plusieurs mesures.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Quand un référentiel est multiple et une fiche est rattachée à plusieurs attributs il faut faire attention dans les analyse car la totalité de l’action sera prise en compte pour chaque attribut :
+Par exemple si on a une fiche avec un budget à 10 000 euros rattachés à deux mesures dans les analyses comment est comptabilisé le budget pour chaque mesure ?
+-&gt; Par défaut les éléments vont être répétés dans les deux mesures, donc les 10 000 euros sont comptabilisés deux fois, pour bien faire apparaître les proportions. Par contre dans les totaux, on ne les comptabilise pas deux fois.
+Lors des analyses, il y a la possibilité de diviser les éléments à parité lorsqu’ils sont rattachés à plusieurs entités d’un mot clé ou référentiel (dans l’exemple attribuer 5 000 euros à chaque mesure), il faut cocher une case pour l’indiquer.</p>
+</div>
+<ul class="simple">
+<li><p>le nom du référentiel (le nom chapeau donc par exemple « Charte du parc »)</p></li>
+</ul>
+<p>Après enregistrement de ces éléments le référentiel apparaît dans la liste des référentiels.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Après le premier enregistrement, il apparaît tout en bas de la page, puis il apparaitra dans l’ordre alphabétique.</p>
+</div>
+<p>Il est possible de :</p>
+<ul class="simple">
+<li><p>modifier le référentiel avec <a class="reference internal" href="../_images/Crayon_modif_ligne.png"><img alt="crayon_modif_ligne" src="../_images/Crayon_modif_ligne.png" style="width: 30px;" /></a></p></li>
+<li><p>archiver le référentiel avec <a class="reference internal" href="../_images/Archiver_ligne.png"><img alt="archiver_ligne" src="../_images/Archiver_ligne.png" style="width: 30px;" /></a>, cela le retire de la liste de choix dans les fiches et indicateurs mais ne supprime pas l’historique des données rattachées et le laisse dans la liste des référentiels pour pouvoir le réactiver plus tard si besoin en cliquant sur <a class="reference internal" href="../_images/Reactive.png"><img alt="reactive" src="../_images/Reactive.png" style="width: 30px;" /></a>.</p></li>
+<li><p>supprimer avec <a class="reference internal" href="../_images/Supprimer_ligne.png"><img alt="supprimer_ligne" src="../_images/Supprimer_ligne.png" style="width: 30px;" /></a></p></li>
+<li><p>On peut lui ajouter des attributs (exemple : les différents axes et mesures de la charte) en cliquant sur le <a class="reference internal" href="../_images/Ajout_plus.png"><img alt="ajout_plus" src="../_images/Ajout_plus.png" style="width: 50px;" /></a> à côté du nom.</p></li>
+</ul>
+<p>Les attributs sont définis par :</p>
+<ul class="simple">
+<li><p>un nom</p></li>
+<li><p>une description</p></li>
+<li><p>Un parent : les référentiels étant arborescents on peux rattacher des attributs d’un niveau inférieur à un niveau supérieur, par exemple dans le référentiel Charte on peut avoir des axes, qui sont sous-divisés en orientations, qui sont sous-divisées en mesures…</p></li>
+<li><p>L’ordre dans lequel il doit appraître, sachant que le premier à apparaître sera celui avec un ordre 0. Si plusieurs référentiels ont un ordre 0, l’ordre sera par ordre alphabétique.</p></li>
+</ul>
+<p>Après enregistrement de l’attribut il apparaît dans la liste si on clique sur le <a class="reference internal" href="../_images/Dossier.png"><img alt="dossier" src="../_images/Dossier.png" style="width: 30px;" /></a>.</p>
+<p>Il est possible de :</p>
+<ul class="simple">
+<li><p>modifier l’attribut avec <a class="reference internal" href="../_images/Crayon_modif_ligne.png"><img alt="crayon_modif_ligne" src="../_images/Crayon_modif_ligne.png" style="width: 30px;" /></a></p></li>
+<li><p>archiver l’attribut avec <a class="reference internal" href="../_images/Archiver_ligne.png"><img alt="archiver_ligne" src="../_images/Archiver_ligne.png" style="width: 30px;" /></a>, cela le retire de la liste de choix lors du remplissage du référentel mais ne supprime pas l’historique des données rattachées et le laisse dans la liste pour pouvoir le réactiver plus tard si besoin en cliquant sur <a class="reference internal" href="../_images/Reactive.png"><img alt="reactive" src="../_images/Reactive.png" style="width: 30px;" /></a>.</p></li>
+<li><p>supprimer avec <a class="reference internal" href="../_images/Supprimer_ligne.png"><img alt="supprimer_ligne" src="../_images/Supprimer_ligne.png" style="width: 30px;" /></a></p></li>
+<li><p>fusionner en cliquant sur <a class="reference internal" href="../_images/Fusion.png"><img alt="fusion" src="../_images/Fusion.png" style="width: 30px;" /></a> : Une boîte de dialogue s’ouvre, la fusion permet de réassocier tous les éléments d’un attribut à un autre. Cela est utile dans le cas où trop d’attribut aurait été définit pour un référentiel, à un niveau trop fin et le référentiel n’est pas rempli à ce niveau de finesse. Par exemple des sous-mesures ont été créé  et ont été associées au début aux fiches puis les utilisateurs ont préféré associer uniquement les mesures. Dans ce cas on peut rapatrier toutes les associations avec Bles sous-mesures en fusionnant ces attributs vers la mesure. On peut ensuite les supprimer ou les archiver.</p></li>
+</ul>
 </section>
 <section id="exemples-de-mots-cles-et-referentiels">
 <h3>Exemples de mots clés et référentiels<a class="headerlink" href="#exemples-de-mots-cles-et-referentiels" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Liste non-exhaustive d’exemple de mots-clés et référentiels à adapter aux besoins de chacun. Pour les mots clés il est indiqué à quel type d’élément ils peuvent être associés.</p>
+<p><strong>Mots clés</strong> :</p>
+<ul class="simple">
+<li><p>Thématiques (Agriculture, Alimentation , Biodiversité, Bâti, Climat, Culture, Economie, Economie sociale et solidaire (ESS), Education, Energie, Forêt , Gouvernance partagée, Mobilité, Paysages, Tourisme, Transition, Urbanisme…) associé aux fiches</p></li>
+<li><p>Rôle du parc (Maîtrise d’oeuvre, Maîtrise d’ouvrage, Conseil, Opérateur, Rédacteur d’avis, Partenaire…) associé aux fiches</p></li>
+<li><p>Public cible (Agents du parc, Agriculteurs, Associations, Élus, Jeunes, Habitants, Institutions, Professionels, Scolaires, Séniors, Touristes, Usagers…) associé aux fiches</p></li>
+<li><p>Communication autour de l’action (Affichage, Presse écrite, Radio, Réseaux des parcs, Réseaux locaux, Réseaux sociaux, Site internet du Parc, Site internet dédié, Supports imprimés, Télévision…) associé aux fiches</p></li>
+<li><p>Instances de gouvernance (Bureau, COPIL, COTECH, Commision…) associé aux fiches</p></li>
+<li><p>Pôles ou Services associé aux fiches et utilisateurs</p></li>
+<li><p>Rôle partenaire (Appui technique, Bénéficiaire, Financeur, Maîtrise d’oeuvre, Partenaire, Prestataire…) associé aux acteurs dans les fiches</p></li>
+<li><p>Groupes de contacts (Acteurs du tourisme, Agriculteurs, Commission, Conseil scientifique, Observatoires…) associé aux contacts dans l’annuaire</p></li>
+<li><p>Types d’activité (Administratif, Communication, Conseil, Gouvernance, Inventaire…) associé aux feuilles de temps</p></li>
+<li><p>Type d’indicateur (État, Pression, Réalisation, Résultat, Impact…) associé aux indicateurs</p></li>
+<li><p>Échelle territoriale (Agglomération, Commune, EPCI, Site Natura…) associé aux territoires</p></li>
+</ul>
+<p>…</p>
+<p><strong>Référentiels</strong> :</p>
+<ul class="simple">
+<li><p>Charte du parc ou plan de gestion avec l’arborescence</p></li>
+<li><p>Contrat de parc avec les régions</p></li>
+<li><p>Programme d’action</p></li>
+<li><p>Référentiel d’évaluation avec Enjeux et Questions Évaluatives</p></li>
+</ul>
+<p>…</p>
 </section>
 </section>
-<section id="creation-de-comptes-utilisateurs">
-<h2>Création de comptes utilisateurs<a class="headerlink" href="#creation-de-comptes-utilisateurs" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="les-utilisateurs">
+<h2>Les utilisateurs<a class="headerlink" href="#les-utilisateurs" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Chaque parc a son propre EVA définit par un URL au nom du parc. Dans un parc, chaque utilisateur se connecte via un identifiant unique. La création d’utilisateur, au-delà de permettre un accès à EVA permet de rattacher des informations aux utilisateurs. Lorsqu’il est connecté, l’utilisateur insère des données en son nom par défaut.</p>
+<p>Il existe différentes possibilités d’accès au logiciel qui sont gérés dans les rôles, si vous souhaitez rattacher vos utilisateurs à des rôles autres que les rôles dajà créés, il faudra d’abord créer les nouveaux rôles avant de créer l’utilisateur.</p>
+<section id="creation-des-utilisateurs">
+<h3>Création des utilisateurs<a class="headerlink" href="#creation-des-utilisateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Les utilisateurs sont accessibles dans le module <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="width: 100px;" /></a> &gt; <a class="reference internal" href="../_images/Utilisateurs.png"><img alt="utilisateurs" src="../_images/Utilisateurs.png" style="width: 100px;" /></a>.</p>
+<p>Les fonctionnalités de tableau et d’ajout sont détaillées dans la partie <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#">Tableaux</a> et <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Ajouts.html">Ajouts</a> des fonctionnalités générales.</p>
+<p>Pour les imports de contacts voir : <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#import-utilisateurs">Import Utilisateurs</a></p>
+<p>En cliquant sur le Nom d’utilisateur on accède aux détails de l’utilisateur.</p>
+<p>Les champs obligatoires sont :</p>
+<ul class="simple">
+<li><p>Civilité (Mme. Mr. ou Non binaire)</p></li>
+<li><p>Prénom</p></li>
+<li><p>Nom</p></li>
+<li><p>Adresse email</p></li>
+<li><p>Nom d’utilisateur</p></li>
+<li><p>Mot de passe</p></li>
+<li><p>Rôle (voir plus bas)</p></li>
+<li><p>Couleur : la couleur est importante pour les agendas, lorsque vous affichez plusieurs agendas, chaque utilisateur apparaîtra avec sa couleur (qui est la même par défaut)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Le mot de passe affiche une longue série de points lorsqu’il est masqué mais cela ne veut pas dire qu’il est aussi long.</p>
+</div>
+<p>Les options sont :</p>
+<ul class="simple">
+<li><p>rattacher des mots clés.</p></li>
+<li><p>L’option <strong>Inactif</strong> en haut à droite. Cette option est utile lorsqu’un collaborateur quitte la structure pour retirer les accès aux comptes sans perdre les données associées.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/Inactif.png"><img alt="../_images/Inactif.png" src="../_images/Inactif.png" style="width: 200px;" /></a>
+<ul class="simple">
+<li><p>L’option tableau redimensionnable : si la case est cochée, lorsque la souris survolent des colonnes dans EVA, elles s’agrandiront pour afficher le contenu entier. Il est souvent préféré visuellement de garder une taille de colonne fixe mais cela est à l’appréciation de chacun.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Lorsque l’utilisateur est créé, il ne reçoit pas automatiquement un email de création de compte. Il faut donc l’informer de son nom d’utilisateur et de son mot de passe, qu’il pourra aller modifier par la suite. Voir <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Tutoriel-d%C3%A9buts-dans-EVA/index.html#">Tutoriels début dans EVA</a></p>
+</div>
 </section>
 <section id="gestion-des-roles">
-<h2>Gestion des rôles<a class="headerlink" href="#gestion-des-roles" title="Lien permanent vers cette rubrique"></a></h2>
+<h3>Gestion des rôles<a class="headerlink" href="#gestion-des-roles" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Les rôles permette de contrôler les accès au logiciel pour les utilisateurs, on peut ainsi créer des rôles de types administrateur avec accès partout, un rôle utilisateur avec quelques accès restreint, un rôle en consultation pour les externes au parc…</p>
+<p>Les rôles peuvent être créés dans le module <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="width: 100px;" /></a> &gt; <a class="reference internal" href="../_images/Roles.png"><img alt="roles" src="../_images/Roles.png" style="width: 100px;" /></a>.</p>
+<p>Les rôles sont définis par des accès « Créer », « Voir », « Modifier » et « Supprimer »</p>
+<p><em>Documentation en cours de rédaction</em></p>
+</section>
 </section>
 </section>
 
@@ -189,7 +308,7 @@ Lors des analyses, il y a la possibilité de diviser les éléments à parité l
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 23 mars 2023.
+      <span class="lastupdated">Mis à jour le 24 mars 2023.
       </span></p>
   </div>
 
