@@ -4,7 +4,7 @@ Cartographie
 
 Le module cartographie permet de renseigner les territoires dans EVA, ils pourront ensuite être renseignés dans les différents modules.
 
-Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie `Tableaux <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#>`_ des fonctionnalités générales.
+Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie `Tableaux <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#>`_ et `Ajouts <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Ajouts.html>`_ des fonctionnalités générales.
 
 Quelques spécifités du tableau des territoires :
 
@@ -51,5 +51,9 @@ Il faut cocher quelle colonne doit être retenue pour le nom du territoire et le
 	:width: 700
 
 
+Modification des territoires
+----------------------------
 
+En cliquant sur un territoire on peut le modifier via le formulaire (similaire au formulaire de création mais différent du formulaire d'importation).
 
+Via ce formulaire on peut ajouter des territoires enfants à un territoire qui aurait été ajouté via importation, ainsi que des mots clés.
