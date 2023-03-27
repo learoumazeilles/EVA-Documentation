@@ -228,3 +228,7 @@
 
 .. |mots_cles| image:: /_static/images/Mots_clés.png
 	:width: 100
+
+.. |roles| image:: /_static/images/Roles.png
+	:width: 100
+

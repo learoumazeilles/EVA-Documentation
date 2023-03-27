@@ -269,13 +269,53 @@ Les options sont :
 Gestion des rôles
 ~~~~~~~~~~~~~~~~~
 
-Les rôles permette de contrôler les accès au logiciel pour les utilisateurs, on peut ainsi créer des rôles de types administrateur avec accès partout, un rôle utilisateur avec quelques accès restreint, un rôle en consultation pour les externes au parc...
+Les rôles permettent de contrôler les accès au logiciel pour les utilisateurs, on peut ainsi créer des rôles de types administrateur avec accès partout, un rôle utilisateur avec quelques accès restreint, un rôle en consultation pour les externes au parc... La logique des rôles est importantes pour ne pas donner des accès de modification ou de suppression de données importantes.
 
-Les rôles peuvent être créés dans le module |administration| > |roles|.
+Les rôles peuvent être créés dans le module |administration| > |roles| 
 
-Les rôles sont définis par des accès "Créer", "Voir", "Modifier" et "Supprimer"
+Les rôles sont définis par des accès "Créer", "Voir", "Modifier" et "Supprimer". Pour chaque élément du logiciel on peut cocher un ou plusieurs de ces accès. La dénomination des éléments est assez logique dans la plupart des cas.
+
+Pour les rôles moins évidents :
+
+- Application > configuration régit les accès à |administration| > |configuration| (choix des modules, traduction des niveaux et champs de fiches, aide au remplissage...)
+
+- Groupe de champs et champs : désigne les champs créés dans |administration| > |champs|
+
+- Accueil et Accueil général : l'accueil général est celui créé par le référent EVA, il se trouve en début d'accueil pour tous les utilisateurs, l'accueil simple est celui créé par chaque utilisateur qui peut rajouter à la suite de l'accueil commun ses propres affichages
+
+- Mots-clés : ici est regroupé mots-clés et référentiels sans distinction, Groupe réfère au mot clé ou référentiel chapeau (ex : thématiques ou charte), mot-clé réfère aux attributs (ex ; biodiversité ou Axe 1)
+
+- Type d'absence et paramétrage des heures sont des paramétrages des temps accessible dans |administration| > |temps|
+
+Rôles avec des options :
+
+- Propriétaire vs Tous : si Propriétaire seulement est choisi cela permet l'accès aux éléments créés par l'utilisateur mais pas les autres, si Tous est choisi cela permet l'accès à tous les éléments. Dans le cas des requêtes, cela ne s'applique pas aux requêtes partagées qui seront visible par tous mais il est utile de limiter la vue aux requêtes propriétaires pour ne voir que celle partagée et celle que l'on a créé
+
+- Dépense et recette : on peut choisir à quel type de dépense le rôle s'applique, habituellement, on sélectionne tout
+
+- Fiches : on peut choisir les accès en fonction des statuts des fiches
 
 
-*Documentation en cours de rédaction*
+**IMPORTANT** : l'accès aux rôles est à bien définir. Il est important de ne pas donner d'accès autre que "Voir" pour les rôles aux non-administrateur et de ne pas donner un accès "Modifier" à "Utilisateur : rôle" car sinon l'utilisateur pourra modifier le rôle qui lui a été donné et on perd l'intérêt des rôles.
 
+.. warning ::
+	Les rôles ont parfois des dépendances non logiques qui bloquent des accès qui ne devraient pas. Cette anomalie est en cours de résolution et est suivie dans le ticket suivant 
+	`n°268 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/268>`_
 
+	Dans certains cas : si l'élément est en accès "Voir" uniquement il n'est pas visible dans le logiciel, par contre il peut être accessible par l'URL, par exemple les rôles sont accessible via nomduparc.evaparc.net/role ou en cliquant sur un role depuis le module utilisateur
+
+**Exemple de rôles** : 
+
+- Administrateur : accès à tout pour les référents EVA et l'assistance
+
+- Utilisateur : accès pour les chargés de mission avec pour principal différence avec le rôle admin : 
+	- pas d'accès à la configuration
+	- accès restreint aux éléments budgétaires
+	- accès restreint aux modifications de l'annuaire
+	- accès restreint aux modifications des groupes de champs
+	- accès restreint aux modifications des mots clés et référentiels
+	- accès restreint aux modifications des modèles de fiche
+	- accès restreint aux modifications des paramétrages des temps (voir enlever tout accès si non utilisé)
+	- modification des utilisateurs propriétaire seulement et pas de modifcation du rôle utilisateur
+	- accès restreint aux modifications du rôle
+	- plusieurs élément sans accès "supprimer"
