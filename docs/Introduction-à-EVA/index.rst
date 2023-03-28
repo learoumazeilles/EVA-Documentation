@@ -23,6 +23,8 @@ Le logiciel EVA
 ~~~~~~~~~~~~~~~
 Le logiciel EVA est un logiciel en ligne, utilisé par les Parcs Naturels Régionaux, les Parcs Nationaux et les Parcs Naturels Marins.
 
+Le projet EVA est porté par la Fédération des Parcs Naturels Régionaux avec le soutien financier de l'Office Français de la Biodiversité.
+
 .. image:: images/EVA_illus.png
    :width: 600
 
@@ -76,6 +78,7 @@ Liaisons avec d'autres logiciels
 - **AGE par Elap Finances :** outil comptable pour les Parc Nationaux. Une liaison à l’entrepôt de données donne accès aux données financières à j+1 par un accès en lecture seule.
 - **.ICS calendrier en ligne :** liaison aux calendriers partagés en lecture seule via le protocole ICS. Elle  est  paramétrée pour  chaque  utilisateur  depuis  l'interface  EVA  et  fonctionne  pour OUTLOOK, ZIMBRA, Google Calendar, Phenix.
 - **ZIMBRA  API-REST  serveur  ATEN  (OFB) :** solution  de  messagerie  et  de  calendrier  de  l'ATEN maintenue par l'OFB.
+- **PostParc** : logiciel de gestion des contacts
 
 
 
