@@ -57,6 +57,28 @@ Lors de la création d'un mot clé, on indique :
 
 - à quel élément du logiciel il doit être attribué
 
+Les éléments auxquels ont peut attribuer des mots-clés :
+- Acteur : ici désigne uniquement l'acteur rattaché dans l'onglet "Acteurs" des fiches et non les structures elles-mêmes
+- Contact : ici désigne le contact dans l'annuaire
+- Fonction contact ?
+- Convention
+- Enveloppe (module budget)
+- Indicateur
+- Fonction : ici désigne les fonctions modifiables dans l'administration et qui permettent le lien entre structure et contact
+- Membre : ici désigne les membres dans l'onglet équipe des fiches
+- Poste de dépense
+- Poste de recette
+- Fiche
+- Structure
+- Tâche
+- Territoire
+- Feuille de temps
+- Dépense : utile lors de l'ajout d'une dépense dans les fiches
+- Recette : utile lors de l'ajout d'une recette dans les fiches
+- Utilisateur
+
+.. warning::
+	Pour la colonne "Membre" qui désigne les membres de la fiche, il est possible de rattacher qu'un seul mot clé. Il apparaîtra dans la colonne rôle de l'onglet Équipe dans les fichesmais ne se substituera pas si le membre a été ajouté en tant que chef de projet ou validateur.
 
 Après enregistrement de ces éléments le mot clé apparaît dans la liste des mots-clés.
 
@@ -95,6 +117,7 @@ Il est possible de :
 - supprimer avec |supprimer_ligne|
 
 - fusionner en cliquant sur |fusion| : Une boîte de dialogue s’ouvre, la fusion permet de réassocier tous les éléments d'un attribut à un autre. Cela est utile dans le cas où trop d'attribut aurait été définit pour un mot, à un niveau trop fin et le mot clé n'est pas rempli à ce niveau de finesse. Par exemple Biodiversité marine et Biodiversité terrestre ont été associées au début aux fiches puis les utilisateurs ont préféré associer uniquement Biodiversité. Dans ce cas on peut rapatrier toutes les associations avec Biodiversité marine et Biodiversité terrestre en fusionnant ces deux attributs vers Biodiversité. On peut ensuite les supprimer ou les archiver.
+
 
 Onglet référentiels
 ~~~~~~~~~~~~~~~~~~~
@@ -319,3 +342,128 @@ Rôles avec des options :
 	- modification des utilisateurs propriétaire seulement et pas de modifcation du rôle utilisateur
 	- accès restreint aux modifications du rôle
 	- plusieurs élément sans accès "supprimer"
+
+
+Configuration
+-------------
+
+Dans l'administration, le sous-module |configuration| permet un accès à quatre sous-onglets (nombre qui peut varier en fonction de votre configuration initiale par le prestataire). Ces sous-onglets sont dédiés au référent EVA. Ils permettent en général de paramétrer le logiciel pour le rendre plus lisible par les utilisateurs (activation des modules et traductions).
+
+.. warning::
+	Ne pas oublier de sauvegarder à chaque modification !
+
+
+Activation des modules
+~~~~~~~~~~~~~~~~~~~~~~
+
+Dans ce sous-onglet, on peut choisir d'activer ou non les modules. Vous pouvez aussi activer ou désactiver les liaisons avec les logiciels comptables (si elles ont été paramétrées) et le logiciel PostParc via cette interface.
+
+Lorsqu'un module est désactivé, il n'est plus visible mais les données qui ont pu être rentrées dans le module ne sont pas supprimées. Si l'on souhaite le réactiver par la suite, elles seront toujours présentes.
+
+La désactivation des modules non-utilisés permet une approche plus fluide du logiciel EVA par les utilisateurs car l'environnement paraît moins chargé.
+
+.. warning::
+	Désactiver l'accueil semble ne pas fonctionner, pour désactiver l'accueil on peut supprimer tout les éléments définis dans l'accueil, par défaut l'accueil affichera alors le module fiche.
+
+Traductions
+~~~~~~~~~~~
+
+Dnas ce sous-onglet, on peut définir des traductions, c'est à dire changer certains mots de vocabulaire pour mieux être plus aligné avec le vocabulaire utilisé dans le parc et ainsi faciliter la compréhension par les utilisateurs.
+
+**Les niveaux**
+
+Les niveaux de fiche peuvent être traduits dans EVA. Les niveaux de fiche sont définis par la place dans l'arborescence (ils ne sont pas liés aux modèles de fiche). Le niveau 0 est le niveau plus élevé, ensuite le niveau 1... 
+
+Par exemple, on peut définir ici que le niveau 0 correspond à un projet qui pourra être subdivisé en plusieurs sous-projets (niveau 1). Ces sous-projets pourront être divisés en actions (niveau 2).
+
+.. image:: images/Niveaux_ex.png
+	:width: 400
+
+Dans le module fiche, lorsque l'on créé une fiche, elle sera par défaut un projet, si on la rattache à une autre fiche projet via la case "rattachement", elle deviendra un sous-projet. Si on la rattache à une fiche sous-projet, elle deviendra une action.
+
+.. note::
+	Plus de détails sur la différence entre modèles de fiches et niveaux de fiches dans la `FAQ <https://documentation-eva.readthedocs.io/fr/latest/FAQ/index.html?highlight=niveau#difference-entre-modeles-de-fiche-et-niveaux-de-fiches>`_
+
+**Champs de la fiche**
+
+Certains champs de la partie générale de la fiche peuvent être renommés pour s'adapter à vos besoins.
+Par exemple le champ "Code" peut être renommé en "Code analytique", le champs "Objectifs" peut être renommé en "Livrables"...
+
+Les champs modifiables de la partie générale des fiches (et dans le tableau des fiches pour les colonnes et filtres) sont :
+	- Code
+	- Titre
+	- Rattachement
+	- Descriptif
+	- Bilan
+	- Objectifs
+	- Bilan des années antérieures
+	- Contexte et motif
+	- Date de programmation
+	- Date de démarrage prévue
+	- Date de fin prévue
+	- Date de démarrage effective
+	- Date de fin effective
+	- Maîtrise d'ouvrage externe
+	- Maître d'ouvrage
+	- Statut financier
+	- Codes financier
+	- Temps prévu
+
+
+Les noms de sous-onglet modifiable :
+	- Équipe (modifie dans le tableau des fiches pour recherche par filtre mais pas colonnes)
+	- Acteurs (modifié dans le tableau des fiches aussi)
+
+Les membres de l'équipe modifiables (modifié dans le tableau de fiches aussi) :
+	- chef de projet
+	- validateur
+
+Les champs modifiés dans le tableau des fiches :
+	- statut
+	- Membres de l'équipe (modifie seulement pour le titre de la colonne du tableau)
+	- Accès réseau
+
+.. warning::
+	Renommer "Avancement" ne semble pas fonctionner.
+
+**Tooltip = InfoBulle**
+
+Les Tooltip permettent de donner une instruction courte aux utilisateurs pour remplir les champs. Ils sont disponibles pour un certain nombre de champ de la fiche.
+
+Ils apparaissent à côté du titre lorsqu'ils sont survolés par la souris :
+
+.. image:: images/Tooltip_ex.png
+	:width: 300
+
+**Placeholder = Aide au remplissage**
+
+Les placeholder permettent de donner une instruction plus longue que les tooltip ou complémentaire pour remplir les champs. Ils sont disponibles pour un certain nombre de champ texte long de la fiche.
+
+Ils apparaissent en grisé dans le cadre lorsqu'il est vide et disparaissent au remplissage.
+
+.. image:: images/Placeholder_ex.png
+	:width: 400
+
+Commandes
+~~~~~~~~~
+
+*À compléter*
+
+Cet onglet permet de lancer manuellement une synchronisation comptable ou PostParc si elles ont été paramétrées.
+
+
+Code
+~~~~
+
+Ce champ est utile si vous utilisez la génération de code automatique pour les fiches. Ces codes sont créés par défaut avec l'année de création (deux derniers chiffres, ex : 23 pour 2023), les lettres PRJ (pour projet), une série de 0 et le numéro du projet. 
+
+Il s'incrémente automatiquement à chaque nouveau projet. Si on a créé des projets que l'on a finalement supprimer, on peut réinitialiser le numéro ici pour ne pas qu'il y ait de trou dans la numérotation.
+
+Pour utiliser le code automatique, dans une fiche il faut cliquer sur le code barre à côté du champ "Code".
+
+.. image:: images/Code_auto.png
+	:width: 300
+
+
+
+
