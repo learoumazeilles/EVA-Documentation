@@ -63,7 +63,7 @@ Requête dans les fiches :
 **Calendrier**
 Calendrier avec les personnes de mon équipe. Pour un meilleur rendu, il faut changer la couleur associée à chaque personne (`Indiqué ici <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-essentiels/index.html#creation-des-utilisateurs>`_)
 
-Par exemple ici une nuance de bleu pour chaque personne :
+Par exemple ici une couleur pour chaque personne, la requête associée prend les temps passés de 5 utilisateurs choisis :
 
 .. image:: images/Calendrier_equipe_test.png
 	:width: 600
