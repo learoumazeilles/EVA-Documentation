@@ -155,8 +155,16 @@
 	:width: 30
 
 
+.. |accueil| image:: /_static/images/Accueil.png
+	:height: 50
+
+.. |accueil_rouge| image:: /_static/images/Accueil_rouge.png
+	:height: 50
 
 .. |administration| image:: /_static/images/Administration.png
+	:height: 50
+
+.. |analyses| image:: /_static/images/Analyses.png
 	:height: 50
 
 .. |ajout_hebdo_module| image:: /_static/images/Ajout_hebdo_module.png
@@ -199,6 +207,9 @@
 	:height: 50
 
 .. |indicateurs| image:: /_static/images/Indicateurs.png
+	:height: 50
+
+.. |liste_temps| image:: /_static/images/Liste_temps.png
 	:height: 50
 
 .. |mots_cles| image:: /_static/images/Mots_clés.png
