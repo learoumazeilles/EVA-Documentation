@@ -13,7 +13,7 @@ Les temps sont necessairement rattachés aux fiches, ils peuvent être ajoutés 
 Feuilles de temps
 -----------------
 
-La liste des feuilles de temps s'affichent par défaut en vue calendrier avec un double filtre temps passés et utilisateur courant. Pour avoir accès à la vue tableau il faut cliquer sur |vue_liste| en haut et sur |vue_calendrier| pour revenir en vue calendrier. Les requêtes et filtres sont les mêmes en vue calendrier et liste.
+|liste_temps| La liste des feuilles de temps s'affichent par défaut en vue calendrier avec un double filtre temps passés et utilisateur courant. Pour avoir accès à la vue tableau il faut cliquer sur |vue_liste| en haut et sur |vue_calendrier| pour revenir en vue calendrier. Les requêtes et filtres sont les mêmes en vue calendrier et liste.
 
 .. image:: images/Filtre_temps.png
   :width: 500

@@ -56,7 +56,17 @@
 <p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-essentiels/index.html">Paramétrages essentiels</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Paramétrages simples</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Paramétrages simples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#accueil">Accueil</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creation-des-blocs">Création des blocs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exemples-de-mise-en-page-d-accueil">Exemples de mise en page d’accueil</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#champs">Champs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alertes">Alertes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modele-de-fiche">Modèle de fiche</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-avanc%C3%A9s/index.html">Paramétrages avancés</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
@@ -91,6 +101,62 @@
              
   <section id="parametrages-simples">
 <h1>Paramétrages simples<a class="headerlink" href="#parametrages-simples" title="Lien permanent vers cette rubrique"></a></h1>
+<section id="accueil">
+<h2>Accueil<a class="headerlink" href="#accueil" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="creation-des-blocs">
+<h3>Création des blocs<a class="headerlink" href="#creation-des-blocs" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Dans <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Accueil.png"><img alt="accueil" src="../_images/Accueil.png" style="height: 50px;" /></a>, on peut paramétrer l’écran d’accueil qui est l’écran qui s’affiche en premier par défaut lros de la connexion à EVA. Il est aussi accessible via le bouton <a class="reference internal" href="../_images/Accueil_rouge.png"><img alt="accueil_rouge" src="../_images/Accueil_rouge.png" style="height: 50px;" /></a>.</p>
+<p>Il y a deux onglets dans le paramétrage de l’accueil :</p>
+<ul class="simple">
+<li><p>un onglet « Accueil » qui peut être défini par chaque utilisateur</p></li>
+<li><p>un onglet « Accueil général » qui peut être défini par le référent EVA et s’affichera pour tous les utilisateurs</p></li>
+</ul>
+<p>Les blocs définis dans l’accueil général s’afficheront au dessus des blocs définis par l’accueil.</p>
+<p>Vous pouvez créer un bloc en cliqunt sur « Créer un bloc ».</p>
+<a class="reference internal image-reference" href="../_images/Créer_bloc.png"><img alt="../_images/Créer_bloc.png" src="../_images/Créer_bloc.png" style="width: 100px;" /></a>
+<p>Un formulaire s’affiche avec plusieurs champs :</p>
+<ul>
+<li><p>Titre : il apparaîtra dans l’acceuil en titre du bloc</p></li>
+<li><p>Ordre : en partant de 0, le plus petit chiffre positionnera le bloc avant les autres, si deux blocs ont le même chiffre de position, ils se placeront dans l’ordre de création (le plus ancien d’abord)</p></li>
+<li><p>Largeur : combien de place le bloc prendra-t-il sur la page</p></li>
+<li><p>Type : en fonction du type choisi, plusieurs options sont proposées</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Texte : Permet de faire passer des messages, de présenter EVA à l’arrivée sur le logiciel… On peut écrire le texte et le mettre en forme en html, on peut ajouter des images…</p></li>
+<li><p>Liste : Pour ajouter une liste de fiches ou tâches avec une certaine requête, par exemple pour afficher dans l’accueil toutes les fiches d’un utilisateur qui sont en cours ou qui ont une date de caducité proche… La requête doit être définie dans les modules fiches ou tâches respectivement</p></li>
+<li><p>Calendrier : Pour ajouter le calendrier avec une certaine requête donc par exemple toutes mes feuilles de temps uniquement, ou toutes les temps prévionnels de mon équipe uniquement… La requête doit être définie dans le module <a class="reference internal" href="../_images/Temps.png"><img alt="temps" src="../_images/Temps.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Liste_temps.png"><img alt="liste_temps" src="../_images/Liste_temps.png" style="height: 50px;" /></a></p></li>
+<li><p>Note : Pour afficher le fil de discussion par note sur les fiches, cela peut permettre de mettre en valeur des messages, les notes qui s’affichent sont uniquement celles des fiches pour lesquelles l’utilisateur est membre de l’équipe. (Il faut choisir note dans entité.</p></li>
+<li><p>Graphique : il permet de montrer les temps passés par mois (Seule les feuilles de temps sont disponibles à ce jour avec une répartition par mois). On peut y associer une requête précise qui doit être défini dans le module <a class="reference internal" href="../_images/Analyses.png"><img alt="analyses" src="../_images/Analyses.png" style="height: 50px;" /></a>&gt;|temps|</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/Notes_accueil_ex.png"><img alt="../_images/Notes_accueil_ex.png" src="../_images/Notes_accueil_ex.png" style="width: 300px;" /></a>
+<p>Les requêtes intéressantes à paramétrer pour l’accueil sont celles basées sur « Utilisateur courant » car elles s’adapteront au profile de la personne connectée.</p>
+</section>
+<section id="exemples-de-mise-en-page-d-accueil">
+<h3>Exemples de mise en page d’accueil<a class="headerlink" href="#exemples-de-mise-en-page-d-accueil" title="Lien permanent vers cette rubrique"></a></h3>
+<p><strong>Texte</strong></p>
+<a class="reference internal image-reference" href="../_images/Accueil_texte_ex.png"><img alt="../_images/Accueil_texte_ex.png" src="../_images/Accueil_texte_ex.png" style="width: 300px;" /></a>
+<p><strong>Liste</strong>
+Liste des fiches dont on est membre et qui arrive à caducité dans 30 jours.
+Requête dans les fiches :</p>
+<a class="reference internal image-reference" href="../_images/Requete_accueil_ex.png"><img alt="../_images/Requete_accueil_ex.png" src="../_images/Requete_accueil_ex.png" style="width: 300px;" /></a>
+<p><strong>Calendrier</strong>
+Calendrier avec les personnes de mon équipe. Pour un meilleur rendu, il faut changer la couleur associée à chaque personne (<a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-essentiels/index.html#creation-des-utilisateurs">Indiqué ici</a>)</p>
+<p>Par exemple ici une nuance de bleu pour chaque personne :</p>
+<a class="reference internal image-reference" href="../_images/Calendrier_equipe_test.png"><img alt="../_images/Calendrier_equipe_test.png" src="../_images/Calendrier_equipe_test.png" style="width: 600px;" /></a>
+</section>
+</section>
+<section id="champs">
+<h2>Champs<a class="headerlink" href="#champs" title="Lien permanent vers cette rubrique"></a></h2>
+</section>
+<section id="alertes">
+<h2>Alertes<a class="headerlink" href="#alertes" title="Lien permanent vers cette rubrique"></a></h2>
+</section>
+<section id="modele-de-fiche">
+<h2>Modèle de fiche<a class="headerlink" href="#modele-de-fiche" title="Lien permanent vers cette rubrique"></a></h2>
+</section>
 </section>
 
 
@@ -105,7 +171,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 23 mars 2023.
+      <span class="lastupdated">Mis à jour le 29 mars 2023.
       </span></p>
   </div>
 

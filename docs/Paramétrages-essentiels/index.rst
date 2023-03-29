@@ -58,24 +58,24 @@ Lors de la création d'un mot clé, on indique :
 - à quel élément du logiciel il doit être attribué
 
 Les éléments auxquels ont peut attribuer des mots-clés :
-- Acteur : ici désigne uniquement l'acteur rattaché dans l'onglet "Acteurs" des fiches et non les structures elles-mêmes
-- Contact : ici désigne le contact dans l'annuaire
-- Fonction contact ?
-- Convention
-- Enveloppe (module budget)
-- Indicateur
-- Fonction : ici désigne les fonctions modifiables dans l'administration et qui permettent le lien entre structure et contact
-- Membre : ici désigne les membres dans l'onglet équipe des fiches
-- Poste de dépense
-- Poste de recette
-- Fiche
-- Structure
-- Tâche
-- Territoire
-- Feuille de temps
-- Dépense : utile lors de l'ajout d'une dépense dans les fiches
-- Recette : utile lors de l'ajout d'une recette dans les fiches
-- Utilisateur
+	- Acteur : ici désigne uniquement l'acteur rattaché dans l'onglet "Acteurs" des fiches et non les structures elles-mêmes
+	- Contact : ici désigne le contact dans l'annuaire
+	- Fonction contact ?
+	- Convention
+	- Enveloppe (module budget)
+	- Indicateur
+	- Fonction : ici désigne les fonctions modifiables dans l'administration et qui permettent le lien entre structure et contact
+	- Membre : ici désigne les membres dans l'onglet équipe des fiches
+	- Poste de dépense
+	- Poste de recette
+	- Fiche
+	- Structure
+	- Tâche
+	- Territoire
+	- Feuille de temps
+	- Dépense : utile lors de l'ajout d'une dépense dans les fiches
+	- Recette : utile lors de l'ajout d'une recette dans les fiches
+	- Utilisateur
 
 .. warning::
 	Pour la colonne "Membre" qui désigne les membres de la fiche, il est possible de rattacher qu'un seul mot clé. Il apparaîtra dans la colonne rôle de l'onglet Équipe dans les fichesmais ne se substituera pas si le membre a été ajouté en tant que chef de projet ou validateur.
