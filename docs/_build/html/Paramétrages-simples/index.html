@@ -62,7 +62,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#exemples-de-mise-en-page-d-accueil">Exemples de mise en page d’accueil</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#champs">Champs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#champs">Champs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fiche">Fiche</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exemple-d-utilisation">Exemple d’utilisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#contact">Contact</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#structure">Structure</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#alertes">Alertes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#modele-de-fiche">Modèle de fiche</a></li>
 </ul>
@@ -150,6 +156,161 @@ Calendrier avec les personnes de mon équipe. Pour un meilleur rendu, il faut ch
 </section>
 <section id="champs">
 <h2>Champs<a class="headerlink" href="#champs" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Dans <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Champs.png"><img alt="champs" src="../_images/Champs.png" style="height: 50px;" /></a> on peut créer des champs personnalisés. Ces champs peuvent être ajoutés aux fiches, aux contacts ou aux structures et permettent de renseigner des informations qui n’auraient pas trouvé leur place ailleurs.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<ul class="simple">
+<li><p>Ces champs apparaissent souvent en bas de page après le bouton « Enregistrer » mais il faut bien se souvenir d’enregistrer à chaque fois, sinon les éléments ajoutés seront perdus.</p></li>
+<li><p>Si un champ personnalisable a été rempli, il ne pourra pas être supprimer, par conter vous pouvez désactivez le groupe de champs (voir précision plus bas)</p></li>
+</ul>
+</div>
+<section id="fiche">
+<h3>Fiche<a class="headerlink" href="#fiche" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Dans l’onglet Fiche, on peut créer un nouveau groupe de champs en appuyant sur « Créer un groupe de champs ».</p>
+<a class="reference internal image-reference" href="../_images/Créer_groupe_champs.png"><img alt="../_images/Créer_groupe_champs.png" src="../_images/Créer_groupe_champs.png" style="width: 200px;" /></a>
+<p>Le groupe sera créé tout en bas de la page si vous avez déjà des groupes de champs paramétrés.</p>
+<p>Il faut insérer un titre, (on peut indiquer un modèle de fiche mais ce paramètre n’a pas grand intérêt), et un onglet de fiche ou le champ apparaîtra, on peut choisir à peu près tous les onglets, le champ aparaîtra en bas de page de l’onglet et dans l’ordre alphabétique avec les autres champs personnalisés. Si l’onglet n’est pas renseigné le champ apparaîtra par défaut dans l’onglet « champs personnalisables » des fiches.</p>
+<p>Les onglets les plus utilisés si ce sont des champs textes (comme les bilans) sont l’onglet <strong>Fiche</strong> et l’onglet <strong>Champs personnalisables</strong> qui peut avoir un nom différent dans votre EVA.</p>
+<p>Il faut ensuite cliquer sur enregistrer sur la droite <a class="reference internal" href="../_images/Enregistrer_ligne.png"><img alt="enregistrer_ligne" src="../_images/Enregistrer_ligne.png" style="width: 30px;" /></a>.</p>
+<p>Le champ apparaît avec la case activé coché, cette case permet de rendre visible ou non le champ. Elle permet de cacher la visibilité de ce champ s’il n’est plus utilisé pour ne pas surcharger l’écran tout en gardant les informations associées.</p>
+<p>Lorsqu’on survole le champ, trois outils apparaissent :</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../_images/Ajout_plus.png"><img alt="ajout_plus" src="../_images/Ajout_plus.png" style="width: 50px;" /></a> permet d’ajouter les champs</p></li>
+<li><p><a class="reference internal" href="../_images/Modifier_ligne.png"><img alt="modifier_ligne" src="../_images/Modifier_ligne.png" style="width: 30px;" /></a> permet de modifier le groupe de champs (titre, onglet…)</p></li>
+<li><p><a class="reference internal" href="../_images/Supprimer_ligne.png"><img alt="supprimer_ligne" src="../_images/Supprimer_ligne.png" style="width: 30px;" /></a> permet de supprimer le groupe</p></li>
+</ul>
+<p><strong>Ajout des champs</strong></p>
+<p>Pour ajouter un champs un formulaire s’affiche avec les options suivantes, des options spécifique s’affichent en fonction du choix de type de champs :</p>
+<ul class="simple">
+<li><p>Titre : le titre du champ (obligatoire)</p></li>
+<li><p>Aide : l’aide apparaîtra sous la forme d’une infobulle</p></li>
+<li><dl class="simple">
+<dt>Type:</dt><dd><ul>
+<li><p>Ligne de texte : champ pour un texte court. Avec ce type de champ on peut également cocher la case « Doit-il être unique ? » » Si cette case est cochée, le champ devra être unique, une erreur sera mentionné sinon et on ne pourra pas sauvegarder la fiche.</p></li>
+<li><p>Bloc de texte : Pour un texte plus long, par exemple pour les bilans annuels</p></li>
+<li><p>Sélection (radio) : Possibilité de sélectionner seulement une option (point à cocher)</p></li>
+<li><p>Sélection multiple : Possibilité de sélectionner plusieurs options (case à cocher)</p></li>
+<li><p>Sélection (liste) : Possibilité de sélectionner depuis un liste déroulante (une seule option possible)</p></li>
+<li><p>Date : ajout d’un champ date (sélection sur un calendrier possible)</p></li>
+<li><p>Date avec Heures : ajout d’un champ de date avec l’heures</p></li>
+<li><p>Ajout d’un champ montant : un euros apparaît en bout de champs et il ne prend que les valeurs numériques</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>-&gt; pour les sélections il faut ensuite crééer les valeurs en cliquant sur <strong>Créer une valeur</strong> en bas du formulaire</p>
+<a class="reference internal image-reference" href="../_images/Créer_valeur.png"><img alt="../_images/Créer_valeur.png" src="../_images/Créer_valeur.png" style="width: 200px;" /></a>
+<p>On peut également choisir les options suivantes :</p>
+<ul class="simple">
+<li><p>Ordre : on peut choisir l’odre d’apparition dans le groupe de champ, 0 apparaîtra en premier.</p></li>
+<li><p>Placeholder : un texte qui apparait en grisé dans le cadre lorsqu’il est vide et disparait au remplissage. Cette option ne fonctionne pas pour les types sélections et montants.</p></li>
+<li><p>Obligatoire : la fiche ne peut pas être sauvegardée si le champ n’est pas rempli</p></li>
+</ul>
+</section>
+<section id="exemple-d-utilisation">
+<h3>Exemple d’utilisation<a class="headerlink" href="#exemple-d-utilisation" title="Lien permanent vers cette rubrique"></a></h3>
+<p><strong>Bilans fiches pluriannuelles</strong>
+L’utilisation la plus répandue de ces champs est pour les bilans dans les fiches pluri-annuelles. En effet il arrive couramment qu’un même projet se déroule sur plusieurs années mais nécessite de faire un bilan chaque année. Dans ce cas on peut ajouter un groupe de champ Bilans dans l’onglet champs personnalisables de la fiche et des champs de type bloc de texte pour chaque année « Bilan 2020 », « Bilan 2021 »… On peut également ajouter un placeholder pour indiquer aux chargés de mission, la longueur et le format requis pour le bilan pour avoir un bilan assez homogénéiser au moment de l’export, car ces champs sont accssibles dans les exports word.</p>
+<p><strong>Code temps</strong>
+Pour la synchronisation des temps, selon votre outil de calendrier les codes analytiques des fiches ne sont pas utilisables. Dans ce cas on peut utiliser des codes temps qui fonctionne comme les codes analytiques. C’est un champ de type Ligne de texte avec l’option « Doit-il être unique cochée ». Vous verrez ensuite apparaître ce champ dans les options de synchronisation des calendriers pour le champ de jointure.</p>
+</section>
+<section id="contact">
+<h3>Contact<a class="headerlink" href="#contact" title="Lien permanent vers cette rubrique"></a></h3>
+<p>On peut également créer des champs personnalisables dans les contacts pour ajouter des informations par exemple ou valider le consentement à faire partie de la liste de contact.</p>
+<p>L’ajout s’effectue selon les mêmes modalités que pour les fiches, à quelques exceptions.</p>
+<p>On peut créer un nouveau groupe de champs en appuyant sur « Créer un groupe de champs ».</p>
+<a class="reference internal image-reference" href="../_images/Créer_groupe_champs.png"><img alt="../_images/Créer_groupe_champs.png" src="../_images/Créer_groupe_champs.png" style="width: 200px;" /></a>
+<p>Le groupe sera créé tout en bas de la page si vous avez déjà des groupes de champs paramétrés.</p>
+<p>Il faut insérer un titre, (on peut indiquer un modèle de fiche mais ce paramètre n’a pas grand intérêt).</p>
+<p>Il faut ensuite cliquer sur enregistrer sur la droite <a class="reference internal" href="../_images/Enregistrer_ligne.png"><img alt="enregistrer_ligne" src="../_images/Enregistrer_ligne.png" style="width: 30px;" /></a>.</p>
+<p>Le champ apparaît avec la case activé coché, cette case permet de rendre visible ou non le champ. Elle permet de cacher la visibilité de ce champ s’il n’est plus utilisé pour ne pas surcharger l’écran tout en gardant les informations associées.</p>
+<p>Lorsqu’on survole le champ, trois outils apparaissent :</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../_images/Ajout_plus.png"><img alt="ajout_plus" src="../_images/Ajout_plus.png" style="width: 50px;" /></a> permet d’ajouter les champs</p></li>
+<li><p><a class="reference internal" href="../_images/Modifier_ligne.png"><img alt="modifier_ligne" src="../_images/Modifier_ligne.png" style="width: 30px;" /></a> permet de modifier le groupe de champs (titre, onglet…)</p></li>
+<li><p><a class="reference internal" href="../_images/Supprimer_ligne.png"><img alt="supprimer_ligne" src="../_images/Supprimer_ligne.png" style="width: 30px;" /></a> permet de supprimer le groupe</p></li>
+</ul>
+<p><strong>Ajout des champs</strong></p>
+<p>Pour ajouter un champs un formulaire s’affiche avec les options suivantes, des options spécifique s’affichent en fonction du choix de type de champs :</p>
+<ul class="simple">
+<li><p>Titre : le titre du champ (obligatoire)</p></li>
+<li><p>Aide : l’aide apparaîtra sous la forme d’une infobulle</p></li>
+<li><dl class="simple">
+<dt>Type:</dt><dd><ul>
+<li><p>Ligne de texte : champ pour un texte court. Avec ce type de champ on peut également cocher la case « Doit-il être unique ? » » Si cette case est cochée, le champ devra être unique, une erreur sera mentionné sinon et on ne pourra pas sauvegarder la fiche.</p></li>
+<li><p>Bloc de texte : Pour un texte plus long, par exemple pour les bilans annuels</p></li>
+<li><p>Sélection (radio) : Possibilité de sélectionner seulement une option (point à cocher)</p></li>
+<li><p>Sélection multiple : Possibilité de sélectionner plusieurs options (case à cocher)</p></li>
+<li><p>Sélection (liste) : Possibilité de sélectionner depuis un liste déroulante (une seule option possible)</p></li>
+<li><p>Date : ajout d’un champ date (sélection sur un calendrier possible)</p></li>
+<li><p>Date avec Heures : ajout d’un champ de date avec l’heures</p></li>
+<li><p>Ajout d’un champ montant : un euros apparaît en bout de champs et il ne prend que les valeurs numériques</p></li>
+<li><p>Consentement : permet de faire apparaître un champ avec deux boutons « Confirmer » et « Supprimer » qui quand ils sont choisis font apparaître la date à laquelle ils ont été activés.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/Confirmez_Déclinez.png"><img alt="../_images/Confirmez_Déclinez.png" src="../_images/Confirmez_Déclinez.png" style="width: 200px;" /></a>
+<p>-&gt; pour les sélections il faut ensuite crééer les valeurs en cliquant sur <strong>Créer une valeur</strong> en bas du formulaire</p>
+<a class="reference internal image-reference" href="../_images/Créer_valeur.png"><img alt="../_images/Créer_valeur.png" src="../_images/Créer_valeur.png" style="width: 200px;" /></a>
+<p>On peut également choisir les options suivantes :</p>
+<ul class="simple">
+<li><p>Ordre : on peut choisir l’odre d’apparition dans le groupe de champ, 0 apparaîtra en premier.</p></li>
+<li><p>Placeholder : un texte qui apparait en grisé dans le cadre lorsqu’il est vide et disparait au remplissage. Cette option ne fonctionne pas pour les types sélections et montants.</p></li>
+<li><p>Obligatoire : la fiche ne peut pas être sauvegardée si le champ n’est pas rempli</p></li>
+</ul>
+<p><strong>Exemple pour le champ consentement</strong></p>
+<p>Pour confirmer si la personne a accepté de faire partie de la liste de diffusion d’une Newsletter par exemple ou a demandé à être retiré.</p>
+<a class="reference internal image-reference" href="../_images/Consentement_ex.png"><img alt="../_images/Consentement_ex.png" src="../_images/Consentement_ex.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../_images/Consentement_ex_conf.png"><img alt="../_images/Consentement_ex_conf.png" src="../_images/Consentement_ex_conf.png" style="width: 200px;" /></a>
+</section>
+<section id="structure">
+<h3>Structure<a class="headerlink" href="#structure" title="Lien permanent vers cette rubrique"></a></h3>
+<p>On peut également créer des champs personnalisables dans les structures pour ajouter des informations par exemple.</p>
+<p>L’ajout s’effectue selon les mêmes modalités que pour les contacts, sauf pour l’option consentement qui n’existe pas.</p>
+<p>On peut créer un nouveau groupe de champs en appuyant sur « Créer un groupe de champs ».</p>
+<a class="reference internal image-reference" href="../_images/Créer_groupe_champs.png"><img alt="../_images/Créer_groupe_champs.png" src="../_images/Créer_groupe_champs.png" style="width: 200px;" /></a>
+<p>Le groupe sera créé tout en bas de la page si vous avez déjà des groupes de champs paramétrés.</p>
+<p>Il faut insérer un titre (on peut indiquer un modèle de fiche mais ce paramètre n’a pas grand intérêt).</p>
+<p>Il faut ensuite cliquer sur enregistrer sur la droite <a class="reference internal" href="../_images/Enregistrer_ligne.png"><img alt="enregistrer_ligne" src="../_images/Enregistrer_ligne.png" style="width: 30px;" /></a>.</p>
+<p>Le champ apparaît avec la case activé coché, cette case permet de rendre visible ou non le champ. Elle permet de cacher la visibilité de ce champ s’il n’est plus utilisé pour ne pas surcharger l’écran tout en gardant les informations associées.</p>
+<p>Lorsqu’on survole le champ, trois outils apparaissent :</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../_images/Ajout_plus.png"><img alt="ajout_plus" src="../_images/Ajout_plus.png" style="width: 50px;" /></a> permet d’ajouter les champs</p></li>
+<li><p><a class="reference internal" href="../_images/Modifier_ligne.png"><img alt="modifier_ligne" src="../_images/Modifier_ligne.png" style="width: 30px;" /></a> permet de modifier le groupe de champs (titre, onglet…)</p></li>
+<li><p><a class="reference internal" href="../_images/Supprimer_ligne.png"><img alt="supprimer_ligne" src="../_images/Supprimer_ligne.png" style="width: 30px;" /></a> permet de supprimer le groupe</p></li>
+</ul>
+<p><strong>Ajout des champs</strong></p>
+<p>Pour ajouter un champs un formulaire s’affiche avec les options suivantes, des options spécifique s’affichent en fonction du choix de type de champs :</p>
+<ul class="simple">
+<li><p>Titre : le titre du champ (obligatoire)</p></li>
+<li><p>Aide : l’aide apparaîtra sous la forme d’une infobulle</p></li>
+<li><dl class="simple">
+<dt>Type:</dt><dd><ul>
+<li><p>Ligne de texte : champ pour un texte court. Avec ce type de champ on peut également cocher la case « Doit-il être unique ? » » Si cette case est cochée, le champ devra être unique, une erreur sera mentionné sinon et on ne pourra pas sauvegarder la fiche.</p></li>
+<li><p>Bloc de texte : Pour un texte plus long, par exemple pour les bilans annuels</p></li>
+<li><p>Sélection (radio) : Possibilité de sélectionner seulement une option (point à cocher)</p></li>
+<li><p>Sélection multiple : Possibilité de sélectionner plusieurs options (case à cocher)</p></li>
+<li><p>Sélection (liste) : Possibilité de sélectionner depuis un liste déroulante (une seule option possible)</p></li>
+<li><p>Date : ajout d’un champ date (sélection sur un calendrier possible)</p></li>
+<li><p>Date avec Heures : ajout d’un champ de date avec l’heures</p></li>
+<li><p>Ajout d’un champ montant : un euros apparaît en bout de champs et il ne prend que les valeurs numériques</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>-&gt; pour les sélections il faut ensuite crééer les valeurs en cliquant sur <strong>Créer une valeur</strong> en bas du formulaire</p>
+<a class="reference internal image-reference" href="../_images/Créer_valeur.png"><img alt="../_images/Créer_valeur.png" src="../_images/Créer_valeur.png" style="width: 200px;" /></a>
+<p>On peut également choisir les options suivantes :</p>
+<ul class="simple">
+<li><p>Ordre : on peut choisir l’odre d’apparition dans le groupe de champ, 0 apparaîtra en premier.</p></li>
+<li><p>Placeholder : un texte qui apparait en grisé dans le cadre lorsqu’il est vide et disparait au remplissage. Cette option ne fonctionne pas pour les types sélections et montants.</p></li>
+<li><p>Obligatoire : la fiche ne peut pas être sauvegardée si le champ n’est pas rempli</p></li>
+</ul>
+</section>
 </section>
 <section id="alertes">
 <h2>Alertes<a class="headerlink" href="#alertes" title="Lien permanent vers cette rubrique"></a></h2>
@@ -171,7 +332,7 @@ Calendrier avec les personnes de mon équipe. Pour un meilleur rendu, il faut ch
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 29 mars 2023.
+      <span class="lastupdated">Mis à jour le 30 mars 2023.
       </span></p>
   </div>
 
