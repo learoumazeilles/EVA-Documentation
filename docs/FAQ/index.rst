@@ -74,14 +74,18 @@ Les **rôles des membres de la fiche** apparaissent dans la fiche dans le sous-o
 lors de l'ajout d'un membre, vous pourrait ajouter un rôle qui apparaîtra dans la colonne rôle ici (sauf si ce membre est déjà un chef de projet ou un validateur). Si le mot-clé n'est pas rempli le rôle sera "membre" par défaut. Ce rôle peut être différent d'une fiche à l'autre pour la même personne.
 Ces rôles n'ont pas lien avec les rôles d'accès décrit ci-dessus, ce sont simplement des termes définit par le référent EVA pour qualifier le rôle du membre de l'équipe dans le projet à des fins d'analyse plus tard. Ce rôle ne définit donc pas les droits d'accès à EVA.
 
-La fonction dans le parc peut être définie dans les mots clés associés aux utilisateurs. Par exemple : chargé de mission, directeur, agent de terrain, stagiaire, élus...
+La **fonction** dans le parc peut être définie dans les mots clés associés aux utilisateurs. Par exemple : chargé de mission, directeur, agent de terrain, stagiaire, élus...
 Ces mots clés fonction sont à rattacher à l'utilisateur car cette fonction ne change pas d'un projet à l'autre comme le font les rôles des membres de fiche. Ils ne correspondent pas non plus au rôle qui définit les droits d'accès.
 
 Exemple : 
-On peut avoir un utilisateur qui a la **fonction** de "chargé de mission" (fonction qui est rattachée à son profil), un **rôle dans une fiche** de "coordinateur" et de "chef de projet" dans une autre (rôle rattaché à la fiche) et un **rôle d'accès** d'utilisateur qui restreint ces droits de suppression.
-Un autre utilisateur peut avoir la fonction de directeur, un rôle de chef de projet dans les fiches, et un rôle d'accès administrateur.
-Un troisième utilisateur peut avoir la fonction d'élus, aucun rôle dans les fiches et un rôle d'accès "Visiteur".
-Le référent EVA peut avoir une fonction de chargée de mission, un rôle différent dans chaque fiche et un rôle d'accès administrateur.
+
+- On peut avoir un utilisateur qui a la **fonction** de "chargé de mission" (fonction qui est rattachée à son profil), un **rôle dans une fiche** de "coordinateur" et de "chef de projet" dans une autre (rôle rattaché à la fiche) et un **rôle d'accès** d'utilisateur qui restreint ces droits de suppression.
+
+- Un autre utilisateur peut avoir la fonction de directeur, un rôle de chef de projet dans les fiches, et un rôle d'accès administrateur.
+
+- Un troisième utilisateur peut avoir la fonction d'élus, aucun rôle dans les fiches et un rôle d'accès "Visiteur".
+
+- Le référent EVA peut avoir une fonction de chargé de mission, un rôle différent dans chaque fiche et un rôle d'accès administrateur.
 
 Pour résumer :
 
