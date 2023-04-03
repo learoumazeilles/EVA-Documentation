@@ -52,6 +52,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#difference-entre-modeles-de-fiche-et-niveaux-de-fiches">Différence entre modèles de fiche et niveaux de fiches</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rattachement-d-une-fiche-a-plusieurs-mesures">Rattachement d’une fiche à plusieurs mesures</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#suppression-impossible">Suppression impossible</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#role-d-acces-role-dans-la-fiche-fonction-quelle-difference">Rôle d’accès, Rôle dans la fiche, Fonction, quelle différence ?</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../Tutoriel-d%C3%A9buts-dans-EVA/index.html">Tutoriel débuts dans EVA</a></li>
@@ -60,16 +61,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html">Fonctionnalités générales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-par-modules/index.html">Fonctionnalités par modules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-avanc%C3%A9es/index.html">Fonctionnalités avancées</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../Gestion-des-utilisateurs/index.html">Gestion des utilisateurs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../R%C3%A9f%C3%A9rentiels-et-mots-cl%C3%A9s/index.html">Référentiels et mots clés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-essentiels/index.html">Paramétrages essentiels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-simples/index.html">Paramétrages simples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-avanc%C3%A9s/index.html">Paramétrages avancés</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Novembre-2022/index.html">Développements Novembre 2022</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Mars-2023/index.html">Développements Mars 2023</a></li>
 </ul>
 
         </div>
@@ -145,6 +147,90 @@
 <p>Par exemple une requête peut être associée pour un affichage de l’accueil ou dans une alerte. Un mot clé ou référentiel peut être rattaché à une fiche, indicateur ou d’autres éléments.</p>
 <p>Il faudra donc supprimer les associations à l’élément que vous souhaitez supprimer pour que la suppression puisse avoir lieu. Pour les mots clés et référentiels, par sécurité s’ils ont été utilisés et même s’ils ne le sont plus, on ne pourra pas les supprimer, par contre ils peuvent être archivés ou vous pouvez demander à l’assistance de les supprimer si besoin.</p>
 </section>
+<section id="role-d-acces-role-dans-la-fiche-fonction-quelle-difference">
+<h2>Rôle d’accès, Rôle dans la fiche, Fonction, quelle différence ?<a class="headerlink" href="#role-d-acces-role-dans-la-fiche-fonction-quelle-difference" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Plusieurs éléments du logiciel peuvent s’appeler Rôle mais avoir une fonctionnalité différente.</p>
+<p>Les <strong>rôles d’accès</strong> tel que définis dans le module d’admninistration <a class="reference internal" href="../_images/Roles.png"><img alt="roles" src="../_images/Roles.png" style="height: 50px;" /></a> sont détaillés <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-essentiels/index.html#gestion-des-roles">ici</a>
+Ce type de rôle permet de définir les accès au logiciel EVA. Vous pouvez par exemple définir un rôle d’accès « Administrateur » avec les droits ouverts pour créer, modifier, supprimer et voir tous les modules et un autre rôle d’accès « Utilisateur » avec les droits ouverts pour créer, modifier et voir la plupart des modules sauf l’administration par exemple et un rôle « Visiteur » avec les droits pour voir seulement le logiciel.
+Ces rôles sont à rattacher à l’utilisateur dans le module <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Utilisateurs.png"><img alt="utilisateurs" src="../_images/Utilisateurs.png" style="height: 50px;" /></a>. On peut associer plusieurs personnes au même rôle.</p>
+<p>Les <strong>rôles des membres de la fiche</strong> apparaissent dans la fiche dans le sous-onglet équipe. Si vous avez définit un mot-clé rattaché à membre (cf la partie sur les <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-essentiels/index.html#onglet-mots-cles">mots clés</a>)
+lors de l’ajout d’un membre, vous pourrait ajouter un rôle qui apparaîtra dans la colonne rôle ici (sauf si ce membre est déjà un chef de projet ou un validateur). Si le mot-clé n’est pas rempli le rôle sera « membre » par défaut. Ce rôle peut être différent d’une fiche à l’autre pour la même personne.
+Ces rôles n’ont pas lien avec les rôles d’accès décrit ci-dessus, ce sont simplement des termes définit par le référent EVA pour qualifier le rôle du membre de l’équipe dans le projet à des fins d’analyse plus tard. Ce rôle ne définit donc pas les droits d’accès à EVA.</p>
+<p>La fonction dans le parc peut être définie dans les mots clés associés aux utilisateurs. Par exemple : chargé de mission, directeur, agent de terrain, stagiaire, élus…
+Ces mots clés fonction sont à rattacher à l’utilisateur car cette fonction ne change pas d’un projet à l’autre comme le font les rôles des membres de fiche. Ils ne correspondent pas non plus au rôle qui définit les droits d’accès.</p>
+<p>Exemple :
+On peut avoir un utilisateur qui a la <strong>fonction</strong> de « chargé de mission » (fonction qui est rattachée à son profil), un <strong>rôle dans une fiche</strong> de « coordinateur » et de « chef de projet » dans une autre (rôle rattaché à la fiche) et un <strong>rôle d’accès</strong> d’utilisateur qui restreint ces droits de suppression.
+Un autre utilisateur peut avoir la fonction de directeur, un rôle de chef de projet dans les fiches, et un rôle d’accès administrateur.
+Un troisième utilisateur peut avoir la fonction d’élus, aucun rôle dans les fiches et un rôle d’accès « Visiteur ».
+Le référent EVA peut avoir une fonction de chargée de mission, un rôle différent dans chaque fiche et un rôle d’accès administrateur.</p>
+<p>Pour résumer :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 65%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Usage</p></th>
+<th class="head"><p>À définir dans</p></th>
+<th class="head"><p>Attribution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Rôle</p>
+<p>d’accès</p>
+</td>
+<td><p>Définit les</p>
+<p>droits d’accès</p>
+<p>au logiciel</p>
+</td>
+<td><p>Module</p>
+<p>rôle</p>
+</td>
+<td><p>Un même rôle peut être attribué à plusieurs utilisateurs</p>
+<p>Un même utilisateur n’a qu’un rôle</p>
+<p>Rôle à attribuer dans le module utilisateurs</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Rôle</p>
+<p>dans une</p>
+<p>fiche</p>
+</td>
+<td><p>Définit le</p>
+<p>rôle dans</p>
+<p>un projet</p>
+</td>
+<td><p>Mots-clés</p>
+<p>associé aux</p>
+<p>membres</p>
+</td>
+<td><p>Un même rôle peut ête attribué à plusieurs membres</p>
+<p>Un même utilisateur peut avoir des rôles différents dans différentes fiches</p>
+<p>Rôle à attribuer dans l’onglet équipe des fiches</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Fonction</p>
+<p>dans le</p>
+<p>parc</p>
+</td>
+<td><p>Définit la</p>
+<p>fonction au</p>
+<p>sein du parc</p>
+</td>
+<td><p>Mots-clés</p>
+<p>associé aux</p>
+<p>utilisateurs</p>
+</td>
+<td><p>Une même fonction peut être attribuer à plusieurs utilisateurs</p>
+<p>Un même utilisateur peut avoir une ou plusieurs fonction</p>
+<p>Fonction à attribuer dans le module utilisateurs</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 
 
@@ -159,7 +245,7 @@
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 13 déc. 2022.
+      <span class="lastupdated">Mis à jour le 03 avr. 2023.
       </span></p>
   </div>
 

@@ -17,7 +17,6 @@ Documentation du Logiciel EVA
 
    Fonctionnalités-générales/index
    Fonctionnalités-par-modules/index
-   Fonctionnalités-avancées/index
 
 .. toctree::
    :maxdepth: 2

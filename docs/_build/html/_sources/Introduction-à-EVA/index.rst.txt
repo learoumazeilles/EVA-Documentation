@@ -50,7 +50,7 @@ Définition du logiciel
 - **Définition pratique (cf. Diagramme 2) :** Les fiches projet/action sont le module central du logiciel EVA, elles recensent les informations nécessaires sur les activités menées par le parc. Un système de référentiels et de mots clés permet un classement des fiches. Les autres modules principaux vont permettre de renseigner différents types de données qui peuvent ensuite être rattachés aux fiches. Les  données  peuvent  concerner  des  données  de suivi du terrain avec les indicateurs mais également des données de suivi de la gestion, avec les actions menées et leurs moyens humains et financiers associés. Les données peuvent être insérées de trois façons : en remplissant des formulaire, par des imports de tableurs ou par des liaisons avec d’autres logiciels (cf. Liste des liaisons logiciels).  Les données peuvent être exportées sous différents formats (tableur ou texte). Un module d'analyse permet de réaliser des analyses simples et interactives dans le logiciel.  La  grande  capacité  de  personnalisation  du  logiciel  par  les  paramétrages  permet  de répondre  aux  spécificités  de  chaque  parc. 
 - **Utilisateurs :** Les  utilisateurs  sont  les  chargés  de  mission  des  parcs  avec  un  rôle renforcé pour les référents EVA qui sont responsable de la mise en place et de l’animation du logiciel au sein de leur parc.
 
-.. figure:: images/Diagramme_modules.png
+.. figure:: images/Diagramme_modules2.png
    :width: 700
 
    Diagramme 2 : Représentation  du  logiciel  EVA,  montrant  les  modules  en  rouges  et  leur fonction.
@@ -68,7 +68,7 @@ Le référent EVA et la direction sont responsables de faire le lien entre ces d
 
 La force du logiciel EVA est de pouvoir associer plusieurs référentiels à une même fiche, car certaines actions du parc peuvent contribuer à plusieurs finalités (mesure de la charte, Natura 2000...)
 
-.. figure:: images/Fiches_référentiels.png
+.. figure:: images/Fiches_référentiels2.png
    :width: 700
 
 

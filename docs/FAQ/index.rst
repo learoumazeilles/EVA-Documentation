@@ -1,3 +1,4 @@
+.. include:: ../substitutions.rst
 FAQ
 ===
 
@@ -59,5 +60,51 @@ Si l'erreur mentionne quelque chose comme : *"An exception occurred while execut
 Par exemple une requête peut être associée pour un affichage de l'accueil ou dans une alerte. Un mot clé ou référentiel peut être rattaché à une fiche, indicateur ou d'autres éléments.
 
 Il faudra donc supprimer les associations à l'élément que vous souhaitez supprimer pour que la suppression puisse avoir lieu. Pour les mots clés et référentiels, par sécurité s'ils ont été utilisés et même s'ils ne le sont plus, on ne pourra pas les supprimer, par contre ils peuvent être archivés ou vous pouvez demander à l'assistance de les supprimer si besoin.
+
+Rôle d'accès, Rôle dans la fiche, Fonction, quelle différence ?
+---------------------------------------------------------------
+Plusieurs éléments du logiciel peuvent s'appeler Rôle mais avoir une fonctionnalité différente.
+
+Les **rôles d'accès** tel que définis dans le module d'admninistration |roles| sont détaillés `ici <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-essentiels/index.html#gestion-des-roles>`_
+Ce type de rôle permet de définir les accès au logiciel EVA. Vous pouvez par exemple définir un rôle d'accès "Administrateur" avec les droits ouverts pour créer, modifier, supprimer et voir tous les modules et un autre rôle d'accès "Utilisateur" avec les droits ouverts pour créer, modifier et voir la plupart des modules sauf l'administration par exemple et un rôle "Visiteur" avec les droits pour voir seulement le logiciel.
+Ces rôles sont à rattacher à l'utilisateur dans le module |administration| > |utilisateurs|. On peut associer plusieurs personnes au même rôle.
+
+
+Les **rôles des membres de la fiche** apparaissent dans la fiche dans le sous-onglet équipe. Si vous avez définit un mot-clé rattaché à membre (cf la partie sur les `mots clés <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-essentiels/index.html#onglet-mots-cles>`_)
+lors de l'ajout d'un membre, vous pourrait ajouter un rôle qui apparaîtra dans la colonne rôle ici (sauf si ce membre est déjà un chef de projet ou un validateur). Si le mot-clé n'est pas rempli le rôle sera "membre" par défaut. Ce rôle peut être différent d'une fiche à l'autre pour la même personne.
+Ces rôles n'ont pas lien avec les rôles d'accès décrit ci-dessus, ce sont simplement des termes définit par le référent EVA pour qualifier le rôle du membre de l'équipe dans le projet à des fins d'analyse plus tard. Ce rôle ne définit donc pas les droits d'accès à EVA.
+
+La fonction dans le parc peut être définie dans les mots clés associés aux utilisateurs. Par exemple : chargé de mission, directeur, agent de terrain, stagiaire, élus...
+Ces mots clés fonction sont à rattacher à l'utilisateur car cette fonction ne change pas d'un projet à l'autre comme le font les rôles des membres de fiche. Ils ne correspondent pas non plus au rôle qui définit les droits d'accès.
+
+Exemple : 
+On peut avoir un utilisateur qui a la **fonction** de "chargé de mission" (fonction qui est rattachée à son profil), un **rôle dans une fiche** de "coordinateur" et de "chef de projet" dans une autre (rôle rattaché à la fiche) et un **rôle d'accès** d'utilisateur qui restreint ces droits de suppression.
+Un autre utilisateur peut avoir la fonction de directeur, un rôle de chef de projet dans les fiches, et un rôle d'accès administrateur.
+Un troisième utilisateur peut avoir la fonction d'élus, aucun rôle dans les fiches et un rôle d'accès "Visiteur".
+Le référent EVA peut avoir une fonction de chargée de mission, un rôle différent dans chaque fiche et un rôle d'accès administrateur.
+
+Pour résumer :
+
++----------+----------------+----------------+-----------------------------------------------------------------------------+
+| Type     | Usage          | À définir dans | Attribution                                                                 |
++==========+================+================+=============================================================================+
+| Rôle     | Définit les    | Module         | Un même rôle peut être attribué à plusieurs utilisateurs                    | 
+|          |                |                |                                                                             |  
+|          | droits d'accès |                | Un même utilisateur n'a qu'un rôle                                          |
+|          |                |                |                                                                             |
+| d'accès  | au logiciel    | rôle           | Rôle à attribuer dans le module utilisateurs                                |
++----------+----------------+----------------+-----------------------------------------------------------------------------+
+| Rôle     | Définit le     | Mots-clés      | Un même rôle peut ête attribué à plusieurs membres                          |
+|          |                |                |                                                                             |
+| dans une | rôle dans      | associé aux    | Un même utilisateur peut avoir des rôles différents dans différentes fiches |
+|          |                |                |                                                                             |
+| fiche    | un projet      | membres        | Rôle à attribuer dans l'onglet équipe des fiches                            |
++----------+----------------+----------------+-----------------------------------------------------------------------------+
+| Fonction | Définit la     | Mots-clés      | Une même fonction peut être attribuer à plusieurs utilisateurs              |
+|          |                |                |                                                                             |
+| dans le  | fonction au    | associé aux    | Un même utilisateur peut avoir une ou plusieurs fonction                    |
+|          |                |                |                                                                             |
+| parc     | sein du parc   | utilisateurs   | Fonction à attribuer dans le module utilisateurs                            |
++----------+----------------+----------------+-----------------------------------------------------------------------------+
 
 
