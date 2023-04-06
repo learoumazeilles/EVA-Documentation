@@ -289,5 +289,50 @@ On peut également choisir les options suivantes :
 Alertes
 -------
 
+Dans le module |administration| > |alertes|, on peut paramétrer des alertes qui envoient des mails automatiquement. Ces mails permettent d'alerter sur des statuts de fiches, des dates de caducité, des modifications ou autre en fonction des paramétrages.
+
+Les alertes sont basées sur les requêtes paramétrées dans le tableau des fiches.
+
+En cliquant sur |bouton_3_traits|, on peut créer une nouvelle alerte. Les champs à remplir pour l'alerte sont les suivants :
+
+- Nom : le titre de l'alerte
+
+- Période d'envoi : journalier, hebdomadaire ou mensuel -> l'envoi s'effectue 3h du matin du jour concerné
+
+- Requête : la requête à associer, elle est à définir auparavant dans les fiches (voir `Documentation requêtes <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#filtres-requetes-et-colonnes>`_)
+
+- Destinataires : on peut choisir les destinataires en cochant les cases pour envoyer aux personnes rattachées aux fiches qui remontent de la requête : chef de projet, validateur, membre de l'équipe et/ou ajouter des destinataires en choisissant des utilisateurs en particulier.
+
+- Objet : apparaîtra comme objet de mail
+
+- Corps : on peut écrire un mail dans le cadre de texte et y ajouter quelques variables (disponibles sur la droite) comme la liste des projets qui remontent de la requête (sous forme de lien) et le nom et prénom du destinataire (ceux paramétrés dans le profil utilisateur).
+
+.. Note::
+	Si la requête ne remonte aucune fiche, le mail ne sera pas envoyé.
+
+.. warning::
+	La variable $projetCommissions$ ne fonctionne pas. L'oeil à côté des requêtes devraient envoyer vers le résultat de la requête mais il ne fonctionne pas.
+
+Par exemple avec une requête sur les dates de caducité on peut envoyer des mails automatiques comme suit :
+
+
+.. image:: images/Alertes_ex.png
+	:width: 700
+
+On peut **tester** l'envoi de l'alerte ou forcer son envoi en appuyant sur |envoi| en haut à droite, l'alerte s'envoi alors directement sans attendre la périodicité définie.
+
+Pour des alertes utiles périodiquement, par exemple pour alerter sur la date proche d'un dossier à rendre tous les ans à la même date, on peut aussi **désactiver** les alertes en décochant la case activée.
+
+
+.. image:: images/Case_activée.png
+	:width: 100
+
+.. note::
+	On peut également modifier les destinaires et l'activation directement en mode tableau en cochant les cases, l'alerte s'enregistre automatiquement avec les modifications
+
+.. warning::
+	Si vous ne recevez pas les alertes automatiques, contactez l'assistance.
+
+
 Modèle de fiche
 ---------------
