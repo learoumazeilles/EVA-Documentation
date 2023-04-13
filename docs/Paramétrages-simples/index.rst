@@ -37,13 +37,13 @@ Un formulaire s'affiche avec plusieurs champs :
 	- Liste : Pour ajouter une liste de fiches ou tâches avec une certaine requête, par exemple pour afficher dans l'accueil toutes les fiches d'un utilisateur qui sont en cours ou qui ont une date de caducité proche... La requête doit être définie dans les modules fiches ou tâches respectivement
 	- Calendrier : Pour ajouter le calendrier avec une certaine requête donc par exemple toutes mes feuilles de temps uniquement, ou toutes les temps prévionnels de mon équipe uniquement... La requête doit être définie dans le module |temps| > |liste_temps|
 	- Note : Pour afficher le fil de discussion par note sur les fiches, cela peut permettre de mettre en valeur des messages, les notes qui s'affichent sont uniquement celles des fiches pour lesquelles l'utilisateur est membre de l'équipe. (Il faut choisir note dans entité.
-	- Graphique : il permet de montrer les temps passés par mois (Seule les feuilles de temps sont disponibles à ce jour avec une répartition par mois). On peut y associer une requête précise qui doit être défini dans le module |analyses|>|temps|
+	- Graphique : il permet de montrer les temps passés par mois (Seule les feuilles de temps sont disponibles à ce jour avec une répartition par mois). On peut y associer une requête précise qui doit être défini dans le module |analyses| > |temps|
 
 
 .. image:: images/Notes_accueil_ex.png
 	:width: 300
 
-Les requêtes intéressantes à paramétrer pour l'accueil sont celles basées sur "Utilisateur courant" car elles s'adapteront au profile de la personne connectée.
+Les requêtes intéressantes à paramétrer pour l'accueil sont celles basées sur "Utilisateur courant" car elles s'adapteront au profil de la personne connectée.
 
 Exemples de mise en page d'accueil
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,7 +76,7 @@ Dans |administration| > |champs| on peut créer des champs personnalisés. Ces c
 .. warning ::
 	- Ces champs apparaissent souvent en bas de page après le bouton "Enregistrer" mais il faut bien se souvenir d'enregistrer à chaque fois, sinon les éléments ajoutés seront perdus.
 
-	- Si un champ personnalisable a été rempli, il ne pourra pas être supprimer, par conter vous pouvez désactivez le groupe de champs (voir précision plus bas)
+	- Si un champ personnalisable a été rempli, il ne pourra pas être supprimer, par contre vous pouvez désactivez le groupe de champs (voir précision plus bas)
 
 Fiche
 ~~~~~
@@ -88,7 +88,10 @@ Dans l'onglet Fiche, on peut créer un nouveau groupe de champs en appuyant sur 
 
 Le groupe sera créé tout en bas de la page si vous avez déjà des groupes de champs paramétrés.
 
-Il faut insérer un titre, (on peut indiquer un modèle de fiche mais ce paramètre n'a pas grand intérêt), et un onglet de fiche ou le champ apparaîtra, on peut choisir à peu près tous les onglets, le champ aparaîtra en bas de page de l'onglet et dans l'ordre alphabétique avec les autres champs personnalisés. Si l'onglet n'est pas renseigné le champ apparaîtra par défaut dans l'onglet "champs personnalisables" des fiches.
+Il faut insérer un titre, et un onglet de fiche ou le champ apparaîtra, on peut choisir à peu près tous les onglets, le champ aparaîtra en bas de page de l'onglet et dans l'ordre alphabétique avec les autres champs personnalisés. Si l'onglet n'est pas renseigné le champ apparaîtra par défaut dans l'onglet "champs personnalisables" des fiches.
+
+.. warning ::
+	Le paramètre "modèle de fiche" n'ajoute pas le champs comme "afficher" dans le modèle de fiche, il n'a donc pas grand intérêt, vous pouvez le laisser blanc.
 
 Les onglets les plus utilisés si ce sont des champs textes (comme les bilans) sont l'onglet **Fiche** et l'onglet **Champs personnalisables** qui peut avoir un nom différent dans votre EVA.
 
@@ -336,3 +339,83 @@ Pour des alertes utiles périodiquement, par exemple pour alerter sur la date pr
 
 Modèle de fiche
 ---------------
+
+Dans |administration| > |modele_fiches|, on peut paramétrer des modèles de fiches. Ces modèles sont utiles pour calibrer les champs à remplir dans les fiches. On peut créer plusieurs modèles de fiches pour des usages différents. Ils permettent de ne pas afficher les champs que l'on ne pense pas utile pour notre usage pour ne pas surcharger l'écran pour les utilisateurs et leur simplifier le remplissage. Ils permettent également d'afficher des champs supplémentaires (texte, case à cocher...) qui sont spécifiques à certains usages.
+
+Si aucun modèle de fiche n'est défini, un modèle par défaut est proposé avec tous les champs affichés.
+
+Un modèle de fiche peut être ajouté via |bouton_3_traits|, le formulaire permet de lui donner un nom puis de choisir les champs à afficher qui sont diviser en trois onglets : "Champs", "Champs personnalisables", "Mots-clés" .
+
+.. note::
+	Par défaut les champs sont masqués, donc il faut changer pour afficher en dessous des champs que l'on souhaite afficher, si le champs est laissé blanc il sera masqué.
+
+**Onglet Champs**
+
+Voici les différents champs accessibles et les questions à se poser si l'on souhaite les afficher ou non (les fonctionnalités de ces champs sont définis dans la `partie fiche de la documentation <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Fiches.html#remplir-une-fiche>`_) :
+
+- Code : obligatoire ou presque, c’est un code unique qui permet de rattacher d’autres informations à la fiche, il est recommandé d'utiliser ces codes et donc de les afficher
+
+- Rattachement arborescence initiale : est-ce que je souhaite faire le lien entre des projets et des sous-actions ?
+
+- Champs textes : Descriptif, Bilan, Objectifs, Livrables, Contexte et motif -> Est-ce que j'ai besoin de tous ces champs ?
+
+- Chef.fe(s) de projet : est-ce que ce rôle a du sens dans mon parc ?
+
+- Validateur(s) : est-ce que ce rôle a du sens dans mon parc ?
+
+- Statut : est-ce que je souhaite afficher des informations sur le statut de la fiche ? Brouillon ou à valider par exemple, peut permettre de solliciter automatiquement pas mail les chefs de projets et validateurs
+
+- Date de programmation : est-ce que cette date a du sens pour moi, est-ce qu’elle est redondante ?
+
+- Date de démarrage prévue : est-ce que cette date a du sens pour moi, est-ce qu’elle est redondante ?
+
+- Date de fin prévue : est-ce que cette date a du sens pour moi, est-ce qu’elle est redondante ?
+
+- Date de démarrage effective : est-ce que cette date a du sens pour moi, est-ce qu’elle est redondante ?
+
+- Date de fin effective : est-ce que cette date a du sens pour moi, est-ce qu’elle est redondante ?
+
+- Maîtrise d'ouvrage externe : est-ce que certains de mes projets sont en maîtrise d’ouvrage externe ?
+
+- Accessible au réseau : est-ce que je souhaite laisser la possibilité de faire remonter les informations de cette fiche au réseau ?
+
+- Maître d'ouvrage : à remplir si on a cocher la case au-dessus maîtrise d'ouvrage externe
+
+- Statut financier : est-ce que j’ai besoin d’associer des statuts financiers qui sont capable de verrouiller l’onglet budget et qui peuvent être utile pour des requêtes ?
+
+- Codes financiers : Est-ce qu’on peut avoir des fiches pluriannuelles avec un suivi budgétaire pour chaque année ?
+
+- Temps prévu : est-ce que je souhaite définir un temps total prévu pour la fiche ? (servira dans la synthèse dans l’onglet temps de la fiche)
+
+.. warning::
+	"Membres de l'équipe" cette option masquer ou non n'a pas d'incidence, tout comme "Acteurs" et "Avancement"
+
+**Onglet Champs personnalisables**
+
+Ici vous trouverz les champs en plus qui ont été définis dans |administration| > |champs| (voir la `documentation <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-simples/index.html#champs>`_ à ce sujet).
+
+Peut-importe l'onglet auquel il a été rattaché, le champ apparaîtra ici dans champs personnalisables.
+
+**Onglet Mots-clés**
+
+Ici l'onglet mots-clés désignent aussi bien les référentiels que les mots-clés. Les mots-clés retrouvés ici sont uniquement les mots-clés que l'on a rattaché aux fiches.
+Pour l'affichage de ces mots-clés et référentiel on peut se demander quelles clés d’analyse on souhaite privilégier, quel rattachement on souhaite associer à ce modèle de fiche.
+
+.. warning::
+	Lorsqu'un nouveau mots-clés ou référentiels est créé il va apparaître dans toutes les fiches sous tous les modèles de fiche qui ont été créé en amont. Il suffit de réenregistrer les modèles de fiche pour que le mot-clé ou référentiel passe en "Masquer" par défaut. Si on veut qu'il soit en "Afficher" il vaut mieux aller le paramétrer dans le modèle de fiche dès la création du mot-clé ou référentiel.
+
+**Par défaut**
+
+En cochant la case "Par défaut", on peut choisir de définir un modèle de fiche par défaut qui sera donc proposé par défaut lors de la création d'une fiche. Cette case se trouve en haut du formulaire mais on peut également le cocher via le tableau des modèles de fiche.
+
+.. image:: images/Par_défaut.png
+	:width: 100
+
+
+.. note::
+	Si on choisit de masquer un champ pour lequel des informations avaient été rempli, on ne perd pas les informations, elles sont simplement cachées. Si l'on ré-affiche ce champs par la suite, les informations réapparaitront.
+
+
+
+
+

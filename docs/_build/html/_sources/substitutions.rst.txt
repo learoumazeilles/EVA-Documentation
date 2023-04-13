@@ -218,6 +218,9 @@
 .. |liste_temps| image:: /_static/images/Liste_temps.png
 	:height: 50
 
+.. |modele_fiches| image:: /_static/images/Modèle_fiches.png
+	:height: 50
+
 .. |mots_cles| image:: /_static/images/Mots_clés.png
 	:height: 50
 

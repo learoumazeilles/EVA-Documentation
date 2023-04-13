@@ -131,13 +131,13 @@
 <li><p>Liste : Pour ajouter une liste de fiches ou tâches avec une certaine requête, par exemple pour afficher dans l’accueil toutes les fiches d’un utilisateur qui sont en cours ou qui ont une date de caducité proche… La requête doit être définie dans les modules fiches ou tâches respectivement</p></li>
 <li><p>Calendrier : Pour ajouter le calendrier avec une certaine requête donc par exemple toutes mes feuilles de temps uniquement, ou toutes les temps prévionnels de mon équipe uniquement… La requête doit être définie dans le module <a class="reference internal" href="../_images/Temps.png"><img alt="temps" src="../_images/Temps.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Liste_temps.png"><img alt="liste_temps" src="../_images/Liste_temps.png" style="height: 50px;" /></a></p></li>
 <li><p>Note : Pour afficher le fil de discussion par note sur les fiches, cela peut permettre de mettre en valeur des messages, les notes qui s’affichent sont uniquement celles des fiches pour lesquelles l’utilisateur est membre de l’équipe. (Il faut choisir note dans entité.</p></li>
-<li><p>Graphique : il permet de montrer les temps passés par mois (Seule les feuilles de temps sont disponibles à ce jour avec une répartition par mois). On peut y associer une requête précise qui doit être défini dans le module <a class="reference internal" href="../_images/Analyses.png"><img alt="analyses" src="../_images/Analyses.png" style="height: 50px;" /></a>&gt;|temps|</p></li>
+<li><p>Graphique : il permet de montrer les temps passés par mois (Seule les feuilles de temps sont disponibles à ce jour avec une répartition par mois). On peut y associer une requête précise qui doit être défini dans le module <a class="reference internal" href="../_images/Analyses.png"><img alt="analyses" src="../_images/Analyses.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Temps.png"><img alt="temps" src="../_images/Temps.png" style="height: 50px;" /></a></p></li>
 </ul>
 </div></blockquote>
 </li>
 </ul>
 <a class="reference internal image-reference" href="../_images/Notes_accueil_ex.png"><img alt="../_images/Notes_accueil_ex.png" src="../_images/Notes_accueil_ex.png" style="width: 300px;" /></a>
-<p>Les requêtes intéressantes à paramétrer pour l’accueil sont celles basées sur « Utilisateur courant » car elles s’adapteront au profile de la personne connectée.</p>
+<p>Les requêtes intéressantes à paramétrer pour l’accueil sont celles basées sur « Utilisateur courant » car elles s’adapteront au profil de la personne connectée.</p>
 </section>
 <section id="exemples-de-mise-en-page-d-accueil">
 <h3>Exemples de mise en page d’accueil<a class="headerlink" href="#exemples-de-mise-en-page-d-accueil" title="Lien permanent vers cette rubrique"></a></h3>
@@ -160,7 +160,7 @@ Calendrier avec les personnes de mon équipe. Pour un meilleur rendu, il faut ch
 <p class="admonition-title">Avertissement</p>
 <ul class="simple">
 <li><p>Ces champs apparaissent souvent en bas de page après le bouton « Enregistrer » mais il faut bien se souvenir d’enregistrer à chaque fois, sinon les éléments ajoutés seront perdus.</p></li>
-<li><p>Si un champ personnalisable a été rempli, il ne pourra pas être supprimer, par conter vous pouvez désactivez le groupe de champs (voir précision plus bas)</p></li>
+<li><p>Si un champ personnalisable a été rempli, il ne pourra pas être supprimer, par contre vous pouvez désactivez le groupe de champs (voir précision plus bas)</p></li>
 </ul>
 </div>
 <section id="fiche">
@@ -168,7 +168,11 @@ Calendrier avec les personnes de mon équipe. Pour un meilleur rendu, il faut ch
 <p>Dans l’onglet Fiche, on peut créer un nouveau groupe de champs en appuyant sur « Créer un groupe de champs ».</p>
 <a class="reference internal image-reference" href="../_images/Créer_groupe_champs.png"><img alt="../_images/Créer_groupe_champs.png" src="../_images/Créer_groupe_champs.png" style="width: 200px;" /></a>
 <p>Le groupe sera créé tout en bas de la page si vous avez déjà des groupes de champs paramétrés.</p>
-<p>Il faut insérer un titre, (on peut indiquer un modèle de fiche mais ce paramètre n’a pas grand intérêt), et un onglet de fiche ou le champ apparaîtra, on peut choisir à peu près tous les onglets, le champ aparaîtra en bas de page de l’onglet et dans l’ordre alphabétique avec les autres champs personnalisés. Si l’onglet n’est pas renseigné le champ apparaîtra par défaut dans l’onglet « champs personnalisables » des fiches.</p>
+<p>Il faut insérer un titre, et un onglet de fiche ou le champ apparaîtra, on peut choisir à peu près tous les onglets, le champ aparaîtra en bas de page de l’onglet et dans l’ordre alphabétique avec les autres champs personnalisés. Si l’onglet n’est pas renseigné le champ apparaîtra par défaut dans l’onglet « champs personnalisables » des fiches.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Le paramètre « modèle de fiche » n’ajoute pas le champs comme « afficher » dans le modèle de fiche, il n’a donc pas grand intérêt, vous pouvez le laisser blanc.</p>
+</div>
 <p>Les onglets les plus utilisés si ce sont des champs textes (comme les bilans) sont l’onglet <strong>Fiche</strong> et l’onglet <strong>Champs personnalisables</strong> qui peut avoir un nom différent dans votre EVA.</p>
 <p>Il faut ensuite cliquer sur enregistrer sur la droite <a class="reference internal" href="../_images/Enregistrer_ligne.png"><img alt="enregistrer_ligne" src="../_images/Enregistrer_ligne.png" style="width: 30px;" /></a>.</p>
 <p>Le champ apparaît avec la case activé coché, cette case permet de rendre visible ou non le champ. Elle permet de cacher la visibilité de ce champ s’il n’est plus utilisé pour ne pas surcharger l’écran tout en gardant les informations associées.</p>
@@ -348,6 +352,55 @@ Pour la synchronisation des temps, selon votre outil de calendrier les codes ana
 </section>
 <section id="modele-de-fiche">
 <h2>Modèle de fiche<a class="headerlink" href="#modele-de-fiche" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Dans <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Modèle_fiches.png"><img alt="modele_fiches" src="../_images/Modèle_fiches.png" style="height: 50px;" /></a>, on peut paramétrer des modèles de fiches. Ces modèles sont utiles pour calibrer les champs à remplir dans les fiches. On peut créer plusieurs modèles de fiches pour des usages différents. Ils permettent de ne pas afficher les champs que l’on ne pense pas utile pour notre usage pour ne pas surcharger l’écran pour les utilisateurs et leur simplifier le remplissage. Ils permettent également d’afficher des champs supplémentaires (texte, case à cocher…) qui sont spécifiques à certains usages.</p>
+<p>Si aucun modèle de fiche n’est défini, un modèle par défaut est proposé avec tous les champs affichés.</p>
+<p>Un modèle de fiche peut être ajouté via <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a>, le formulaire permet de lui donner un nom puis de choisir les champs à afficher qui sont diviser en trois onglets : « Champs », « Champs personnalisables », « Mots-clés » .</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Par défaut les champs sont masqués, donc il faut changer pour afficher en dessous des champs que l’on souhaite afficher, si le champs est laissé blanc il sera masqué.</p>
+</div>
+<p><strong>Onglet Champs</strong></p>
+<p>Voici les différents champs accessibles et les questions à se poser si l’on souhaite les afficher ou non (les fonctionnalités de ces champs sont définis dans la <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Fiches.html#remplir-une-fiche">partie fiche de la documentation</a>) :</p>
+<ul class="simple">
+<li><p>Code : obligatoire ou presque, c’est un code unique qui permet de rattacher d’autres informations à la fiche, il est recommandé d’utiliser ces codes et donc de les afficher</p></li>
+<li><p>Rattachement arborescence initiale : est-ce que je souhaite faire le lien entre des projets et des sous-actions ?</p></li>
+<li><p>Champs textes : Descriptif, Bilan, Objectifs, Livrables, Contexte et motif -&gt; Est-ce que j’ai besoin de tous ces champs ?</p></li>
+<li><p>Chef.fe(s) de projet : est-ce que ce rôle a du sens dans mon parc ?</p></li>
+<li><p>Validateur(s) : est-ce que ce rôle a du sens dans mon parc ?</p></li>
+<li><p>Statut : est-ce que je souhaite afficher des informations sur le statut de la fiche ? Brouillon ou à valider par exemple, peut permettre de solliciter automatiquement pas mail les chefs de projets et validateurs</p></li>
+<li><p>Date de programmation : est-ce que cette date a du sens pour moi, est-ce qu’elle est redondante ?</p></li>
+<li><p>Date de démarrage prévue : est-ce que cette date a du sens pour moi, est-ce qu’elle est redondante ?</p></li>
+<li><p>Date de fin prévue : est-ce que cette date a du sens pour moi, est-ce qu’elle est redondante ?</p></li>
+<li><p>Date de démarrage effective : est-ce que cette date a du sens pour moi, est-ce qu’elle est redondante ?</p></li>
+<li><p>Date de fin effective : est-ce que cette date a du sens pour moi, est-ce qu’elle est redondante ?</p></li>
+<li><p>Maîtrise d’ouvrage externe : est-ce que certains de mes projets sont en maîtrise d’ouvrage externe ?</p></li>
+<li><p>Accessible au réseau : est-ce que je souhaite laisser la possibilité de faire remonter les informations de cette fiche au réseau ?</p></li>
+<li><p>Maître d’ouvrage : à remplir si on a cocher la case au-dessus maîtrise d’ouvrage externe</p></li>
+<li><p>Statut financier : est-ce que j’ai besoin d’associer des statuts financiers qui sont capable de verrouiller l’onglet budget et qui peuvent être utile pour des requêtes ?</p></li>
+<li><p>Codes financiers : Est-ce qu’on peut avoir des fiches pluriannuelles avec un suivi budgétaire pour chaque année ?</p></li>
+<li><p>Temps prévu : est-ce que je souhaite définir un temps total prévu pour la fiche ? (servira dans la synthèse dans l’onglet temps de la fiche)</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>« Membres de l’équipe » cette option masquer ou non n’a pas d’incidence, tout comme « Acteurs » et « Avancement »</p>
+</div>
+<p><strong>Onglet Champs personnalisables</strong></p>
+<p>Ici vous trouverz les champs en plus qui ont été définis dans <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Champs.png"><img alt="champs" src="../_images/Champs.png" style="height: 50px;" /></a> (voir la <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-simples/index.html#champs">documentation</a> à ce sujet).</p>
+<p>Peut-importe l’onglet auquel il a été rattaché, le champ apparaîtra ici dans champs personnalisables.</p>
+<p><strong>Onglet Mots-clés</strong></p>
+<p>Ici l’onglet mots-clés désignent aussi bien les référentiels que les mots-clés. Les mots-clés retrouvés ici sont uniquement les mots-clés que l’on a rattaché aux fiches.
+Pour l’affichage de ces mots-clés et référentiel on peut se demander quelles clés d’analyse on souhaite privilégier, quel rattachement on souhaite associer à ce modèle de fiche.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Lorsqu’un nouveau mots-clés ou référentiels est créé il va apparaître dans toutes les fiches sous tous les modèles de fiche qui ont été créé en amont. Il suffit de réenregistrer les modèles de fiche pour que le mot-clé ou référentiel passe en « Masquer » par défaut. Si on veut qu’il soit en « Afficher » il vaut mieux aller le paramétrer dans le modèle de fiche dès la création du mot-clé ou référentiel.</p>
+</div>
+<p><strong>Par défaut</strong></p>
+<p>En cochant la case « Par défaut », on peut choisir de définir un modèle de fiche par défaut qui sera donc proposé par défaut lors de la création d’une fiche. Cette case se trouve en haut du formulaire mais on peut également le cocher via le tableau des modèles de fiche.</p>
+<a class="reference internal image-reference" href="../_images/Par_défaut.png"><img alt="../_images/Par_défaut.png" src="../_images/Par_défaut.png" style="width: 100px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si on choisit de masquer un champ pour lequel des informations avaient été rempli, on ne perd pas les informations, elles sont simplement cachées. Si l’on ré-affiche ce champs par la suite, les informations réapparaitront.</p>
+</div>
 </section>
 </section>
 
@@ -363,7 +416,7 @@ Pour la synchronisation des temps, selon votre outil de calendrier les codes ana
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 06 avr. 2023.
+      <span class="lastupdated">Mis à jour le 13 avr. 2023.
       </span></p>
   </div>
 

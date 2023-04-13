@@ -154,6 +154,9 @@
 .. |fusion| image:: /_static/images/Fusion.png
 	:width: 30
 
+.. |envoi| image:: /_static/images/Envoi_alerte.png
+	:width: 30
+
 
 .. |accueil| image:: /_static/images/Accueil.png
 	:height: 50
@@ -162,6 +165,9 @@
 	:height: 50
 
 .. |administration| image:: /_static/images/Administration.png
+	:height: 50
+
+.. |alertes| image:: /_static/images/Alertes.png
 	:height: 50
 
 .. |analyses| image:: /_static/images/Analyses.png
@@ -210,6 +216,9 @@
 	:height: 50
 
 .. |liste_temps| image:: /_static/images/Liste_temps.png
+	:height: 50
+
+.. |modele_fiches| image:: /_static/images/Modèle_fiches.png
 	:height: 50
 
 .. |mots_cles| image:: /_static/images/Mots_clés.png
