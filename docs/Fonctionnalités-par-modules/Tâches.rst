@@ -2,6 +2,8 @@
 Tâches
 ======
 
+|suivi_projet| > |tâches|
+
 Les tâches permettent de diviser le projet par personne et suivre l'avancée des différentes parties du projet.
 
 Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie :ref:`Fonctionnalités générales`.

@@ -30,5 +30,6 @@ Documentation du Logiciel EVA
    :maxdepth: 2
    :caption: Suivi des développements
 
-   Développements/Développements-Novembre-2022/index
-   Développements/Développements-Mars-2023/index
+   Développements/Développements-2022-11/index
+   Développements/Développements-2023-03/index
+   Développements/Développements-2023-07/index

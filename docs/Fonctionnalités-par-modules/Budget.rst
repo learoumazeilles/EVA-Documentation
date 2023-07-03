@@ -2,6 +2,8 @@
 Budget
 ======
 
+|données| > |budget|
+
 Ambition du module Budget : Suivre tout le budget du parc, du dialogue de gestion à la clôture. 
 
 Le **dialogue de gestion** pourra avoir lieu dans les fiches, chaque chargé de mission sera amené à prévoir le budget nécessaire à son action. Les échanges jusque validation du budget sont rythmés par les **statuts des fiches** et les **statuts financiers**. Les statuts et dates de caducité peuvent être couplés aux **alertes** (envoi mail automatique), ce qui permet un **suivi de la réalisation financière** des projets. Les **données comptables** peuvent être remontées automatiquement depuis le logiciel de comptabilité (si compatible) ou par export/import à une périodicité choisie.

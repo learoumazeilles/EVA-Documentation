@@ -164,6 +164,9 @@
 .. |accueil_rouge| image:: /_static/images/Accueil_rouge.png
 	:height: 50
 
+.. |accueil_vert| image:: /_static/images/Accueil_vert.png
+	:height: 50
+
 .. |administration| image:: /_static/images/Administration.png
 	:height: 50
 
@@ -200,6 +203,9 @@
 .. |conventions| image:: /_static/images/Conventions.png
 	:height: 50
 
+.. |données| image:: /_static/images/Données.png
+	:height: 50
+
 .. |enveloppes| image:: /_static/images/Enveloppes.png
 	:height: 50
 
@@ -209,7 +215,13 @@
 .. |exports_temps| image:: /_static/images/Exports_temps.png
 	:height: 50
 
+.. |fiches| image:: /_static/images/Fiches.png
+	:height: 50
+
 .. |fonctions| image:: /_static/images/Fonctions.png
+	:height: 50
+
+.. |indexage| image:: /_static/images/Indexage.png
 	:height: 50
 
 .. |indicateurs| image:: /_static/images/Indicateurs.png
@@ -227,6 +239,9 @@
 .. |notes| image:: /_static/images/Notes.png
 	:height: 50
 
+.. |profils| image:: /_static/images/Profils.png
+	:height: 50
+
 .. |roles| image:: /_static/images/Roles.png
 	:height: 50
 
@@ -234,6 +249,9 @@
 	:height: 50
 
 .. |structures| image:: /_static/images/Structures.png
+	:height: 50
+
+.. |suivi_projet| image:: /_static/images/Suivi_projet.png
 	:height: 50
 
 .. |synchro_module| image:: /_static/images/Synchro_module.png

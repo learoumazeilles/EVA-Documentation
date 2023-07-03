@@ -2,6 +2,8 @@
 Fiches
 ======
 
+|suivi_projet| > |fiches|
+
 Module fiche - intro
 --------------------
 
@@ -47,7 +49,7 @@ Vous pouvez sélectionner le type d'arborescence (arborescence initiale, référ
 .. image:: images/Sélection_arbo.png
   :width: 300
 
-Vous pouvez ensuite sélectionner les niveaux concernés, ce sont les niveaux de l'arborescence choisie. Donc si vous avez sélectionné l'arborescence initiale, ils font référence aux relations parents/enfants entre les fiches. Si vous avez sélectionné une arborescence référentiel ou mot clé, le niveau fait référence à l'arborescence du référentiel ou mot clé. Par exemple : si vous avez choisi un référentiel de charte avec des niveaux d'arborescences type Axes>o
+Vous pouvez ensuite sélectionner les niveaux concernés, ce sont les niveaux de l'arborescence choisie. Donc si vous avez sélectionné l'arborescence initiale, ils font référence aux relations parents/enfants entre les fiches. Si vous avez sélectionné une arborescence référentiel ou mot clé, le niveau fait référence à l'arborescence du référentiel ou mot clé. Par exemple : si vous avez choisi un référentiel de charte avec des niveaux d'arborescences type Axes>
 Orientations>Mesures, si vous choissisez les niveaux à partir du niveau 0 jusqu'au niveau 1, seules les fiches rattachées aux Axes et Orientations seront affichées.
 
 .. image:: images/Sélection_niveau.png
@@ -66,6 +68,16 @@ Vous pouvez choisir pour chaque niveau si vous souhaitez retirer les parties du 
 
 .. image:: images/Filtres_niveaux.png
   :width: 500
+
+Dans l'arborescence, la case « Décochez cette case pour désactiver la recherche arborescente » n'existe pas. Pour sélectionner une seule partie du référentiel sans les fiches rattachées à des niveaux inférieurs, il faudra sélectionner cette partie du référentiel à tous les niveaux.
+
+Par exemple ci-dessous, on affiche uniquement les fiches reliées à l'orientation 1.1 et pas celles qui pourraient être reliées aux mesures de cette orientation par exemple.
+
+.. image:: images/filtre_arbo2.png
+   :width: 300
+
+.. image:: images/arbo2.png
+   :width: 300
 
 
 Le critère de tri par code analytique ou titre réordonne l'ordre dans lequel les fiches apparaissent à l'écran. Elle apparaissent par ordre alphabétique des codes analytiques si "code analytique" est choisi (les fiches sans codes apparaissent avant), et par ordre alphabétique des titres de fiches si "titre" est choisi.
@@ -141,7 +153,7 @@ Les champs accessibles :
 Onglet équipe
 ~~~~~~~~~~~~~
 
-Les différents membres sont à renseigner au préalable dans |administration| > |utilisateurs|
+Les différents membres sont à renseigner au préalable dans |administration| > |profils| > |utilisateurs|
 
 Ajouter les **chefs de projet** et **validateurs** grâce au |petit_plus| à côté des champs.
 Les chefs de projets recoivent un mail lorsque la fiche est passée en statut "Validée", les validateurs recoivent un mail lorsque la fiche est passée en statut "À valider". Le tableau des membres de l'équipe se remplit automatiquement avec les chefs de projet (indiqué via |écrou|) et validateurs (indiqué via |tick|).
@@ -179,7 +191,7 @@ L'onglet personnalisable peut avoir un nom différent pour chaque compte de parc
 Onglet acteurs
 ~~~~~~~~~~~~~~
 
-Cet onglet permet de rattacher des structures à la fiche. Ces structures peuvent être renseignées dans le module |annuaire| > |structures|.
+Cet onglet permet de rattacher des structures à la fiche. Ces structures peuvent être renseignées dans le module |données| > |annuaire| > |structures|.
 
 Cliquez sur |ajout_acteur| pour ajouter une structure. Une boîte de dialogue s'ouvre pour choisir la structure.
 
@@ -195,11 +207,13 @@ N'oubliez pas d'enregistrer cette boîte de dialogue avant de quitter.
 Onglet territoires
 ~~~~~~~~~~~~~~~~~~
 
-Cet onglet permet de rattacher des territoires à la fiche. Ces territoires peuvent être renseignés dans le module |cartographie| > |territoires|.
+Cet onglet permet de rattacher des territoires à la fiche. Ces territoires peuvent être renseignés dans le module |données| > |Territoires|.
 
 * Soit commencez à rentrer le nom du territoire, les territoires s'affichent par auto-complétion, choissisez celui qui vous convient.
 
 * Soit cliquez sur le |petit_plus|, rentrer les premières lettres et cliquer sur la |loupe|, puis choissisez le(s) territoire(s).
+
+* Soit cliquez sur le |petit_plus|, puis les traits pour afficher l'ensemble des territoires (attention cela peut prendre du temps).
 
 N'oubliez pas de cliquer sur sélectionner dans cette boîte de dialogue avant de quitter et ensuite d'enregistrer la fiche.
 
@@ -299,7 +313,7 @@ On peut afficher les temps d'absence en vue liste |vue_liste| ou calendrier |vue
 Onglet indicateurs
 ~~~~~~~~~~~~~~~~~~
 
-Cet onglet permet d'ajouter des mesures à des indicateurs. Les indicateurs peuvent être renseignés dans le module |indicateurs|.
+Cet onglet permet d'ajouter des mesures à des indicateurs. Les indicateurs peuvent être renseignés dans le module |données| > |indicateurs|.
 
 Une boîte de dialogue s'ouvre en cliquant sur :
 
@@ -336,7 +350,7 @@ Une boîte de dialogue s'ouvre en cliquant sur :
 .. image:: images/Créer_poste_dépenses.png
   :width: 200
 
-Ce poste de dépense peut être rattaché à un compte (de dépense) qui est à définir dans le module |budget| > |comptes|.
+Ce poste de dépense peut être rattaché à un compte (de dépense) qui est à définir dans le module |données| > |budget| > |comptes|.
 
 Le rattachement à un parent propose des postes de dépenses (avec le code du compte rattaché) qui viennent de la fiche parent. Toutes les dépenses remontent à la fiche parent. 
 
@@ -367,11 +381,11 @@ Une boîte de dialogue s'ouvre en cliquant sur :
 .. image:: images/Créer_poste_recettes.png
   :width: 200
 
-Ce poste de recette peut être rattaché à un compte (de recette) qui est à définir dans le module |budget| > |comptes|.
+Ce poste de recette peut être rattaché à un compte (de recette) qui est à définir dans le module |données| > |budget| > |comptes|.
 
 Le rattachement à un parent propose des postes de recette (avec le code du compte rattaché) qui viennent de la fiche parent. Toutes les recettes remontent à la fiche parent. 
 
-Il peut aussi être rattaché à une enveloppe qui est à définir dans le module |budget| > |enveloppes|. 
+Il peut aussi être rattaché à une enveloppe qui est à définir dans le module |données| > |budget| > |enveloppes|. 
 
 On peut choisir plus de détails dans l'onglet "détails" de la boîte de dialogue de création d'un compte (les dates de caducité, d'envoi du dossier, informations sur l'arrêté, délibération, montant subventionable).
 
@@ -405,7 +419,7 @@ Ils apparaissent ensuite sur dans l'onglet "Fiche" de la fiche et peuvent être 
 Onglet conventions
 ~~~~~~~~~~~~~~~~~~
 
-Dans cet onglet on peut voir les conventions rattachées à la fiche. On ne peut pas ajouter de convention via la fiche. Les conventions sont paramétrées et rattachées aux fiches dans le module |conventions|.
+Dans cet onglet on peut voir les conventions rattachées à la fiche. On ne peut pas ajouter de convention via la fiche. Les conventions sont paramétrées et rattachées aux fiches dans le module |données| > |conventions|.
 
 Onglet avancement
 ~~~~~~~~~~~~~~~~~
@@ -419,7 +433,7 @@ Les avancements permettent de poser les jalons du projet. Ils ne sont pas relié
 Onglet tâches
 ~~~~~~~~~~~~~
 
-Les tâches permettent d'attribuer des tâches à des utilisateurs. L'ensemble des tâches est visible dans le module |tâches|. Les tâches ne sont pas reliées aux avancements ou aux temps prévus/passés.
+Les tâches permettent d'attribuer des tâches à des utilisateurs. L'ensemble des tâches est visible dans le module |suivi_projet| > |tâches|. Les tâches ne sont pas reliées aux avancements ou aux temps prévus/passés.
 
 .. Warning::
 	Le module tâche a vocation a être revu, la documentation à ce sujet sera plus fourni après la refonte.
@@ -484,7 +498,7 @@ Les notes que l'on a créé peuvent être supprimées en cliquant sur le logo de
 .. image:: images/Suppression_note.png
   :width: 300
 
-Toutes les notes peuvent être retrouvée dans le module |notes|, elles sont datées et indiquent l'utilisateur qui a créé la note.
+Toutes les notes peuvent être retrouvée dans le module |suivi_projet| > |notes|, elles sont datées et indiquent l'utilisateur qui a créé la note.
 
 
 Exports d'une fiche

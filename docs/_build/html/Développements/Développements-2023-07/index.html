@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Développements 2023 07 &mdash; Documentation Documentation EVA 1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="prev" title="Développements 2023 03" href="../D%C3%A9veloppements-2023-03/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #27A26B" >
+            <a href="../../index.html" class="icon icon-home"> Documentation EVA
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Premiers pas</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction-%C3%A0-EVA/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ/index.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Tutoriel-d%C3%A9buts-dans-EVA/index.html">Tutoriel débuts dans EVA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation utilisateur</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html">Fonctionnalités générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fonctionnalit%C3%A9s-par-modules/index.html">Fonctionnalités par modules</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-essentiels/index.html">Paramétrages essentiels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-simples/index.html">Paramétrages simples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-avanc%C3%A9s/index.html">Paramétrages avancés</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2022-11/index.html">Développements 2022 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2023-03/index.html">Développements 2023 03</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Développements 2023 07</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contexte">Contexte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anomalies-resolues">Anomalies résolues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#apparence-du-point-rouge">1. Apparence du point rouge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-word-indicateurs">2. Export Word indicateurs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anomalie-export-arborescent">3. Anomalie export arborescent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anomalie-filtre-arborescent">4. Anomalie filtre arborescent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anomalie-filtre-requete">5. Anomalie filtre requête</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anomalies-filtres">6. Anomalies filtres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#correction-des-dependances-dans-les-roles">7. Correction des dépendances dans les rôles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#synchronisation-eva-postparc">8. Synchronisation EVA – PostParc</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ameliorations-des-fonctionnalites-d-import-et-d-export">Améliorations des fonctionnalités d’import et d’export</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#synchronisation-agendas-limiter-limport-de-la-description-et-des-pieces-jointes">9. Synchronisation agendas, limiter l’import de la description et des pièces-jointes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nouvelle-colonne-de-calcul-de-solde">10. Nouvelle colonne de calcul de solde</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#export-des-montants-financiers-de-facon-non-secable">11. Export des montants financiers de façon non sécable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#amelioration-des-messages-d-erreurs">12. Amélioration des messages d’erreurs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enregistrement-champs-personnalises-annuaire">13. Enregistrement champs personnalisés annuaire</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#nouvelles-fonctionnalites">Nouvelles fonctionnalités !</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#affichage-page-d-accueil">14. Affichage page d’accueil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#partage-des-requetes-en-vue-arborescente">15. Partage des requêtes en vue arborescente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#selection-des-territoires-simplifiee">16. Sélection des territoires simplifiée</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nouvelle-organisation-des-modules">17. Nouvelle organisation des modules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #27A26B" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Documentation EVA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Développements 2023 07</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Développements/Développements-2023-07/index.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="developpements-2023-07">
+<h1>Développements 2023 07<a class="headerlink" href="#developpements-2023-07" title="Lien permanent vers cette rubrique"></a></h1>
+<section id="contexte">
+<h2>Contexte<a class="headerlink" href="#contexte" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Un déploiement des derniers développements sur le logiciel EVA a eu lieu le 3/07/2023. Il comprend des <strong>résolutions d’anomalies</strong>, des <strong>améliorations des fonctionnalités existantes et des ajouts de fonctionnalités</strong> avec notamment une nouvelle organisation des modules.</p>
+<p>Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé (il faut un compte pour le consulter) et un mode d’emploi pour les nouveautés.</p>
+</section>
+<section id="anomalies-resolues">
+<h2>Anomalies résolues<a class="headerlink" href="#anomalies-resolues" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="apparence-du-point-rouge">
+<h3>1. Apparence du point rouge<a class="headerlink" href="#apparence-du-point-rouge" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/330">Ticket 330</a> :
+Dans certain navigateur, au moment de l’édition d’une fiche, le point rouge d’ajout de fiche est traversé par une barre verte car il y a un ajout d’une barre grise en bas.</p>
+<a class="reference internal image-reference" href="../../_images/Apparence_point_rouge.png"><img alt="../../_images/Apparence_point_rouge.png" src="../../_images/Apparence_point_rouge.png" style="width: 600px;" /></a>
+<p><strong>Corrigé</strong></p>
+</section>
+<section id="export-word-indicateurs">
+<h3>2. Export Word indicateurs<a class="headerlink" href="#export-word-indicateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/133">Ticket 133</a> : L’export Word des indicateurs repérait l’année la plus récente renseignée parmi toutes les mesures de tous les indicateurs à exporter et n’exportait que les mesures de cette même année pour tous les indicateurs en ignorant les autres. Ainsi, par exemple, si un seul indicateur a une mesure en 2023 et les autres des mesures en 2022, seules les mesures de 2023 ressortent.</p>
+<p><strong>Corrigé</strong> : Maintenant toutes les valeurs cibles et réalisées pour chaque indicateur sont exportées.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il est possible de filtrer les années des mesures si on le souhaite dans le paramétrage global de l’export (qui filtrera aussi les autres données datées de temps et de budget)</p>
+</div>
+<a class="reference internal image-reference" href="../../_images/export_année.png"><img alt="../../_images/export_année.png" src="../../_images/export_année.png" style="width: 300px;" /></a>
+</section>
+<section id="anomalie-export-arborescent">
+<h3>3. Anomalie export arborescent<a class="headerlink" href="#anomalie-export-arborescent" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/395">Ticket 395</a> : Il y avait plusieurs anomalies dans les exports arborescents :
+- La description des mots clés ne s’affichait pas
+- Les données budgétaires et de temps n’étaient pas agrégées correctement
+- Les différents niveaux de fiches et de mots clés n’étaient pas respectés</p>
+<a class="reference internal image-reference" href="../../_images/mots_cles_export.png"><img alt="../../_images/mots_cles_export.png" src="../../_images/mots_cles_export.png" style="width: 200px;" /></a>
+<p><strong>Corrigé</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les niveaux dans les exports arborescents fonctionnent comme suit :
+- Feuille/Nœud/Parent concernent les mots clés/référentiels, le premier niveau sera un parent, s’il n’y a qu’un niveau, il sera parent. Le niveau le plus bas sera une feuille et tous les niveaux intermédiaires seront des nœuds.
+- Les fiches sont rattachées à chaque niveau et peuvent être formattées différemment</p>
+</div>
+</section>
+<section id="anomalie-filtre-arborescent">
+<h3>4. Anomalie filtre arborescent<a class="headerlink" href="#anomalie-filtre-arborescent" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/377">Ticket 377</a> : Dans les filtres de l’affichage des fiches arborescent, les filtres sur les niveaux ne fonctionnaient plus.</p>
+<p>Par exemple, si l’on souhaite voir apparaître dans une arborescence de charte, uniquement les fiches rattachées à l’axe 1 et l’orientation 1.1, voici les filtres à sélectionner :</p>
+<a class="reference internal image-reference" href="../../_images/filtre_arbo1.png"><img alt="../../_images/filtre_arbo1.png" src="../../_images/filtre_arbo1.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/arbo1.png"><img alt="../../_images/arbo1.png" src="../../_images/arbo1.png" style="width: 400px;" /></a>
+<ul class="simple">
+<li><p>Il faut bien cocher la case « Retirer les mots-clés sans fiches » pour ne pas faire apparaître les autres titres du mot-clé/référentiel.</p></li>
+<li><p>Ensuite, il faut sélectionner pour chaque niveau les bonnes parties du mot-clé/référentiel. Par exemple ici, l’axe correspond au niveau 0 donc il faut sélectionner l’axe 1 dans les filtres du niveau 0, puis l’orientation 1.1 dans les filtres du niveau 1 puis les mesures associées à l’orientation 1.1 dans les filtres du niveau 2.</p></li>
+</ul>
+<p><strong>Corrigé</strong> : La case à cocher pour les référentiels « Décochez cette case pour désactiver la recherche arborescente » a été supprimée, car elle ne fonctionnait pas en arborescence.</p>
+<a class="reference internal image-reference" href="../../_images/case_arbo.png"><img alt="../../_images/case_arbo.png" src="../../_images/case_arbo.png" style="width: 300px;" /></a>
+<p>Pour rappel, dans la liste des fiches, elle aurait par exemple permis dans l’exemple ci-dessus de ne pas sélectionner les fiches des mesures 1.1.2 et 1.1.1 mais seulement la fiche « Fiche test formation LC » qui est la seule rattachée directement à l’orientation 1.1. Pour parvenir à sélectionner uniquement les fiches rattachées à l’orientation 1.1, ici il faudra sélectionner le filtre Orientation 1.1 pour tous les niveaux.</p>
+<a class="reference internal image-reference" href="../../_images/filtre_arbo2.png"><img alt="../../_images/filtre_arbo2.png" src="../../_images/filtre_arbo2.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/arbo2.png"><img alt="../../_images/arbo2.png" src="../../_images/arbo2.png" style="width: 300px;" /></a>
+</section>
+<section id="anomalie-filtre-requete">
+<h3>5. Anomalie filtre requête<a class="headerlink" href="#anomalie-filtre-requete" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/327">Ticket 327</a> : Les filtres ne s’affichaient pas quand on cliquait une requête. Par exemple, en cliquant sur une requête qui a pour filtre « toutes les fiches pour lesquelles le référentiel charte est remplie », la sélection avait lieu mais le filtre n’était pas affiché.</p>
+<p><strong>Corrigé</strong></p>
+</section>
+<section id="anomalies-filtres">
+<h3>6. Anomalies filtres<a class="headerlink" href="#anomalies-filtres" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/393">Ticket 393</a></p>
+<p>Dans les fiches, les filtres sur les chefs de projet ne fonctionnaient plus en sélectionnant plusieurs chefs de projet.</p>
+<p><strong>Corrigé</strong></p>
+</section>
+<section id="correction-des-dependances-dans-les-roles">
+<h3>7. Correction des dépendances dans les rôles<a class="headerlink" href="#correction-des-dependances-dans-les-roles" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/268">Ticket 268</a></p>
+<p>La gestion des droits contient des dépendances illogiques qui parfois limitent l’accès au logiciel. Par exemple pour certains modules s’ils sont en accès « voir » seul, et non « modifier », il est difficile d’y accéder car ils n’apparaissent pas.</p>
+<p><strong>Corrigé</strong></p>
+</section>
+<section id="synchronisation-eva-postparc">
+<h3>8. Synchronisation EVA – PostParc<a class="headerlink" href="#synchronisation-eva-postparc" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/397">Ticket 397</a> : Synchronisation manuelle fonctionne mais pas la synchronisation automatique (tous les lundis…)</p>
+<p><strong>Corrigé</strong></p>
+</section>
+</section>
+<section id="ameliorations-des-fonctionnalites-d-import-et-d-export">
+<h2>Améliorations des fonctionnalités d’import et d’export<a class="headerlink" href="#ameliorations-des-fonctionnalites-d-import-et-d-export" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="synchronisation-agendas-limiter-limport-de-la-description-et-des-pieces-jointes">
+<h3>9. Synchronisation agendas, limiter l’import de la description et des pièces-jointes<a class="headerlink" href="#synchronisation-agendas-limiter-limport-de-la-description-et-des-pieces-jointes" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/299">Ticket 359</a> :</p>
+<p>Des problèmes de synchronisation avaient lieu lorsque la description des rendez-vous dans l’agenda était trop longue ou contenait des smileys ou autres caractères spéciaux ainsi que des pièces-jointes ou encore lorsque les agendas comportaient plusieurs fuseaux horaires.</p>
+<p><strong>Corrigé</strong></p>
+<ul class="simple">
+<li><p>Une option de limitation du nombre de caractère des descriptions a été ajoutée</p></li>
+<li><p>Les pièces-jointes sont ignorées</p></li>
+<li><p>Le fuseau horaire utilisé sera celui paramétré dans la synchronisation</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/Synchro_option.png"><img alt="../../_images/Synchro_option.png" src="../../_images/Synchro_option.png" style="width: 300px;" /></a>
+</section>
+<section id="nouvelle-colonne-de-calcul-de-solde">
+<h3>10. Nouvelle colonne de calcul de solde<a class="headerlink" href="#nouvelle-colonne-de-calcul-de-solde" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/399">Ticket 399</a> : Besoin d’un solde « prévu – liquidé » ( ou « prévu – engagé payé » dans certains EVA).</p>
+<p>-&gt;Ajout de la nouvelle colonne de calcul</p>
+<a class="reference internal image-reference" href="../../_images/colonne_calcul.png"><img alt="../../_images/colonne_calcul.png" src="../../_images/colonne_calcul.png" style="width: 600px;" /></a>
+</section>
+<section id="export-des-montants-financiers-de-facon-non-secable">
+<h3>11. Export des montants financiers de façon non sécable<a class="headerlink" href="#export-des-montants-financiers-de-facon-non-secable" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/367">Ticket 367</a> : Certains titres de fiches très longs déforment les tableaux financiers, pour éviter ce comportement, les montants ont été rendus non sécables.</p>
+<p>Avant :</p>
+<a class="reference internal image-reference" href="../../_images/avant_compte.png"><img alt="../../_images/avant_compte.png" src="../../_images/avant_compte.png" style="width: 600px;" /></a>
+<p>Après :</p>
+<a class="reference internal image-reference" href="../../_images/après_compte.png"><img alt="../../_images/après_compte.png" src="../../_images/après_compte.png" style="width: 600px;" /></a>
+</section>
+<section id="amelioration-des-messages-d-erreurs">
+<h3>12. Amélioration des messages d’erreurs<a class="headerlink" href="#amelioration-des-messages-d-erreurs" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/284">Ticket 284</a> : Les messages d’erreur étaient en anglais et rarement compréhensible lors des suppressions par exemple ou des imports. Les erreurs d’import n’étaient pas toujours indiquées, ce qui pouvait porter à confusion.</p>
+<p><strong>Il y a maintenant un nouveau message d’erreur lorsque l’on tente de supprimer un élément qui a déjà été utilisé quelque part (par exemple un mot clé qui est déjà rattaché dans une fiche, ou une requête qui est utilisée dans l’accueil)</strong></p>
+<a class="reference internal image-reference" href="../../_images/erreur_suppr.png"><img alt="../../_images/erreur_suppr.png" src="../../_images/erreur_suppr.png" style="width: 500px;" /></a>
+<p><strong>Les erreurs d’import sont maintenant pour la plupart signalées et indique comment être résolues.</strong></p>
+<a class="reference internal image-reference" href="../../_images/erreur_import.png"><img alt="../../_images/erreur_import.png" src="../../_images/erreur_import.png" style="width: 300px;" /></a>
+</section>
+<section id="enregistrement-champs-personnalises-annuaire">
+<h3>13. Enregistrement champs personnalisés annuaire<a class="headerlink" href="#enregistrement-champs-personnalises-annuaire" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/342">Ticket 342</a> : Il y a deux boutons « enregistrer » dans le contact quand il y a des champs personnalisables. Si on enregistre avec le bouton du bas, cela n’enregistre pas les modifications effectuées dans la partie principale (et inversement). Il faudrait rendre possible comme dans les fiches l’enregistrement de tout le contact avec ces deux boutons, ou bien garder seulement un seul bouton enregistrer tout en bas.</p>
+<p>-&gt; Un seul bouton est accessible dans le contact et enregistre tous les champs.</p>
+</section>
+</section>
+<section id="nouvelles-fonctionnalites">
+<h2>Nouvelles fonctionnalités !<a class="headerlink" href="#nouvelles-fonctionnalites" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="affichage-page-d-accueil">
+<h3>14. Affichage page d’accueil<a class="headerlink" href="#affichage-page-d-accueil" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/398">Ticket 398</a> : La personnalisation de la page d’accueil permet d’ajouter un module calendrier dynamique qui permet l’ajout de feuille de temps. Cependant, lors de la saisie, le champ “utilisateur” apparait vide. Il serait intéressant que ce champ soit prérempli avec le nom de l’utilisateur loggé comme lorsque l’on saisit dans le module temps.</p>
+<a class="reference internal image-reference" href="../../_images/aff_acc_temps.png"><img alt="../../_images/aff_acc_temps.png" src="../../_images/aff_acc_temps.png" style="width: 600px;" /></a>
+<p>La page d’accueil peut être personnalisée par l’ajout de différent module. Un graphique du temps de saisie par mois est disponible mais il pourrait être intéressant que l’utilisateur puisse modifier le type de graphique directement et ainsi afficher un graphique de répartition des temps saisie par fiche en représentation camembert par exemple.</p>
+<a class="reference internal image-reference" href="../../_images/aff_acc_fiches.png"><img alt="../../_images/aff_acc_fiches.png" src="../../_images/aff_acc_fiches.png" style="width: 600px;" /></a>
+<p>-&gt; Ceci est maintenant possible pour affichage en accueil, il faut paramétrer la requête dans Analyses &gt; Temps. Attention, les temps s’affichent au niveau de la fiche parent uniquement.</p>
+</section>
+<section id="partage-des-requetes-en-vue-arborescente">
+<h3>15. Partage des requêtes en vue arborescente<a class="headerlink" href="#partage-des-requetes-en-vue-arborescente" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/400">Ticket 400</a> : Le partage des requêtes n’était pas possible sur les fiches en vue arborescente.</p>
+<a class="reference internal image-reference" href="../../_images/requete_arbo.png"><img alt="../../_images/requete_arbo.png" src="../../_images/requete_arbo.png" style="width: 400px;" /></a>
+<p>-&gt; Ceci est maintenant possible.</p>
+</section>
+<section id="selection-des-territoires-simplifiee">
+<h3>16. Sélection des territoires simplifiée<a class="headerlink" href="#selection-des-territoires-simplifiee" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/381">Ticket 381</a> : Pour faciliter la saisie des territoires dans les fiches, il a été ajouté la fonction d’afficher tous les territoires dans le sélecteur en cliquant sur les trois traits.</p>
+<a class="reference internal image-reference" href="../../_images/selec_territoire.png"><img alt="../../_images/selec_territoire.png" src="../../_images/selec_territoire.png" style="width: 400px;" /></a>
+</section>
+<section id="nouvelle-organisation-des-modules">
+<h3>17. Nouvelle organisation des modules<a class="headerlink" href="#nouvelle-organisation-des-modules" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/401">Ticket 401</a> : Il a été relevé que l’organisation des modules n’étaient pas simples pour les utilisateurs. EVA a donc été réorganisé comme suit :</p>
+<a class="reference internal image-reference" href="../../_images/orga_module.png"><img alt="../../_images/orga_module.png" src="../../_images/orga_module.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>L’accueil est accessible via la barre du haut, le bouton aide renvoie vers la documentation en ligne</p></li>
+<li><p>En survolant votre nom d’utilisateur en haut à droite, vous pouvez modifier votre profil ou vous déconnecter</p></li>
+<li><p>Fiches, Notes, tâches, temps et alertes ont été rassemblé dans « Suivi de projet »</p></li>
+<li><p>Le module analyses ne change pas</p></li>
+<li><p>Annuaire, indicateurs, budget, conventions, territoires ont été rassemblés dans données. Les fonctions ont été rattachées au module annuaire.</p></li>
+<li><p>La partie paramétrage n’a pas beaucoup changées, le bouton « mots-clés » s’appelle maintenant « indexage » car il rassemble mots-clés et référentiels. « Rôles » et « utilisateurs » ont été rassemblés dans l’onglet profils pour bien montrer que la relation entre les deux.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="../D%C3%A9veloppements-2023-03/index.html" class="btn btn-neutral float-left" title="Développements 2023 03" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Lea Roumazeilles.
+      <span class="lastupdated">Mis à jour le 03 juil. 2023.
+      </span></p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

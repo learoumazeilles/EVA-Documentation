@@ -12,4 +12,4 @@ Fonctionnalités par modules
    Indicateurs
    Budget
    Conventions
-   Cartographie
+   Territoires

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Développements 2022 11 &mdash; Documentation Documentation EVA 1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #27A26B" >
+            <a href="../../index.html" class="icon icon-home"> Documentation EVA
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Premiers pas</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction-%C3%A0-EVA/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ/index.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Tutoriel-d%C3%A9buts-dans-EVA/index.html">Tutoriel débuts dans EVA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation utilisateur</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html">Fonctionnalités générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fonctionnalit%C3%A9s-par-modules/index.html">Fonctionnalités par modules</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-essentiels/index.html">Paramétrages essentiels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-simples/index.html">Paramétrages simples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-avanc%C3%A9s/index.html">Paramétrages avancés</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #27A26B" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Documentation EVA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Développements 2022 11</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Développements/Développements-2022-11/index.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="developpements-2022-11">
+<h1>Développements 2022 11<a class="headerlink" href="#developpements-2022-11" title="Lien permanent vers cette rubrique"></a></h1>
+<section id="contexte">
+<h2>Contexte<a class="headerlink" href="#contexte" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Ce déploiement des développements en cours sur le logiciel EVA a eu lieu le 9/11/2022. Il comprend des résolutions d’anomalies, des améliorations ergonomiques, l’ajout de nouvelles fonctionnalités et une évolution pour conformité avec le cadre Open Source.</p>
+<p>Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé (il faut un compte pour le consulter) et un mode d’emploi pour les nouveautés.</p>
+<dl class="simple">
+<dt>Il y a deux points d’attention :</dt><dd><ul class="simple">
+<li><p>Le changement de la librairie des exports peut avoir un <strong>impact sur les exports Word paramétrés</strong>. Si vous êtes impactés, l’assistance saura vous aider.</p></li>
+<li><p>La résolution des <strong>envois d’alertes mails automatiques</strong> : je vous invite à <strong>vérifier les envois</strong> de ces alertes et à me notifier si le problème persiste.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="anomalies-resolues">
+<h2>Anomalies résolues<a class="headerlink" href="#anomalies-resolues" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="anomalie-droit-dajout-des-territoires">
+<h3>1. Anomalie droit d’ajout des territoires<a class="headerlink" href="#anomalie-droit-dajout-des-territoires" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/81">Ticket 81</a> : Dans certains cas les utilisateurs ne parvenaient pas à renseigner des territoires dans les fiches. C’était une anomalie au niveau du rôle de l’utilisateur pour « Créer » des fiches : si ce droit était désactivé dans le rôle, il était impossible d’ajouter des territoires alors que la possibilité d’ajouter des territoires aurait dû être associée au droit de « Modifier » les fiches.</p>
+<p><strong>Corrigé</strong> : les utilisateurs qui ont le droit de modifier les fiches ont le droit d’ajouter des territoires</p>
+<a class="reference internal image-reference" href="../../_images/role_territoire.png"><img alt="../../_images/role_territoire.png" src="../../_images/role_territoire.png" style="width: 700px;" /></a>
+</section>
+<section id="envoi-des-alertes-automatiques">
+<h3>2. Envoi des alertes automatiques<a class="headerlink" href="#envoi-des-alertes-automatiques" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/163">Ticket 163</a> : Les alertes automatiques n’étaient plus reçues car détectée comme suspectes par les gestionnaires de boîte mails.</p>
+<p><strong>Corrigé</strong> : les alertes de mail sont maintenant envoyées avec une adresse evaparc.net qui est configurée de manière à inspirer confiance aux gestionnaires de boîte mails.</p>
+<a class="reference internal image-reference" href="../../_images/Alertes.png"><img alt="../../_images/Alertes.png" src="../../_images/Alertes.png" style="width: 100px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Alerte_adresse.png"><img alt="../../_images/Alerte_adresse.png" src="../../_images/Alerte_adresse.png" style="width: 200px;" /></a>
+</section>
+<section id="affichage-du-module-des-mots-cles">
+<h3>3. Affichage du module des mots clés<a class="headerlink" href="#affichage-du-module-des-mots-cles" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/267">Ticket 267</a> : Dans le module de définition des mots clés, la taille de la fenêtre n’était pas adaptée et il n’était pas possible de voir toutes les colonnes sans dézoomer. De plus, parfois les mots clés clignotaient et sautaient de ligne quand on essayait de cliquer dessus.</p>
+<p><strong>Corrigé</strong> : Il y a maintenant des ascenseurs verticaux et horizontaux pour pouvoir voir tous les mots clés et colonnes. L’affichage du nom complet a été bloqué pour éviter les clignotements.</p>
+<a class="reference internal image-reference" href="../../_images/Affichage_motsclés.png"><img alt="../../_images/Affichage_motsclés.png" src="../../_images/Affichage_motsclés.png" style="width: 700px;" /></a>
+</section>
+<section id="titre-de-fiche-long">
+<h3>4. Titre de fiche long<a class="headerlink" href="#titre-de-fiche-long" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/270">Ticket 270</a> : Lorsqu’un titre de fiche était trop long, il était chevauché par le statut et les notes, ce qui rendait le tout peu lisible.</p>
+<p><strong>Corrigé</strong> : Lorsque le titre est long, il s’adapte sur plusieurs lignes.</p>
+<a class="reference internal image-reference" href="../../_images/Titre_long.png"><img alt="../../_images/Titre_long.png" src="../../_images/Titre_long.png" style="width: 600px;" /></a>
+</section>
+<section id="navigation-entre-vue-arborescente-et-vue-liste">
+<h3>5. Navigation entre vue arborescente et vue liste<a class="headerlink" href="#navigation-entre-vue-arborescente-et-vue-liste" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/283">Ticket 283</a> : Dans la partie « arborescence des fiches » dans le menu gauche des fiches, lorsque l’on cliquait sur « Vue liste », on était ensuite bloqué en vue liste sans pouvoir revenir en vue arborescente.</p>
+<p><strong>Corrigé</strong> : il y a maintenant un bouton « Vue arborescente » qui permet de faire l’aller-retour entre la vue arborescente et la vue liste.</p>
+<a class="reference internal image-reference" href="../../_images/Vue_arbo.png"><img alt="../../_images/Vue_arbo.png" src="../../_images/Vue_arbo.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Vue_liste.png"><img alt="../../_images/Vue_liste.png" src="../../_images/Vue_liste.png" style="width: 400px;" /></a>
+</section>
+<section id="anomalies-sur-les-imports">
+<h3>6. Anomalies sur les imports<a class="headerlink" href="#anomalies-sur-les-imports" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/290">Ticket 290</a> :</p>
+<ul class="simple">
+<li><p>Import de contact : deux champs « Nom » étaient présents au moment de l’import des contacts mais seulement un fonctionnait. Le champ en plus est un champ nécessaire pour la base de données.</p></li>
+</ul>
+<p><strong>Corrigé</strong> : « Nom » a été remplacé par le champ « Nom-Prénom » qui n’est pas à utiliser.</p>
+<a class="reference internal image-reference" href="../../_images/Nom_Prénom_import.png"><img alt="../../_images/Nom_Prénom_import.png" src="../../_images/Nom_Prénom_import.png" style="width: 200px;" /></a>
+<ul class="simple">
+<li><p>Import d’utilisateur : le champ « Adresse email » était obligatoire dans le formulaire mais pas dans l’import ce qui pouvait poser problèmes lors de modification des utilisateurs.</p></li>
+</ul>
+<p><strong>Corrigé</strong> : Il est maintenant obligatoire dans l’import également.</p>
+<a class="reference internal image-reference" href="../../_images/Email_import.png"><img alt="../../_images/Email_import.png" src="../../_images/Email_import.png" style="width: 200px;" /></a>
+<ul class="simple">
+<li><p>Import enveloppes : le champ financeur est obligatoire dans l’import mais il n’avait pas d’étoile.</p></li>
+</ul>
+<p><strong>Corrigé</strong> : Le champ financeur comporte une étoile (à noter qu’il faut indiquer l’ID du financeur et non le nom complet, cf Ticket #285 : Afficher et exporter la colonne ID)</p>
+<a class="reference internal image-reference" href="../../_images/Financeur_import.png"><img alt="../../_images/Financeur_import.png" src="../../_images/Financeur_import.png" style="width: 100px;" /></a>
+<ul class="simple">
+<li><p>Import budget recette : l’association à une enveloppe était obligatoire lors de la création d’un poste de recette mais pas lors de l’import (qui engendre la création de poste de recette).</p></li>
+</ul>
+<p><strong>Corrigé</strong> : l’association d’une enveloppe à un poste de recette a donc été rendu non-obligatoire partout.</p>
+<a class="reference internal image-reference" href="../../_images/Création_posterecette.png"><img alt="../../_images/Création_posterecette.png" src="../../_images/Création_posterecette.png" style="width: 500px;" /></a>
+</section>
+</section>
+<section id="ameliorations-ergonomiques">
+<h2>Améliorations ergonomiques<a class="headerlink" href="#ameliorations-ergonomiques" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="nouvelles-infobulles">
+<h3>7. Nouvelles infobulles<a class="headerlink" href="#nouvelles-infobulles" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/279">Ticket 279</a> et <a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/287">Ticket 287</a> : De nouvelles infobulles ont été ajoutées pour faciliter l’utilisation du logiciel :</p>
+<ul class="simple">
+<li><p>Utilisateur inactif : dans le module utilisateur, la case « Inactif » est maintenant explicitée</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/Utilisateur_inactif.png"><img alt="../../_images/Utilisateur_inactif.png" src="../../_images/Utilisateur_inactif.png" style="width: 300px;" /></a>
+<ul class="simple">
+<li><p>Aide import : Une infobulle explique l’utilisation des boutons Envoyer, Valider et Importer et une infobulle dans le coin droit affiche les étapes pour l’import</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/Aide_import1.png"><img alt="../../_images/Aide_import1.png" src="../../_images/Aide_import1.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Aide_import2.png"><img alt="../../_images/Aide_import2.png" src="../../_images/Aide_import2.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Import budget avec écrasement : une infobulle prévient de la nécessité de remplir l’année (sinon l’import n’a pas lieu).</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/Remplir_écrasement.png"><img alt="../../_images/Remplir_écrasement.png" src="../../_images/Remplir_écrasement.png" style="width: 600px;" /></a>
+</section>
+<section id="la-taille-des-colonnes-qui-changent">
+<h3>8. La taille des colonnes qui changent<a class="headerlink" href="#la-taille-des-colonnes-qui-changent" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/280">Ticket 280</a> : Si la taille des colonnes qui changent au passage de la souris vous déplaît, vous pouvez maintenant éviter ce comportement en décochant la case « tableau redimensionnable » dans votre profil. Cette case, disponible avant dans un onglet difficilement trouvable, a été rapatriée à côté de votre choix de couleur et agrémentée d’une infobulle (cliquer sur votre nom en haut à droite dans EVA pour y accéder).</p>
+<a class="reference internal image-reference" href="../../_images/Taille_colonnes.png"><img alt="../../_images/Taille_colonnes.png" src="../../_images/Taille_colonnes.png" style="width: 600px;" /></a>
+</section>
+<section id="indicattion-des-filtres-par-defaut">
+<h3>9. Indicattion des filtres par défaut<a class="headerlink" href="#indicattion-des-filtres-par-defaut" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/281">Ticket 281</a> : Dans certains modules des filtres par défaut sont appliqués sur les tableaux, ce qui parfois conduit à l’affichage d’aucune donnée. Ces filtres sont maintenant indiqués de manière évidente en haut des tableaux pour éviter les confusions.</p>
+<a class="reference internal image-reference" href="../../_images/Filtres_défaut.png"><img alt="../../_images/Filtres_défaut.png" src="../../_images/Filtres_défaut.png" style="width: 600px;" /></a>
+</section>
+</section>
+<section id="nouvelles-fonctionnalites">
+<h2>Nouvelles fonctionnalités !<a class="headerlink" href="#nouvelles-fonctionnalites" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="permettre-les-caracteres-speciaux-dans-les-titres">
+<h3>10. Permettre les caractères spéciaux dans les titres<a class="headerlink" href="#permettre-les-caracteres-speciaux-dans-les-titres" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/282">Ticket 282</a> : Parfois lors de l’ajout de fiches et de liaisons avec des fiches de temps, des caractères spéciaux comme les guillemets, les points de suspensions ou les crochets dans les titres pouvaient conduire à un bug. Ce n’est plus le cas, les ‘, ‘’, … et [ ] sont maintenant autorisés mais attention à l’utilisation des crochets si ce sont vos caractères d’entourage pour la liaison des temps.</p>
+</section>
+<section id="afficher-et-exporter-la-colonne-id">
+<h3>11. Afficher et exporter la colonne ID<a class="headerlink" href="#afficher-et-exporter-la-colonne-id" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/285">Ticket 285</a> : Les imports requièrent parfois la référence présente en base de données et dans l’URL qu’il est compliqué de trouver (ID). Elle est maintenant présente dans tous les tableaux. Elle est unique et non modifiable.</p>
+<a class="reference internal image-reference" href="../../_images/Colonne_ID.png"><img alt="../../_images/Colonne_ID.png" src="../../_images/Colonne_ID.png" style="width: 300px;" /></a>
+</section>
+<section id="import-des-mots-cles-et-referentiels-via-csv">
+<h3>12. Import des mots clés et référentiels via csv<a class="headerlink" href="#import-des-mots-cles-et-referentiels-via-csv" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/286">Ticket 286</a> : Pour faciliter la création des nouveaux mots clés et référentiels, une fonction d’import en csv est maintenant disponible comme dans les autres modules. Le bouton rouge en bas à droite permet d’importer les mots clés ou référentiels.
+Cette fonctionnalité est documentée dans la partie import des <a class="reference internal" href="../../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html#fonctionnalites-generales"><span class="std std-ref">Fonctionnalités générales</span></a></p>
+<a class="reference internal image-reference" href="../../_images/Import_motsclés.png"><img alt="../../_images/Import_motsclés.png" src="../../_images/Import_motsclés.png" style="width: 200px;" /></a>
+</section>
+<section id="import-des-equipes-et-acteurs-dans-les-fiches">
+<h3>13. Import des équipes et acteurs dans les fiches<a class="headerlink" href="#import-des-equipes-et-acteurs-dans-les-fiches" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/289">Ticket 289</a> : Lors de l’import des fiches, il est maintenant possible d’importer les membres de l’équipes (autres que chef d’équipe et validateur) ainsi que les acteurs associés à la fiche. Ils peuvent être ajoutés avec leur rôle.
+Cette fonctionnalité est documentée dans la partie import des <a class="reference internal" href="../../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html#fonctionnalites-generales"><span class="std std-ref">Fonctionnalités générales</span></a></p>
+</section>
+</section>
+<section id="conformite-open-source">
+<h2>Conformité Open Source<a class="headerlink" href="#conformite-open-source" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="changement-de-la-librairie-d-export">
+<h3>14. Changement de la librairie d’export<a class="headerlink" href="#changement-de-la-librairie-d-export" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/265">Ticket 265</a> : La librairie qui couvrait les exports dans EVA (PHPDocx) venait d’une licence propriétaire, ce qui était contraire à la logique d’EVA qui est passé en Open Source cette année. Nous avons donc changé cette librairie pour une librairie en Open Source PHPOffice. Nous avons tout fait pour qu’il y ait le moins de perturbations possibles mais certains exports word seront potentiellement à retravailler (surtout s’il y a eu des modifications dans le code html). Si vous constatez des problèmes sur vos exports Word, je vous invite à contacter l’assistance qui pourra les corriger.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Lea Roumazeilles.
+      <span class="lastupdated">Mis à jour le 03 juil. 2023.
+      </span></p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

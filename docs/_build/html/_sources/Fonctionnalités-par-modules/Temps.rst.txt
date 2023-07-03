@@ -2,6 +2,8 @@
 Temps
 =====
 
+|suivi_projet| > |temps|
+
 Les temps sont necessairement rattachés aux fiches, ils peuvent être ajoutés de plusieurs façon :
 
 - En remplissant un formulaire
@@ -206,6 +208,11 @@ Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie :ref
 Il faut donner un **titre** à la synchronisation et ajouter le **lien** qui permettra de récupérer les données. Ce lien peut être trouvé dans les paramètre de partage de votre boîte mail (sous le nom d'adresse privée ou lien de partage, en .ics ou .ical...).
 
 Choisissez ensuite le **type** en fonction de votre agenda (Google, Phénix, Zimbra, Outlook) et votre fuseau horaire.
+
+Il y a aussi une option de limitation du nombre de caractère des descriptions, qui permet de ne pas prendre en compte les descriptions si besoin, car parfois les caractères utilisés dans les descriptions peuvent bloquer la synchro (type émoji) et les descriptions ne sont pas forcément utiles dans EVA.
+
+.. note::
+  Les pièces-jointes inclues dans les agendas sont ignorées.
 
 Les temps dans les agendas doivent pouvoir être reliés aux fiches, ce sont les champs **Jointure à la fiche** qui permettent de les relier :
 

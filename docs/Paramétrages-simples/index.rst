@@ -8,7 +8,7 @@ Accueil
 Création des blocs
 ~~~~~~~~~~~~~~~~~~
 
-Dans |administration| > |accueil|, on peut paramétrer l'écran d'accueil qui est l'écran qui s'affiche en premier par défaut lros de la connexion à EVA. Il est aussi accessible via le bouton |accueil_rouge|.
+Dans |administration| > |accueil|, on peut paramétrer l'écran d'accueil qui est l'écran qui s'affiche en premier par défaut lros de la connexion à EVA. Il est aussi accessible via le bouton |accueil_vert| en haut dans la barre verte.
 
 Il y a deux onglets dans le paramétrage de l'accueil : 
 
@@ -37,7 +37,7 @@ Un formulaire s'affiche avec plusieurs champs :
 	- Liste : Pour ajouter une liste de fiches ou tâches avec une certaine requête, par exemple pour afficher dans l'accueil toutes les fiches d'un utilisateur qui sont en cours ou qui ont une date de caducité proche... La requête doit être définie dans les modules fiches ou tâches respectivement
 	- Calendrier : Pour ajouter le calendrier avec une certaine requête donc par exemple toutes mes feuilles de temps uniquement, ou toutes les temps prévionnels de mon équipe uniquement... La requête doit être définie dans le module |temps| > |liste_temps|
 	- Note : Pour afficher le fil de discussion par note sur les fiches, cela peut permettre de mettre en valeur des messages, les notes qui s'affichent sont uniquement celles des fiches pour lesquelles l'utilisateur est membre de l'équipe. (Il faut choisir note dans entité.
-	- Graphique : il permet de montrer les temps passés par mois (Seule les feuilles de temps sont disponibles à ce jour avec une répartition par mois). On peut y associer une requête précise qui doit être défini dans le module |analyses| > |temps|
+	- Graphique : il permet de montrer les temps passés par mois ou par fiches. On peut y associer une requête précise qui doit être défini dans le module |analyses| > |temps|. Pour les fiches, le graphique n'affiche que les temps prévus au niveau de la fiche parent.
 
 
 .. image:: images/Notes_accueil_ex.png
@@ -67,6 +67,16 @@ Par exemple ici une couleur pour chaque personne, la requête associée prend le
 
 .. image:: images/Calendrier_equipe_test.png
 	:width: 600
+
+**Temps par fiche**
+Un graphique du temps par mois pour l'utilisateur courant, avec la requête suivante : 
+- Filtres Utilisateurs : Utilisateur -> contient -> Utilisateur courant
+- Filtres Fiches : Charte DEMO -> est rempli ->
+- Filtres Feuilles de temps : Type -> contient -> Temps passé
+
+.. image:: images/Accueil_temps_fiches.png
+	:width: 600
+
 
 Champs
 ------
@@ -292,7 +302,7 @@ On peut également choisir les options suivantes :
 Alertes
 -------
 
-Dans le module |administration| > |alertes|, on peut paramétrer des alertes qui envoient des mails automatiquement. Ces mails permettent d'alerter sur des statuts de fiches, des dates de caducité, des modifications ou autre en fonction des paramétrages.
+Dans le module |suivi_projet| > |alertes|, on peut paramétrer des alertes qui envoient des mails automatiquement. Ces mails permettent d'alerter sur des statuts de fiches, des dates de caducité, des modifications ou autre en fonction des paramétrages.
 
 Les alertes sont basées sur les requêtes paramétrées dans le tableau des fiches.
 

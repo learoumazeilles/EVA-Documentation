@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Développements 2023 03 &mdash; Documentation Documentation EVA 1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #27A26B" >
+            <a href="../../index.html" class="icon icon-home"> Documentation EVA
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Premiers pas</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction-%C3%A0-EVA/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ/index.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Tutoriel-d%C3%A9buts-dans-EVA/index.html">Tutoriel débuts dans EVA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation utilisateur</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html">Fonctionnalités générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fonctionnalit%C3%A9s-par-modules/index.html">Fonctionnalités par modules</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-essentiels/index.html">Paramétrages essentiels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-simples/index.html">Paramétrages simples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-avanc%C3%A9s/index.html">Paramétrages avancés</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #27A26B" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Documentation EVA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Développements 2023 03</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Développements/Développements-2023-03/index.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="developpements-2023-03">
+<h1>Développements 2023 03<a class="headerlink" href="#developpements-2023-03" title="Lien permanent vers cette rubrique"></a></h1>
+<section id="contexte">
+<h2>Contexte<a class="headerlink" href="#contexte" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Un déploiement des derniers développements sur le logiciel EVA aura lieu le 1er Mars après 17h. Il comprend des <strong>résolutions d’anomalies</strong>, des <strong>améliorations des fonctionnalités d’import et d’export, l’ajout de nouvelles fonctionnalités dans l’annuaire et les conventions</strong> et une <strong>nouvelle liaison automatique</strong> avec le logiciel de gestion de contact PostParc.</p>
+<p>Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé (il faut un compte pour le consulter) et un mode d’emploi pour les nouveautés.</p>
+</section>
+<section id="anomalies-resolues">
+<h2>Anomalies résolues<a class="headerlink" href="#anomalies-resolues" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="anomalie-sur-les-filtres-des-analyses-temps">
+<h3>1. Anomalie sur les filtres des analyses temps<a class="headerlink" href="#anomalie-sur-les-filtres-des-analyses-temps" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/239">Ticket 239</a> :
+Les filtres et requêtes dans les analyses des feuilles de temps présentaient quelques anomalies :
+- Les requêtes enregistrées ne s’affichaient pas correctement
+- Quand on appliquait une requête puis un filtre la combinaison ne s’effectuait pas correctement</p>
+<p><strong>Corrigé</strong> : les filtres des requêtes enregistrées s’affichent correctement (sauf pour le critère « utilisateur courant » qui a toujours des soucis d’affichage) et la combinaison requêtes et fiches supplémentaires est possible</p>
+</section>
+<section id="notification-mails-du-changement-de-statut">
+<h3>2. Notification mails du changement de statut<a class="headerlink" href="#notification-mails-du-changement-de-statut" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/345">Ticket 345</a> : Les mails automatiques envoyés lorsque l’on change certains statuts de fiches ne fonctionnaient plus.</p>
+<p><strong>Corrigé</strong> : les mails automatiques repartent bien quand on change le statut pour « À valider » ou « Validée ».</p>
+<a class="reference internal image-reference" href="../../_images/changement_statut.png"><img alt="../../_images/changement_statut.png" src="../../_images/changement_statut.png" style="width: 300px;" /></a>
+</section>
+<section id="tri-alphabetique-des-colonnes">
+<h3>3. Tri alphabétique des colonnes<a class="headerlink" href="#tri-alphabetique-des-colonnes" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/266">Ticket 266</a> : Les flèches des colonnes qui permettent de réordonner les lignes ne le faisait pas forcément par ordre alphabétique, particulière si les lignes contenaient des chiffres ou des espaces et ceux dans plusieurs modules.</p>
+<p><strong>Corrigé</strong> : Ce tri a été corrigé pour :
+- Colonne noms dans module conventions
+- Colonne structures dans fiche &gt; acteurs
+- Colonnes titre et utilisateur dans fiches &gt; temps passé
+- Colonnes titre et fiches dans temps &gt; liste &gt; vue liste
+- Colonne titre dans temps &gt; synchro
+- Colonne titre dans fiche &gt; avancement
+- Colonnes titre et fiche dans tâches</p>
+<a class="reference internal image-reference" href="../../_images/Tri_colonne.png"><img alt="../../_images/Tri_colonne.png" src="../../_images/Tri_colonne.png" style="width: 300px;" /></a>
+</section>
+</section>
+<section id="ameliorations-des-fonctionnalites-d-import-et-d-export">
+<h2>Améliorations des fonctionnalités d’import et d’export<a class="headerlink" href="#ameliorations-des-fonctionnalites-d-import-et-d-export" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="imports-de-civilites-contacts">
+<h3>4. Imports de civilités contacts<a class="headerlink" href="#imports-de-civilites-contacts" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/288">Ticket 288</a> : Le format des imports de civilités de contacts n’était pas le même que pour les utilisateurs ce qui pouvait porter à confusion et mener à des anomalies d’affichage.</p>
+<p><strong>Corrigé</strong> : Les imports des civilités des contacts peuvent maintenant s’effectuer de la même façon que pour les utilisateurs avec les variables M. et Mme. Ils sont bien affichés dans le tableau.</p>
+</section>
+<section id="import-du-lien-entre-contact-et-structure">
+<h3>5. Import du lien entre contact et structure<a class="headerlink" href="#import-du-lien-entre-contact-et-structure" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/305">Ticket 305</a> : L’import de plusieurs contacts et structures en un seul import était possible mais la liaison entre les contacts et structures était ensuite fastidieuse à effectuer car il n’était pas possible de l’importer donc il fallait ouvrir chaque contact ou structure.</p>
+<p><strong>Corrigé</strong> : Il est maintenant possible d’importer cette liaison entre contact et structure qui s’effectue par la fonction.</p>
+<p>Mode d’emploi dans la <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-lien-contact-structure">documentation import</a></p>
+</section>
+<section id="amelioration-du-lien-entre-export-et-import-tableur">
+<h3>6. Amélioration du lien entre export et import tableur<a class="headerlink" href="#amelioration-du-lien-entre-export-et-import-tableur" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/308">Ticket 308</a></p>
+<p><strong>Export :</strong>
+- Annuaire -&gt; Structures : les colonnes SIRET et Site web sont maintenant exportables
+- Fiches : la colonne ID modèle de fiche a été rajoutée dans l’export car cet ID est utile pour l’import des fiches
+- Budget -&gt; Enveloppe : la colonne ID financeur a été rajoutée dans l’export car cet ID est utile pour l’import des enveloppes
+- Budget -&gt; Compte : la colonne type de mouvement a été rajouté et est exportable pour permettre de faire la différence à l’export entre les dépenses et les recettes</p>
+<p><strong>Import :</strong>
+- Fiches : les variables Chefs de projet ou Validateur qui sont nommées par défaut dans le logiciel ont pu être renommées pour le parc en Pilote par exemple pour Chef de projet. Dans ce cas, l’import permet maintenant d’indiquer le nouveau terme.</p>
+<a class="reference internal image-reference" href="../../_images/variable_import.png"><img alt="../../_images/variable_import.png" src="../../_images/variable_import.png" style="width: 600px;" /></a>
+</section>
+<section id="amelioration-des-exports-et-imports-des-conventions-et-acteurs">
+<h3>7. Amélioration des exports et imports des conventions et acteurs<a class="headerlink" href="#amelioration-des-exports-et-imports-des-conventions-et-acteurs" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/307">Ticket 307</a></p>
+<p><strong>Export Word :</strong>
+- Convention : les champs de la convention sont maintenant exportables sous forme de variable via l’export des fiches</p>
+<p>Attention, avec la variable « Mots-clés », tous les mots clés rattachés à la convention sont exportés sans distinction possible.</p>
+<a class="reference internal image-reference" href="../../_images/export_convention.png"><img alt="../../_images/export_convention.png" src="../../_images/export_convention.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Acteurs : les champs des acteurs sont maintenant exportables sous forme de variable via l’export des fiches</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/export_acteur.png"><img alt="../../_images/export_acteur.png" src="../../_images/export_acteur.png" style="width: 600px;" /></a>
+<p><strong>Export Excel :</strong>
+- Convention : les colonnes Description, ID contractant, Membres, Territoire, Fiches, ID fiches peuvent maintenant être affichées à l’écran et exportées</p>
+<p><strong>Import csv :</strong>
+- Convention : il est maintenant possible d’importer les contractant par ID et d’importer les fiches (par ID) rattachées à la convention. Les fiches rattachées en import seront affectées automatiquement à 100% à la convention. Pour rattacher plusieurs fiches, il faut indiquer dans la colonne ID Fiches ID1 – ID2 (deux ID séparés par deux tirets et un espace de chaque côté des tirets).</p>
+</section>
+</section>
+<section id="nouvelles-fonctionnalites">
+<h2>Nouvelles fonctionnalités !<a class="headerlink" href="#nouvelles-fonctionnalites" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="convention">
+<h3>8. Convention<a class="headerlink" href="#convention" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/306">Ticket 306</a> : Les conventions sont maintenant duplicables.</p>
+<p>Mode d’emploi dans la <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Conventions.html#dupliquer-convention">documentation convention</a></p>
+</section>
+<section id="annuaire">
+<h3>9. Annuaire<a class="headerlink" href="#annuaire" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/299">Ticket 299</a> :</p>
+<ul class="simple">
+<li><p>La recherche de doublons est désormais disponible dans le module annuaire.</p></li>
+<li><p>La fusion est désormais possible dans l’annuaire.</p></li>
+<li><p>Il est désormais possible d’ajouter un champ personnalisable dans les structures (comme dans fiches et contact).</p></li>
+<li><p>Civilité non binaire</p></li>
+</ul>
+<p>Mode d’emploi dans la documentation annuaire :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Annuaire.html#recherche-de-doublons">Recherche de doublons</a></p></li>
+<li><p><a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Annuaire.html#fusion">Fusion</a></p></li>
+</ul>
+</section>
+</section>
+<section id="liaison-logiciel-postparc">
+<h2>Liaison logiciel PostParc<a class="headerlink" href="#liaison-logiciel-postparc" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="liaison-automatique-avec-le-logiciel-postparc">
+<h3>10. Liaison automatique avec le logiciel PostParc<a class="headerlink" href="#liaison-automatique-avec-le-logiciel-postparc" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/316">Ticket 316</a> : La liaison automatique entre l’annuaire et le logiciel PostParc (<a class="reference external" href="https://www.postparc.fr/">https://www.postparc.fr/</a>)  est désormais possible.
+Pour l’utiliser, il faut :</p>
+<ul class="simple">
+<li><p>avoir un compte postparc</p></li>
+<li><p>demander un compte API aupres de l’équipe de POSTPARC (PROBESYS)</p></li>
+<li><p>demander le raccordement par l’assistance qui doit se faire en base de données.</p></li>
+</ul>
+<p>Caractéristiques de la liaison :</p>
+<ul class="simple">
+<li><p>Toutes les données des structures et contacts remontent automatiquement de PostParc à EVA (et seulement dans ce sens) ainsi que les rattachements contact-structures.</p></li>
+<li><p>La case financeur est cochée « non » par défaut, la fonction de rattachement contact-structure si elle n’a pas été définie dans PostParc sera « membre » par défaut.</p></li>
+<li><p>Une colonne « IMPORT POSTPARC » indique si le contact ou la structure a été importée de PostParc « SYNC-POSTPARC », supprimé dans PostParc « SUPP-POSTPARC », s’il a été créé dans EVA cette colonne sera vide. Ainsi si un contact a été supprimé dans PostParc, il ne sera pas supprimé automatiquement dans EVA pour éviter des pertes de données.</p></li>
+<li><p>L’appartenance des structures à des groupes et types d’organisme définis dans PostParc remontent dans les mots clés, ces mots clés ne sont pas administrables dans EVA, ils n’apparaissent pas dans les mots clés de l’administration EVA mais ils peuvent être utilisés en filtres comme les autres mots clés.</p></li>
+<li><p>L’appartenance des contacts à des groupes fonctionne comme pour les structures.</p></li>
+<li><p>La synchronisation automatique s’effectue tous les dimanches matins. Dans Paramétrages/Administration -&gt; Configuration, onglet Commandes vous pouvez lancer la synchronisation manuellement.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/synchro_postparc.png"><img alt="../../_images/synchro_postparc.png" src="../../_images/synchro_postparc.png" style="width: 600px;" /></a>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Lea Roumazeilles.
+      <span class="lastupdated">Mis à jour le 03 juil. 2023.
+      </span></p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -2,6 +2,8 @@
 Conventions
 ===========
 
+|données| > |conventions|
+
 Le module convention permet de regrouper les projets qui font partie d'une même convention.
 
 Pour ajouter une convention à une fiche projet, il faut passer par cet onglet.

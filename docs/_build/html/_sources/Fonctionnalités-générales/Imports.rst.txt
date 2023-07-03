@@ -50,7 +50,7 @@ Import indicateurs
 
 Colonnes obligatoires : Nom, Type, Opérateur de synthèse annuelle
 
-Autres colonnes possibles : Archivé (oui ou non), Description, Définition, Méthode, Interprétation, Unité de mesure 
+Autres colonnes possibles : Archivé (oui/non ou 1/0), Description, Définition, Méthode, Interprétation, Unité de mesure 
 
 \+ les mots clés
 
@@ -382,7 +382,10 @@ Import Recettes
 ###############
 
 Colonnes obligatoires : Code analytique, Compte, Date, Montant
-Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du mandatement, Mandat, Engagement, Compléments, Évolution, Unité de gestion, Série, Convention (numéro de la convention)
+Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du mandatement, Mandat, Engagement, Compléments, Évolution, Unité de gestion, Série, Convention
+
+.. warning ::
+	Attention le champ convention ici n'est pas rattaché à au module convention.
 
 
 +-------------+---------+------------+-----------------+---------+------------------+

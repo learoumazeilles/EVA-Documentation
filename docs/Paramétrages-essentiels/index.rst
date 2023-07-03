@@ -11,7 +11,7 @@ Techniquement les référentiels et mots clés sont la même chose (possibilité
 
 - **Les mots clés** sont à définir plus finement pour les analyses et à rattacher à chaque type d’information. Par exemple des types de partenaire à rattacher aux acteurs, des types d'indicateur à rattacher aux indicateurs, des thématiques à rattacher aux fiches...
 
-Les mots clés et référentiels se trouvent dans le module |administration| > |mots_cles|, il y a un onglet pour les Mots-clés et un onglet pour les Référentiels.
+Les mots clés et référentiels se trouvent dans le module |administration| > |indexage|, il y a un onglet pour les Mots-clés et un onglet pour les Référentiels.
 
 Paramétrages
 ~~~~~~~~~~~~
@@ -240,12 +240,12 @@ Les utilisateurs
 
 Chaque parc a son propre EVA définit par un URL au nom du parc. Dans un parc, chaque utilisateur se connecte via un identifiant unique. La création d'utilisateur, au-delà de permettre un accès à EVA permet de rattacher des informations aux utilisateurs. Lorsqu'il est connecté, l'utilisateur insère des données en son nom par défaut.
 
-Il existe différentes possibilités d'accès au logiciel qui sont gérés dans les rôles, si vous souhaitez rattacher vos utilisateurs à des rôles autres que les rôles dajà créés, il faudra d'abord créer les nouveaux rôles avant de créer l'utilisateur.
+Il existe différentes possibilités d'accès au logiciel qui sont gérés dans les rôles, si vous souhaitez rattacher vos utilisateurs à des rôles autres que les rôles dajà créés, **il faudra d'abord créer les nouveaux rôles avant de créer l'utilisateur**.
 
 Création des utilisateurs
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Les utilisateurs sont accessibles dans le module |administration| > |utilisateurs|.
+Les utilisateurs sont accessibles dans le module |administration| > |profils| > |utilisateurs|.
 
 Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie `Tableaux <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#>`_ et `Ajouts <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Ajouts.html>`_ des fonctionnalités générales.
 
@@ -294,7 +294,7 @@ Gestion des rôles
 
 Les rôles permettent de contrôler les accès au logiciel pour les utilisateurs, on peut ainsi créer des rôles de types administrateur avec accès partout, un rôle utilisateur avec quelques accès restreint, un rôle en consultation pour les externes au parc... La logique des rôles est importantes pour ne pas donner des accès de modification ou de suppression de données importantes.
 
-Les rôles peuvent être créés dans le module |administration| > |roles| 
+Les rôles peuvent être créés dans le module |administration| > |profils| > |roles| 
 
 Les rôles sont définis par des accès "Créer", "Voir", "Modifier" et "Supprimer". Pour chaque élément du logiciel on peut cocher un ou plusieurs de ces accès. La dénomination des éléments est assez logique dans la plupart des cas.
 

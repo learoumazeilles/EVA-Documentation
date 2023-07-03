@@ -1,8 +1,10 @@
 .. include:: ../substitutions.rst
-Cartographie
-============
+Territoires
+===========
 
-Le module cartographie permet de renseigner les territoires dans EVA, ils pourront ensuite être renseignés dans les différents modules.
+|données| > |territoires|
+
+Le module Territoires permet de renseigner les territoires dans EVA, ils pourront ensuite être renseignés dans les différents modules.
 
 Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie `Tableaux <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#>`_ et `Ajouts <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Ajouts.html>`_ des fonctionnalités générales.
 

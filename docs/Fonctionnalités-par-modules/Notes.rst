@@ -2,6 +2,8 @@
 Notes
 =====
 
+|suivi_projet| > |notes|
+
 Le module Note rassemble les notes insérées dans les fiches. Elles permettent de faire passer des messages aux autres membres de la fiche, par exemple lorsque l'on change de statut.
 
 L'affichage des notes n'est pas en tableau.
