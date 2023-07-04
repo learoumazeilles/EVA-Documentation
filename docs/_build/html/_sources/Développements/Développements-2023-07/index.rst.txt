@@ -4,7 +4,7 @@ Développements 2023 07
 Contexte
 ~~~~~~~~
 
-Un déploiement des derniers développements sur le logiciel EVA a eu lieu le 3/07/2023. Il comprend des **résolutions d’anomalies**, des **améliorations des fonctionnalités existantes et des ajouts de fonctionnalités** avec notamment une nouvelle organisation des modules.
+Un déploiement des derniers développements sur le logiciel EVA a lieu le 4/07/2023 après 18h. Il comprend des **résolutions d’anomalies**, des **améliorations des fonctionnalités existantes et des ajouts de fonctionnalités** avec notamment une nouvelle organisation des modules.
 
 Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé (il faut un compte pour le consulter) et un mode d’emploi pour les nouveautés.
 
