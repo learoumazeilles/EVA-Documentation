@@ -8,6 +8,12 @@ Un déploiement des derniers développements sur le logiciel EVA a lieu le 4/07/
 
 Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé (il faut un compte pour le consulter) et un mode d’emploi pour les nouveautés.
 
+.. warning::
+   Pour bien faire appraître les modifications, vider votre cache !
+   `Procédure Chrome <https://support.google.com/accounts/answer/32050?hl=fr&co=GENIE.Platform%3DDesktop>`_; `Procédure Mozilla firefox <https://support.mozilla.org/fr/kb/comment-vider-cache-firefox>`_; `Procédure Edge <https://support.microsoft.com/fr-fr/microsoft-edge/afficher-et-supprimer-l-historique-du-navigateur-dans-microsoft-edge-00cf7943-a9e1-975a-a33d-ac10ce454ca4>`_; `Procédure Safari <https://vider-mon-cache.fr/apple-mac-os/safari.html>`_; `Procédure Opéra <https://vider-mon-cache.fr/windows/opera.html>`_; `Procédure Brave <https://www.clubic.com/tutoriels/article-893036-1-comment-vider-cache-brave.html>`_
+
+
+
 
 Anomalies résolues
 ~~~~~~~~~~~~~~~~~~
