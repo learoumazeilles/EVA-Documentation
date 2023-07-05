@@ -123,8 +123,8 @@ La gestion des droits contient des dépendances illogiques qui parfois limitent 
 
 **Corrigé**
 
-Améliorations des fonctionnalités d'import et d'export
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Améliorations des fonctionnalités existantes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 9. Synchronisation agendas, limiter l’import de la description et des pièces-jointes
 ####################################################################################
