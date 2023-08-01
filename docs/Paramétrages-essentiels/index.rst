@@ -13,6 +13,10 @@ Techniquement les référentiels et mots clés sont la même chose (possibilité
 
 Les mots clés et référentiels se trouvent dans le module |administration| > |indexage|, il y a un onglet pour les Mots-clés et un onglet pour les Référentiels.
 
+
+..note::
+	Lorsque les mots clés ou référentiels sont arborescents (type 1. Axe, 1.1 Orientation, 1.1.1 Mesure) il est recommandé de rattacher l’élément au plus petit niveau possible (par exemple si tu as 1. Axe, 1.1 Orientation, 1.1.1 Mesure, il faudra plutôt rattacher à 1.1.1 Mesure si possible). Car EVA comprend donc que la fiche fait bien partie des niveaux supérieurs, si on coche tous les niveaux d’une même partie d’un référentiel on peut avoir des doublons dans les analyses par la suite.
+
 Paramétrages
 ~~~~~~~~~~~~
 
@@ -296,7 +300,7 @@ Les rôles permettent de contrôler les accès au logiciel pour les utilisateurs
 
 Les rôles peuvent être créés dans le module |administration| > |profils| > |roles| 
 
-Les rôles sont définis par des accès "Créer", "Voir", "Modifier" et "Supprimer". Pour chaque élément du logiciel on peut cocher un ou plusieurs de ces accès. La dénomination des éléments est assez logique dans la plupart des cas.
+Les rôles sont définis par des accès "Créer", "Voir", "Modifier" et "Supprimer". Pour chaque élément du logiciel on peut cocher un ou plusieurs de ces accès, en commençant toujours par cocher "Voir" en premier. La dénomination des éléments est assez logique dans la plupart des cas.
 
 Pour les rôles moins évidents :
 
@@ -322,8 +326,7 @@ Rôles avec des options :
 **IMPORTANT** : l'accès aux rôles est à bien définir. Il est important de ne pas donner d'accès autre que "Voir" pour les rôles aux non-administrateur et de ne pas donner un accès "Modifier" à "Utilisateur : rôle" car sinon l'utilisateur pourra modifier le rôle qui lui a été donné et on perd l'intérêt des rôles.
 
 .. warning ::
-	Les rôles ont parfois des dépendances non logiques qui bloquent des accès qui ne devraient pas. Cette anomalie est en cours de résolution et est suivie dans le ticket suivant 
-	`n°268 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/268>`_
+	Les rôles ont parfois des dépendances non logiques qui bloquent des accès qui ne devraient pas.
 
 	Dans certains cas : si l'élément est en accès "Voir" uniquement il n'est pas visible dans le logiciel, par contre il peut être accessible par l'URL, par exemple les rôles sont accessible via nomduparc.evaparc.net/role ou en cliquant sur un role depuis le module utilisateur
 
@@ -380,6 +383,9 @@ Par exemple, on peut définir ici que le niveau 0 correspond à un projet qui po
 	:width: 400
 
 Dans le module fiche, lorsque l'on créé une fiche, elle sera par défaut un projet, si on la rattache à une autre fiche projet via la case "rattachement", elle deviendra un sous-projet. Si on la rattache à une fiche sous-projet, elle deviendra une action.
+
+.. note::
+	Les différents niveaux apparaîssent dans ce module après la création et le rattachement des fiches. Par exemple si aucune de vos fiches n'est rattachée à une autre fiche, il n'y aura qu'un niveau à renommer.
 
 .. note::
 	Plus de détails sur la différence entre modèles de fiches et niveaux de fiches dans la `FAQ <https://documentation-eva.readthedocs.io/fr/latest/FAQ/index.html?highlight=niveau#difference-entre-modeles-de-fiche-et-niveaux-de-fiches>`_

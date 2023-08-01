@@ -151,6 +151,9 @@ On peut également choisir les options suivantes :
 
 - Obligatoire : la fiche ne peut pas être sauvegardée si le champ n'est pas rempli
 
+.. warning::
+	Ne pas cocher la case obligatoire pour l'instant car cela est trop contraignant et donnera une erreur dans d'autres modèles de fiche.
+
 
 Exemple d'utilisation
 ~~~~~~~~~~~~~~~~~~~~~

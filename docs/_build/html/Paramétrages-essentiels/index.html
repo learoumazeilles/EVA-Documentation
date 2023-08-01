@@ -120,6 +120,10 @@
 <li><p><strong>Les mots clés</strong> sont à définir plus finement pour les analyses et à rattacher à chaque type d’information. Par exemple des types de partenaire à rattacher aux acteurs, des types d’indicateur à rattacher aux indicateurs, des thématiques à rattacher aux fiches…</p></li>
 </ul>
 <p>Les mots clés et référentiels se trouvent dans le module <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Indexage.png"><img alt="indexage" src="../_images/Indexage.png" style="height: 50px;" /></a>, il y a un onglet pour les Mots-clés et un onglet pour les Référentiels.</p>
+<dl class="simple">
+<dt>..note::</dt><dd><p>Lorsque les mots clés ou référentiels sont arborescents (type 1. Axe, 1.1 Orientation, 1.1.1 Mesure) il est recommandé de rattacher l’élément au plus petit niveau possible (par exemple si tu as 1. Axe, 1.1 Orientation, 1.1.1 Mesure, il faudra plutôt rattacher à 1.1.1 Mesure si possible). Car EVA comprend donc que la fiche fait bien partie des niveaux supérieurs, si on coche tous les niveaux d’une même partie d’un référentiel on peut avoir des doublons dans les analyses par la suite.</p>
+</dd>
+</dl>
 <section id="parametrages">
 <h3>Paramétrages<a class="headerlink" href="#parametrages" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Les mots clés et référentiels sont à paramétrer par le référent EVA <strong>au début</strong> de l’utilisation du logiciel. Ils sont à paramétrer en fonction des besoins en <strong>analyses et en export identifiés</strong>.</p>
@@ -324,7 +328,7 @@ Lors des analyses, il y a la possibilité de diviser les éléments à parité l
 <h3>Gestion des rôles<a class="headerlink" href="#gestion-des-roles" title="Lien permanent vers cette rubrique"></a></h3>
 <p>Les rôles permettent de contrôler les accès au logiciel pour les utilisateurs, on peut ainsi créer des rôles de types administrateur avec accès partout, un rôle utilisateur avec quelques accès restreint, un rôle en consultation pour les externes au parc… La logique des rôles est importantes pour ne pas donner des accès de modification ou de suppression de données importantes.</p>
 <p>Les rôles peuvent être créés dans le module <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Profils.png"><img alt="profils" src="../_images/Profils.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Roles.png"><img alt="roles" src="../_images/Roles.png" style="height: 50px;" /></a></p>
-<p>Les rôles sont définis par des accès « Créer », « Voir », « Modifier » et « Supprimer ». Pour chaque élément du logiciel on peut cocher un ou plusieurs de ces accès. La dénomination des éléments est assez logique dans la plupart des cas.</p>
+<p>Les rôles sont définis par des accès « Créer », « Voir », « Modifier » et « Supprimer ». Pour chaque élément du logiciel on peut cocher un ou plusieurs de ces accès, en commençant toujours par cocher « Voir » en premier. La dénomination des éléments est assez logique dans la plupart des cas.</p>
 <p>Pour les rôles moins évidents :</p>
 <ul class="simple">
 <li><p>Application &gt; configuration régit les accès à <a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Configuration.png"><img alt="configuration" src="../_images/Configuration.png" style="height: 50px;" /></a> (choix des modules, traduction des niveaux et champs de fiches, aide au remplissage…)</p></li>
@@ -342,8 +346,7 @@ Lors des analyses, il y a la possibilité de diviser les éléments à parité l
 <p><strong>IMPORTANT</strong> : l’accès aux rôles est à bien définir. Il est important de ne pas donner d’accès autre que « Voir » pour les rôles aux non-administrateur et de ne pas donner un accès « Modifier » à « Utilisateur : rôle » car sinon l’utilisateur pourra modifier le rôle qui lui a été donné et on perd l’intérêt des rôles.</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
-<p>Les rôles ont parfois des dépendances non logiques qui bloquent des accès qui ne devraient pas. Cette anomalie est en cours de résolution et est suivie dans le ticket suivant
-<a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/268">n°268</a></p>
+<p>Les rôles ont parfois des dépendances non logiques qui bloquent des accès qui ne devraient pas.</p>
 <p>Dans certains cas : si l’élément est en accès « Voir » uniquement il n’est pas visible dans le logiciel, par contre il peut être accessible par l’URL, par exemple les rôles sont accessible via nomduparc.evaparc.net/role ou en cliquant sur un role depuis le module utilisateur</p>
 </div>
 <p><strong>Exemple de rôles</strong> :</p>
@@ -393,6 +396,10 @@ Lors des analyses, il y a la possibilité de diviser les éléments à parité l
 <p>Par exemple, on peut définir ici que le niveau 0 correspond à un projet qui pourra être subdivisé en plusieurs sous-projets (niveau 1). Ces sous-projets pourront être divisés en actions (niveau 2).</p>
 <a class="reference internal image-reference" href="../_images/Niveaux_ex.png"><img alt="../_images/Niveaux_ex.png" src="../_images/Niveaux_ex.png" style="width: 400px;" /></a>
 <p>Dans le module fiche, lorsque l’on créé une fiche, elle sera par défaut un projet, si on la rattache à une autre fiche projet via la case « rattachement », elle deviendra un sous-projet. Si on la rattache à une fiche sous-projet, elle deviendra une action.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les différents niveaux apparaîssent dans ce module après la création et le rattachement des fiches. Par exemple si aucune de vos fiches n’est rattachée à une autre fiche, il n’y aura qu’un niveau à renommer.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Plus de détails sur la différence entre modèles de fiches et niveaux de fiches dans la <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/FAQ/index.html?highlight=niveau#difference-entre-modeles-de-fiche-et-niveaux-de-fiches">FAQ</a></p>
@@ -479,7 +486,7 @@ Par exemple le champ « Code » peut être renommé en « Code analytique »
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 03 juil. 2023.
+      <span class="lastupdated">Mis à jour le 01 août 2023.
       </span></p>
   </div>
 

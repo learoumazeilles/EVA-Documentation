@@ -13,6 +13,11 @@ Pour mettre en place le module budget, il faut avoir les fiches rattachées à d
 .. image:: images/Budget_eva.png
   :width: 500
 
+.warning::
+  Dans le module budget de la fiche, peut apparaît un champ "saisie simplifié", dans le module administration peut apparaître un sous module budget.
+  Ces éléments sont à ignorer car ce sont des reliquats d'ancienne fonctionnalité qui ne sont plus accessibles et seront complètement supprimés prochainement. Pour ne pas les voir dans vos EVA vous pouvez dans Admin -> rôle enlever les droits de les voir pour tous le monde.
+  Dans chaque rôle sur les lignes "Poste de dépense : saisie simplifiée" et "Poste de dépense référentiel" -> décocher la case "voir"
+
 Enveloppes
 ----------
 

@@ -90,6 +90,10 @@ Le critère de tri par code analytique ou titre réordonne l'ordre dans lequel l
 
 L'arborescence choisie s'affiche sur la gauche.
 
+..warning::
+  J'ai un filtre sur un niveau qui ne devrait pas faire apparaître une partie de mon référentiel mais cette partie apparaît quand même ?
+  Cela peut être dû à une fiche rattachée à une partie du référentiel sélectionné qui est aussi rattachée à cette partie du référentiel qui ne devrait pas apparaître.
+
 En cliquant sur le logo |dossier| on peut déplier ou replier des parties de l'arborescence. Pour tout replier ou déplier d'un coup, vous pouvez utiliser les boutons dans la partie de sélection de l'arborescence.
 
 .. image:: images/Tout_replier.png
@@ -415,6 +419,11 @@ Les codes financiers peuvent être créer en cliquant sur :
   :width: 200
 
 Ils apparaissent ensuite sur dans l'onglet "Fiche" de la fiche et peuvent être utilisés pour les imports budget par exemple.
+
+..warning::
+  Dans le module budget de la fiche, peut apparaît un champ "saisie simplifié", dans le module administration peut apparaître un sous module budget.
+  Ces éléments sont à ignorer car ce sont des reliquats d'ancienne fonctionnalité qui ne sont plus accessibles et seront complètement supprimés prochainement. Pour ne pas les voir dans vos EVA vous pouvez dans Admin -> rôle enlever les droits de les voir pour tous le monde.
+  Dans chaque rôle sur les lignes "Poste de dépense : saisie simplifiée" et "Poste de dépense référentiel" -> décocher la case "voir"
 
 Onglet conventions
 ~~~~~~~~~~~~~~~~~~

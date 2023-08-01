@@ -16,7 +16,7 @@ La précédure pour les imports est similaire dans la majorité des cas (exeptio
 Quelles colonnes pour chaque import ?
 #####################################
 
-* Des exemples de fichiers Excel et csv sont disponibles `ici <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP>`_
+* **Des exemples de fichiers Excel et csv** sont disponibles `ici <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP>`_
 * L’ordre des colonnes n’a pas d’importance, certaines cases peuvent être vides si elles ne sont pas dans les colonnes de champs obligatoires.
 * Dans certaines colonnes, on peut indiquer un texte librement, pour d’autres seulement certains mots sont acceptés (indiqué en **gras** dans les tableaux ci-dessous) ou seulement des chiffres, les majuscules/minuscules sont importantes.
 * Les mots clés et référentiels peuvent s’ajouter dans des colonnes supplémentaires s’ils ont été paramétrés précédemment.
@@ -324,10 +324,10 @@ La précédure pour les imports budget suit la logique suivante :
 2. Sauvegarder au format csv
 3. Importer dans EVA
 
-* Des exemples de fichiers Excel et csv sont disponibles `ici <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP>`_
+* Des **exemples de fichiers Excel et csv sont disponibles** `ici <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP>`_
 * L’ordre des colonnes n’a pas d’importance, certaines cases peuvent être vides si elles ne sont pas dans les colonnes de champs obligatoires.
 * Dans certaines colonnes, on peut indiquer un texte librement, pour d’autres seulement certains mots sont acceptés (indiqué en **gras** dans les tableaux ci-dessous) ou seulement des chiffres, les majuscules/minuscules sont importantes.
-* Les montants doivent être au format numérique sans espace
+* Les montants doivent être au format numérique sans espace, un point ou une virgule peuvent être indiqué pour les décimales
 
 Import budget en général
 ########################
@@ -381,8 +381,8 @@ Autres colonnes possibles : Code, Début, Fin, Montant
 Import Recettes
 ###############
 
-Colonnes obligatoires : Code analytique, Compte, Date, Montant
-Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du mandatement, Mandat, Engagement, Compléments, Évolution, Unité de gestion, Série, Convention
+Colonnes obligatoires : Rattachement à la fiche (soit par code analytique, soit par code financier, soit par le titre), Compte, Date, Montant
+Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du mandatement, Mandat, Engagement, Compléments, Évolution, Unité de gestion, Série, Convention (non lié au module convention)
 
 .. warning ::
 	Attention le champ convention ici n'est pas rattaché à au module convention.
@@ -401,7 +401,7 @@ Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du manda
 Import Dépenses
 ###############
 
-Colonnes obligatoires : Code analytique, Compte, Date, Montant
+Colonnes obligatoires : Rattachement à la fiche (soit par code analytique, soit par code financier, soit par le titre), Compte, Date, Montant
 Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du mandatement, Mandat, Engagement, Compléments, Évolution, Unité de gestion, Date facture.
 
 

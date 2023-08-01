@@ -85,7 +85,7 @@ Les fichiers .ics peuvent être exportés depuis vos agendas type google, outloo
 Les temps dans les agendas doivent pouvoir être reliés aux fiches, ce sont les champs **Jointure à la fiche** qui permettent de les relier :
 
 * **Champ utilisé** correspond au champ dans votre agenda ou il y aura l'élément de rattachement à la fiche : titre, description, localisation, tags pour Zimbra
-* **Caractère(s) d'entourage** correspond aux caractères entourant l'élément de rattachement à la fiche : crochet [] ou hashtag # ou aucun. Il est préférable de choisir les [].
+* **Caractère(s) d'entourage** correspond aux caractères entourant l'élément de rattachement à la fiche : crochet [] ou hashtag # ou aucun. Il est préférable de choisir les []. Si des caractères d'entourage sont utilisés, il faudra utiliser les mêmes pour les codes, mots clés...
 * **Champs de jointure fiche** correspond au champ dans la fiche qui permet de faire le rattachement, il doit être un champ unique pour chaque fiche : Code, Titre, Champ personnalisé (personalisé dans |administration| > |champs|), Aucun (ne rattachera pas les fiches)
 
 .. warning::
@@ -217,7 +217,7 @@ Il y a aussi une option de limitation du nombre de caractère des descriptions, 
 Les temps dans les agendas doivent pouvoir être reliés aux fiches, ce sont les champs **Jointure à la fiche** qui permettent de les relier :
 
 * **Champ utilisé** correspond au champ dans votre agenda ou il y aura l'élément de rattachement à la fiche : titre, description, localisation, tags pour Zimbra
-* **Caractère(s) d'entourage** correspond aux caractères entourant l'élément de rattachement à la fiche : crochet [] ou hashtag # ou aucun. Il est préférable de choisir les [].
+* **Caractère(s) d'entourage** correspond aux caractères entourant l'élément de rattachement à la fiche : crochet [] ou hashtag # ou aucun. Il est préférable de choisir les []. Si des caractères d'entourage sont utilisés, il faudra utiliser les mêmes pour les codes, mots clés...
 * **Champs de jointure fiche** correspond au champ dans la fiche qui permet de faire le rattachement, il doit être un champ unique pour chaque fiche : Code, Titre, Champ personnalisé (personalisé dans |administration| > |champs|), Aucun (ne rattachera pas les fiches)
 
 .. warning::
