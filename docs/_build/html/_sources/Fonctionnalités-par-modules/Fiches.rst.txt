@@ -138,11 +138,11 @@ Les champs accessibles :
 
 * **Code** (analytique ou non) : doit être unique, permet de rattacher la fiche à d'autres informations par la suite (feuille de temps, budget)
 
-* **Rattachement** (à l'arborescence initiale) : rattache à la fiche comme enfant d'une fiche qui devient son parent, c'est ce qui décide le niveau de la fiche
+* **Rattachement** (à l'arborescence initiale) : rattache à la fiche comme enfant d'une fiche qui devient son parent, c'est ce qui décide le niveau de la fiche. Deux façons de chercher la fiche à laquelle la rattacher : 1. Commencer à taper le nom de la fiche dans le champs, des propositions appraîtront en dessous. 2. Cliquer sur le |petit_plus|, la liste des fiches apparaît, en commençant à taper le nom dans la barre de recherche, les fiches sont filtrées, cocher la fiche à laquelle rattacher cette fiche.
 
 * **Temps prévu** : contribue à la synthèse des temps dans l'onglet temps
 
-* **Dates importantes** : Dates de démarrage et de fin, prévue et effective, date de programmation
+* **Dates importantes** : Dates de démarrage et de fin, prévue et effective, date de programmation. Cliquer sur calendrier pour choisir la date ou bien rentrer la date au format JJ/MM/AAAA.
 
 * **Maîtrise d'ouvrage externe** : cocher la case permet l'affichage d'un champs pour indiquer le maître d'ouvrage (à sélectionner parmi les structures de l'annuaire), il changera également le sous-onglet "dépenses" dans l'onglet budget en "dépenses de subventions du parc"
 
@@ -420,7 +420,7 @@ Les codes financiers peuvent être créer en cliquant sur :
 
 Ils apparaissent ensuite sur dans l'onglet "Fiche" de la fiche et peuvent être utilisés pour les imports budget par exemple.
 
-..warning::
+.. warning::
   Dans le module budget de la fiche, peut apparaît un champ "saisie simplifié", dans le module administration peut apparaître un sous module budget.
   Ces éléments sont à ignorer car ce sont des reliquats d'ancienne fonctionnalité qui ne sont plus accessibles et seront complètement supprimés prochainement. Pour ne pas les voir dans vos EVA vous pouvez dans Admin -> rôle enlever les droits de les voir pour tous le monde.
   Dans chaque rôle sur les lignes "Poste de dépense : saisie simplifiée" et "Poste de dépense référentiel" -> décocher la case "voir"
