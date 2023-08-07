@@ -164,7 +164,7 @@ Les chefs de projets recoivent un mail lorsque la fiche est passée en statut "V
 
 Ajouter les membres de l'équipe grâce au bouton d'ajout des membres. Une boîte de dialogue s'ouvre pour choisir l'utilisateur.
 
-.. image:: images/Arbo_col_req.png
+.. image:: images/Ajout_membres.png
   :width: 300
 
 * Soit commencez à rentrer le nom du membre, les utilisateurs s'affichent par auto-complétion, choissisez celui qui vous convient.
@@ -206,7 +206,7 @@ Cliquez sur |ajout_acteur| pour ajouter une structure. Une boîte de dialogue s'
 N'oubliez pas d'enregistrer cette boîte de dialogue avant de quitter.
 
 .. note :: 
-	Les mots clés associés aux acteurs (et non aux structures) peuvent être ajouter via cette boîte de dialogue.
+	Les mots clés associés aux acteurs (et non aux structures) peuvent être ajoutés via cette boîte de dialogue.
 
 Onglet territoires
 ~~~~~~~~~~~~~~~~~~
@@ -223,7 +223,7 @@ N'oubliez pas de cliquer sur sélectionner dans cette boîte de dialogue avant d
 
 La carte affiche les différents territoires associés à la fiche.
 
-Pour **supprimer** un territoire, cliquez dans la barre des territoires pour positinoner votre curseur et appuyer sur supprimer sur votre clavier.
+Pour **supprimer** un territoire, cliquez dans la barre des territoires pour positionner votre curseur et appuyer sur supprimer sur votre clavier.
 
 Onglet temps
 ~~~~~~~~~~~~

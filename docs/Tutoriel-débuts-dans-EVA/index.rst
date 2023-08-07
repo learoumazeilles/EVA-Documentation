@@ -2,6 +2,48 @@
 Tutoriel débuts dans EVA
 ========================
 
+Élaboration de la stratégie
+---------------------------
+
+Cette partie s'adresse principalement aux **référents EVA**.
+
+Les besoins
+~~~~~~~~~~~
+
+Lors de la création d'un nouveau compte EVA, il faut déjà avoir une certaine stratégie en place pour bien démarrer dans le logiciel. Il faut définir les objectifs attendus pour le logiciel. Un tableau comme ci-dessous peut être rempli :
+
+.. image:: images/Stratégie_exemple.png
+  :width: 600
+
+D'autres exemples sont disponibles dans le `centre de ressources <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/Epas2TGX8CRIhy0YeCNP9YsBEdGRb9bho8aiOq5JHO2n3Q>`_.
+
+Les objectifs sont à définir avec la direction pour s'assurer un portage de l'intégration du logiciel. Ils peuvent être définis avec l'équipe également pour les intégrer au processus.
+
+Il est important d'avoir en tête les objectifs et analyses vers lesquels tendre pour pouvoir déterminer les données à suivre. Cette première étape est importante à formaliser pour tous les paramétrages à effectuer par la suite.
+
+La question des personnes impliquées et de la temporalité permet de concrétiser les objectifs.
+
+La question des pré-requis peut être élaborée avec l'appui de la FPNRF ou du prestataire d'assistance.
+
+
+Les livrables attendus
+~~~~~~~~~~~~~~~~~~~~~~
+
+On peut également partir des livrables pour se questionner sur les usages souhaités pour EVA :
+1. Identifier les exports que l’on souhaite obtenir pour identifier les champs nécessaires : mots clés, référentiels, champs personnalisables, informations nécessaires hors fiches (budget, temps passé, territoire…)
+Exemples :
+
+- Je souhaite exporter mon programme d’actions -> il me faut les données sur le projet (titre, description, livrables…), les données sur le budget prévisionnel, les données sur le temps prévu, les actions sont rattachées au plan de gestion ou à la charte et indique si le projet fait partie d’un Life, se rattache à une zone natura 2000…
+- Je souhaite exporter mon bilan d’activité -> il me faut les données sur le projet, des bilans d’avancement annuels, le rattachement à la charte ou plan de gestion mais aussi à des thématiques
+- Je souhaite insérer mes données dans la BD AMP -> il faut que les champs principaux correspondent au même vocabulaire
+
+2. Reprendre un ancien rapport d’évaluation ou bilan pour identifier des clés d’analyse
+Exemples : 
+
+- Il y a des analyses par axes de la charte ou par finalité du plan de gestion -> il faut bien rattacher les fiches au référentiel charte ou plan de gestion
+- Mon rapport d’évaluation est divisé en thématique -> il me faut un mot clé thématique
+- Il y a une analyse sur le budget par territoire -> il faut insérer les territoires à minima et paramétrer le module budget si possible
+
 Se connecter à EVA
 ------------------
 
@@ -42,53 +84,8 @@ Vous pouvez ensuite changer votre mot de passe, sans oublier d'enregistrer les m
 .. image:: images/Info_utilisateur.png
   :width: 600
 
-
-Les débuts dans EVA pour référents EVA
---------------------------------------
-
-Cette partie s'adresse principalement aux **référents EVA**.
-
-Élaboration de la stratégie
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**Les besoins**
-
-Lors de la création d'un nouveau compte EVA, il faut déjà avoir une certaine stratégie en place pour bien démarrer dans le logiciel. Il faut définir les objectifs attendus pour le logiciel. Un tableau comme ci-dessous peut être rempli :
-
-.. image:: images/Stratégie_exemple.png
-  :width: 600
-
-D'autres exemples sont disponibles dans le `centre de ressources <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/Epas2TGX8CRIhy0YeCNP9YsBEdGRb9bho8aiOq5JHO2n3Q>`_.
-
-Les objectifs sont à définir avec la direction pour s'assurer un portage de l'intégration du logiciel. Ils peuvent être définis avec l'équipe également pour les intégrer au processus.
-
-Il est important d'avoir en tête les objectifs et analyses vers lesquels tendre pour pouvoir déterminer les données à suivre. Cette première étape est importante à formaliser pour tous les paramétrages à effectuer par la suite.
-
-La question des personnes impliquées et de la temporalité permet de concrétiser les objectifs.
-
-La question des pré-requis peut être élaborée avec l'appui de la FPNRF ou du prestataire d'assistance.
-
-
-**Les livrables attendus**
-
-On peut également partir des livrables pour se questionner sur les usages souhaités pour EVA :
-1. Identifier les exports que l’on souhaite obtenir pour identifier les champs nécessaires : mots clés, référentiels, champs personnalisables, informations nécessaires hors fiches (budget, temps passé, territoire…)
-Exemples :
-
-- Je souhaite exporter mon programme d’actions -> il me faut les données sur le projet (titre, description, livrables…), les données sur le budget prévisionnel, les données sur le temps prévu, les actions sont rattachées au plan de gestion ou à la charte et indique si le projet fait partie d’un Life, se rattache à une zone natura 2000…
-- Je souhaite exporter mon bilan d’activité -> il me faut les données sur le projet, des bilans d’avancement annuels, le rattachement à la charte ou plan de gestion mais aussi à des thématiques
-- Je souhaite insérer mes données dans la BD AMP -> il faut que les champs principaux correspondent au même vocabulaire
-
-2. Reprendre un ancien rapport d’évaluation ou bilan pour identifier des clés d’analyse
-Exemples : 
-
-- Il y a des analyses par axes de la charte ou par finalité du plan de gestion -> il faut bien rattacher les fiches au référentiel charte ou plan de gestion
-- Mon rapport d’évaluation est divisé en thématique -> il me faut un mot clé thématique
-- Il y a une analyse sur le budget par territoire -> il faut insérer les territoires à minima et paramétrer le module budget si possible
-
-
 Remplissage des données
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 Pour pouvoir remplir des fiches dans EVA, il faudra avoir renseigné des données dans les différents modules du logiciel.
 
@@ -116,7 +113,7 @@ Les données peuvent être ajoutées dans l'ordre suivant dans EVA :
 
 
 Création d'une fiche
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 La création d'une première fiche basée sur un projet existant permettra de vérifier qu'aucune information n'a été oublié (sinon rajouter le champ nécessaire) et que tous les champs paramétrés sont utiles (sinon le masquer dans le modèle de fiche).
 
@@ -129,6 +126,9 @@ Une fois la fiche enregistrée avec le titre :
 
 1. Modifier le modèle de fiche en cliquant sur "Modifier le modèle de fiche" en haut à gauche et choisir dans la liste déroulante le modèle voulu.
 2. Remplir les champs de la fiche. Plus d'infos dans la partie `Onglet Fiches <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Fiches.html#onglet-fiche>`_ de cette documentation
+
+Remplir onglet fiche
+~~~~~~~~~~~~~~~~~~~~
 
 .. image:: images/Fiche1.png
   :width: 700
@@ -152,10 +152,80 @@ Une fois la fiche enregistrée avec le titre :
 
 **-> L'onglet Fiche est maintenant rempli, ne pas oublier d'enregistrer avant de passer aux autres onglets**
 
+Remplir onglet équipe
+~~~~~~~~~~~~~~~~~~~~~
+
+Plus d'infos dans la partie `Onglet Equipes <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Fiches.html#onglet-equipe>`_ de cette documentation
+
+Ici seront rattachés tous les membres du projet. Tous les membres (chef de projet, validateur ou membre simple) sont des utilisateurs. Il sont donc à créer dans |administration| > |profils| > |utilisateurs|.
+
+1. Choisir le chef de projet, par défaut, le chef de projet est celui qui créé la fiche, mais il peut être modifié en cliquant que sur le |petit_plus| ou en insérant dans le champs les premières lettres de l'utilisateur à sélectionner. Plusieurs chefs de projet peuvent être ajoutés. Ajouter un chef de projet permet de filtrer les fiches sur ce rôle, paramétrer des alertes pour ce rôle... Lorsque la fiche change de statut pour le statut "Validée" (vert), un mail est envoyé au chef de projet de la fiche.
+2. Choisir le validateur, il peut être ajouté en cliquant que sur le |petit_plus| ou en insérant dans le champs les premières lettres de l'utilisateur à sélectionner. Plusieurs validateurs peuvent être ajoutés. Ajouter un validateur permet de filtrer les fiches sur ce rôle, paramétrer des alertes pour ce rôle... Lorsque la fiche change de statut pour le statut "À validée" (violet), un mail est envoyé au validateur de la fiche.
+
+3. Le tableau des membres de l'équipe se remplit automatiquement avec les chefs de projet (indiqué via |écrou|) et validateurs (indiqué via |tick|).
+
+4. Ajouter les membres de l'équipe grâce au bouton d'ajout des membres. Une boîte de dialogue s'ouvre pour choisir l'utilisateur.S oit commencez à rentrer le nom du membre, les utilisateurs s'affichent par auto-complétion, choissisez celui qui vous convient. Soit cliquez sur le |petit_plus| et cochez les noms qui vous conviennent. N'oubliez pas de cliquer sur ajouter dans cette boîte de dialogue avant de quitter.
+
+5. Si vous avez paramétré un mot clé rattaché aux "membres" alors lors de l'ajout d'un membre, vous pourrez aussi indiquer un rôle. Attention ce rôle est bien un mot clé et n'est pas relié au "rôle" qui définit les accès. Plus d'infos dans la `FAQ sur les rôles <hhttps://documentation-eva.readthedocs.io/fr/latest/FAQ/index.html#role-d-acces-role-dans-la-fiche-fonction-quelle-difference>`_. Si le rôle n'est pas défini alors l'utilisateur ajouté sera "membre" par défaut.
+
+.. image:: images/Fiche_equipe.png
+  :width: 700
+
+**-> L'onglet équipe est maintenant rempli, ne pas oublier d'enregistrer avant de passer aux autres onglets**
+
+Remplir onglet personnalisable
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Cet onglet peut avoir un nom différent pour chaque parc, car il est modifiable à la demande. Plus d'infos dans la partie `Onglet personnalisable <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Fiches.html#onglet-personnalisable>`_ de cette documentation.
+
+Cet onglet permet d'ajouter des champs supplémentaires pour ajouter des données que vous n'avez pas pu ajouter autre part dans le logiciel. Par exemple, si vous avez une fiche pluri-annuel vous pouvez créer des champs personnalisables pour les bilans de chaque année.
+
+Les champs personnalisables sont à créer dans |administration| > |champs| et il faut ensuite les rajouter au modèle de fiche souhaité. Plus d'infos dans la partie `Champs <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-simples/index.html#champs>`_ de cette documentation.
+
+**-> Un fois l'onglet champs personnalisable rempli, ne pas oublier d'enregistrer avant de passer aux autres onglets**
+
+Remplir onglet acteurs
+~~~~~~~~~~~~~~~~~~~~~~
+
+Plus d'infos dans la partie `Onglet acteurs <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Fiches.html#onglet-acteurs>`_ de cette documentation.
+
+1. Cliquez sur |ajout_acteur| pour ajouter une structure. Une boîte de dialogue s'ouvre pour choisir la structure. Soit commencez à rentrer le nom de la structure, les structures s'affichent par auto-complétion, choissisez celle qui vous convient. Soit cliquez sur le |petit_plus| et cochez le nom qui vous convient. N'oubliez pas d'enregistrer cette boîte de dialogue avant de quitter. Les mots clés associés aux acteurs (et non aux structures) peuvent être ajoutés via cette boîte de dialogue.
+
+Les acteurs sont donc à remplir dans l'annuaire, dans la partie structure : |données| > |annuaire| > |structures|.
+
+.. image:: images/Fiche_acteur.png
+  :width: 700
+
+
+Remplir onglet territoires
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Plus d'infos dans la partie `Onglet territoires <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Fiches.html#onglet-territoires>`_ de cette documentation.
+
+Cet onglet permet de rattacher des territoires à la fiche. Ces territoires peuvent être renseignés dans le module |données| > |Territoires|.
+
+* Soit commencez à rentrer le nom du territoire, les territoires s'affichent par auto-complétion, choissisez celui qui vous convient.
+
+* Soit cliquez sur le |petit_plus|, rentrer les premières lettres et cliquer sur la |loupe|, puis choissisez le(s) territoire(s).
+
+* Soit cliquez sur le |petit_plus|, puis les traits pour afficher l'ensemble des territoires (attention cela peut prendre du temps).
+
+N'oubliez pas de cliquer sur sélectionner dans cette boîte de dialogue avant de quitter.
+
+La carte affiche les différents territoires associés à la fiche.
+
+.. image:: images/Fiche_territoire.png
+  :width: 700
+
+
+**-> Un fois l'onglet territoire rempli, ne pas oublier d'enregistrer avant de passer aux autres onglets**
+
+
+
 (La suite est à venir prochainement)
 
 .. warning::
-  Penser à bien **ENREGISTRER** à chaque modification, si on change de fenêtre sans avoir enregistrer on perd les modifications effectuées.
+  Penser à bien **ENREGISTRER** à chaque modification, si on change de fenêtre sans avoir enregistré on perd les modifications effectuées.
 
 
 
