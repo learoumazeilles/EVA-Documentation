@@ -196,6 +196,7 @@ Les acteurs sont donc à remplir dans l'annuaire, dans la partie structure : |do
 .. image:: images/Fiche_acteur.png
   :width: 700
 
+Pour les prochains onglets, la documentation sur le module fiche est plus complète sur le sujet.
 
 Remplir onglet territoires
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -221,13 +222,47 @@ La carte affiche les différents territoires associés à la fiche.
 **-> Un fois l'onglet territoire rempli, ne pas oublier d'enregistrer avant de passer aux autres onglets**
 
 
+Remplir onglet temps
+~~~~~~~~~~~~~~~~~~~~
 
-(La suite est à venir prochainement)
+Plus d'infos dans la partie `Onglet temps <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Fiches.html#onglet-temps>`_ de cette documentation.
+
+Le premier sous-onglet est l'onglet synthèse qui reprend les données des autres sous-onglets ainsi que le temps total prévu dans la partie principale de la fiche.
+
+.. image:: images/Fiche_temps_synthèse.png
+  :width: 700
+
+
+Pour remplir les temps passés, il est plus facile de paramétrer des synchronisations via le module temps, mais il est aussi possible de venir remplir les temps dans chaque fiche.
+
+En cliquant sur le bouton de création de la feuille de temps dans les onglets temps passé et temps prévu, le formulaire s'affiche, il faudra obligatoirement associer la feuille de temps avec un utilisateur, lui donner un début et une fin ainsi qu'une durée.
+
+.. image:: images/Créer_feuille_temps.png
+  :width: 200
+
+Remplir onglet budget
+~~~~~~~~~~~~~~~~~~~~~
+
+Plus d'infos dans la partie `Onglet budget <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Fiches.html#onglet-budget>`_ de cette documentation.
+
+L'onglet budget est divisé en trois sous-onglets : dépenses, recettes et codes financiers.
+
+Il faut avoir défini des comptes de dépenses et de recettes en amont dans le module |données| > |budget| > |comptes| ainsi que des enveloppes pour les recettes dans |données| > |budget| > |enveloppes|.
+
+Pour remplir le budget, il faudra d'abord créer un poste de dépense ou de recette puis cliquer sur le plus en fin de ligne pour ajouter la dépense ou la recette.
+
+Pour le budget, il est possible d'importer de nombreuses lignes budgétaires comme expliqué dans la partie `import budget <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-budget>`_ de cette documentation. Certains logiciels de comptablitité sont aussi reliés automatiquement.
+
+Autres onglets
+~~~~~~~~~~~~~~
+
+Les onglets : Conventions, Avancement et Tâches sont moins utilisés, ils sont décrits dans la partie `Remplissage de fiche <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Fiches.html#remplir-une-fiche>`_
+
 
 .. warning::
   Penser à bien **ENREGISTRER** à chaque modification, si on change de fenêtre sans avoir enregistré on perd les modifications effectuées.
 
 
 
-Une fois les paramétrages réalisés et satisfaisants, réaliser un mode d'emploi pour le remplissage de vos fiches à l'attention des agents du parc. Des exemples sont disponibles dans le `centre de ressources <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/Epas2TGX8CRIhy0YeCNP9YsBEdGRb9bho8aiOq5JHO2n3Q>`_.
+Une fois les paramétrages réalisés et la première fiche remplie de manière satisfaisante, réaliser un mode d'emploi pour le remplissage de vos fiches à l'attention des agents du parc. Des exemples sont disponibles dans le `centre de ressources <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/Epas2TGX8CRIhy0YeCNP9YsBEdGRb9bho8aiOq5JHO2n3Q>`_.
 
