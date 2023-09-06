@@ -51,9 +51,31 @@ Exemples de mise en page d'accueil
 **Texte**
 
 .. image:: images/Accueil_texte_ex.png
-	:width: 300
+	:width: 45%
+.. image:: images/Accueil_texte_ex2.png
+	:width: 45%
+
+*La mise en forme des textes est plus complexe et requiert des notions en html comme expliqué ci-dessous*
+
+Pour mettre en forme les textes, il faut éditer la partie **Code Source** dans le bloc de texte.
+En cliquant que le bouton code source "<>" une autre page s'ouvre :
+
+.. image:: images/Code_source.png
+	:width: 100
+
+Voici le code nécessaire pour faire apparaître le texte en rouge et en grand et les liens sous forme de texte cliquable comme sur l'exemple à droite au dessus :
+
+| ``<p>&nbsp;<span style="color: #a70013; font-size: 20pt;"><strong>Liens Utiles</strong></span></p>``
+| ``<p>&nbsp;</p>``
+| ``<p>Plateforme des tickets pour notifier une anomalie : <a href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues">GitLab</a></p>``
+| ``<p>Groupe collaboratif des r&eacute;f&eacute;rents EVA : <a href="https://www.parcs-naturels-regionaux.fr/espace-membres/groupes/projet-eva-referents-eva">Groupe collaboratif</a></p>``
+| ``<p>&nbsp;</p>``
+
+
+La partie ``<span style="color: #a70013; font-size: 20pt;"`` permet d'indiquer la couleur en code hex et la taille de la police.  Pour mettre en forme les liens, il faut indiquer le lien, il faut indiquer la balise ``<a`` puis indiquer le lien dans ``href=""``, ensuite indiquer le nom du lien après le charactère ``<`` et enfin fermer la balise ``</a>`.
 
 **Liste**
+
 Liste des fiches dont on est membre et qui arrive à caducité dans 30 jours.
 Requête dans les fiches :
 
@@ -61,6 +83,7 @@ Requête dans les fiches :
 	:width: 300
 
 **Calendrier**
+
 Calendrier avec les personnes de mon équipe. Pour un meilleur rendu, il faut changer la couleur associée à chaque personne (`Indiqué ici <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-essentiels/index.html#creation-des-utilisateurs>`_)
 
 Par exemple ici une couleur pour chaque personne, la requête associée prend les temps passés de 5 utilisateurs choisis :
@@ -69,6 +92,7 @@ Par exemple ici une couleur pour chaque personne, la requête associée prend le
 	:width: 600
 
 **Temps par fiche**
+
 Un graphique du temps par mois pour l'utilisateur courant, avec la requête suivante : 
 - Filtres Utilisateurs : Utilisateur -> contient -> Utilisateur courant
 - Filtres Fiches : Charte DEMO -> est rempli ->

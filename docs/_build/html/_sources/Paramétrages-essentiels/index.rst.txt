@@ -14,7 +14,7 @@ Techniquement les référentiels et mots clés sont la même chose (possibilité
 Les mots clés et référentiels se trouvent dans le module |administration| > |indexage|, il y a un onglet pour les Mots-clés et un onglet pour les Référentiels.
 
 
-..note::
+.. note::
 	Lorsque les mots clés ou référentiels sont arborescents (type 1. Axe, 1.1 Orientation, 1.1.1 Mesure) il est recommandé de rattacher l’élément au plus petit niveau possible (par exemple si tu as 1. Axe, 1.1 Orientation, 1.1.1 Mesure, il faudra plutôt rattacher à 1.1.1 Mesure si possible). Car EVA comprend donc que la fiche fait bien partie des niveaux supérieurs, si on coche tous les niveaux d’une même partie d’un référentiel on peut avoir des doublons dans les analyses par la suite.
 
 Paramétrages
