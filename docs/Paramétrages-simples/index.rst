@@ -72,7 +72,7 @@ Voici le code nécessaire pour faire apparaître le texte en rouge et en grand e
 | ``<p>&nbsp;</p>``
 
 
-La partie ``<span style="color: #a70013; font-size: 20pt;"`` permet d'indiquer la couleur en code hex et la taille de la police.  Pour mettre en forme les liens, il faut indiquer le lien, il faut indiquer la balise ``<a`` puis indiquer le lien dans ``href=""``, ensuite indiquer le nom du lien après le charactère ``<`` et enfin fermer la balise ``</a>`.
+La partie ``<span style="color: #a70013; font-size: 20pt;"`` permet d'indiquer la couleur en code hex et la taille de la police.  Pour mettre en forme les liens, il faut indiquer le lien, il faut indiquer la balise ``<a`` puis indiquer le lien dans ``href=""``, ensuite indiquer le nom du lien après le charactère ``<`` et enfin fermer la balise ``</a>``.
 
 **Liste**
 
