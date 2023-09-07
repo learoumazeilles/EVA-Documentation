@@ -58,7 +58,7 @@ Exemples de mise en page d'accueil
 *La mise en forme des textes est plus complexe et requiert des notions en html comme expliqué ci-dessous*
 
 Pour mettre en forme les textes, il faut éditer la partie **Code Source** dans le bloc de texte.
-En cliquant que le bouton code source "<>" une autre page s'ouvre :
+En cliquant sur le bouton code source "<>" une autre page s'ouvre :
 
 .. image:: images/Code_source.png
 	:width: 100
