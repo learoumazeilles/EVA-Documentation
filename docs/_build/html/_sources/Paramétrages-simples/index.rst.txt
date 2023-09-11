@@ -58,7 +58,7 @@ Exemples de mise en page d'accueil
 *La mise en forme des textes est plus complexe et requiert des notions en html comme expliqué ci-dessous*
 
 Pour mettre en forme les textes, il faut éditer la partie **Code Source** dans le bloc de texte.
-En cliquant que le bouton code source "<>" une autre page s'ouvre :
+En cliquant sur le bouton code source "<>" une autre page s'ouvre :
 
 .. image:: images/Code_source.png
 	:width: 100
@@ -72,7 +72,7 @@ Voici le code nécessaire pour faire apparaître le texte en rouge et en grand e
 | ``<p>&nbsp;</p>``
 
 
-La partie ``<span style="color: #a70013; font-size: 20pt;"`` permet d'indiquer la couleur en code hex et la taille de la police.  Pour mettre en forme les liens, il faut indiquer le lien, il faut indiquer la balise ``<a`` puis indiquer le lien dans ``href=""``, ensuite indiquer le nom du lien après le charactère ``<`` et enfin fermer la balise ``</a>`.
+La partie ``<span style="color: #a70013; font-size: 20pt;"`` permet d'indiquer la couleur en code hex et la taille de la police.  Pour mettre en forme les liens, il faut indiquer le lien, il faut indiquer la balise ``<a`` puis indiquer le lien dans ``href=""``, ensuite indiquer le nom du lien après le charactère ``<`` et enfin fermer la balise ``</a>``.
 
 **Liste**
 

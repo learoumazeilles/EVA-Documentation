@@ -69,6 +69,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#exports-temps">Exports temps</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#export-par-defaut">Export par défaut</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#export-a-parametrer">Export à paramétrer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#export-parametre-en-base-de-donnees">Export paramétré en base de données</a></li>
 </ul>
 </li>
 </ul>
@@ -389,6 +390,41 @@ Il faut cocher la case <strong>Analyser le titre</strong> dans les paramètres d
 <p>L’export paramétré exporte tous les temps qui résulte des filtres, peu importe s’ils ont été cochés ou non ou s’ils ont été effacés avec la gomme. Les années exportées dépendront des feuilles de temps présentes dans l’export.</p>
 </div>
 </section>
+<section id="export-parametre-en-base-de-donnees">
+<h3>Export paramétré en base de données<a class="headerlink" href="#export-parametre-en-base-de-donnees" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Il existe un export des temps Life qui est à demander à l’assistance pour être paramétré.</p>
+<p>Les agents qui suivent des temps Life peuvent utiliser un export qui leur permet d’exporter les temps des projets passés en heures, par jour et par axe du référentiel Life, avec un onglet par mois et un onglet bilan de l’année. Voir exemple ci-dessous.</p>
+<a class="reference internal image-reference" href="../_images/Temps_Life.png"><img alt="../_images/Temps_Life.png" src="../_images/Temps_Life.png" style="width: 700px;" /></a>
+<p>Pour pouvoir utiliser cet export :</p>
+<ul class="simple">
+<li><p>il faut avoir défini un référentiel pour lequel on veut exporter les temps, par exemple le programme Life en question (voir <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-essentiels/index.html#mots-cles-et-referentiels">la partie sur les référentiels</a>)</p></li>
+<li><p>il faut avoir rattaché les bonnes fiches à ce référentiel, il est préférable pour ces fiches qu’elles soient spécifiques au programme sinon il sera copmliqué de définir quel temps passé se rattache au programme et quel temps se rattache à la charte par exemple.</p></li>
+<li><p>si l’on doit rendre des comptes sur les congés, il faut avoir créé les types de congés (voir <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Temps.html#synchronisations-des-absences">la partie sur la synchro des temps d absences</a> )</p></li>
+<li><p>il faut remplir les temps passés et d’absence dans les fiches (voir la doc sur le module temps pour tous les moyens d’ajouter les temps passés)</p></li>
+</ul>
+<p>Pour exporter les temps :</p>
+<ol class="arabic simple">
+<li><p>Se rendre dans le module Fiches -&gt; vue arborescente -&gt; choisir le référentiel de votre choix -&gt; indiquer des filtres (optionnel) -&gt; cliquer sur rechercher</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/Life_arbo.png"><img alt="../_images/Life_arbo.png" src="../_images/Life_arbo.png" style="width: 500px;" /></a>
+<p>-&gt; Votre référentiel et toutes les fiches rattachées s’affichent à l’écran sous forme arborescente</p>
+<ol class="arabic simple" start="2">
+<li><p>Exporter au format Excel (dans export personnalisé)</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/Export_life.png"><img alt="../_images/Export_life.png" src="../_images/Export_life.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="3">
+<li><p>Remplir le formulaire qui s’affiche</p></li>
+</ol>
+<p>Les premiers champs (« Référence du projet » et « Plein temps ou temps partiel » seront repris textuellement dans l’export), les autres champs servent aux calculs (« Nombre d’heures par jour », « Utilisateur », « Début », « Fin », « Autres arborescenes fonds européens »).</p>
+<a class="reference internal image-reference" href="../_images/Formulaire_life.png"><img alt="../_images/Formulaire_life.png" src="../_images/Formulaire_life.png" style="width: 500px;" /></a>
+<ol class="arabic simple" start="4">
+<li><p>Cliquer sur « exporter » -&gt; Vous obtenez votre export Life</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>La ligne « Autres arborescences hors fonds européens » n’est pas remplie par l’export.</p>
+</div>
+</section>
 </section>
 </section>
 
@@ -404,7 +440,7 @@ Il faut cocher la case <strong>Analyser le titre</strong> dans les paramètres d
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 01 août 2023.
+      <span class="lastupdated">Mis à jour le 11 sept. 2023.
       </span></p>
   </div>
 

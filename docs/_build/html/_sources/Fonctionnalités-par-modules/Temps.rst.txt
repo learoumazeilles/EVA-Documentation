@@ -394,7 +394,47 @@ Dans le formulaire d'export temps les champs sont les suivants :
   L'export paramétré exporte tous les temps qui résulte des filtres, peu importe s'ils ont été cochés ou non ou s'ils ont été effacés avec la gomme. Les années exportées dépendront des feuilles de temps présentes dans l'export.
 
 
+Export paramétré en base de données
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Il existe un export des temps Life qui est à demander à l'assistance pour être paramétré.
+
+Les agents qui suivent des temps Life peuvent utiliser un export qui leur permet d'exporter les temps des projets passés en heures, par jour et par axe du référentiel Life, avec un onglet par mois et un onglet bilan de l’année. Voir exemple ci-dessous.
+
+.. image:: images/Temps_Life.png
+  :width: 700
+
+Pour pouvoir utiliser cet export : 
+
+- il faut avoir défini un référentiel pour lequel on veut exporter les temps, par exemple le programme Life en question (voir `la partie sur les référentiels <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-essentiels/index.html#mots-cles-et-referentiels>`_)
+- il faut avoir rattaché les bonnes fiches à ce référentiel, il est préférable pour ces fiches qu'elles soient spécifiques au programme sinon il sera copmliqué de définir quel temps passé se rattache au programme et quel temps se rattache à la charte par exemple.
+- si l'on doit rendre des comptes sur les congés, il faut avoir créé les types de congés (voir `la partie sur la synchro des temps d absences <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Temps.html#synchronisations-des-absences>`_ )
+- il faut remplir les temps passés et d'absence dans les fiches (voir la doc sur le module temps pour tous les moyens d'ajouter les temps passés)
 
 
+Pour exporter les temps :
 
+1. Se rendre dans le module Fiches -> vue arborescente -> choisir le référentiel de votre choix -> indiquer des filtres (optionnel) -> cliquer sur rechercher
+
+.. image:: images/Life_arbo.png
+  :width: 500
+
+-> Votre référentiel et toutes les fiches rattachées s'affichent à l'écran sous forme arborescente
+
+2. Exporter au format Excel (dans export personnalisé)
+
+.. image:: images/Export_life.png
+  :width: 500
+
+3. Remplir le formulaire qui s'affiche
+
+Les premiers champs ("Référence du projet" et "Plein temps ou temps partiel" seront repris textuellement dans l'export), les autres champs servent aux calculs ("Nombre d'heures par jour", "Utilisateur", "Début", "Fin", "Autres arborescenes fonds européens").
+
+.. image:: images/Formulaire_life.png
+  :width: 500
+
+4. Cliquer sur "exporter" -> Vous obtenez votre export Life
+
+.. warning ::
+  La ligne "Autres arborescences hors fonds européens" n'est pas remplie par l'export.
 
