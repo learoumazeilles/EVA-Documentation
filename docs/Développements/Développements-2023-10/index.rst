@@ -2,7 +2,7 @@ Développements 2023 10
 ======================
 
 Contexte
-~~~~~~~~
+--------
 
 Un déploiement des derniers développements sur le logiciel EVA a lieu prochainement. Il comprend des **résolutions d’anomalies** et des **améliorations des fonctionnalités existantes**.
 
@@ -12,7 +12,7 @@ Les développements sont détaillés ci-après, avec le détail du ticket GitLab
 
 
 Anomalies résolues
-~~~~~~~~~~~~~~~~~~
+------------------
 
 1. Problème de synchronisation des agendas
 ##########################################
@@ -44,7 +44,7 @@ Lorsque l'on cliquait sur une requête dans Analyses> budget (dépenses et recet
 
 
 Améliorations des fonctionnalités existantes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------
 
 4. Ajout de la colonne "code financier" dans la liste des fiches de l'accueil
 #############################################################################
@@ -63,7 +63,7 @@ Ajout des colonnes de soldes et calcul budgétaire dans la liste des fiches (ég
    Tous les parcs n'ont pas la même nomenclature financière donc la capture ci-dessous peut ne pas correspondre exactement à votre cas.
 
 .. image:: images/Colonnes_solde.png
-   :width: 200
+   :width: 700
 
 
 .. warning::
@@ -71,4 +71,4 @@ Ajout des colonnes de soldes et calcul budgétaire dans la liste des fiches (ég
 
 
 .. image:: images/Colonnes_cochées.png
-   :width: 200
+   :width: 400
