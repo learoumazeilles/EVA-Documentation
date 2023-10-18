@@ -20,7 +20,8 @@
         <script src="../../_static/translations.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Recherche" href="../../search.html" /> 
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="prev" title="Développements 2023 07" href="../D%C3%A9veloppements-2023-07/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -57,10 +58,25 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-avanc%C3%A9s/index.html">Paramétrages avancés</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2022-11/index.html">Développements 2022 11</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2023-03/index.html">Développements 2023 03</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2023-07/index.html">Développements 2023 07</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Développements 2023 10</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contexte">Contexte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anomalies-resolues">Anomalies résolues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#probleme-de-synchronisation-des-agendas">1. Problème de synchronisation des agendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#requete-utilisateur-courant-dans-les-analyses-temps">2. Requête utilisateur courant dans les analyses temps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#requetes-analyses-budget">3. Requêtes analyses budget</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ameliorations-des-fonctionnalites-existantes">Améliorations des fonctionnalités existantes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ajout-de-la-colonne-code-financier-dans-la-liste-des-fiches-de-l-accueil">4. Ajout de la colonne « code financier » dans la liste des fiches de l’accueil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ajout-des-colonnes-de-solde-financier-dans-la-liste-des-fiches">5. Ajout des colonnes de solde financier dans la liste des fiches</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -91,7 +107,7 @@
 <h1>Développements 2023 10<a class="headerlink" href="#developpements-2023-10" title="Lien permanent vers cette rubrique"></a></h1>
 <section id="contexte">
 <h2>Contexte<a class="headerlink" href="#contexte" title="Lien permanent vers cette rubrique"></a></h2>
-<p>Un déploiement des derniers développements sur le logiciel EVA a lieu prochainement. Il comprend des <strong>résolutions d’anomalies</strong> et des <strong>améliorations des fonctionnalités existantes</strong>.</p>
+<p>Un déploiement des derniers développements sur le logiciel EVA a eu lieu le 18/10/2023 à 13h. Il comprend des <strong>résolutions d’anomalies</strong> et des <strong>améliorations des fonctionnalités existantes</strong>.</p>
 <p>Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé (il faut un compte pour le consulter) et un mode d’emploi pour les nouveautés.</p>
 <p>À noter, pour le point 5, des colonnes seront ajoutées dans vos tableaux des fiches par défaut, si vous ne souhaitez pas les voir affichées, vous pouvez les décocher dans le choix des colonnes.</p>
 </section>
@@ -134,12 +150,12 @@ Ajout des colonnes de soldes et calcul budgétaire dans la liste des fiches (ég
 <p class="admonition-title">Note</p>
 <p>Tous les parcs n’ont pas la même nomenclature financière donc la capture ci-dessous peut ne pas correspondre exactement à votre cas.</p>
 </div>
-<a class="reference internal image-reference" href="../../_images/Colonnes_solde.png"><img alt="../../_images/Colonnes_solde.png" src="../../_images/Colonnes_solde.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Colonnes_solde.png"><img alt="../../_images/Colonnes_solde.png" src="../../_images/Colonnes_solde.png" style="width: 700px;" /></a>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
 <p>Les colonnes vont être affichées par défaut dans vos tableaux des fiches, comme pour les autres colonnes vous pouvez simplement les décocher dans l’affichage des colonnes si vous ne souhaitez pas les afficher.</p>
 </div>
-<a class="reference internal image-reference" href="../../_images/Colonnes_cochées.png"><img alt="../../_images/Colonnes_cochées.png" src="../../_images/Colonnes_cochées.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Colonnes_cochées.png"><img alt="../../_images/Colonnes_cochées.png" src="../../_images/Colonnes_cochées.png" style="width: 400px;" /></a>
 </section>
 </section>
 </section>
@@ -147,13 +163,15 @@ Ajout des colonnes de soldes et calcul budgétaire dans la liste des fiches (ég
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="../D%C3%A9veloppements-2023-07/index.html" class="btn btn-neutral float-left" title="Développements 2023 07" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 13 oct. 2023.
+      <span class="lastupdated">Mis à jour le 18 oct. 2023.
       </span></p>
   </div>
 

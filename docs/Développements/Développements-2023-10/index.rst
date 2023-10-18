@@ -4,7 +4,7 @@ Développements 2023 10
 Contexte
 --------
 
-Un déploiement des derniers développements sur le logiciel EVA a lieu prochainement. Il comprend des **résolutions d’anomalies** et des **améliorations des fonctionnalités existantes**.
+Un déploiement des derniers développements sur le logiciel EVA a eu lieu le 18/10/2023 à 13h. Il comprend des **résolutions d’anomalies** et des **améliorations des fonctionnalités existantes**.
 
 Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé (il faut un compte pour le consulter) et un mode d’emploi pour les nouveautés.
 
