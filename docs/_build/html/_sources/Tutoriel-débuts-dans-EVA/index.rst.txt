@@ -73,8 +73,8 @@ Lors de votre première connexion, il est recommandé de modifier au moins votre
 
 Pour accéder à vos informations, deux solutions :
 
-* Par le module Administration > Utilisateurs > Cliquez sur votre profil
-* En cliquant sur votre profil directement en haut à droite
+* Par le module Administration > Utilisateurs >  Profils > Cliquez sur votre profil
+* En cliquant sur votre profil directement en haut à droite et Personnalisation du profil
 
 .. image:: images/Acces_info_utilisateurs.png
   :width: 600
