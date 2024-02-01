@@ -157,6 +157,9 @@
 .. |envoi| image:: /_static/images/Envoi_alerte.png
 	:width: 30
 
+.. |effacer_forme| image:: /_static/images/Effacer_forme.png
+	:width: 80
+
 
 .. |accueil| image:: /_static/images/Accueil.png
 	:height: 50

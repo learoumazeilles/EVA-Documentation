@@ -69,7 +69,7 @@ Les champs utilisateur, fiche rattachée, dates de début et de fin, nombre d'he
 * Des **Territoires** peuvent aussi être ajoutés aux temps
 
 .. warning::
-	Si le pramétrage des types d'absence n'a pas été paramétré, l'ajout des temps d'absence ne fonctionnera pas.
+	Si le pramétrage des types d'absence n'a pas été paramétré, l'ajout des temps d'absence ne fonctionnera pas. Attention si on remplit le type d'absence puis on change le type de temps pour temps passé ou prévu, le champs type d'absence dispaîtra mais il restera plein et sera présent lors des exports. Il faut donc bien penser à le vider si on souhaite retirer cette donnée.
 
 
 Formulaire import avec fichier .ics

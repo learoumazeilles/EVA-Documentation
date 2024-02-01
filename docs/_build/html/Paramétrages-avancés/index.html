@@ -21,7 +21,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Développements Novembre 2022" href="../D%C3%A9veloppements/D%C3%A9veloppements-Novembre-2022/index.html" />
+    <link rel="next" title="Développements 2022 11" href="../D%C3%A9veloppements/D%C3%A9veloppements-2022-11/index.html" />
     <link rel="prev" title="Paramétrages simples" href="../Param%C3%A9trages-simples/index.html" /> 
 </head>
 
@@ -51,18 +51,30 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html">Fonctionnalités générales</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-par-modules/index.html">Fonctionnalités par modules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Fonctionnalit%C3%A9s-avanc%C3%A9es/index.html">Fonctionnalités avancées</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-essentiels/index.html">Paramétrages essentiels</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Param%C3%A9trages-simples/index.html">Paramétrages simples</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Paramétrages avancés</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Paramétrages avancés</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#exports-word">Exports Word</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parametrages-des-exports-word">Paramétrages des exports Word</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#les-types-d-export-et-leur-vocabulaire">Les types d’export et leur vocabulaire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#option-filtre-par-annee">Option filtre par année</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#choix-des-variables">Choix des variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mise-en-forme">Mise en forme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#conseil">Conseil !</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Novembre-2022/index.html">Développements Novembre 2022</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-Mars-2023/index.html">Développements Mars 2023</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2022-11/index.html">Développements 2022 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2023-03/index.html">Développements 2023 03</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2023-07/index.html">Développements 2023 07</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2023-10/index.html">Développements 2023 10</a></li>
 </ul>
 
         </div>
@@ -91,6 +103,102 @@
              
   <section id="parametrages-avances">
 <h1>Paramétrages avancés<a class="headerlink" href="#parametrages-avances" title="Lien permanent vers cette rubrique"></a></h1>
+<section id="exports-word">
+<h2>Exports Word<a class="headerlink" href="#exports-word" title="Lien permanent vers cette rubrique"></a></h2>
+<p><a class="reference internal" href="../_images/Administration.png"><img alt="administration" src="../_images/Administration.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Exports.png"><img alt="exports" src="../_images/Exports.png" style="height: 50px;" /></a></p>
+<a class="reference internal image-reference" href="../_images/Export_word.png"><img alt="../_images/Export_word.png" src="../_images/Export_word.png" style="width: 300px;" /></a>
+<p><strong>À quoi sert la fonctionnalité d’export Word dans EVA ?</strong></p>
+<p>Pour exporter dans un format Word uniforme plusieurs fiches contenues dans le logiciel en un clic (ou presque…).
+Exemples : Rapport d’activité, Programme d’action, Rapport d’évaluation…$</p>
+<p><strong>Comment elle fonctionne ?</strong></p>
+<p>Sur le principe du publipostage, les exports reposent sur la notion de « variable ».
+Exemple : Les titres de toutes les fiches peuvent être appelées par la variable $name$. À l’export, pour chaque fiche, à la place de $name$ dans l’export, le titre de la fiche sera indiqué.</p>
+<p><strong>Les étapes pour faire un export, exemple simple</strong></p>
+<ol class="arabic simple">
+<li><p>Paramétrage de l’export</p></li>
+</ol>
+<p>Choisir le format et les champs à afficher (plus d’infos plus bas).</p>
+<p>Les variables s’adaptent aux fiches exportées, les textes insérés sans variable seront toujours les mêmes pour toutes les fiches.</p>
+<a class="reference internal image-reference" href="../_images/Param_exp.png"><img alt="../_images/Param_exp.png" src="../_images/Param_exp.png" style="width: 400px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>Choix des fiches à exporter</p></li>
+</ol>
+<p>Dans le module des fiches, choisir les fiches à exporter et cliquer sur le logo Word en haut à droite.</p>
+<a class="reference internal image-reference" href="../_images/Choix_fiches_exp.png"><img alt="../_images/Choix_fiches_exp.png" src="../_images/Choix_fiches_exp.png" style="width: 400px;" /></a>
+<ol class="arabic simple" start="3">
+<li><p>Export</p></li>
+</ol>
+<p>Exemple de fichier word rendu avec la variable titre qui s’est adapté à chaque fiche et le texte qui est resté le même.</p>
+<a class="reference internal image-reference" href="../_images/Exemple_exp_word.png"><img alt="../_images/Exemple_exp_word.png" src="../_images/Exemple_exp_word.png" style="width: 500px;" /></a>
+</section>
+<section id="parametrages-des-exports-word">
+<h2>Paramétrages des exports Word<a class="headerlink" href="#parametrages-des-exports-word" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="les-types-d-export-et-leur-vocabulaire">
+<h3>Les types d’export et leur vocabulaire<a class="headerlink" href="#les-types-d-export-et-leur-vocabulaire" title="Lien permanent vers cette rubrique"></a></h3>
+<a class="reference internal image-reference" href="../_images/Types_export.png"><img alt="../_images/Types_export.png" src="../_images/Types_export.png" style="width: 300px;" /></a>
+<p>Pour le paramétrage des exports, il existe deux types d’export défini dans le menu déroulant « Arborescence ».</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Si on change ce paramètre d’arborescence de l’un à l’autre après avoir déjà paramétré l’export, tout s’efface. Il est donc plutôt conseillé d’en créer un nouveau si on souhaite changer l’arborescence.</p>
+</div>
+<p><strong>TYPE Arborescence initiale</strong></p>
+<p>But : exporter plusieurs fiches les unes à la suite des autres sans ordre précis
+Accessible depuis : tableau des fiches et les fiches elles-mêmes</p>
+<p>Le vocabulaire Feuille - Noeud - Parent dans ce type d’export correspond au niveau des fiches exportées.</p>
+<a class="reference internal image-reference" href="../_images/vocab_export_simple.png"><img alt="../_images/vocab_export_simple.png" src="../_images/vocab_export_simple.png" style="width: 300px;" /></a>
+<p>Le niveau « parent » correspond au plus haut niveau de fiche exportée, le niveau « feuille » au plus bas niveau et le niveau « noeud » à toutes les fiches de niveaux intermédiaires entre le plus élevé et le plus bas.</p>
+<p>Le niveau ici fait référence au rattachement de la fiche, si la fiche n’est rattachée à aucune autre fiche, elle est par défaut une « feuille ».</p>
+<a class="reference internal image-reference" href="../_images/niveau_export_simple.png"><img alt="../_images/niveau_export_simple.png" src="../_images/niveau_export_simple.png" style="width: 600px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L’export prend en compte cette arborescence uniquement si les fiches rattachées sont toutes dans l’export. Par exemple : Si on exporte uniquement la fiche SOUS-PROJET elle sera considéré comme une feuille car ces fiches enfants ou sa fiche parent ne sont pas intégrées</p>
+</div>
+<p><strong>TYPE Mot-clé référentiel</strong></p>
+<p>But : exporter plusieurs fiches organisées selon l’arborescence d’un mot-clé ou référentiel
+Accessible depuis : la vue arborescente des fiches <a class="reference internal" href="../_images/Arborescence_fiche.png"><img alt="arbo_fiches" src="../_images/Arborescence_fiche.png" style="width: 30px;" /></a></p>
+<a class="reference internal image-reference" href="../_images/Arborescence_fiches.png"><img alt="../_images/Arborescence_fiches.png" src="../_images/Arborescence_fiches.png" style="width: 600px;" /></a>
+<p>Le vocabulaire Feuille - Noeud - Parent dans ce type d’export correspond au niveau du mot-clé ou référentiel exporté.</p>
+<a class="reference internal image-reference" href="../_images/vocab_export_simple.png"><img alt="../_images/vocab_export_simple.png" src="../_images/vocab_export_simple.png" style="width: 300px;" /></a>
+<p>Le niveau « parent » correspond au plus haut niveau de mot-clé/référentiel, le niveau « feuille » au plus bas niveau et le niveau « noeud » à tous les niveaux intermédiaires entre le plus élevé et le plus bas. On peut donc paramétrer ces niveaux si on veut mettre en forme la partie de l’export contenant le mot-clé, par exemple son nom, exporter des données cumulées pour le mot-clé…</p>
+<p>Les « fiches rattachées à », correspondent aux fiches rattachées à ce niveau de mot-clé et on pourra donc paramétrer l’export de la fiche comme dans le type précédent.</p>
+<a class="reference internal image-reference" href="../_images/niveau_export_arbo.png"><img alt="../_images/niveau_export_arbo.png" src="../_images/niveau_export_arbo.png" style="width: 600px;" /></a>
+</section>
+<section id="option-filtre-par-annee">
+<h3>Option filtre par année<a class="headerlink" href="#option-filtre-par-annee" title="Lien permanent vers cette rubrique"></a></h3>
+<a class="reference internal image-reference" href="../_images/Filtre_année.png"><img alt="../_images/Filtre_année.png" src="../_images/Filtre_année.png" style="width: 300px;" /></a>
+<p>Cette option permet de filtrer les données sur une seule année (budget, mesures d’indicateurs…). Par exemple, si l’on suit un indicateur dans une fiche pluri-annuelle mais l’on souhaite faire ressortir dans cet export les mesures pour l’année 2023 uniquement, on peut indiquer 2023 dans ce champ.</p>
+</section>
+<section id="choix-des-variables">
+<h3>Choix des variables<a class="headerlink" href="#choix-des-variables" title="Lien permanent vers cette rubrique"></a></h3>
+<a class="reference internal image-reference" href="../_images/Choix_variables.png"><img alt="../_images/Choix_variables.png" src="../_images/Choix_variables.png" style="width: 300px;" /></a>
+<p>On peut choisir les variables à exporter dans les différents onglets disponibles à gauche du cadre de l’export. Les exports Word aujourd’hui concernent uniquement les fiches donc les variables disponibles concernent des données rattachées aux fiches.</p>
+<p>En cliquant sur un élément à ajouter, il apparaîtra sous sa forme de variable dans le cadre à droite.</p>
+<p>On peut rechercher un champ que l’on souhaite exporter dans la barre de recherche en haut des variables.</p>
+<p>Lorsque l’on clique sur une variable, la question de l’arborescence est souvent posée. Cela veut dire de faire remonter les données de fiches rattachées par exemple ou d’afficher toute l’arborescence d’un mot-clé ou référentiel.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pour les variables sous forme de tableau, il faut mieux éviter d’avoir trop de colonnes car le rendu devient alors illisible.</p>
+</div>
+</section>
+<section id="mise-en-forme">
+<h3>Mise en forme<a class="headerlink" href="#mise-en-forme" title="Lien permanent vers cette rubrique"></a></h3>
+<p>On peut mettre en forme les exports grâce aux outils disponibles en haut du cadre de droite.</p>
+<a class="reference internal image-reference" href="../_images/Format_export.png"><img alt="../_images/Format_export.png" src="../_images/Format_export.png" style="width: 300px;" /></a>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Si on met en forme (gras, italique…) des éléments de texte dans les fiches, il ne faut pas mettre en forme des variables de textes dans l’export. Souvent lorsque les exports ne fonctionnent pas, c’est une question de superposition de la mise en forme fiches + exports. On peut alors aller dans la fiche, sélectionner les textes et cliquer sur « Effacer la mise en forme ». <a class="reference internal" href="../_images/Effacer_forme.png"><img alt="effacer_forme" src="../_images/Effacer_forme.png" style="width: 80px;" /></a></p>
+</div>
+</section>
+<section id="conseil">
+<h3>Conseil !<a class="headerlink" href="#conseil" title="Lien permanent vers cette rubrique"></a></h3>
+<p>TESTER PETIT À PETIT : N’attendez pas d’avoir fini votre export avant de le tester, tester le petit à petit (si une erreur survient vous pourrez identifier d’où elle vient). Faire des tests sur une fiche puis plusieurs fiches.</p>
+<p>Deux cafés EVA sur les exports ont eu lieu en 2023 -&gt; à regarder pour plus de détails (disponible dans le centre de ressources) :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/EsOr_di3mZJNhUULbvZ-7AcBrV_W7HTuep2FEIPv2CohXQ?e=siEalt">Novembre 2023 Exports Word Exemples</a></p></li>
+<li><p><a class="reference external" href="https://fpnrf-my.sharepoint.com/:v:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/EbATzDkwFrRFk5jF4eoAwR0BBzNc0EpM4bSIYbmfH_z0Wg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=A4h3x0">Août 2023 Exports Word Référentiel</a></p></li>
+</ul>
+</section>
+</section>
 </section>
 
 
@@ -98,14 +206,14 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
         <a href="../Param%C3%A9trages-simples/index.html" class="btn btn-neutral float-left" title="Paramétrages simples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
-        <a href="../D%C3%A9veloppements/D%C3%A9veloppements-Novembre-2022/index.html" class="btn btn-neutral float-right" title="Développements Novembre 2022" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../D%C3%A9veloppements/D%C3%A9veloppements-2022-11/index.html" class="btn btn-neutral float-right" title="Développements 2022 11" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 23 mars 2023.
+      <span class="lastupdated">Mis à jour le 01 févr. 2024.
       </span></p>
   </div>
 

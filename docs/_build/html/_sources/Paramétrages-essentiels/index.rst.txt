@@ -84,6 +84,9 @@ Les éléments auxquels ont peut attribuer des mots-clés :
 .. warning::
 	Pour la colonne "Membre" qui désigne les membres de la fiche, il est possible de rattacher qu'un seul mot clé. Il apparaîtra dans la colonne rôle de l'onglet Équipe dans les fichesmais ne se substituera pas si le membre a été ajouté en tant que chef de projet ou validateur.
 
+.. warning::
+  Attention si on a coché une des cases pour rattacher le mot-clé, par exemple à "structures" et on a rattaché des structures à ce mot-clé si par la suite on décoche cette case, les champs associés ne se vident pas en base de données. Il sera alors impossible de supprimer le mot-clé car il y a une sécurité pour ne pas supprimer les mots-clés associés à une donnée.
+
 Après enregistrement de ces éléments le mot clé apparaît dans la liste des mots-clés.
 
 .. warning ::
@@ -95,7 +98,7 @@ Il est possible de :
 
 - archiver le mot clé avec |archiver_ligne|, cela le retire de la liste de choix dans l'élément rattaché (fiche si on a coché fiche) mais ne supprime pas l’historique des données rattachées et le laisse dans la liste des mots-clés pour pouvoir le réactiver plus tard si besoin en cliquant sur |reactive|.
 
-- supprimer avec |supprimer_ligne|
+- supprimer avec |supprimer_ligne|, il sera impossible de supprimer un mot-clé s'il est rattaché quelque part
 
 - On peut lui ajouter des attributs (exemple : les différentes thématiques) en cliquant sur le |ajout_plus| à côté du nom.
 
@@ -118,7 +121,7 @@ Il est possible de :
 
 - archiver l'attribut avec |archiver_ligne|, cela le retire de la liste de choix lors du remplissage du mot clé mais ne supprime pas l’historique des données rattachées et le laisse dans la liste pour pouvoir le réactiver plus tard si besoin en cliquant sur |reactive|.
 
-- supprimer avec |supprimer_ligne|
+- supprimer avec |supprimer_ligne|, il sera impossible de supprimer l'attribut s'il est rattaché quelque part
 
 - fusionner en cliquant sur |fusion| : Une boîte de dialogue s’ouvre, la fusion permet de réassocier tous les éléments d'un attribut à un autre. Cela est utile dans le cas où trop d'attribut aurait été définit pour un mot, à un niveau trop fin et le mot clé n'est pas rempli à ce niveau de finesse. Par exemple Biodiversité marine et Biodiversité terrestre ont été associées au début aux fiches puis les utilisateurs ont préféré associer uniquement Biodiversité. Dans ce cas on peut rapatrier toutes les associations avec Biodiversité marine et Biodiversité terrestre en fusionnant ces deux attributs vers Biodiversité. On peut ensuite les supprimer ou les archiver.
 
@@ -166,7 +169,7 @@ Il est possible de :
 
 - archiver le référentiel avec |archiver_ligne|, cela le retire de la liste de choix dans les fiches et indicateurs mais ne supprime pas l’historique des données rattachées et le laisse dans la liste des référentiels pour pouvoir le réactiver plus tard si besoin en cliquant sur |reactive|.
 
-- supprimer avec |supprimer_ligne|
+- supprimer avec |supprimer_ligne|, il sera impossible de supprimer un référentiel s'il est rattaché quelque part
 
 - On peut lui ajouter des attributs (exemple : les différents axes et mesures de la charte) en cliquant sur le |ajout_plus| à côté du nom.
 
@@ -189,7 +192,7 @@ Il est possible de :
 
 - archiver l'attribut avec |archiver_ligne|, cela le retire de la liste de choix lors du remplissage du référentel mais ne supprime pas l’historique des données rattachées et le laisse dans la liste pour pouvoir le réactiver plus tard si besoin en cliquant sur |reactive|.
 
-- supprimer avec |supprimer_ligne|
+- supprimer avec |supprimer_ligne|, il sera impossible de supprimer l'attribut s'il est rattaché quelque part
 
 - fusionner en cliquant sur |fusion| : Une boîte de dialogue s’ouvre, la fusion permet de réassocier tous les éléments d'un attribut à un autre. Cela est utile dans le cas où trop d'attribut aurait été définit pour un référentiel, à un niveau trop fin et le référentiel n'est pas rempli à ce niveau de finesse. Par exemple des sous-mesures ont été créé  et ont été associées au début aux fiches puis les utilisateurs ont préféré associer uniquement les mesures. Dans ce cas on peut rapatrier toutes les associations avec Bles sous-mesures en fusionnant ces attributs vers la mesure. On peut ensuite les supprimer ou les archiver.
 

@@ -154,6 +154,10 @@ Les champs accessibles :
 
 * **Mots clés et référentiels** : à rattacher
 
+.. warning::
+  Attention si on coche la case "maîtrise d'ouvrage externe" puis on remplit le champ "Maître d'ouvrage", si par la suite on décohe la case "Maîtrise d'ouvrage externe" le champ "Maître d'ouvrage" dispaîtra mais il restera plein et sera présent lors des exports. Il faut donc bien penser à le vider si on souhaite retirer cette donnée.
+
+
 Onglet équipe
 ~~~~~~~~~~~~~
 
