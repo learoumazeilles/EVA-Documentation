@@ -236,7 +236,7 @@ Donc dans les agendas, il faut indiquer un élément de rattachement à la fiche
 Vous pouvez également indiquer les **mots clés** et **territoires** dans vos agendas. Pour les **mots clés**, vous pouvez les indiquer dans la description avec des caractères d'entourage ou non si en un seul mot, mais si le mot clé est en plusieurs mots il faudra utiliser les crochets. Dans le cas des **territoires**, il faut les insérer dans la partie localisation/lieu du rendez-vous.
 
 .. note::
-  Si le **champs utilisé** pour la jointure à la fiche est localisation/lieu, il ne pourra pas être utilisé pour rattacher les territoires. On ne peut faire remonter qu’un seul territoire par rendez-vous, le champs « Lieu » de votre rendez-vous d’agenda doit contenir uniquement le nom d’un territoire dans EVA pour que le rendez-vous remonte bien dans la synchronisation (donc en effet il ne sera plus possible de mettre le nom d’une salle ou un lien visio dans le lieu)
+  Si le **champs utilisé** pour la jointure à la fiche est localisation/lieu, il ne pourra pas être utilisé pour rattacher les territoires. Pour les territoires, on ne peut faire remonter qu’un seul territoire par rendez-vous, le champs « Lieu » de votre rendez-vous d’agenda doit contenir uniquement le nom d’un territoire dans EVA pour que le territoire remonte bien dans la synchronisation (donc en effet il ne sera plus possible de mettre le nom d’une salle ou un lien visio dans le lieu)
 
 Exemple de temps inséré dans l'agenda google pour import :
 
