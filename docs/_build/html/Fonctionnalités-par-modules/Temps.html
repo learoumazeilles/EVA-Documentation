@@ -262,7 +262,7 @@ Si <strong>Aucun</strong> est utilisé comme caractère d’entourage, l’élé
 <p>Les fonctionnalités de tableau et d’ajout sont détaillées dans la partie <a class="reference internal" href="../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html#fonctionnalites-generales"><span class="std std-ref">Fonctionnalités générales</span></a>.</p>
 <p><strong>Dans EVA</strong></p>
 <a class="reference internal image-reference" href="../_images/Ajout_synchro.png"><img alt="../_images/Ajout_synchro.png" src="../_images/Ajout_synchro.png" style="width: 700px;" /></a>
-<p>Il faut donner un <strong>titre</strong> à la synchronisation et ajouter le <strong>lien</strong> qui permettra de récupérer les données. Ce lien peut être trouvé dans les paramètre de partage de votre boîte mail (sous le nom d’adresse privée ou lien de partage, en .ics ou .ical…).</p>
+<p>Il faut donner un <strong>titre</strong> à la synchronisation et ajouter le <strong>lien</strong> qui permettra de récupérer les données. Ce lien peut être trouvé dans les paramètre de partage de votre boîte mail (sous le nom d’adresse privée ou lien de partage, en .ics ou .ical…). Pour certains types d’agendas, il faudra passer par la version navigateur de votre boîte mail et non l’application pour trouver le lien de partage</p>
 <p>Choisissez ensuite le <strong>type</strong> en fonction de votre agenda (Google, Phénix, Zimbra, Outlook) et votre fuseau horaire.</p>
 <p>Il y a aussi une option de limitation du nombre de caractère des descriptions, qui permet de ne pas prendre en compte les descriptions si besoin, car parfois les caractères utilisés dans les descriptions peuvent bloquer la synchro (type émoji) et les descriptions ne sont pas forcément utiles dans EVA.</p>
 <div class="admonition note">
@@ -289,7 +289,7 @@ Si <strong>Aucun</strong> est utilisé comme caractère d’entourage, l’élé
 <p>Vous pouvez également indiquer les <strong>mots clés</strong> et <strong>territoires</strong> dans vos agendas. Pour les <strong>mots clés</strong>, vous pouvez les indiquer dans la description avec des caractères d’entourage ou non si en un seul mot, mais si le mot clé est en plusieurs mots il faudra utiliser les crochets. Dans le cas des <strong>territoires</strong>, il faut les insérer dans la partie localisation/lieu du rendez-vous.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Si le <strong>champs utilisé</strong> pour la jointure à la fiche est localisation/lieu, il ne pourra pas être utilisé pour rattacher les territoires.</p>
+<p>Si le <strong>champs utilisé</strong> pour la jointure à la fiche est localisation/lieu, il ne pourra pas être utilisé pour rattacher les territoires. On ne peut faire remonter qu’un seul territoire par rendez-vous, le champs « Lieu » de votre rendez-vous d’agenda doit contenir uniquement le nom d’un territoire dans EVA pour que le rendez-vous remonte bien dans la synchronisation (donc en effet il ne sera plus possible de mettre le nom d’une salle ou un lien visio dans le lieu)</p>
 </div>
 <p>Exemple de temps inséré dans l’agenda google pour import :</p>
 <a class="reference internal image-reference" href="../_images/Ex_agenda_google.png"><img alt="../_images/Ex_agenda_google.png" src="../_images/Ex_agenda_google.png" style="width: 300px;" /></a>
@@ -325,6 +325,13 @@ Si <strong>Aucun</strong> est utilisé comme caractère d’entourage, l’élé
 </ul>
 <p>Une fois importée, vous pouvez vérifier la ligne dans l’onglet temps de la fiche associée, par exemple (mode d’intervention est le mot clé) :</p>
 <a class="reference internal image-reference" href="../_images/Temps_synchro_fiche.png"><img alt="../_images/Temps_synchro_fiche.png" src="../_images/Temps_synchro_fiche.png" style="width: 700px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Quelques éléments de précisions sur les synchronisations :
+* Si vous modifiez un horaire, un jour, une description ou un titre d’un rendez-vous d’agenda, à la prochaine synchronisation (manuelle ou automatique) le rendez-vous sera bien modifié sans être dupliqué dans EVA
+* Si vous supprimez un rendez-vous dans votre agenda, il ne se supprimera pas dans EVA
+-&gt; Donc si vous voulez modifier un rendez-vous, il faut bien modifier le rendez-vous existant et ne pas le supprimer pour en créer un autre</p>
+</div>
 </section>
 <section id="synchronisations-des-absences">
 <h2>Synchronisations des absences<a class="headerlink" href="#synchronisations-des-absences" title="Lien permanent vers cette rubrique"></a></h2>
@@ -441,7 +448,7 @@ Il faut cocher la case <strong>Analyser le titre</strong> dans les paramètres d
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 01 févr. 2024.
+      <span class="lastupdated">Mis à jour le 14 févr. 2024.
       </span></p>
   </div>
 

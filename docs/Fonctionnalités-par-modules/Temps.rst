@@ -198,14 +198,13 @@ La synchronisation est utile pour importer automatiquement plusieurs feuilles de
 
 Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie :ref:`Fonctionnalités générales`.
 
-
 **Dans EVA**
 
 
 .. image:: images/Ajout_synchro.png
   :width: 700
 
-Il faut donner un **titre** à la synchronisation et ajouter le **lien** qui permettra de récupérer les données. Ce lien peut être trouvé dans les paramètre de partage de votre boîte mail (sous le nom d'adresse privée ou lien de partage, en .ics ou .ical...).
+Il faut donner un **titre** à la synchronisation et ajouter le **lien** qui permettra de récupérer les données. Ce lien peut être trouvé dans les paramètre de partage de votre boîte mail (sous le nom d'adresse privée ou lien de partage, en .ics ou .ical...). Pour certains types d'agendas, il faudra passer par la version navigateur de votre boîte mail et non l'application pour trouver le lien de partage
 
 Choisissez ensuite le **type** en fonction de votre agenda (Google, Phénix, Zimbra, Outlook) et votre fuseau horaire.
 
@@ -237,7 +236,7 @@ Donc dans les agendas, il faut indiquer un élément de rattachement à la fiche
 Vous pouvez également indiquer les **mots clés** et **territoires** dans vos agendas. Pour les **mots clés**, vous pouvez les indiquer dans la description avec des caractères d'entourage ou non si en un seul mot, mais si le mot clé est en plusieurs mots il faudra utiliser les crochets. Dans le cas des **territoires**, il faut les insérer dans la partie localisation/lieu du rendez-vous.
 
 .. note::
-  Si le **champs utilisé** pour la jointure à la fiche est localisation/lieu, il ne pourra pas être utilisé pour rattacher les territoires.
+  Si le **champs utilisé** pour la jointure à la fiche est localisation/lieu, il ne pourra pas être utilisé pour rattacher les territoires. On ne peut faire remonter qu’un seul territoire par rendez-vous, le champs « Lieu » de votre rendez-vous d’agenda doit contenir uniquement le nom d’un territoire dans EVA pour que le rendez-vous remonte bien dans la synchronisation (donc en effet il ne sera plus possible de mettre le nom d’une salle ou un lien visio dans le lieu)
 
 Exemple de temps inséré dans l'agenda google pour import :
 
@@ -298,6 +297,14 @@ Une fois importée, vous pouvez vérifier la ligne dans l'onglet temps de la fic
 
 .. image:: images/Temps_synchro_fiche.png
   :width: 700
+
+
+.. note::
+  Quelques éléments de précisions sur les synchronisations :
+  * Si vous modifiez un horaire, un jour, une description ou un titre d’un rendez-vous d’agenda, à la prochaine synchronisation (manuelle ou automatique) le rendez-vous sera bien modifié sans être dupliqué dans EVA
+  * Si vous supprimez un rendez-vous dans votre agenda, il ne se supprimera pas dans EVA
+  -> Donc si vous voulez modifier un rendez-vous, il faut bien modifier le rendez-vous existant et ne pas le supprimer pour en créer un autre
+
 
 
 Synchronisations des absences

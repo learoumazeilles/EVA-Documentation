@@ -37,7 +37,7 @@ Un formulaire s'affiche avec plusieurs champs :
 	- Liste : Pour ajouter une liste de fiches ou tâches avec une certaine requête, par exemple pour afficher dans l'accueil toutes les fiches d'un utilisateur qui sont en cours ou qui ont une date de caducité proche... La requête doit être définie dans les modules fiches ou tâches respectivement
 	- Calendrier : Pour ajouter le calendrier avec une certaine requête donc par exemple toutes mes feuilles de temps uniquement, ou toutes les temps prévionnels de mon équipe uniquement... La requête doit être définie dans le module |temps| > |liste_temps|
 	- Note : Pour afficher le fil de discussion par note sur les fiches, cela peut permettre de mettre en valeur des messages, les notes qui s'affichent sont uniquement celles des fiches pour lesquelles l'utilisateur est membre de l'équipe. (Il faut choisir note dans entité.
-	- Graphique : il permet de montrer les temps passés par mois ou par fiches. On peut y associer une requête précise qui doit être défini dans le module |analyses| > |temps|. Pour les fiches, le graphique n'affiche que les temps prévus au niveau de la fiche parent.
+	- Graphique : il permet de montrer les temps passés par mois ou par fiches. On peut y associer une requête précise qui doit être défini dans le module |analyses| > |temps|. **Pour les fiches, le graphique n'affiche que les temps prévus au niveau de la fiche parent.**
 
 
 .. image:: images/Notes_accueil_ex.png
