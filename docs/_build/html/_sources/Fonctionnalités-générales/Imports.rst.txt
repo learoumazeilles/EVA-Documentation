@@ -141,17 +141,20 @@ Autres colonnes possibles : Titre, Description, Territoire
 
 .. note::
 	- Le nombre d'heures peut être différent de la différence entre début et fin (moins élevé comme plus élevé)
+	- Le type peut être indiqué en français : "Temps prévu", "Temps passé", "Temps d'absence", ou en anglais respectivement "target", "done", "absence"
 
-+---------+--------------+---------+------------------+------------------+---------+---------------------+
-| Titre   | Utilisateur* | Fiche*  | Début*           | Fin*             | Heures* | Type*               |
-+=========+==============+=========+==================+==================+=========+=====================+
-| *Texte* | Prénom       | Code ou | Date au format   | Date au format   | Chiffre | **Temps passé**     |
-|         |              |         |                  |                  |         |                     |
-|         |              |         |                  |                  |         | **Temps d'absence** |
-|         |              |         |                  |                  |         |                     |
-| *libre* | Nom          | titre   | JJ/MM/AAAA HH:MM | JJ/MM/AAAA HH:MM |         | **Temps prévu**     |
-+---------+--------------+---------+------------------+------------------+---------+---------------------+
 
++---------------------+--------------+---------+------------------+------------------+---------+---------+
+| Type*               | Utilisateur* | Fiche*  | Début*           | Fin*             | Heures* | Titre   |
++=====================+==============+=========+==================+==================+=========+=========+
+| **Temps passé**     | Prénom       | Code ou | Date au format   | Date au format   | Chiffre | *Texte* |
+|                     |              |         |                  |                  |         |         |
+| **Temps d'absence** |              |         |                  |                  |         |         |
+|                     |              |         |                  |                  |         |         |
+| **Temps prévu**     | Nom          | titre   | JJ/MM/AAAA HH:MM | JJ/MM/AAAA HH:MM |         | *libre* |
++---------------------+--------------+---------+------------------+------------------+---------+---------+
+
+*Le tableau ci-dessus est plus large que la page, vous pouvez le faire glisser de gauche à droite*
 
 Import fiches
 #############
