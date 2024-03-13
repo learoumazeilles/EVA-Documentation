@@ -327,11 +327,22 @@ Si <strong>Aucun</strong> est utilisé comme caractère d’entourage, l’élé
 <a class="reference internal image-reference" href="../_images/Temps_synchro_fiche.png"><img alt="../_images/Temps_synchro_fiche.png" src="../_images/Temps_synchro_fiche.png" style="width: 700px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Quelques éléments de précisions sur les synchronisations :
-* Si vous modifiez un horaire, un jour, une description ou un titre d’un rendez-vous d’agenda, à la prochaine synchronisation (manuelle ou automatique) le rendez-vous sera bien modifié sans être dupliqué dans EVA
-* Si vous supprimez un rendez-vous dans votre agenda, il ne se supprimera pas dans EVA
--&gt; Donc si vous voulez modifier un rendez-vous, il faut bien modifier le rendez-vous existant et ne pas le supprimer pour en créer un autre</p>
+<p>Quelques éléments de précisions sur les synchronisations :</p>
+<ul class="simple">
+<li><p>Si vous modifiez un horaire, un jour, une description ou un titre d’un rendez-vous d’agenda, à la prochaine synchronisation (manuelle ou automatique) le rendez-vous sera bien modifié sans être dupliqué dans EVA</p></li>
+<li><p>Si vous supprimez un rendez-vous dans votre agenda, il ne se supprimera pas dans EVA</p></li>
+</ul>
+<p>-&gt; Donc si vous voulez modifier un rendez-vous, il faut bien modifier le rendez-vous existant et ne pas le supprimer pour en créer un autre</p>
 </div>
+<p><strong>IMPORTANT :</strong></p>
+<p>Ce qui est remonté ou écrasé lors des synchronisations automatiques :</p>
+<ol class="arabic simple">
+<li><p>La synchronisation automatique remonte et écrase les RDV indéfiniment après la date de dernière synchro</p></li>
+<li><p>La synchronisation automatique remonte et écrase les RDV jusqu’à 1 période avant la date de dernière synchronisation</p></li>
+</ol>
+<p>Par exemple : j’ai une synchronisation hebdomadaire qui s’effectue tous les lundis matin. Ma dernière synchro a eu lieu le 8 avril. Le lundi 15 avril quand se lance ma nouvelle synchro, si j’ai modifié un RDV le 17 avril qui était déjà remonté lors de la dernière synchro automatique, la modification sera prise en compte, si j’ai modifié un RDV le mardi 2 avril ou ajouté un RDV le 3 avril, la modification et l’ajout seront pris en compte. Par contre si j’ai modifié ou ajouté un RDV en mars (plus d’une semaine avant ma dernière synchro, les modifications ne seront pas prise en compte).</p>
+<p>Par exemple avec une synchronisation hebdomadaire :</p>
+<a class="reference internal image-reference" href="../_images/Temps_synchro_periode.png"><img alt="../_images/Temps_synchro_periode.png" src="../_images/Temps_synchro_periode.png" style="width: 700px;" /></a>
 </section>
 <section id="synchronisations-des-absences">
 <h2>Synchronisations des absences<a class="headerlink" href="#synchronisations-des-absences" title="Lien permanent vers cette rubrique"></a></h2>
@@ -448,7 +459,7 @@ Il faut cocher la case <strong>Analyser le titre</strong> dans les paramètres d
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 14 févr. 2024.
+      <span class="lastupdated">Mis à jour le 13 mars 2024.
       </span></p>
   </div>
 

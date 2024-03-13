@@ -301,10 +301,28 @@ Une fois importée, vous pouvez vérifier la ligne dans l'onglet temps de la fic
 
 .. note::
   Quelques éléments de précisions sur les synchronisations :
-  * Si vous modifiez un horaire, un jour, une description ou un titre d’un rendez-vous d’agenda, à la prochaine synchronisation (manuelle ou automatique) le rendez-vous sera bien modifié sans être dupliqué dans EVA
-  * Si vous supprimez un rendez-vous dans votre agenda, il ne se supprimera pas dans EVA
+
+  - Si vous modifiez un horaire, un jour, une description ou un titre d’un rendez-vous d’agenda, à la prochaine synchronisation (manuelle ou automatique) le rendez-vous sera bien modifié sans être dupliqué dans EVA
+
+  - Si vous supprimez un rendez-vous dans votre agenda, il ne se supprimera pas dans EVA
+
   -> Donc si vous voulez modifier un rendez-vous, il faut bien modifier le rendez-vous existant et ne pas le supprimer pour en créer un autre
 
+
+**IMPORTANT :**
+
+Ce qui est remonté ou écrasé lors des synchronisations automatiques :
+
+1.  La synchronisation automatique remonte et écrase les RDV indéfiniment après la date de dernière synchro
+
+2.  La synchronisation automatique remonte et écrase les RDV jusqu’à 1 période avant la date de dernière synchronisation
+
+Par exemple : j’ai une synchronisation hebdomadaire qui s’effectue tous les lundis matin. Ma dernière synchro a eu lieu le 8 avril. Le lundi 15 avril quand se lance ma nouvelle synchro, si j’ai modifié un RDV le 17 avril qui était déjà remonté lors de la dernière synchro automatique, la modification sera prise en compte, si j’ai modifié un RDV le mardi 2 avril ou ajouté un RDV le 3 avril, la modification et l’ajout seront pris en compte. Par contre si j’ai modifié ou ajouté un RDV en mars (plus d’une semaine avant ma dernière synchro, les modifications ne seront pas prise en compte).
+
+Par exemple avec une synchronisation hebdomadaire :
+
+.. image:: images/Temps_synchro_periode.png
+  :width: 700
 
 
 Synchronisations des absences
