@@ -160,6 +160,15 @@
 .. |effacer_forme| image:: /_static/images/Effacer_forme.png
 	:width: 80
 
+.. |creer_mesure| image:: /_static/images/Creer_mesure.png
+	:width: 80
+
+.. |creer_valeur| image:: /_static/images/Creer_mesure.png
+	:width: 80
+
+.. |uploader_document| image:: /_static/images/Uploader_document.png
+	:width: 80
+
 
 .. |accueil| image:: /_static/images/Accueil.png
 	:height: 50
@@ -186,6 +195,9 @@
 	:height: 50
 
 .. |budget| image:: /_static/images/Budget.png
+	:height: 50
+
+.. |campagne_mesures| image:: /_static/images/Campagnes_mesures.png
 	:height: 50
 
 .. |cartographie| image:: /_static/images/Cartographie.png
@@ -222,6 +234,9 @@
 	:height: 50
 
 .. |fonctions| image:: /_static/images/Fonctions.png
+	:height: 50
+
+.. |groupes_indic| image:: /_static/images/Groupes_indic.png
 	:height: 50
 
 .. |indexage| image:: /_static/images/Indexage.png

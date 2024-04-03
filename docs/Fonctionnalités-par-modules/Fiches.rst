@@ -321,7 +321,7 @@ On peut afficher les temps d'absence en vue liste |vue_liste| ou calendrier |vue
 Onglet indicateurs
 ~~~~~~~~~~~~~~~~~~
 
-Cet onglet permet d'ajouter des mesures à des indicateurs. Les indicateurs peuvent être renseignés dans le module |données| > |indicateurs|.
+Cet onglet permet d'ajouter des mesures à des indicateurs. Les indicateurs peuvent être renseignés dans le module |données| > |indicateurs| > |indicateurs|.
 
 Une boîte de dialogue s'ouvre en cliquant sur :
 
@@ -334,9 +334,10 @@ L'indicateur est à choisir :
 * Soit cliquez sur le |petit_plus| et cochez l'indicateur qui vous convient.
 
 Il faut choisir ensuite la période, le type et la date de fin à minima.
+On peut indiquer un territoire à rattacher à cette mesure.
 
-.. warning::
-	Le module indicateur a vocation a être revu, la documentation à ce sujet sera plus fourni après la refonte.
+Les mesures indiquées en bleues sont les mesures qui remontent des campagnes (voir la documentation à ce sujet dans la documentation sur le `module indicateur <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Indicateurs.html#indicateurs>`_)
+
 
 Onglet budget
 ~~~~~~~~~~~~~

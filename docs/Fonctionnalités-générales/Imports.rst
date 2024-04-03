@@ -16,7 +16,9 @@ La précédure pour les imports est similaire dans la majorité des cas (exeptio
 Quelles colonnes pour chaque import ?
 #####################################
 
-* **Des exemples de fichiers Excel et csv** sont disponibles `ici <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP>`_
+-> -> **Des exemples de fichiers Excel et csv** sont disponibles `ICI <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP>`_ <-- <--
+
+
 * L’ordre des colonnes n’a pas d’importance, certaines cases peuvent être vides si elles ne sont pas dans les colonnes de champs obligatoires.
 * Dans certaines colonnes, on peut indiquer un texte librement, pour d’autres seulement certains mots sont acceptés (indiqué en **gras** dans les tableaux ci-dessous) ou seulement des chiffres, les majuscules/minuscules sont importantes.
 * Les mots clés et référentiels peuvent s’ajouter dans des colonnes supplémentaires s’ils ont été paramétrés précédemment.
@@ -75,6 +77,31 @@ Autres colonnes possibles : Archivé (oui/non ou 1/0), Description, Définition,
 | *libre* |**Liste** | **Minimum** |         | *libre*     | *libre*   |
 +---------+----------+-------------+---------+-------------+-----------+
 
+Import mesures d'indicateurs
+############################
+
+Colonnes obligatoires : Indicateur (ID ou nom exact), Type (Réalisé ou Cible), Valeur, Date fin/réalisée
+
+Autres colonnes possibles : Fiche (titre ou code ou ID), date début, commentaires, source, territoires
+
+
++------------+-----------+-------------+---------+------------+------------+--------------+
+|Indicateur* | Type*     | Valeur*     | Fiche   | Date fin/  | Date       | Commentaires |
+|            |           |             |         |            |            |              |
+|            |           |             |         | Réalisée*  | début      |              |
++============+===========+=============+=========+============+============+==============+
+| ID         |**Réalisé**| *Texte*     | ID ou   | Date       | Date       | *Texte*      | 
+|            |           |             |         |            |            |              |
+| ou         |           |             | Code ou | au format  | au format  |              |
+|            |           |             |         |            |            |              |
+| nom        |**Cible**  | *numérique* | Titre   | JJ/MM/AAAA | JJ/MM/AAAA | *libre*      |
++------------+-----------+-------------+---------+------------+------------+--------------+
+
+.. note::
+	Il n'est pas possible d'importer des mesures de campagne d'indicateur
+
+.. warning::
+	Attention pour les mesures d'indicateurs de type "liste", il faut insérer le chiffre indiqué dans la liste des valeurs pour qu'il y ait une bonne adéquation. Par exemple, si vous avez défini que la valeur 100 voulait dire "Bon état", la valeur 50 = "moyen" et la valeur 0 = "mauvais" il faudra indiquer une de ces trois valeurs numériques exactement et non les équivalents texte.
 
 Import contacts
 ###############

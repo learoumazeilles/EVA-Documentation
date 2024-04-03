@@ -57,6 +57,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#quelles-colonnes-pour-chaque-import">Quelles colonnes pour chaque import ?</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-utilisateurs">Import utilisateurs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-indicateurs">Import indicateurs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-mesures-d-indicateurs">Import mesures d’indicateurs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-contacts">Import contacts</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-structures">Import structures</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-temps">Import temps</a></li>
@@ -104,6 +105,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2023-03/index.html">Développements 2023 03</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2023-07/index.html">Développements 2023 07</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2023-10/index.html">Développements 2023 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2024-04/index.html">Développements 2024 04</a></li>
 </ul>
 
         </div>
@@ -144,8 +146,8 @@
 </ol>
 <section id="quelles-colonnes-pour-chaque-import">
 <h3>Quelles colonnes pour chaque import ?<a class="headerlink" href="#quelles-colonnes-pour-chaque-import" title="Lien permanent vers cette rubrique"></a></h3>
+<p>-&gt; -&gt; <strong>Des exemples de fichiers Excel et csv</strong> sont disponibles <a class="reference external" href="https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP">ICI</a> &lt;– &lt;–</p>
 <ul class="simple">
-<li><p><strong>Des exemples de fichiers Excel et csv</strong> sont disponibles <a class="reference external" href="https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP">ici</a></p></li>
 <li><p>L’ordre des colonnes n’a pas d’importance, certaines cases peuvent être vides si elles ne sont pas dans les colonnes de champs obligatoires.</p></li>
 <li><p>Dans certaines colonnes, on peut indiquer un texte librement, pour d’autres seulement certains mots sont acceptés (indiqué en <strong>gras</strong> dans les tableaux ci-dessous) ou seulement des chiffres, les majuscules/minuscules sont importantes.</p></li>
 <li><p>Les mots clés et référentiels peuvent s’ajouter dans des colonnes supplémentaires s’ils ont été paramétrés précédemment.</p></li>
@@ -281,6 +283,72 @@
 </tr>
 </tbody>
 </table>
+</section>
+<section id="import-mesures-d-indicateurs">
+<h3>Import mesures d’indicateurs<a class="headerlink" href="#import-mesures-d-indicateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Colonnes obligatoires : Indicateur (ID ou nom exact), Type (Réalisé ou Cible), Valeur, Date fin/réalisée</p>
+<p>Autres colonnes possibles : Fiche (titre ou code ou ID), date début, commentaires, source, territoires</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 13%" />
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Indicateur*</p></th>
+<th class="head"><p>Type*</p></th>
+<th class="head"><p>Valeur*</p></th>
+<th class="head"><p>Fiche</p></th>
+<th class="head"><p>Date fin/</p>
+<p>Réalisée*</p>
+</th>
+<th class="head"><p>Date</p>
+<p>début</p>
+</th>
+<th class="head"><p>Commentaires</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ID</p>
+<p>ou</p>
+<p>nom</p>
+</td>
+<td><p><strong>Réalisé</strong></p>
+<p><strong>Cible</strong></p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>numérique</em></p>
+</td>
+<td><p>ID ou</p>
+<p>Code ou</p>
+<p>Titre</p>
+</td>
+<td><p>Date</p>
+<p>au format</p>
+<p>JJ/MM/AAAA</p>
+</td>
+<td><p>Date</p>
+<p>au format</p>
+<p>JJ/MM/AAAA</p>
+</td>
+<td><p><em>Texte</em></p>
+<p><em>libre</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il n’est pas possible d’importer des mesures de campagne d’indicateur</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Attention pour les mesures d’indicateurs de type « liste », il faut insérer le chiffre indiqué dans la liste des valeurs pour qu’il y ait une bonne adéquation. Par exemple, si vous avez défini que la valeur 100 voulait dire « Bon état », la valeur 50 = « moyen » et la valeur 0 = « mauvais » il faudra indiquer une de ces trois valeurs numériques exactement et non les équivalents texte.</p>
+</div>
 </section>
 <section id="import-contacts">
 <h3>Import contacts<a class="headerlink" href="#import-contacts" title="Lien permanent vers cette rubrique"></a></h3>
@@ -1399,7 +1467,7 @@ Vous obtenez ceci dans votre fichier cible :</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 13 mars 2024.
+      <span class="lastupdated">Mis à jour le 03 avr. 2024.
       </span></p>
   </div>
 

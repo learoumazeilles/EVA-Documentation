@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Développements 2024 04 &mdash; Documentation Documentation EVA 1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="prev" title="Développements 2023 10" href="../D%C3%A9veloppements-2023-10/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #27A26B" >
+            <a href="../../index.html" class="icon icon-home"> Documentation EVA
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Premiers pas</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction-%C3%A0-EVA/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ/index.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Tutoriel-d%C3%A9buts-dans-EVA/index.html">Tutoriel débuts dans EVA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation utilisateur</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html">Fonctionnalités générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fonctionnalit%C3%A9s-par-modules/index.html">Fonctionnalités par modules</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-essentiels/index.html">Paramétrages essentiels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-simples/index.html">Paramétrages simples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-avanc%C3%A9s/index.html">Paramétrages avancés</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2022-11/index.html">Développements 2022 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2023-03/index.html">Développements 2023 03</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2023-07/index.html">Développements 2023 07</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2023-10/index.html">Développements 2023 10</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Développements 2024 04</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contexte">Contexte</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dette-technique">Dette technique</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nouvelles-fonctionnalites-indicateurs">Nouvelles fonctionnalités indicateurs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#anomalies-resolues">Anomalies résolues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#problemes-de-synchronisation-des-agendas">1. Problèmes de synchronisation des agendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#probleme-de-saisie-des-temps-hebdo-en-jours">2. Problème de saisie des temps hebdo en jours</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#saisie-des-mouvements-a-la-chaine">3. Saisie des mouvements à la chaîne</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nomenclatures-et-colonnes-financieres-adaptees">4. Nomenclatures et colonnes financières adaptées</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#analyses-budget-par-annee-et-mots-cles">5. Analyses budget par année et mots-clés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#filtre-structures-pour-indicateurs-reseau">6. Filtre structures pour indicateurs réseau</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fonctionnalites-indicateurs">Fonctionnalités indicateurs</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #27A26B" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Documentation EVA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Développements 2024 04</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Développements/Développements-2024-04/index.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="developpements-2024-04">
+<h1>Développements 2024 04<a class="headerlink" href="#developpements-2024-04" title="Lien permanent vers cette rubrique"></a></h1>
+<section id="contexte">
+<h2>Contexte<a class="headerlink" href="#contexte" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Un déploiement des derniers développements sur le logiciel EVA a lieu le 6/04/2024. Il comprend la <strong>mise à jour</strong> du code EVA, des <strong>résolutions d’anomalies</strong> et des <strong>nouvelles fonctionnalités pour les indicateurs</strong>.</p>
+<p>Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé et un mode d’emploi pour les nouveautés.</p>
+<section id="dette-technique">
+<h3>Dette technique<a class="headerlink" href="#dette-technique" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Depuis quelques temps, nous vous parlons de la “dette technique” du logiciel EVA qui réfère au besoin de mise à jour des technologies sous-jacentes du logiciel afin de maintenir sa sécurité et ses performances.</p>
+<p>Après l’aval des comités stratégiques et techniques EVA, une première partie de mise à jour a déjà commencé. Deux phases de test ont déjà eu lieu sur une version test du logiciel et je remercie les parcs volontaires pour leurs vérifications approfondies.</p>
+<p>Cette mise à jour ne devrait entraîner aucune modification sur votre EVA actuel (en terme de fonctionnement et de visuel et les données ne sont pas touchées), seuls des effets peuvent être attendus sur les <strong>exports Word et les territoires</strong>. Pour les exports, Word il faudra faire attention aux « balises html » issus de copier/coller des sites web dans les textes. Pour les territoires, la nouvelle version va générer une erreur s’il y a des fichiers de territoires trop conséquents, votre liste de territoire ne s’affichera pas, l’assistance pourra résoudre ce problème.</p>
+<p><strong>N’hésitez pas à solliciter l’assistance via le tchat ou les tickets GitLab si vous constatez des problèmes</strong></p>
+</section>
+<section id="nouvelles-fonctionnalites-indicateurs">
+<h3>Nouvelles fonctionnalités indicateurs<a class="headerlink" href="#nouvelles-fonctionnalites-indicateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<p>Depuis quelques temps, nous travaillons avec un groupe de travail dédié composé de référents EVA et avec le prestataire à faire évoluer ce module pour qu’ils répondent mieux à vos besoins. Une première partie des développements a pu avoir lieu et être testée et sera donc livrée en même temps que la mise à jour. Ces nouvelles fonctionnalités inclues :
+- groupement des indicateurs en « groupe »
+- création de campagne de recueil des donnnées pour associer une date de saisie attendue et un référent par indicateur
+- import des mesures d’indicateur
+- association de pièce-jointes aux mesures</p>
+<p>La deuxième partie du développement du module indicateurs se concentrera sur les analyses possibles via ces nouvelles fonctionnalités.</p>
+<p>Quelques dysfonctionnement sur ce développement persistent à ce jour (04/04/2024) mais seront corrigés très prochainement.</p>
+<p><strong>N’hésitez pas à me faire remonter toutes remarques ou anomalies sur ces nouvelles fonctionnalités indicateurs par mail lroumazeilles&#64;parcs-naturels-regionaux.fr</strong></p>
+</section>
+</section>
+<section id="anomalies-resolues">
+<h2>Anomalies résolues<a class="headerlink" href="#anomalies-resolues" title="Lien permanent vers cette rubrique"></a></h2>
+<section id="problemes-de-synchronisation-des-agendas">
+<h3>1. Problèmes de synchronisation des agendas<a class="headerlink" href="#problemes-de-synchronisation-des-agendas" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/546">Ticket 546</a>
+Suite à une évolution outlook, les catégories ne sont plus reconnues dans EVA, cette option n’est donc plus nécessaire et peut porter à confusion, elle a donc été supprimée dans les choix possibles lors du paramétrage des synchronisations.</p>
+<a class="reference internal image-reference" href="../../_images/categories_outlook.png"><img alt="../../_images/categories_outlook.png" src="../../_images/categories_outlook.png" style="width: 300px;" /></a>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/564">Ticket 564</a>
+Il y avait un problème de prise en compte du contenu html dans la description des rendez-vous qui bloquaient donc la synchronisation.</p>
+<p><strong>Corrigé</strong></p>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/565">Ticket 565</a>
+Il y avait un problème de remontée des mots-clés et territoires avec la synchronisation automatique.</p>
+<p><strong>Corrigé</strong></p>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/566">Ticket 566</a>
+Une double synchronisation pouvait avoir lieu au moment de la synchronisation manuelle si on cliquait deux fois sur le bouton enregistrer. L’interface a été corrigée pour ne plus permettre ce double-clic.</p>
+<p><strong>Corrigé</strong></p>
+<a class="reference internal image-reference" href="../../_images/enregistrer_synchro.png"><img alt="../../_images/enregistrer_synchro.png" src="../../_images/enregistrer_synchro.png" style="width: 400px;" /></a>
+</section>
+<section id="probleme-de-saisie-des-temps-hebdo-en-jours">
+<h3>2. Problème de saisie des temps hebdo en jours<a class="headerlink" href="#probleme-de-saisie-des-temps-hebdo-en-jours" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/577">Ticket 577</a>
+Dans la saisie des temps hebdomadaires, on peut saisir les temps par heures ou par jour. Si l’on souhaite les saisir par jour, il faut avoir paramétré combien d’heures représente une journée dans les paramétrages temps. Par exemple : on peut paramétrer qu’une journée représente 7,61 heures et ainsi lors de la saisie hebdomaire on peut simplement indiquer 1 pour une journée et 0,5 pour une demi journée et le logiciel fera le calcul en heure. Cette fonctionnalité était en fait deffectueuse jusqu’à présent si le nombre d’heure par jour contenait une décimal, le logiciel faisait un mauvais calcul mais l’affichage restait le bon.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Ceci a été corrigé mais il se peut que certains de vos anciens temps ajoutés avant la correction ait pu être mal interprété par le logiciel dans ce cas vous vous retrouver avec un nombre d’heure bien plus conséquent que prévu.</p>
+</div>
+<p><strong>A VERIFIER POUR CEUX QUI UTILISAIENT CETTE FONCTIONNALITE</strong></p>
+</section>
+<section id="saisie-des-mouvements-a-la-chaine">
+<h3>3. Saisie des mouvements à la chaîne<a class="headerlink" href="#saisie-des-mouvements-a-la-chaine" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/406">Ticket 406</a> :
+Lorsque l’on créait plusieurs dépenses ou recettes dans les fiches à la suite, il y avait un problème de sauvegarde sur la date. En effet, par défaut la date renseignée se remplissait avec la date renseignée dans la dépense ou recette précédemment créé et indiquait une erreur de non remplissage.</p>
+<p><strong>Corrigé</strong></p>
+</section>
+<section id="nomenclatures-et-colonnes-financieres-adaptees">
+<h3>4. Nomenclatures et colonnes financières adaptées<a class="headerlink" href="#nomenclatures-et-colonnes-financieres-adaptees" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/487">Ticket 487</a> :
+Le précédent déploiement avait permis l’affichage des soldes financiers en vue liste des fiches mais cela avait conduit a un mélange des nomenclatures comptables entre les différents types des parcs (utilisant une nomcenclature AE/CP ou non).</p>
+<p><strong>Corrigé</strong></p>
+</section>
+<section id="analyses-budget-par-annee-et-mots-cles">
+<h3>5. Analyses budget par année et mots-clés<a class="headerlink" href="#analyses-budget-par-annee-et-mots-cles" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/504">Ticket 504</a> :
+Dans le module des analyses budget, dans l’onglet répartition par année, le regroupement par mots-clés ou par financeurs ne fonctionnait pas correctement.</p>
+<p><strong>Corrigé</strong></p>
+<a class="reference internal image-reference" href="../../_images/analyses_annees_budget.png"><img alt="../../_images/analyses_annees_budget.png" src="../../_images/analyses_annees_budget.png" style="width: 600px;" /></a>
+</section>
+<section id="filtre-structures-pour-indicateurs-reseau">
+<h3>6. Filtre structures pour indicateurs réseau<a class="headerlink" href="#filtre-structures-pour-indicateurs-reseau" title="Lien permanent vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/488">Ticket 488</a> :
+Dans l’instance réseau des PNx, il existe un filtre « structure » qui indique à quel parc correspond la mesure. Dans le module indicateurs -&gt; mesures, le filtre « structure » ne fonctionnait plus.</p>
+<p><strong>Corrigé</strong></p>
+</section>
+</section>
+<section id="fonctionnalites-indicateurs">
+<h2>Fonctionnalités indicateurs<a class="headerlink" href="#fonctionnalites-indicateurs" title="Lien permanent vers cette rubrique"></a></h2>
+<p><strong>N’hésitez pas à me faire remonter toutes remarques ou anomalies sur ces nouvelles fonctionnalités indicateurs par mail lroumazeilles&#64;parcs-naturels-regionaux.fr</strong></p>
+<p>Nouvelles fonctionnalités livrées :
+- possibilité d’ajouter des pièces-jointes aux mesures d’indicateurs
+- possibilité de créer des groupes d’indicateurs
+- possibilité de créer des campagnes de récoles des mesures d’indicateur
+- possibilité de créer des alertes d’indicateurs
+- possibilité d’importer les mesures d’indicateurs
+-&gt; Documentation à retrouver dans la documentation sur le <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Indicateurs.html#indicateurs">module indicateur</a> et les <a class="reference external" href="file:///Users/lea.roumazeilles/Documents/EVA-Documentation/docs/_build/html/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-generale">imports</a></p>
+<p>À venir :
+- résolution de petites anomalies inhérantes aux nouvelles fonctionnalités
+- ajout de possibilité d’analyses et d’agrégation</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="../D%C3%A9veloppements-2023-10/index.html" class="btn btn-neutral float-left" title="Développements 2023 10" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Lea Roumazeilles.
+      <span class="lastupdated">Mis à jour le 03 avr. 2024.
+      </span></p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
