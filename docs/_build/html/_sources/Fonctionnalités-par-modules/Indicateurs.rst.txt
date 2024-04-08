@@ -7,7 +7,7 @@ Indicateurs
 Le module indicateur permet de suivre les indicateurs du parc. La partie principale du module se présente sous forme d'une liste d'indicateur, chaque indicateur se décline ensuite en une partie de description de l'indicateur et une partie de récapitulatif des mesures. Une mesure d'un indicateur peut être rattachée ou non à une fiche.
 
 Depuis avril 2024 de nouvelles fonctionnalités sont disponibles pour le module indicateur : les campagnes et les groupes.
-Les groupes permettent de regrouper des indicateurs pour faire des agrégations, les campagnes permettent d'associer les indicateurs à une date de remplissage attendue et un référent pour un suivi du remplissage.
+Les groupes permettent de regrouper des indicateurs pour faire des agrégations, les campagnes permettent d'associer les indicateurs à une date de remplissage attendue et un référent pour un suivi du remplissage. (Il faut bien les activer en configuration et dans les rôles comme indiqué dans `la documentation sur ce développement <https://documentation-eva.readthedocs.io/fr/latest/D%C3%A9veloppements/D%C3%A9veloppements-2024-04/index.html#developpements-2024-04>`_)
 
 Une mesure d'indicateur peut donc être créée via le sous-module indicateur ou via l'onglet indicateur d'une fiche, une mesure définie dans une campagne peut être remplie via le module indicateur, l'onglet indicateur d'une fiche, le sous-module campagne, le sous-module groupe.
 
