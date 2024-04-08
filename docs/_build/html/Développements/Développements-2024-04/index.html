@@ -122,13 +122,16 @@
 </section>
 <section id="nouvelles-fonctionnalites-indicateurs">
 <h3>Nouvelles fonctionnalités indicateurs<a class="headerlink" href="#nouvelles-fonctionnalites-indicateurs" title="Lien permanent vers cette rubrique"></a></h3>
-<p>Depuis quelques temps, nous travaillons avec un groupe de travail dédié composé de référents EVA et avec le prestataire à faire évoluer ce module pour qu’ils répondent mieux à vos besoins. Une première partie des développements a pu avoir lieu et être testée et sera donc livrée en même temps que la mise à jour. Ces nouvelles fonctionnalités inclues :
-- groupement des indicateurs en « groupe »
-- création de campagne de recueil des donnnées pour associer une date de saisie attendue et un référent par indicateur
-- import des mesures d’indicateur
-- association de pièce-jointes aux mesures</p>
+<p>Depuis quelques temps, nous travaillons avec un groupe de travail dédié composé de référents EVA et avec le prestataire à faire évoluer ce module pour qu’ils répondent mieux à vos besoins. Une première partie des développements a pu avoir lieu et être testée et sera donc livrée en même temps que la mise à jour. Ces nouvelles fonctionnalités inclues :</p>
+<ul class="simple">
+<li><p>groupement des indicateurs en « groupe »</p></li>
+<li><p>création de campagne de recueil des donnnées pour associer une date de saisie attendue et un référent par indicateur</p></li>
+<li><p>import des mesures d’indicateur</p></li>
+<li><p>association de pièce-jointes aux mesures</p></li>
+</ul>
 <p>La deuxième partie du développement du module indicateurs se concentrera sur les analyses possibles via ces nouvelles fonctionnalités.</p>
 <p>Quelques dysfonctionnement sur ce développement persistent à ce jour (04/04/2024) mais seront corrigés très prochainement.</p>
+<p>Pour pouvoir afficher les nouvelles fonctionnalités de groupes et de campagnes, il faudra les activer (détails ci-dessous)</p>
 <p><strong>N’hésitez pas à me faire remonter toutes remarques ou anomalies sur ces nouvelles fonctionnalités indicateurs par mail lroumazeilles&#64;parcs-naturels-regionaux.fr</strong></p>
 </section>
 </section>
@@ -189,16 +192,30 @@ Dans l’instance réseau des PNx, il existe un filtre « structure » qui ind
 <section id="fonctionnalites-indicateurs">
 <h2>Fonctionnalités indicateurs<a class="headerlink" href="#fonctionnalites-indicateurs" title="Lien permanent vers cette rubrique"></a></h2>
 <p><strong>N’hésitez pas à me faire remonter toutes remarques ou anomalies sur ces nouvelles fonctionnalités indicateurs par mail lroumazeilles&#64;parcs-naturels-regionaux.fr</strong></p>
-<p>Nouvelles fonctionnalités livrées :
-- possibilité d’ajouter des pièces-jointes aux mesures d’indicateurs
-- possibilité de créer des groupes d’indicateurs
-- possibilité de créer des campagnes de récoles des mesures d’indicateur
-- possibilité de créer des alertes d’indicateurs
-- possibilité d’importer les mesures d’indicateurs
--&gt; Documentation à retrouver dans la documentation sur le <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Indicateurs.html#indicateurs">module indicateur</a> et les <a class="reference external" href="file:///Users/lea.roumazeilles/Documents/EVA-Documentation/docs/_build/html/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-generale">imports</a></p>
-<p>À venir :
-- résolution de petites anomalies inhérantes aux nouvelles fonctionnalités
-- ajout de possibilité d’analyses et d’agrégation</p>
+<p>Nouvelles fonctionnalités livrées :</p>
+<ul class="simple">
+<li><p>possibilité d’ajouter des pièces-jointes aux mesures d’indicateurs</p></li>
+<li><p>possibilité de créer des groupes d’indicateurs</p></li>
+<li><p>possibilité de créer des campagnes de récoles des mesures d’indicateur</p></li>
+<li><p>possibilité de créer des alertes d’indicateurs</p></li>
+<li><p>possibilité d’importer les mesures d’indicateurs</p></li>
+</ul>
+<p>-&gt; Documentation à retrouver dans la documentation sur le <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Indicateurs.html#indicateurs">module indicateur</a> et les <a class="reference external" href="file:///Users/lea.roumazeilles/Documents/EVA-Documentation/docs/_build/html/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-generale">imports</a></p>
+<p>IMPORTANT : les nouvelles fonctionnalités de « groupes » et « campagnes » ne s’affichent pas par défaut.</p>
+<ul class="simple">
+<li><p>Pour les groupes, il faut modifier les accès pour le rôle associé à votre profil (et aux autres rôles si vous souhaitez que d’autres puissent les utiliser). Dans <a class="reference internal" href="../../_images/Administration.png"><img alt="administration" src="../../_images/Administration.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../../_images/Profils.png"><img alt="profils" src="../../_images/Profils.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../../_images/Roles.png"><img alt="roles" src="../../_images/Roles.png" style="height: 50px;" /></a> -&gt; cocher les cases associées au « groupe d’indicateurs »</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/role_groupes.png"><img alt="../../_images/role_groupes.png" src="../../_images/role_groupes.png" style="width: 600px;" /></a>
+<ul class="simple">
+<li><p>Pour les campagnes, il faut d’abord activer la fonctionnalité dans <a class="reference internal" href="../../_images/Configuration.png"><img alt="configuration" src="../../_images/Configuration.png" style="height: 50px;" /></a> &gt; onglet Modules, passer en « activé » la campagne de mesures, puis comme pour les rôles modifier les accès dans les rôles en cochant les cases associées à la « Campagne de mesures ».</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/campagnes_activé.png"><img alt="../../_images/campagnes_activé.png" src="../../_images/campagnes_activé.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/role_campagne.png"><img alt="../../_images/role_campagne.png" src="../../_images/role_campagne.png" style="width: 600px;" /></a>
+<p>À venir :</p>
+<ul class="simple">
+<li><p>résolution de petites anomalies inhérantes aux nouvelles fonctionnalités</p></li>
+<li><p>ajout de possibilité d’analyses et d’agrégation</p></li>
+</ul>
 </section>
 </section>
 
@@ -213,7 +230,7 @@ Dans l’instance réseau des PNx, il existe un filtre « structure » qui ind
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 03 avr. 2024.
+      <span class="lastupdated">Mis à jour le 08 avr. 2024.
       </span></p>
   </div>
 
