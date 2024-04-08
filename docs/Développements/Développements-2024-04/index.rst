@@ -1,3 +1,4 @@
+.. include:: ../../substitutions.rst
 Développements 2024 04
 ======================
 
@@ -23,6 +24,7 @@ Nouvelles fonctionnalités indicateurs
 #####################################
 
 Depuis quelques temps, nous travaillons avec un groupe de travail dédié composé de référents EVA et avec le prestataire à faire évoluer ce module pour qu’ils répondent mieux à vos besoins. Une première partie des développements a pu avoir lieu et être testée et sera donc livrée en même temps que la mise à jour. Ces nouvelles fonctionnalités inclues : 
+
 - groupement des indicateurs en "groupe" 
 - création de campagne de recueil des donnnées pour associer une date de saisie attendue et un référent par indicateur
 - import des mesures d'indicateur
@@ -31,6 +33,8 @@ Depuis quelques temps, nous travaillons avec un groupe de travail dédié compos
 La deuxième partie du développement du module indicateurs se concentrera sur les analyses possibles via ces nouvelles fonctionnalités.
 
 Quelques dysfonctionnement sur ce développement persistent à ce jour (04/04/2024) mais seront corrigés très prochainement.
+
+Pour pouvoir afficher les nouvelles fonctionnalités de groupes et de campagnes, il faudra les activer (détails ci-dessous)
 
 **N'hésitez pas à me faire remonter toutes remarques ou anomalies sur ces nouvelles fonctionnalités indicateurs par mail lroumazeilles@parcs-naturels-regionaux.fr**
 
@@ -119,14 +123,35 @@ Fonctionnalités indicateurs
 **N'hésitez pas à me faire remonter toutes remarques ou anomalies sur ces nouvelles fonctionnalités indicateurs par mail lroumazeilles@parcs-naturels-regionaux.fr**
 
 Nouvelles fonctionnalités livrées :
+
 - possibilité d'ajouter des pièces-jointes aux mesures d'indicateurs
 - possibilité de créer des groupes d'indicateurs
 - possibilité de créer des campagnes de récoles des mesures d'indicateur
 - possibilité de créer des alertes d'indicateurs
 - possibilité d'importer les mesures d'indicateurs
+
 -> Documentation à retrouver dans la documentation sur le `module indicateur <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Indicateurs.html#indicateurs>`_ et les `imports <file:///Users/lea.roumazeilles/Documents/EVA-Documentation/docs/_build/html/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-generale>`_
 
+
+IMPORTANT : les nouvelles fonctionnalités de "groupes" et "campagnes" ne s'affichent pas par défaut. 
+
+- Pour les groupes, il faut modifier les accès pour le rôle associé à votre profil (et aux autres rôles si vous souhaitez que d'autres puissent les utiliser). Dans |administration| > |profils| > |roles| -> cocher les cases associées au "groupe d'indicateurs"
+
+
+.. image:: images/role_groupes.png
+   :width: 600
+
+- Pour les campagnes, il faut d'abord activer la fonctionnalité dans |configuration| > onglet Modules, passer en "activé" la campagne de mesures, puis comme pour les rôles modifier les accès dans les rôles en cochant les cases associées à la "Campagne de mesures".
+
+.. image:: images/campagnes_activé.png
+   :width: 300
+
+
+.. image:: images/role_campagne.png
+   :width: 600
+
 À venir :
+
 - résolution de petites anomalies inhérantes aux nouvelles fonctionnalités
 - ajout de possibilité d'analyses et d'agrégation
 
