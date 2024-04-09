@@ -326,10 +326,12 @@ On peut également choisir les options suivantes :
 
 - Obligatoire : la fiche ne peut pas être sauvegardée si le champ n'est pas rempli
 
-Alertes
--------
+Alertes de fiches
+-----------------
 
-Dans le module |suivi_projet| > |alertes|, on peut paramétrer des alertes qui envoient des mails automatiquement. Ces mails permettent d'alerter sur des statuts de fiches, des dates de caducité, des modifications ou autre en fonction des paramétrages.
+Dans le module |suivi_projet| > |alertes|, on peut paramétrer des alertes qui envoient des mails automatiquement. Il existe deux types d'alertes les alertes sur les fiches et les alertes sur les indicateurs. 
+
+Pour les fiches ces mails permettent d'alerter sur des statuts de fiches, des dates de caducité, des modifications ou autre en fonction des paramétrages.
 
 Les alertes sont basées sur les requêtes paramétrées dans le tableau des fiches.
 
@@ -372,6 +374,50 @@ Pour des alertes utiles périodiquement, par exemple pour alerter sur la date pr
 
 .. warning::
 	Si vous ne recevez pas les alertes automatiques, contactez l'assistance.
+
+
+Alertes d'indicateurs
+---------------------
+
+Dans le module |suivi_projet| > |alertes|, on peut paramétrer des alertes qui envoient des mails automatiquement. Dans le cas des alertes de campagne, les mails permettent d'alerter sur mesures d'indicateurs à remplir pour une certaine date par exemple.
+
+Les alertes sont basées sur les requêtes paramétrées dans les campagnes et réfèrent donc au tableau de mesure pré-rempli des campagnes.
+
+En cliquant sur |bouton_3_traits|, on peut créer une nouvelle "alerte de campagne". Les champs à remplir pour l'alerte sont les suivants :
+
+- Nom : le titre de l'alerte
+
+- Période d'envoi : journalier, hebdomadaire ou mensuel -> l'envoi s'effectue 3h du matin du jour concerné
+
+- Requête : la requête à associer, elle est à définir auparavant dans le tableau des campagnes d'indicateur (voir `Documentation requêtes <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#filtres-requetes-et-colonnes>`_)
+
+- Indicateurs et groupes d'indicateurs : ces champs sont des filtres qui vont permettre de limiter la requête à certains indicateurs si besoin
+
+- Destinataires : on peut choisir les destinataires en cochant les cases pour envoyer aux personnes rattachées aux campagnes et indicateurs qui remontent de la requête : Responsables de la campagne ou référents de l'indicateur ou en choisissant des utilisateurs en particulier dans le champs libre.
+
+- Objet : apparaîtra comme objet de mail
+
+- Corps : on peut écrire un mail dans le cadre de texte et y ajouter quelques variables (disponibles sur la droite) comme le nom de la campagne, la liste des indicateurs qui remontent de la requête (sous forme de lien qui renvoie vers la campagne) et le nom et prénom du destinataire (ceux paramétrés dans le profil utilisateur).
+
+.. Note::
+	Si la requête ne remonte aucune mesure, le mail ne sera pas envoyé.
+
+EXEMPLE : une requête pour envoyer des rappels sur les mesures à remplir pour les indicateurs de la charte. On peut calibrer la requête comme suit : "Date attendue" > "Dans moins de..." > "90 jours" et "Réalisé" > "est vide" -> ce qui renvoie les mesures d'indicateur de la campagne qui sont attendue dans moins de 90 jours et qui n'ont pas encore été remplies.
+
+
+.. image:: images/Alertes_ex_indic.png
+	:width: 700
+
+On peut **tester** l'envoi de l'alerte ou forcer son envoi en appuyant sur |envoi| en haut à droite, l'alerte s'envoi alors directement sans attendre la périodicité définie.
+
+Pour des alertes utiles périodiquement, on peut aussi **désactiver** les alertes en décochant la case activée.
+
+
+.. image:: images/Case_activée.png
+	:width: 100
+
+.. warning::
+	Pour l'instant le tableau des alertes fiches et indicateurs est mélangé, notamment au niveau des chefs de projet/validateur (fiches) et responsables/référents (indicateurs).
 
 
 Modèle de fiche

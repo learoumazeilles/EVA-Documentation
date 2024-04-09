@@ -68,7 +68,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#structure">Structure</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#alertes">Alertes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alertes-de-fiches">Alertes de fiches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alertes-d-indicateurs">Alertes d’indicateurs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#modele-de-fiche">Modèle de fiche</a></li>
 </ul>
 </li>
@@ -342,9 +343,10 @@ Pour la synchronisation des temps, selon votre outil de calendrier les codes ana
 </ul>
 </section>
 </section>
-<section id="alertes">
-<h2>Alertes<a class="headerlink" href="#alertes" title="Lien permanent vers cette rubrique"></a></h2>
-<p>Dans le module <a class="reference internal" href="../_images/Suivi_projet.png"><img alt="suivi_projet" src="../_images/Suivi_projet.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Alertes1.png"><img alt="alertes" src="../_images/Alertes1.png" style="height: 50px;" /></a>, on peut paramétrer des alertes qui envoient des mails automatiquement. Ces mails permettent d’alerter sur des statuts de fiches, des dates de caducité, des modifications ou autre en fonction des paramétrages.</p>
+<section id="alertes-de-fiches">
+<h2>Alertes de fiches<a class="headerlink" href="#alertes-de-fiches" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Dans le module <a class="reference internal" href="../_images/Suivi_projet.png"><img alt="suivi_projet" src="../_images/Suivi_projet.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Alertes1.png"><img alt="alertes" src="../_images/Alertes1.png" style="height: 50px;" /></a>, on peut paramétrer des alertes qui envoient des mails automatiquement. Il existe deux types d’alertes les alertes sur les fiches et les alertes sur les indicateurs.</p>
+<p>Pour les fiches ces mails permettent d’alerter sur des statuts de fiches, des dates de caducité, des modifications ou autre en fonction des paramétrages.</p>
 <p>Les alertes sont basées sur les requêtes paramétrées dans le tableau des fiches.</p>
 <p>En cliquant sur <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a>, on peut créer une nouvelle alerte. Les champs à remplir pour l’alerte sont les suivants :</p>
 <ul class="simple">
@@ -375,6 +377,34 @@ Pour la synchronisation des temps, selon votre outil de calendrier les codes ana
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
 <p>Si vous ne recevez pas les alertes automatiques, contactez l’assistance.</p>
+</div>
+</section>
+<section id="alertes-d-indicateurs">
+<h2>Alertes d’indicateurs<a class="headerlink" href="#alertes-d-indicateurs" title="Lien permanent vers cette rubrique"></a></h2>
+<p>Dans le module <a class="reference internal" href="../_images/Suivi_projet.png"><img alt="suivi_projet" src="../_images/Suivi_projet.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Alertes1.png"><img alt="alertes" src="../_images/Alertes1.png" style="height: 50px;" /></a>, on peut paramétrer des alertes qui envoient des mails automatiquement. Dans le cas des alertes de campagne, les mails permettent d’alerter sur mesures d’indicateurs à remplir pour une certaine date par exemple.</p>
+<p>Les alertes sont basées sur les requêtes paramétrées dans les campagnes et réfèrent donc au tableau de mesure pré-rempli des campagnes.</p>
+<p>En cliquant sur <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a>, on peut créer une nouvelle « alerte de campagne ». Les champs à remplir pour l’alerte sont les suivants :</p>
+<ul class="simple">
+<li><p>Nom : le titre de l’alerte</p></li>
+<li><p>Période d’envoi : journalier, hebdomadaire ou mensuel -&gt; l’envoi s’effectue 3h du matin du jour concerné</p></li>
+<li><p>Requête : la requête à associer, elle est à définir auparavant dans le tableau des campagnes d’indicateur (voir <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#filtres-requetes-et-colonnes">Documentation requêtes</a>)</p></li>
+<li><p>Indicateurs et groupes d’indicateurs : ces champs sont des filtres qui vont permettre de limiter la requête à certains indicateurs si besoin</p></li>
+<li><p>Destinataires : on peut choisir les destinataires en cochant les cases pour envoyer aux personnes rattachées aux campagnes et indicateurs qui remontent de la requête : Responsables de la campagne ou référents de l’indicateur ou en choisissant des utilisateurs en particulier dans le champs libre.</p></li>
+<li><p>Objet : apparaîtra comme objet de mail</p></li>
+<li><p>Corps : on peut écrire un mail dans le cadre de texte et y ajouter quelques variables (disponibles sur la droite) comme le nom de la campagne, la liste des indicateurs qui remontent de la requête (sous forme de lien qui renvoie vers la campagne) et le nom et prénom du destinataire (ceux paramétrés dans le profil utilisateur).</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si la requête ne remonte aucune mesure, le mail ne sera pas envoyé.</p>
+</div>
+<p>EXEMPLE : une requête pour envoyer des rappels sur les mesures à remplir pour les indicateurs de la charte. On peut calibrer la requête comme suit : « Date attendue » &gt; « Dans moins de… » &gt; « 90 jours » et « Réalisé » &gt; « est vide » -&gt; ce qui renvoie les mesures d’indicateur de la campagne qui sont attendue dans moins de 90 jours et qui n’ont pas encore été remplies.</p>
+<a class="reference internal image-reference" href="../_images/Alertes_ex_indic.png"><img alt="../_images/Alertes_ex_indic.png" src="../_images/Alertes_ex_indic.png" style="width: 700px;" /></a>
+<p>On peut <strong>tester</strong> l’envoi de l’alerte ou forcer son envoi en appuyant sur <a class="reference internal" href="../_images/Envoi_alerte.png"><img alt="envoi" src="../_images/Envoi_alerte.png" style="width: 30px;" /></a> en haut à droite, l’alerte s’envoi alors directement sans attendre la périodicité définie.</p>
+<p>Pour des alertes utiles périodiquement, on peut aussi <strong>désactiver</strong> les alertes en décochant la case activée.</p>
+<a class="reference internal image-reference" href="../_images/Case_activée.png"><img alt="../_images/Case_activée.png" src="../_images/Case_activée.png" style="width: 100px;" /></a>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Pour l’instant le tableau des alertes fiches et indicateurs est mélangé, notamment au niveau des chefs de projet/validateur (fiches) et responsables/référents (indicateurs).</p>
 </div>
 </section>
 <section id="modele-de-fiche">
@@ -443,7 +473,7 @@ Pour l’affichage de ces mots-clés et référentiel on peut se demander quelle
 
   <div role="contentinfo">
     <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 03 avr. 2024.
+      <span class="lastupdated">Mis à jour le 09 avr. 2024.
       </span></p>
   </div>
 
