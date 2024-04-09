@@ -130,7 +130,7 @@ Nouvelles fonctionnalités livrées :
 - possibilité de créer des alertes d'indicateurs
 - possibilité d'importer les mesures d'indicateurs
 
--> Documentation à retrouver dans la documentation sur le `module indicateur <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Indicateurs.html#indicateurs>`_ et les `imports <file:///Users/lea.roumazeilles/Documents/EVA-Documentation/docs/_build/html/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-generale>`_
+-> Documentation à retrouver dans la documentation sur le `module indicateur <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-par-modules/Indicateurs.html#indicateurs>`_ et les `imports <file:///Users/lea.roumazeilles/Documents/EVA-Documentation/docs/_build/html/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Imports.html#procedure-generale>`_ et les `alertes <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-simples/index.html#alertes-d-indicateurs>`_
 
 
 IMPORTANT : les nouvelles fonctionnalités de "groupes" et "campagnes" ne s'affichent pas par défaut. 

@@ -204,3 +204,5 @@ Un ratio est calculé automatiquement entre la valeur cible et la valeur réalis
 
 Il est possible ensuite de faire des filtres et des requêtes pour sélectionner toutes les mesures dont on est référents par exemple et qui ont une date attendue proche -> voir la partie `sur les filtres et requêtes <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#filtres-requetes-et-colonnes>`_
 
+Grâce à ces requêtes, il est possible de paramétrer des alertes, pour recevoir des mails automatiquement lorsque l'on doit remplir des mesures d'une campagne par exemple -> voir la partie `sur les alertes indicateurs <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-simples/index.html#alertes-d-indicateurs>`_
+
