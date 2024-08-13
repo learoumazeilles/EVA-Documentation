@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr" data-content_root="../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Développements 2024 04 &mdash; Documentation Documentation EVA 1</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/translations.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=041d0952"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Développements 2024 07" href="../D%C3%A9veloppements-2024-07/index.html" />
     <link rel="prev" title="Développements 2023 10" href="../D%C3%A9veloppements-2023-10/index.html" /> 
 </head>
 
@@ -29,12 +32,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #27A26B" >
-            <a href="../../index.html" class="icon icon-home"> Documentation EVA
-            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Documentation EVA
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -81,6 +88,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#fonctionnalites-indicateurs">Fonctionnalités indicateurs</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2024-07/index.html">Développements 2024 07</a></li>
 </ul>
 
         </div>
@@ -96,8 +104,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Développements 2024 04</li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Développements 2024 04</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Développements/Développements-2024-04/index.rst.txt" rel="nofollow"> Afficher la source de la page</a>
       </li>
@@ -108,20 +116,20 @@
            <div itemprop="articleBody">
              
   <section id="developpements-2024-04">
-<h1>Développements 2024 04<a class="headerlink" href="#developpements-2024-04" title="Lien permanent vers cette rubrique"></a></h1>
+<h1>Développements 2024 04<a class="headerlink" href="#developpements-2024-04" title="Lien vers cette rubrique"></a></h1>
 <section id="contexte">
-<h2>Contexte<a class="headerlink" href="#contexte" title="Lien permanent vers cette rubrique"></a></h2>
+<h2>Contexte<a class="headerlink" href="#contexte" title="Lien vers cette rubrique"></a></h2>
 <p>Un déploiement des derniers développements sur le logiciel EVA a lieu le 6/04/2024. Il comprend la <strong>mise à jour</strong> du code EVA, des <strong>résolutions d’anomalies</strong> et des <strong>nouvelles fonctionnalités pour les indicateurs</strong>.</p>
 <p>Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé et un mode d’emploi pour les nouveautés.</p>
 <section id="dette-technique">
-<h3>Dette technique<a class="headerlink" href="#dette-technique" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Dette technique<a class="headerlink" href="#dette-technique" title="Lien vers cette rubrique"></a></h3>
 <p>Depuis quelques temps, nous vous parlons de la “dette technique” du logiciel EVA qui réfère au besoin de mise à jour des technologies sous-jacentes du logiciel afin de maintenir sa sécurité et ses performances.</p>
 <p>Après l’aval des comités stratégiques et techniques EVA, une première partie de mise à jour a déjà commencé. Deux phases de test ont déjà eu lieu sur une version test du logiciel et je remercie les parcs volontaires pour leurs vérifications approfondies.</p>
 <p>Cette mise à jour ne devrait entraîner aucune modification sur votre EVA actuel (en terme de fonctionnement et de visuel et les données ne sont pas touchées), seuls des effets peuvent être attendus sur les <strong>exports Word et les territoires</strong>. Pour les exports, Word il faudra faire attention aux « balises html » issus de copier/coller des sites web dans les textes. Pour les territoires, la nouvelle version va générer une erreur s’il y a des fichiers de territoires trop conséquents, votre liste de territoire ne s’affichera pas, l’assistance pourra résoudre ce problème.</p>
 <p><strong>N’hésitez pas à solliciter l’assistance via le tchat ou les tickets GitLab si vous constatez des problèmes</strong></p>
 </section>
 <section id="nouvelles-fonctionnalites-indicateurs">
-<h3>Nouvelles fonctionnalités indicateurs<a class="headerlink" href="#nouvelles-fonctionnalites-indicateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Nouvelles fonctionnalités indicateurs<a class="headerlink" href="#nouvelles-fonctionnalites-indicateurs" title="Lien vers cette rubrique"></a></h3>
 <p>Depuis quelques temps, nous travaillons avec un groupe de travail dédié composé de référents EVA et avec le prestataire à faire évoluer ce module pour qu’ils répondent mieux à vos besoins. Une première partie des développements a pu avoir lieu et être testée et sera donc livrée en même temps que la mise à jour. Ces nouvelles fonctionnalités inclues :</p>
 <ul class="simple">
 <li><p>groupement des indicateurs en « groupe »</p></li>
@@ -136,9 +144,9 @@
 </section>
 </section>
 <section id="anomalies-resolues">
-<h2>Anomalies résolues<a class="headerlink" href="#anomalies-resolues" title="Lien permanent vers cette rubrique"></a></h2>
+<h2>Anomalies résolues<a class="headerlink" href="#anomalies-resolues" title="Lien vers cette rubrique"></a></h2>
 <section id="problemes-de-synchronisation-des-agendas">
-<h3>1. Problèmes de synchronisation des agendas<a class="headerlink" href="#problemes-de-synchronisation-des-agendas" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>1. Problèmes de synchronisation des agendas<a class="headerlink" href="#problemes-de-synchronisation-des-agendas" title="Lien vers cette rubrique"></a></h3>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/546">Ticket 546</a>
 Suite à une évolution outlook, les catégories ne sont plus reconnues dans EVA, cette option n’est donc plus nécessaire et peut porter à confusion, elle a donc été supprimée dans les choix possibles lors du paramétrage des synchronisations.</p>
 <a class="reference internal image-reference" href="../../_images/categories_outlook.png"><img alt="../../_images/categories_outlook.png" src="../../_images/categories_outlook.png" style="width: 300px;" /></a>
@@ -154,7 +162,7 @@ Une double synchronisation pouvait avoir lieu au moment de la synchronisation ma
 <a class="reference internal image-reference" href="../../_images/enregistrer_synchro.png"><img alt="../../_images/enregistrer_synchro.png" src="../../_images/enregistrer_synchro.png" style="width: 400px;" /></a>
 </section>
 <section id="probleme-de-saisie-des-temps-hebdo-en-jours">
-<h3>2. Problème de saisie des temps hebdo en jours<a class="headerlink" href="#probleme-de-saisie-des-temps-hebdo-en-jours" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>2. Problème de saisie des temps hebdo en jours<a class="headerlink" href="#probleme-de-saisie-des-temps-hebdo-en-jours" title="Lien vers cette rubrique"></a></h3>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/577">Ticket 577</a>
 Dans la saisie des temps hebdomadaires, on peut saisir les temps par heures ou par jour. Si l’on souhaite les saisir par jour, il faut avoir paramétré combien d’heures représente une journée dans les paramétrages temps. Par exemple : on peut paramétrer qu’une journée représente 7,61 heures et ainsi lors de la saisie hebdomaire on peut simplement indiquer 1 pour une journée et 0,5 pour une demi journée et le logiciel fera le calcul en heure. Cette fonctionnalité était en fait deffectueuse jusqu’à présent si le nombre d’heure par jour contenait une décimal, le logiciel faisait un mauvais calcul mais l’affichage restait le bon.</p>
 <div class="admonition warning">
@@ -164,33 +172,33 @@ Dans la saisie des temps hebdomadaires, on peut saisir les temps par heures ou p
 <p><strong>A VERIFIER POUR CEUX QUI UTILISAIENT CETTE FONCTIONNALITE</strong></p>
 </section>
 <section id="saisie-des-mouvements-a-la-chaine">
-<h3>3. Saisie des mouvements à la chaîne<a class="headerlink" href="#saisie-des-mouvements-a-la-chaine" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>3. Saisie des mouvements à la chaîne<a class="headerlink" href="#saisie-des-mouvements-a-la-chaine" title="Lien vers cette rubrique"></a></h3>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/406">Ticket 406</a> :
 Lorsque l’on créait plusieurs dépenses ou recettes dans les fiches à la suite, il y avait un problème de sauvegarde sur la date. En effet, par défaut la date renseignée se remplissait avec la date renseignée dans la dépense ou recette précédemment créé et indiquait une erreur de non remplissage.</p>
 <p><strong>Corrigé</strong></p>
 </section>
 <section id="nomenclatures-et-colonnes-financieres-adaptees">
-<h3>4. Nomenclatures et colonnes financières adaptées<a class="headerlink" href="#nomenclatures-et-colonnes-financieres-adaptees" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>4. Nomenclatures et colonnes financières adaptées<a class="headerlink" href="#nomenclatures-et-colonnes-financieres-adaptees" title="Lien vers cette rubrique"></a></h3>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/487">Ticket 487</a> :
 Le précédent déploiement avait permis l’affichage des soldes financiers en vue liste des fiches mais cela avait conduit a un mélange des nomenclatures comptables entre les différents types des parcs (utilisant une nomcenclature AE/CP ou non).</p>
 <p><strong>Corrigé</strong></p>
 </section>
 <section id="analyses-budget-par-annee-et-mots-cles">
-<h3>5. Analyses budget par année et mots-clés<a class="headerlink" href="#analyses-budget-par-annee-et-mots-cles" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>5. Analyses budget par année et mots-clés<a class="headerlink" href="#analyses-budget-par-annee-et-mots-cles" title="Lien vers cette rubrique"></a></h3>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/504">Ticket 504</a> :
 Dans le module des analyses budget, dans l’onglet répartition par année, le regroupement par mots-clés ou par financeurs ne fonctionnait pas correctement.</p>
 <p><strong>Corrigé</strong></p>
 <a class="reference internal image-reference" href="../../_images/analyses_annees_budget.png"><img alt="../../_images/analyses_annees_budget.png" src="../../_images/analyses_annees_budget.png" style="width: 600px;" /></a>
 </section>
 <section id="filtre-structures-pour-indicateurs-reseau">
-<h3>6. Filtre structures pour indicateurs réseau<a class="headerlink" href="#filtre-structures-pour-indicateurs-reseau" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>6. Filtre structures pour indicateurs réseau<a class="headerlink" href="#filtre-structures-pour-indicateurs-reseau" title="Lien vers cette rubrique"></a></h3>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/488">Ticket 488</a> :
 Dans l’instance réseau des PNx, il existe un filtre « structure » qui indique à quel parc correspond la mesure. Dans le module indicateurs -&gt; mesures, le filtre « structure » ne fonctionnait plus.</p>
 <p><strong>Corrigé</strong></p>
 </section>
 </section>
 <section id="fonctionnalites-indicateurs">
-<h2>Fonctionnalités indicateurs<a class="headerlink" href="#fonctionnalites-indicateurs" title="Lien permanent vers cette rubrique"></a></h2>
+<h2>Fonctionnalités indicateurs<a class="headerlink" href="#fonctionnalites-indicateurs" title="Lien vers cette rubrique"></a></h2>
 <p><strong>N’hésitez pas à me faire remonter toutes remarques ou anomalies sur ces nouvelles fonctionnalités indicateurs par mail lroumazeilles&#64;parcs-naturels-regionaux.fr</strong></p>
 <p>Nouvelles fonctionnalités livrées :</p>
 <ul class="simple">
@@ -209,7 +217,7 @@ Dans l’instance réseau des PNx, il existe un filtre « structure » qui ind
 <ul class="simple">
 <li><p>Pour les campagnes, il faut d’abord activer la fonctionnalité dans <a class="reference internal" href="../../_images/Configuration.png"><img alt="configuration" src="../../_images/Configuration.png" style="height: 50px;" /></a> &gt; onglet Modules, passer en « activé » la campagne de mesures, puis comme pour les rôles modifier les accès dans les rôles en cochant les cases associées à la « Campagne de mesures ».</p></li>
 </ul>
-<a class="reference internal image-reference" href="../../_images/campagnes_activé.png"><img alt="../../_images/campagnes_activé.png" src="../../_images/campagnes_activé.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/campagnes_activé.png"><img alt="../../_images/campagnes_activ%C3%A9.png" src="../../_images/campagnes_activ%C3%A9.png" style="width: 300px;" /></a>
 <a class="reference internal image-reference" href="../../_images/role_campagne.png"><img alt="../../_images/role_campagne.png" src="../../_images/role_campagne.png" style="width: 600px;" /></a>
 <p>À venir :</p>
 <ul class="simple">
@@ -224,13 +232,14 @@ Dans l’instance réseau des PNx, il existe un filtre « structure » qui ind
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
         <a href="../D%C3%A9veloppements-2023-10/index.html" class="btn btn-neutral float-left" title="Développements 2023 10" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="../D%C3%A9veloppements-2024-07/index.html" class="btn btn-neutral float-right" title="Développements 2024 07" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 09 avr. 2024.
+    <p>&#169; Droits d'auteur 2022, Lea Roumazeilles.
+      <span class="lastupdated">Mis à jour le 29 juil. 2024.
       </span></p>
   </div>
 

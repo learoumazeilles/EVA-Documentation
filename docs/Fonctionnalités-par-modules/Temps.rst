@@ -204,7 +204,15 @@ Les fonctionnalités de tableau et d'ajout sont détaillées dans la partie :ref
 .. image:: images/Ajout_synchro.png
   :width: 700
 
-Il faut donner un **titre** à la synchronisation et ajouter le **lien** qui permettra de récupérer les données. Ce lien peut être trouvé dans les paramètre de partage de votre boîte mail (sous le nom d'adresse privée ou lien de partage, en .ics ou .ical...). Pour certains types d'agendas, il faudra passer par la version navigateur de votre boîte mail et non l'application pour trouver le lien de partage
+Il faut donner un **titre** à la synchronisation et ajouter le **lien** qui permettra de récupérer les données. Ce lien peut être trouvé dans les paramètre de partage de votre boîte mail (sous le nom d'adresse privée ou lien de partage, en .ics ou .ical...). Pour certains types d'agendas, il faudra passer par la version navigateur de votre boîte mail et non l'application pour trouver le lien de partage.
+
+Pour les synchronisations Zimbra, le paramétrage est quelque peu différent, voir la `vidéo à ce sujet <https://vimeo.com/showcase/6622623/video/475469598>`_
+
+.. warning::
+  Pour Zimbra, faîtes bien une copie via le clic droit du lien **public** ICS (et non en surlignant le lien). Indiquer https et non http
+
+.. warning::
+  Pour Zimbra REST, le lien à indiquer est celui sans votre nom donc par exemple https://mail.espaces-naturels.fr/, puis vous indiquerez votre propre adresse email dans le nom d'utilisateur ainsi que votre mot de passe. Aucun caractère d'entourage n'est nécessaire pour cette liaison.
 
 Choisissez ensuite le **type** en fonction de votre agenda (Google, Phénix, Zimbra, Outlook) et votre fuseau horaire.
 

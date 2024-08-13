@@ -149,6 +149,23 @@ On peut mettre en forme les exports grâce aux outils disponibles en haut du cad
   Si on met en forme (gras, italique...) des éléments de texte dans les fiches, il ne faut pas mettre en forme des variables de textes dans l'export. Souvent lorsque les exports ne fonctionnent pas, c'est une question de superposition de la mise en forme fiches + exports. On peut alors aller dans la fiche, sélectionner les textes et cliquer sur "Effacer la mise en forme". |effacer_forme|
 
 
+Image et vignette territoire
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+On peut insérer des images et des vignettes représentant l'emprise du territoire tel qu'inséré dans EVA. Pour les images il faut d'abord l'ajouter en cliquant sur le +.
+
+.. image:: images/Ajout_image.png
+  :width: 300
+
+Quand on clique ensuite sur une image ou sur l'option "graphique" dans cartographie, la variable s'affiche dans le texte de l'export : 
+| $territoriesMap(false)$ 
+| $pictureGlobal(65)$
+(65 ici représente l'identifiant de l'image inséré et sera donc différent en fonction de votre compte EVA)
+
+On peut ensuite régler la taille en pixel en modifiant l'export comme ceci :
+| $territoriesMap(false,500px,500px)$ 
+| $pictureGlobal(65,500px,500px)$
+
+
 Conseil !
 ~~~~~~~~~
 

@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="fr" >
+<html class="writer-html5" lang="fr" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Imports &mdash; Documentation Documentation EVA 1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.png"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/translations.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=a12a2fe1"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/translations.js?v=041d0952"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
@@ -30,12 +32,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: #27A26B" >
-            <a href="../index.html" class="icon icon-home"> Documentation EVA
-            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Documentation EVA
+              <img src="../_static/logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -106,6 +112,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2023-07/index.html">Développements 2023 07</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2023-10/index.html">Développements 2023 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2024-04/index.html">Développements 2024 04</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2024-07/index.html">Développements 2024 07</a></li>
 </ul>
 
         </div>
@@ -121,9 +128,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Fonctionnalités générales</a> &raquo;</li>
-      <li>Imports</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Fonctionnalités générales</a></li>
+      <li class="breadcrumb-item active">Imports</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/Fonctionnalités-générales/Imports.rst.txt" rel="nofollow"> Afficher la source de la page</a>
       </li>
@@ -134,10 +141,10 @@
            <div itemprop="articleBody">
              
   <section id="imports">
-<h1>Imports<a class="headerlink" href="#imports" title="Lien permanent vers cette rubrique"></a></h1>
+<h1>Imports<a class="headerlink" href="#imports" title="Lien vers cette rubrique"></a></h1>
 <p>Si vous avez une large base de données à ajouter, il est utile de recourir aux imports qui permettent d’insérer plusieurs entrées d’un coup grâce à un format tableur.</p>
 <section id="procedure-generale">
-<h2>Procédure générale<a class="headerlink" href="#procedure-generale" title="Lien permanent vers cette rubrique"></a></h2>
+<h2>Procédure générale<a class="headerlink" href="#procedure-generale" title="Lien vers cette rubrique"></a></h2>
 <p>La précédure pour les imports est similaire dans la majorité des cas (exeption des imports budgets, territoires et mots clés et référentiels) et suit la logique suivante :</p>
 <ol class="arabic simple">
 <li><p>Créer un fichier tableur avec l’outil de tableur privilégié (Excel, Numbers, Google Sheet, Calc…) et remplir les données avec les en-têtes de colonnes correspondantes</p></li>
@@ -145,7 +152,7 @@
 <li><p>Importer dans EVA</p></li>
 </ol>
 <section id="quelles-colonnes-pour-chaque-import">
-<h3>Quelles colonnes pour chaque import ?<a class="headerlink" href="#quelles-colonnes-pour-chaque-import" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Quelles colonnes pour chaque import ?<a class="headerlink" href="#quelles-colonnes-pour-chaque-import" title="Lien vers cette rubrique"></a></h3>
 <p>-&gt; -&gt; <strong>Des exemples de fichiers Excel et csv</strong> sont disponibles <a class="reference external" href="https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP">ICI</a> &lt;– &lt;–</p>
 <ul class="simple">
 <li><p>L’ordre des colonnes n’a pas d’importance, certaines cases peuvent être vides si elles ne sont pas dans les colonnes de champs obligatoires.</p></li>
@@ -154,21 +161,11 @@
 </ul>
 </section>
 <section id="import-utilisateurs">
-<h3>Import utilisateurs<a class="headerlink" href="#import-utilisateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import utilisateurs<a class="headerlink" href="#import-utilisateurs" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Prénom, Nom, Nom d’utilisateur, Rôle, Mot de passe, Adresse email</p>
 <p>Autres colonnes possibles : Civilité, Couleur</p>
 <p>+ les mots clés</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 9%" />
-<col style="width: 9%" />
-<col style="width: 16%" />
-<col style="width: 18%" />
-<col style="width: 10%" />
-<col style="width: 16%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Nom*</p></th>
 <th class="head"><p>Prénom*</p></th>
@@ -224,7 +221,7 @@
 </div>
 </section>
 <section id="import-indicateurs">
-<h3>Import indicateurs<a class="headerlink" href="#import-indicateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import indicateurs<a class="headerlink" href="#import-indicateurs" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Nom, Type, Opérateur de synthèse annuelle</p>
 <p>Autres colonnes possibles : Archivé (oui/non ou 1/0), Description, Définition, Méthode, Interprétation, Unité de mesure</p>
 <p>+ les mots clés</p>
@@ -233,14 +230,6 @@
 <p>Ne pas indiquer la colonne « Valeurs » (provoque un bug).</p>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 15%" />
-<col style="width: 20%" />
-<col style="width: 14%" />
-<col style="width: 20%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Nom*</p></th>
 <th class="head"><p>Type*</p></th>
@@ -285,19 +274,10 @@
 </table>
 </section>
 <section id="import-mesures-d-indicateurs">
-<h3>Import mesures d’indicateurs<a class="headerlink" href="#import-mesures-d-indicateurs" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import mesures d’indicateurs<a class="headerlink" href="#import-mesures-d-indicateurs" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Indicateur (ID ou nom exact), Type (Réalisé ou Cible), Valeur, Date fin/réalisée</p>
 <p>Autres colonnes possibles : Fiche (titre ou code ou ID), date début, commentaires, source, territoires</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 13%" />
-<col style="width: 16%" />
-<col style="width: 11%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 17%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Indicateur*</p></th>
 <th class="head"><p>Type*</p></th>
@@ -351,7 +331,7 @@
 </div>
 </section>
 <section id="import-contacts">
-<h3>Import contacts<a class="headerlink" href="#import-contacts" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import contacts<a class="headerlink" href="#import-contacts" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Prénom, Nom</p>
 <p>Autres colonnes possibles : Adresse email, Téléphone, Portable, Adresse, ligne 1, Adresse, ligne 2, Code postal, Ville, Pays</p>
 <p>+ les mots clés et groupe de champs additionnels</p>
@@ -360,15 +340,6 @@
 <p>Bien choisir le « Nom » avec astérisque dans l’interface EVA pour la colonne Nom* et ne pas choisir « Nom-Prénom ».</p>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 22%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 15%" />
-<col style="width: 15%" />
-<col style="width: 12%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Civilité</p></th>
 <th class="head"><p>Prénom*</p></th>
@@ -413,7 +384,7 @@
 </table>
 </section>
 <section id="import-structures">
-<h3>Import structures<a class="headerlink" href="#import-structures" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import structures<a class="headerlink" href="#import-structures" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Nom</p>
 <p>Autres colonnes possibles : Adresse email, Sigle, Numéro de téléphone, SIRET, Site web, « Adresse, ligne 1 », « Adresse, ligne 2 », Code postal, Ville, Pays</p>
 <p>+ les mots clés</p>
@@ -422,15 +393,6 @@
 <p>Ne pas indiquer la colonne « Téléphone secondaire », elle ne fonctionne pas.</p>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 13%" />
-<col style="width: 16%" />
-<col style="width: 16%" />
-<col style="width: 13%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Nom*</p></th>
 <th class="head"><p>Adresse</p>
@@ -476,7 +438,7 @@
 </table>
 </section>
 <section id="import-temps">
-<h3>Import temps<a class="headerlink" href="#import-temps" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import temps<a class="headerlink" href="#import-temps" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Utilisateur, Début, Fin, Heures, Type, Fiche</p>
 <p>Autres colonnes possibles : Titre, Description, Territoire</p>
 <p>+ les mots clés</p>
@@ -497,15 +459,6 @@
 </ul>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 21%" />
-<col style="width: 14%" />
-<col style="width: 9%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 9%" />
-<col style="width: 9%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Type*</p></th>
 <th class="head"><p>Utilisateur*</p></th>
@@ -543,7 +496,7 @@
 <p><em>Le tableau ci-dessus est plus large que la page, vous pouvez le faire glisser de gauche à droite</em></p>
 </section>
 <section id="import-fiches">
-<h3>Import fiches<a class="headerlink" href="#import-fiches" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import fiches<a class="headerlink" href="#import-fiches" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Titre</p>
 <p>Autres colonnes possibles (en fonction des paramètres) : Statut, Code analytique, Chef(s) de projet, Validateur(s), Membres de l’équipe (+ rôle si paramétré), Acteurs (+ rôle si paramétré), Rattachement arboresence initiale (fiche qui doit déjà exister), Objectifs, Etat d’avancement du projet, Contexte et motif, Activité et livrables (en fonction du paramétrage des blocs dans les fiches), Maîtrise d’ouvrage externe, Accessible au réseau, Modèle de fiche (le nombre présent dans l’URL lorsque l’on consulte ce modèle), Statut financier (ID), Date de programmation, Date de démarrage prévue, Date de fin prévue, Date de démarrage effective, Date de fin effective, Territoires</p>
 <p>+ les mots clés</p>
@@ -553,14 +506,6 @@
 Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membres de l’équipe.</p>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 16%" />
-<col style="width: 12%" />
-<col style="width: 20%" />
-<col style="width: 18%" />
-<col style="width: 14%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Statut</p></th>
 <th class="head"><p>Code</p>
@@ -609,13 +554,6 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 </tbody>
 </table>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 20%" />
-<col style="width: 15%" />
-<col style="width: 25%" />
-<col style="width: 22%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Maîtrise</p>
 <p>d’ouvrage</p>
@@ -679,12 +617,6 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 </div>
 <p>Ces colonnes doivent être formatées comme ceci :</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 12%" />
-<col style="width: 43%" />
-<col style="width: 30%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Code</p>
 <p>Analytique</p>
@@ -733,20 +665,11 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 <p>Les rôles « coordination » et « assistance technique » sont des mots clés associés à membres, les rôles « financeur » et « appui technique » sont des mots clés associés à acteurs. (Attention le rôle financeur ici est différent de la case à cocher financeur dans les acteurs)</p>
 </section>
 <section id="import-convention">
-<h3>Import convention<a class="headerlink" href="#import-convention" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import convention<a class="headerlink" href="#import-convention" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Nom</p>
 <p>Autres colonnes possibles : Contractant, Accessible réseau, Description, N°, N° arrêté, Début, Fin, Avancement, Date de décision, Date de notification, Montant, Montant subventionnable, Membres, ID Fiches, Type de convention, Territoire</p>
 <p>+ les mots clés</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 10%" />
-<col style="width: 13%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Nom*</p></th>
 <th class="head"><p>Contractant</p></th>
@@ -784,7 +707,7 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 </div>
 </section>
 <section id="sauvegarder-au-format-csv">
-<h3>Sauvegarder au format csv<a class="headerlink" href="#sauvegarder-au-format-csv" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Sauvegarder au format csv<a class="headerlink" href="#sauvegarder-au-format-csv" title="Lien vers cette rubrique"></a></h3>
 <p>Enregistrer le tableau au format <strong>csv</strong> avec des séparateurs en <strong>points-virgules</strong>. Le format <strong>CSV UTF-8</strong> est à privilégier.</p>
 <p>Vous pouvez vérifier le format en ouvrant le fichier csv avec un éditeur de texte simple (ex : TextEdit, WordPad, NotePad…).</p>
 <p>Les colonnes doivent être séparées par des points-virgules, les lignes par des retours à la ligne.</p>
@@ -793,14 +716,14 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 <p><code class="docutils literal notranslate"><span class="pre">Brouillon;001;Fiche</span> <span class="pre">numéro</span> <span class="pre">1</span></code></p>
 </section>
 <section id="importer-dans-eva">
-<h3>Importer dans EVA<a class="headerlink" href="#importer-dans-eva" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Importer dans EVA<a class="headerlink" href="#importer-dans-eva" title="Lien vers cette rubrique"></a></h3>
 <p>Dans EVA, cliquer sur le bouton rouge dans le coin inférieur droit pour importer les csv <a class="reference internal" href="../_images/Bouton_3_traits.png"><img alt="bouton_3_traits" src="../_images/Bouton_3_traits.png" style="width: 40px;" /></a>.</p>
 <p>Choisir le fichier csv préparé précédemment, le délimiteur point-virgule, et cocher « La première ligne contient les en-têtes des colonnes ? » puis cliquer sur « <strong>Envoyer</strong> ».</p>
 <a class="reference internal image-reference" href="../_images/interface_import.png"><img alt="../_images/interface_import.png" src="../_images/interface_import.png" style="width: 400px;" /></a>
 <p>Les données devraient apparaître, chaque ligne correspondant à chaque élément.</p>
 <a class="reference internal image-reference" href="../_images/tableau_import.png"><img alt="../_images/tableau_import.png" src="../_images/tableau_import.png" style="width: 600px;" /></a>
 <p>Vérifier les en-têtes des colonnes, certains auront déjà été trouvés, d’autres non, il faudra les indiquer grâce au menu déroulant.</p>
-<a class="reference internal image-reference" href="../_images/déroulé_import.png"><img alt="../_images/déroulé_import.png" src="../_images/déroulé_import.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="../_images/déroulé_import.png"><img alt="../_images/d%C3%A9roul%C3%A9_import.png" src="../_images/d%C3%A9roul%C3%A9_import.png" style="width: 200px;" /></a>
 <p>Dans les suggestions d’en-tête du menu déroulant, on peut vérifier quels mots clés et référentiels peuvent être associés. Cliquer sur « <strong>Vérifier ou Valider</strong> ».</p>
 <p>Si votre tableau est correct il sera surligné en vert, les lignes incorrects seront rouges.</p>
 <a class="reference internal image-reference" href="../_images/tableau_import_rouge.png"><img alt="../_images/tableau_import_rouge.png" src="../_images/tableau_import_rouge.png" style="width: 600px;" /></a>
@@ -810,7 +733,7 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 </section>
 </section>
 <section id="procedure-budget">
-<h2>Procédure budget<a class="headerlink" href="#procedure-budget" title="Lien permanent vers cette rubrique"></a></h2>
+<h2>Procédure budget<a class="headerlink" href="#procedure-budget" title="Lien vers cette rubrique"></a></h2>
 <p>La précédure pour les imports budget suit la logique suivante :</p>
 <ol class="arabic simple">
 <li><p>Créer un fichier tableur avec l’outil de tableur privilégié (Excel, Numbers, Google Sheet, Calc…) et remplir les données avec les en-têtes de colonnes correspondantes</p></li>
@@ -824,11 +747,11 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 <li><p>Les montants doivent être au format numérique sans espace, un point ou une virgule peuvent être indiqué pour les décimales</p></li>
 </ul>
 <section id="import-budget-en-general">
-<h3>Import budget en général<a class="headerlink" href="#import-budget-en-general" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import budget en général<a class="headerlink" href="#import-budget-en-general" title="Lien vers cette rubrique"></a></h3>
 <p>Il faut préparer des fichiers csv séparés pour les recettes et dépenses et pour chaque type, par exemple prévu, engagé, payé. Il faut avoir défini au préalable les comptes auxquels rattacher les recettes et dépenses, qui peuvent eux aussi être importés. Les enveloppes peuvent elles aussi être importées.</p>
 </section>
 <section id="import-comptes">
-<h3>Import Comptes<a class="headerlink" href="#import-comptes" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import Comptes<a class="headerlink" href="#import-comptes" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Code, Nom, Type de mouvement</p>
 <p>Autres colonnes possibles : Description, Parent</p>
 <div class="admonition note">
@@ -840,13 +763,6 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 <p>Attention pour le parent à bien donner un compte parent recette si le type de mouvement est recette et un compte parent dépense si le type de mouvement est dépense. Le logiciel ne peut pas le vérifier au moment de l’import mais cela produit des bugs plus tard.</p>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 25%" />
-<col style="width: 24%" />
-<col style="width: 16%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Code*</p></th>
 <th class="head"><p>Nom*</p></th>
@@ -878,7 +794,7 @@ Ne pas indiquer la colonne « équipe », elle ne se remplit pas avec les membre
 </table>
 </section>
 <section id="import-enveloppes">
-<h3>Import Enveloppes<a class="headerlink" href="#import-enveloppes" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import Enveloppes<a class="headerlink" href="#import-enveloppes" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Nom, Financeur
 Autres colonnes possibles : Code, Début, Fin, Montant</p>
 <div class="admonition note">
@@ -886,14 +802,6 @@ Autres colonnes possibles : Code, Début, Fin, Montant</p>
 <p>Les financeurs sont ajoutés via le module structure.</p>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 16%" />
-<col style="width: 18%" />
-<col style="width: 18%" />
-<col style="width: 24%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Code</p></th>
 <th class="head"><p>Nom*</p></th>
@@ -927,7 +835,7 @@ Autres colonnes possibles : Code, Début, Fin, Montant</p>
 </table>
 </section>
 <section id="import-recettes">
-<h3>Import Recettes<a class="headerlink" href="#import-recettes" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import Recettes<a class="headerlink" href="#import-recettes" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Rattachement à la fiche (soit par code analytique, soit par code financier, soit par le titre), Compte, Date, Montant
 Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du mandatement, Mandat, Engagement, Compléments, Évolution, Unité de gestion, Série, Convention (non lié au module convention)</p>
 <div class="admonition warning">
@@ -935,15 +843,6 @@ Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du manda
 <p>Attention le champ convention ici n’est pas rattaché à au module convention.</p>
 </div>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 0%" />
-<col style="width: 12%" />
-<col style="width: 16%" />
-<col style="width: 22%" />
-<col style="width: 12%" />
-<col style="width: 23%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head" colspan="2"><p>Code</p>
 <p>Analytique*</p>
@@ -979,19 +878,10 @@ Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du manda
 </table>
 </section>
 <section id="import-depenses">
-<h3>Import Dépenses<a class="headerlink" href="#import-depenses" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import Dépenses<a class="headerlink" href="#import-depenses" title="Lien vers cette rubrique"></a></h3>
 <p>Colonnes obligatoires : Rattachement à la fiche (soit par code analytique, soit par code financier, soit par le titre), Compte, Date, Montant
 Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du mandatement, Mandat, Engagement, Compléments, Évolution, Unité de gestion, Date facture.</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 0%" />
-<col style="width: 12%" />
-<col style="width: 16%" />
-<col style="width: 22%" />
-<col style="width: 12%" />
-<col style="width: 23%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head" colspan="2"><p>Code</p>
 <p>Analytique*</p>
@@ -1027,7 +917,7 @@ Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du manda
 </table>
 </section>
 <section id="import-budget-dans-eva">
-<h3>Import Budget dans EVA<a class="headerlink" href="#import-budget-dans-eva" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import Budget dans EVA<a class="headerlink" href="#import-budget-dans-eva" title="Lien vers cette rubrique"></a></h3>
 <p>La procédure d’import dans EVA est similaire à celle décrite dans la procédure générale, certains aspects sont légèrement différents.</p>
 <p>Dans EVA cliquer sur « <strong>Budget</strong> » puis « <strong>Import financier</strong> ».</p>
 <p>Choisir le type de mouvement : recette ou dépense.</p>
@@ -1048,7 +938,7 @@ Autres colonnes possibles : Nom, Montant HT, Tiers, Exercice, Bordereau du manda
 <p class="admonition-title">Avertissement</p>
 <p>ATTENTION : l’écrasement total écrasera toutes les données importées précédemment même sur d’autres fiches.</p>
 </div>
-<a class="reference internal image-reference" href="../_images/import_dépense_EVA.png"><img alt="../_images/import_dépense_EVA.png" src="../_images/import_dépense_EVA.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/import_dépense_EVA.png"><img alt="../_images/import_d%C3%A9pense_EVA.png" src="../_images/import_d%C3%A9pense_EVA.png" style="width: 600px;" /></a>
 <p><strong>Dans les deux cas</strong></p>
 <p>Choisir le Statut financier des fiches modidiées : si on choisit un statut ici (défini dans <a class="reference internal" href="../_images/Budget.png"><img alt="budget" src="../_images/Budget.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../_images/Statuts_financiers.png"><img alt="statuts_financiers" src="../_images/Statuts_financiers.png" style="height: 50px;" /></a>), les fiches qui sont modifiées par l’import seront ensuite passées au statut choisi.</p>
 <p>Si l’on coche la case « Les mouvements se mettent dans les postes ayant un compte parent si aucun poste ayant le même compte n’est présent » : les mouvements se mettent en effet sous un poste avec un compte parent du compte indiqué s’il y en a un dans la fiche.
@@ -1073,7 +963,7 @@ Si un poste de dépense/recette existe avec le même compte, le mouvement sera r
 Une bonne pratique est de vérifier si l’import a bien eu lieu correctement.</p>
 </section>
 <section id="exporter-depuis-un-logicel-comptable-pour-import-dans-eva">
-<h3>Exporter depuis un logicel comptable pour import dans EVA<a class="headerlink" href="#exporter-depuis-un-logicel-comptable-pour-import-dans-eva" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Exporter depuis un logicel comptable pour import dans EVA<a class="headerlink" href="#exporter-depuis-un-logicel-comptable-pour-import-dans-eva" title="Lien vers cette rubrique"></a></h3>
 <p>Il est possible d’exporter des fichiers dans un format tableur pour les dépenses et les recettes depuis votre logiciel comptable. La procédure a été expérimentée avec le logiciel <strong>Berger-Levrault</strong>, mais elle devrait être possible avec d’autres logiciels comptables. Les agents peuvent indiquer leur budget prévisionnel et l’équipe comptable peut par la suite importer les données du logiciel comptable dans EVA, ce qui facilite le suivi du budget par les agents. Cette partie permet d’élaborer les tableurs pour les <strong>imports recettes et dépenses</strong> comme décrit plus haut.</p>
 <p><strong>Pré-requis :</strong></p>
 <ul class="simple">
@@ -1101,19 +991,13 @@ Il faudra sauvegarder le fichier en csv.</p>
 </section>
 </section>
 <section id="procedure-mots-cles-et-referentiels">
-<h2>Procédure mots clés et référentiels<a class="headerlink" href="#procedure-mots-cles-et-referentiels" title="Lien permanent vers cette rubrique"></a></h2>
+<h2>Procédure mots clés et référentiels<a class="headerlink" href="#procedure-mots-cles-et-referentiels" title="Lien vers cette rubrique"></a></h2>
 <p>Pour faciliter la création des nouveaux mots clés et référentiels, une fonction d’import en csv est maintenant disponible comme dans les autres modules. Le bouton rouge en bas à droite permet d’importer les mots clés ou référentiels.</p>
-<a class="reference internal image-reference" href="../_images/Imports_motsclés.png"><img alt="../_images/Imports_motsclés.png" src="../_images/Imports_motsclés.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/Imports_motsclés.png"><img alt="../_images/Imports_motscl%C3%A9s.png" src="../_images/Imports_motscl%C3%A9s.png" style="width: 300px;" /></a>
 <section id="preparer-le-csv-des-mots-cles-et-referentiels">
-<h3>Préparer le csv des mots clés et référentiels<a class="headerlink" href="#preparer-le-csv-des-mots-cles-et-referentiels" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Préparer le csv des mots clés et référentiels<a class="headerlink" href="#preparer-le-csv-des-mots-cles-et-referentiels" title="Lien vers cette rubrique"></a></h3>
 <p>Le csv doit être construit comme suit (CVS UTF-8 délimité par des points virgules) :</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 36%" />
-<col style="width: 14%" />
-<col style="width: 27%" />
-<col style="width: 23%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Nom Premier référentiel</p></td>
 <td></td>
@@ -1224,11 +1108,11 @@ Il faudra sauvegarder le fichier en csv.</p>
 </dl>
 </section>
 <section id="import-dans-eva-des-mots-cles-et-referentiels">
-<h3>Import dans EVA des mots clés et référentiels<a class="headerlink" href="#import-dans-eva-des-mots-cles-et-referentiels" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Import dans EVA des mots clés et référentiels<a class="headerlink" href="#import-dans-eva-des-mots-cles-et-referentiels" title="Lien vers cette rubrique"></a></h3>
 <p>Choisir le fichier csv préparé précédemment et le délimiteur point-virgule puis cliquer sur « <strong>Envoyer</strong> ».</p>
-<a class="reference internal image-reference" href="../_images/interface_import_motsclés.png"><img alt="../_images/interface_import_motsclés.png" src="../_images/interface_import_motsclés.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/interface_import_motsclés.png"><img alt="../_images/interface_import_motscl%C3%A9s.png" src="../_images/interface_import_motscl%C3%A9s.png" style="width: 400px;" /></a>
 <p>Si votre fichier a été bien paramétré, vos référentiels ou mots clés s’affichent (vous pouvez les déployer en appuyant sur les dossiers) :</p>
-<a class="reference internal image-reference" href="../_images/import_référentiel.png"><img alt="../_images/import_référentiel.png" src="../_images/import_référentiel.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/import_référentiel.png"><img alt="../_images/import_r%C3%A9f%C3%A9rentiel.png" src="../_images/import_r%C3%A9f%C3%A9rentiel.png" style="width: 300px;" /></a>
 <p>Si tout est conforme à vos attentes, cliquer ensuite sur « <strong>Importer</strong> ».</p>
 <p>Vos référentiels ou mots clés sont importés dans les tableaux correspondants.</p>
 <div class="admonition warning">
@@ -1247,19 +1131,13 @@ Il faudra sauvegarder le fichier en csv.</p>
 </section>
 </section>
 <section id="procedure-lien-contact-structure">
-<h2>Procédure lien contact structure<a class="headerlink" href="#procedure-lien-contact-structure" title="Lien permanent vers cette rubrique"></a></h2>
+<h2>Procédure lien contact structure<a class="headerlink" href="#procedure-lien-contact-structure" title="Lien vers cette rubrique"></a></h2>
 <p>Il fortement recommandé <strong>d’UTILISER LES ID</strong> pour cet import même si les noms exacts peuvent aussi être utilisés. En effet, pour les contacts, il est souvent le cas que deux personnes se nomment de la même façon (nom et prénom) ou bien que l’on ait enregistré la même structure deux fois et dans ce cas, l’import se fera aléatoirement pour l’une des deux structures. Cela permet aussi de résoudre tous les problèmes de correspondance qui arrivent avec les typos. Pour les ID, il faut manipuler les tableurs en amont dans Excel pour bien préparer l’import.</p>
 <p>Les ID sont accessibles dans les colonnes de chaque tableau de données dans EVA et sont présentes à l’export également. C’est un nombre attribué automatiquement par le logiciel en base de données mais qui est unique pour chaque élément.</p>
 <section id="creation-du-fichier-csv">
-<h3>Création du fichier csv<a class="headerlink" href="#creation-du-fichier-csv" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Création du fichier csv<a class="headerlink" href="#creation-du-fichier-csv" title="Lien vers cette rubrique"></a></h3>
 <p>Pour créer un fichier csv, partons d’un cas d’usage. Vous souhaitez importer vos contacts et vos structures et le lien entre elles via un fichier Excel qui regroupe toutes ces informations. Ceci est votre fichier cible :</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 17%" />
-<col style="width: 10%" />
-<col style="width: 22%" />
-<col style="width: 51%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Nom</p></th>
 <th class="head"><p>Prénom</p></th>
@@ -1295,11 +1173,6 @@ Il faudra sauvegarder le fichier en csv.</p>
 <p>Vous obtenez trois tableaux Excel</p>
 <p><strong>Contact</strong></p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 37%" />
-<col style="width: 40%" />
-<col style="width: 23%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Identifiant</p></th>
 <th class="head"><p>Nom</p></th>
@@ -1323,10 +1196,6 @@ Il faudra sauvegarder le fichier en csv.</p>
 </table>
 <p><strong>Structure</strong></p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 24%" />
-<col style="width: 76%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Identifiant</p></th>
 <th class="head"><p>Nom</p></th>
@@ -1346,10 +1215,6 @@ Il faudra sauvegarder le fichier en csv.</p>
 </table>
 <p><strong>Fonction</strong></p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 41%" />
-<col style="width: 59%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Identifiant</p></th>
 <th class="head"><p>Fonction</p></th>
@@ -1385,16 +1250,6 @@ Il faudra sauvegarder le fichier en csv.</p>
 <p>Cette fonction recherche dans la première colonne de la matrice du fichier contact exportée le Prénom Nom correspondant au Prénom Nom dans le fichier cible et insère l’ID correspond (qui se trouve en colonne 2). Faîtes de même pour les structures et fonction.
 Vous obtenez ceci dans votre fichier cible :</p>
 <table class="docutils align-default">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 6%" />
-<col style="width: 14%" />
-<col style="width: 21%" />
-<col style="width: 14%" />
-<col style="width: 10%" />
-<col style="width: 12%" />
-<col style="width: 11%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Nom</p></th>
 <th class="head"><p>Prénom</p></th>
@@ -1443,7 +1298,7 @@ Vous obtenez ceci dans votre fichier cible :</p>
 <p>Il est aussi possible de faire un mixte ID et intitulés, par exemple, utiliser les ID pour les contacts et structures et les intitulés pour les fonctions.</p>
 </section>
 <section id="importer-le-fichier-csv">
-<h3>Importer le fichier csv<a class="headerlink" href="#importer-le-fichier-csv" title="Lien permanent vers cette rubrique"></a></h3>
+<h3>Importer le fichier csv<a class="headerlink" href="#importer-le-fichier-csv" title="Lien vers cette rubrique"></a></h3>
 <p>Pour importer le fichier csv de lien entre contact et structure, dans le module annuaire, cliquer sur « Importer des liens entre contacts – structures – fonctions » via la pastille rouge en bas à droite.</p>
 <a class="reference internal image-reference" href="../_images/Import_liaison_annuaire.png"><img alt="../_images/Import_liaison_annuaire.png" src="../_images/Import_liaison_annuaire.png" style="width: 500px;" /></a>
 <p>Choisissez votre csv, le délimiteur et cocher la case des en-têtes et cliquer sur « Envoyer ».</p>
@@ -1466,8 +1321,8 @@ Vous obtenez ceci dans votre fichier cible :</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 03 avr. 2024.
+    <p>&#169; Droits d'auteur 2022, Lea Roumazeilles.
+      <span class="lastupdated">Mis à jour le 29 juil. 2024.
       </span></p>
   </div>
 

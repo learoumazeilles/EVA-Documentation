@@ -39,6 +39,8 @@ Un formulaire s'affiche avec plusieurs champs :
 	- Note : Pour afficher le fil de discussion par note sur les fiches, cela peut permettre de mettre en valeur des messages, les notes qui s'affichent sont uniquement celles des fiches pour lesquelles l'utilisateur est membre de l'équipe. (Il faut choisir note dans entité.
 	- Graphique : il permet de montrer les temps passés par mois ou par fiches. On peut y associer une requête précise qui doit être défini dans le module |analyses| > |temps|. **Pour les fiches, le graphique n'affiche que les temps prévus au niveau de la fiche parent.**
 
+.. warning::
+	Une fois créé un bloc ne pourra pas changer de typologie, il faudra alors le supprimer pour en créer un nouveau.
 
 .. image:: images/Notes_accueil_ex.png
 	:width: 300
@@ -125,7 +127,7 @@ Le groupe sera créé tout en bas de la page si vous avez déjà des groupes de 
 Il faut insérer un titre, et un onglet de fiche ou le champ apparaîtra, on peut choisir à peu près tous les onglets, le champ aparaîtra en bas de page de l'onglet et dans l'ordre alphabétique avec les autres champs personnalisés. Si l'onglet n'est pas renseigné le champ apparaîtra par défaut dans l'onglet "champs personnalisables" des fiches.
 
 .. warning ::
-	Le paramètre "modèle de fiche" n'ajoute pas le champs comme "afficher" dans le modèle de fiche, il n'a donc pas grand intérêt, vous pouvez le laisser blanc.
+	Il faut enregistrer une première fois le groupe de champs pour pouvoir indiquer le paramètre "modèle de fiche" qui modifiera le modèle de fiche en question pour indiquer "afficher" pour ce groupe de champs. Attention car si le modèle est laissé blanc, toute modification du groupe de champs (le nom, l'onglet...) entraînera un masquage dans le modèle de fiche. Donc un groupe de champs ne peut être utilisé que pour un seul modèle de fiche.
 
 Les onglets les plus utilisés si ce sont des champs textes (comme les bilans) sont l'onglet **Fiche** et l'onglet **Champs personnalisables** qui peut avoir un nom différent dans votre EVA.
 
@@ -173,10 +175,7 @@ On peut également choisir les options suivantes :
 
 - Placeholder : un texte qui apparait en grisé dans le cadre lorsqu'il est vide et disparait au remplissage. Cette option ne fonctionne pas pour les types sélections et montants.
 
-- Obligatoire : la fiche ne peut pas être sauvegardée si le champ n'est pas rempli
-
-.. warning::
-	Ne pas cocher la case obligatoire pour l'instant car cela est trop contraignant et donnera une erreur dans d'autres modèles de fiche.
+- Obligatoire : Cette option a été retirée voir la page sur le déploiement de juillet 2024
 
 
 Exemple d'utilisation

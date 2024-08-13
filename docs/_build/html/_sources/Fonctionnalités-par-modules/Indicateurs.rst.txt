@@ -83,7 +83,7 @@ Le formulaire demande les informations suivantes :
 
 * **Type (obligatoire)** : cible ou réalisé
 
-* **Date de début et Date de fin/réalisée** : on peut indiquer une période pour la mesure ou renseigner au moins la date de fin/réalisée si la mesure a été effectuée en une fois
+* **Date de début et Date de fin/réalisée** : on peut indiquer une période pour la mesure ou renseigner au moins la date de fin/réalisée si la mesure a été effectuée en une fois. La date de fin/réalisée est obligatoire pour que la mesure soit prise en compte dans les analyses
 
 * **Commentaire** : champs texte libre
 
@@ -138,6 +138,8 @@ L'onglet **indicateurs** résume les différents indicateurs du groupe dans un t
 .. warning::
 	Pour l'instant les capacités d'agrégation et d'analyses des groupes n'ont pas été complètement explorées et seront complétées par un autre développement.
 
+.. warning::
+	Si on ajoute uultérieurement un indicateur à un groupe, si le groupe a déjà été ajouté à une campagne, cet indicateur ne fera pas parti de la campagne
 
 Campagne de mesures
 -------------------
@@ -198,11 +200,13 @@ Les mesures sont pré-créées avec les informations renseignées dans l'onglet 
 
 Un ratio est calculé automatiquement entre la valeur cible et la valeur réalisée. Lorsque l'on ajoute un valeur réalisée il faut bien remplir la "date de fin / réalisée".
 
-.. warning::
-	Pour l'instant si l'on veut remettre une mesure à "nr", il faut modifier la valeur dans via |modifier_ligne| en fin de ligne et non en "in-line".
-
-
 Il est possible ensuite de faire des filtres et des requêtes pour sélectionner toutes les mesures dont on est référents par exemple et qui ont une date attendue proche -> voir la partie `sur les filtres et requêtes <https://documentation-eva.readthedocs.io/fr/latest/Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/Tableaux.html#filtres-requetes-et-colonnes>`_
 
 Grâce à ces requêtes, il est possible de paramétrer des alertes, pour recevoir des mails automatiquement lorsque l'on doit remplir des mesures d'une campagne par exemple -> voir la partie `sur les alertes indicateurs <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-simples/index.html#alertes-d-indicateurs>`_
+
+
+.. warning::
+	Pour l'instant, il faut faire attention lors de la modification de mesure de campagnes hors des campagnes (fiches et indicateurs). Car dans les campagnes, les mesures "cibles" et "réalisées" sont regroupées mais elles ne le sont pas dans les autres modules (indicateurs et fiches). Donc les champs dates, commentaires et sources sont unifiés dans les campagnes mais dans les autres modules. Si on remplit les champs commentaires, sources ou dates dans les mesures indicateurs avec des données différentes entre cible et réalisé, puis on modifie la mesure dans la campagne, les données vont être unifiées sur les deux lignes et donc il y a une modification non voulue par l'utilisateur qui peut faire perdre des informations.
+
+
 
