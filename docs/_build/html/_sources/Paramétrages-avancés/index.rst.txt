@@ -156,14 +156,17 @@ On peut insérer des images et des vignettes représentant l'emprise du territoi
 .. image:: images/Ajout_image.png
   :width: 300
 
-Quand on clique ensuite sur une image ou sur l'option "graphique" dans cartographie, la variable s'affiche dans le texte de l'export : 
-| $territoriesMap(false)$ 
-| $pictureGlobal(65)$
+Quand on clique ensuite sur une image ou sur l'option "graphique" dans cartographie, la variable s'affiche dans le texte de l'export :
+
+| ``$territoriesMap(false)$``
+| ``$pictureGlobal(65)$``
+
 (65 ici représente l'identifiant de l'image inséré et sera donc différent en fonction de votre compte EVA)
 
 On peut ensuite régler la taille en pixel en modifiant l'export comme ceci :
-| $territoriesMap(false,500px,500px)$ 
-| $pictureGlobal(65,500px,500px)$
+
+| ``$territoriesMap(false,500px,500px)$``
+| ``$pictureGlobal(65,500px,500px)$``
 
 
 Conseil !
