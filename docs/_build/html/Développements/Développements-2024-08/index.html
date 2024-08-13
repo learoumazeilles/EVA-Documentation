@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Développements 2024 08 &mdash; Documentation Documentation EVA 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../../_static/translations.js?v=041d0952"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="prev" title="Développements 2024 04" href="../D%C3%A9veloppements-2024-04/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #27A26B" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Documentation EVA
+              <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Premiers pas</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Introduction-%C3%A0-EVA/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ/index.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Tutoriel-d%C3%A9buts-dans-EVA/index.html">Tutoriel débuts dans EVA</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation utilisateur</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Fonctionnalit%C3%A9s-g%C3%A9n%C3%A9rales/index.html">Fonctionnalités générales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Fonctionnalit%C3%A9s-par-modules/index.html">Fonctionnalités par modules</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Documentation référent EVA</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-essentiels/index.html">Paramétrages essentiels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-simples/index.html">Paramétrages simples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Param%C3%A9trages-avanc%C3%A9s/index.html">Paramétrages avancés</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Suivi des développements</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2022-11/index.html">Développements 2022 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2023-03/index.html">Développements 2023 03</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2023-07/index.html">Développements 2023 07</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2023-10/index.html">Développements 2023 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements-2024-04/index.html">Développements 2024 04</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Développements 2024 08</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contexte">Contexte</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nouvelles-fonctionnalites-indicateurs">Nouvelles fonctionnalités indicateurs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#anomalies-resolues">Anomalies résolues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#import-piece-jointe-convention">1. Import pièce-jointe convention</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ordre-d-affichage-dans-le-menu-arborescent">2. Ordre d’affichage dans le menu arborescent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gestion-des-roles-pour-la-gbcp">3. Gestion des rôles pour la GBCP</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fonctionnalites-indicateurs">Fonctionnalités indicateurs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#corrections">1. Corrections</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ameliorations-des-fonctionnalites-existantes">Améliorations des fonctionnalités existantes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ameliorations-analyse-budget">1. Améliorations analyse budget</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#retrait-de-la-fonctionnalite-de-champs-obligatoires-qui-etait-dysfonctionnelle">2. Retrait de la fonctionnalité de champs obligatoires qui était dysfonctionnelle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#colonnes-annuaires-supplementaires">3. Colonnes annuaires supplémentaires</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#colonnes-utilisateurs-des-synchronisations-de-temps">4. Colonnes utilisateurs des synchronisations de temps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#case-acces-reseau-accessible-sous-tous-les-statuts">5. Case accès réseau accessible sous tous les statuts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #27A26B" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Documentation EVA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Développements 2024 08</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Développements/Développements-2024-08/index.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="developpements-2024-08">
+<h1>Développements 2024 08<a class="headerlink" href="#developpements-2024-08" title="Lien vers cette rubrique"></a></h1>
+<section id="contexte">
+<h2>Contexte<a class="headerlink" href="#contexte" title="Lien vers cette rubrique"></a></h2>
+<p>Un déploiement des derniers développements sur le logiciel EVA a eu lieu le 12/08/2024. Il comprend des <strong>résolutions d’anomalies</strong>, des corrections sur les <strong>nouvelles fonctionnalités pour les indicateurs</strong> et leurs analyses et des <strong>améliorations des fonctionnalités existantes</strong>.</p>
+<p>Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé et un mode d’emploi pour les nouveautés.</p>
+<p><strong>ATTENTION CONCERNANT LE MODULE INDICATEUR IL RESTE DES ANOMALIES SUR LA MODIFICATION DES DATES. NE PAS UTILISER LES ANALYSES INDICATEURS POUR L’INSTANT !!!!</strong></p>
+<section id="nouvelles-fonctionnalites-indicateurs">
+<h3>Nouvelles fonctionnalités indicateurs<a class="headerlink" href="#nouvelles-fonctionnalites-indicateurs" title="Lien vers cette rubrique"></a></h3>
+<p>Une première partie des développements sur le module indicateur a été livrée en avril 2024 incluant :</p>
+<ul class="simple">
+<li><p>groupement des indicateurs en « groupe »</p></li>
+<li><p>création de campagne de recueil des donnnées pour associer une date de saisie attendue et un référent par indicateur</p></li>
+<li><p>import des mesures d’indicateur</p></li>
+<li><p>association de pièce-jointes aux mesures</p></li>
+</ul>
+<p>La deuxième partie du développement du module indicateurs devait concerner des corrections et améliorations de ces fonctionnalités et les adapter aux analyses.</p>
+<p>Détails du précédent déploiement dans la <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/D%C3%A9veloppements/D%C3%A9veloppements-2024-04/index.html#fonctionnalites-indicateurs">documentation dédiée</a></p>
+<p><strong>N’hésitez pas à me faire remonter toutes remarques ou anomalies sur ces nouvelles fonctionnalités indicateurs par mail lroumazeilles&#64;parcs-naturels-regionaux.fr</strong></p>
+<p><strong>ATTENTION CONCERNANT LE MODULE INDICATEUR IL RESTE DES ANOMALIES SUR LA MODIFICATION DES DATES. NE PAS UTILISER LES ANALYSES INDICATEURS POUR L’INSTANT !!!!</strong></p>
+</section>
+</section>
+<section id="anomalies-resolues">
+<h2>Anomalies résolues<a class="headerlink" href="#anomalies-resolues" title="Lien vers cette rubrique"></a></h2>
+<section id="import-piece-jointe-convention">
+<h3>1. Import pièce-jointe convention<a class="headerlink" href="#import-piece-jointe-convention" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/626">Ticket 626</a>
+Le bouton d’ajout de pièce-jointe était devenu inactif dans les conventions.</p>
+<p><strong>Corrigé</strong></p>
+</section>
+<section id="ordre-d-affichage-dans-le-menu-arborescent">
+<h3>2. Ordre d’affichage dans le menu arborescent<a class="headerlink" href="#ordre-d-affichage-dans-le-menu-arborescent" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/407">Ticket 407</a></p>
+<p>Depuis le module arborescent des fiches, on peut choisir de trier les fiches selon l’ordre des codes ou des titres.</p>
+<a class="reference internal image-reference" href="../../_images/Critere_tri.png"><img alt="../../_images/Critere_tri.png" src="../../_images/Critere_tri.png" style="width: 400px;" /></a>
+<p>Mais il y avait une anomalie dans l’organisation des sous-fiches. EVA organisait les fiches de deux façons dans l’arborescence en fonction de leur niveau :</p>
+<ul class="simple">
+<li><p>Lorsque les fiches crées sont rattachées au référentiel directement, donc des fiches de niveau 0 qui ne sont pas enfants d’autres fiches dans ce référentiel, alors les fiches sont affichées par ordre alphabétique du code (ce qui est le comportement recherché)</p></li>
+<li><p>Lorsque les fiches sont rattachées à une autre fiche présente dans ce référentiel (niveau 1 et au-dessus) alors elles sont affichées par ordre de création et non plus par ordre alphabétique.</p></li>
+</ul>
+<p><strong>Corrigé : les sous-fiches sont maintenant affichées par ordre alphabetique également</strong></p>
+</section>
+<section id="gestion-des-roles-pour-la-gbcp">
+<h3>3. Gestion des rôles pour la GBCP<a class="headerlink" href="#gestion-des-roles-pour-la-gbcp" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/548">Ticket 548</a>
+Pour certains comptes parcs (principalement PNX et PNM), le module budget affichait les éléments de la GBCP (destination, organisation, nature) mais on ne pouvait plus les cacher via les rôles, les lignes de « nature », « organisation », « destination » n’apparaissent plus dans les rôles.</p>
+<p><strong>Corrigé pour la gestion des rôles et désactivation de l’option GBCP si non nécessaire</strong></p>
+<a class="reference internal image-reference" href="../../_images/GBCP.png"><img alt="../../_images/GBCP.png" src="../../_images/GBCP.png" style="width: 400px;" /></a>
+</section>
+</section>
+<section id="fonctionnalites-indicateurs">
+<h2>Fonctionnalités indicateurs<a class="headerlink" href="#fonctionnalites-indicateurs" title="Lien vers cette rubrique"></a></h2>
+<p><strong>ATTENTION CONCERNANT LE MODULE INDICATEUR IL RESTE DES ANOMALIES SUR LA MODIFICATION DES DATES. NE PAS UTILISER LES ANALYSES INDICATEURS POUR L’INSTANT !!!!</strong></p>
+<section id="corrections">
+<h3>1. Corrections<a class="headerlink" href="#corrections" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/553">Ticket 553</a>
+La suppression des groupes d’indicateurs ne fonctionnait pas et le stylo dans les lignes s’affichaient alors que l’on ne pouvait pas éditer.</p>
+<p><strong>Corrigé : la supression est possible et le stylo ne s’affiche plus</strong></p>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/586">Ticket 586</a>
+Dans les campagnes :</p>
+<ul class="simple">
+<li><p>Le bouton de suppression de la campagne en fin de ligne dans le tableau des campagnes ne fonctionnait pas</p></li>
+<li><p>Dans le tableau indicateurs de campagne, la suppression et modification des indicateurs (référents et occurrence) n’était pas possible</p></li>
+</ul>
+<p><strong>Corrigé</strong></p>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/589">Ticket 589</a>
+Pour les mesures de campagnes :
+- quand une mesure n’est pas rempli elle doit indiquer « nr ». Cependant, quand on vidait une valeur de mseure via la modification de la ligne dans la campagne, elle indiquait 0 au lieu de « nr »
+- il n’était pas possible de modifier ou supprimer les mesures en fin de ligne</p>
+<a class="reference internal image-reference" href="../../_images/Modif_mesures_camp.png"><img alt="../../_images/Modif_mesures_camp.png" src="../../_images/Modif_mesures_camp.png" style="width: 600px;" /></a>
+<p><strong>Corrigé</strong></p>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/579">Ticket 579</a>
+Avce les nouvelles fonctionnalités, les parcs peuvent remplir leurs mesures via les campagnes. Cependant, ces mesures devenaient non accessibles dans les instances réseaux même sur des indicateurs réseaux.</p>
+<p><strong>Ceci a été partiellement corrigé mais des dernières corrections sont à venir</strong></p>
+</section>
+</section>
+<section id="ameliorations-des-fonctionnalites-existantes">
+<h2>Améliorations des fonctionnalités existantes<a class="headerlink" href="#ameliorations-des-fonctionnalites-existantes" title="Lien vers cette rubrique"></a></h2>
+<section id="ameliorations-analyse-budget">
+<h3>1. Améliorations analyse budget<a class="headerlink" href="#ameliorations-analyse-budget" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/599">Ticket 599</a> et <a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/580">Ticket 580</a>
+Pour les mots-clés créés spécifiquement pour les dépenses et recettes :</p>
+<ul class="simple">
+<li><p>les faire apparaître dans les colonnes du module Analyses budget et dans les exports</p></li>
+<li><p>les faire apparaître dans les colonnes de l’onglet budget des fiches et dans les exports</p></li>
+<li><p>pour les mots-clés réseaux en filtre dans les analyses budget</p></li>
+<li><p>pour les mots-clés réseaux le remplissage possible via l’import</p></li>
+</ul>
+<p><strong>Ceci a été mis en oeuvre</strong></p>
+</section>
+<section id="retrait-de-la-fonctionnalite-de-champs-obligatoires-qui-etait-dysfonctionnelle">
+<h3>2. Retrait de la fonctionnalité de champs obligatoires qui était dysfonctionnelle<a class="headerlink" href="#retrait-de-la-fonctionnalite-de-champs-obligatoires-qui-etait-dysfonctionnelle" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/451">Ticket 451</a></p>
+<p>Il était possible de créer des champs personnalisables dont le remplissage était obligatoire. Lorsque ces champs étaient ajoutés à un modèle de fiche en particulier cela entraînaient des messages d’erreur dans les autres modèles de fiche également qui signalaient qu’un champ obligatoire n’avait pas été rempli bien que ce champ n’apparaisse pas dans ce modèle et cela bloquait l’enregistrement de la fiche.</p>
+<p><strong>Attention si certains de vos champs étaient obligatoires, vous devez maintenant solliciter l’assistance pour les rendre non-obligatoire</strong></p>
+</section>
+<section id="colonnes-annuaires-supplementaires">
+<h3>3. Colonnes annuaires supplémentaires<a class="headerlink" href="#colonnes-annuaires-supplementaires" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/485">Ticket 485</a></p>
+<p>Les champs personnalisables dans le module annuaire sont maintenant accessibles dans les colonnes. Cela permet d’exporter toutes les données annuaires dont les consentements par exemple.</p>
+</section>
+<section id="colonnes-utilisateurs-des-synchronisations-de-temps">
+<h3>4. Colonnes utilisateurs des synchronisations de temps<a class="headerlink" href="#colonnes-utilisateurs-des-synchronisations-de-temps" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/608">Ticket 608</a></p>
+<p>Il y a eu un ajout de colonnes reprenant le nom des utilisateurs et la date de dernière synchronisation dans les colonnes du module de synchronisation afin d’avoir une meilleure vision sur les synchronisations des différents agents des parcs <a class="reference internal" href="../../_images/Temps.png"><img alt="temps" src="../../_images/Temps.png" style="height: 50px;" /></a> &gt; <a class="reference internal" href="../../_images/Synchro_module.png"><img alt="synchro_module" src="../../_images/Synchro_module.png" style="height: 50px;" /></a></p>
+<p>Une deuxième étape de développement visera à bien traduire les ID des utilisateurs en nom et à pouvoir filtrer sur le champ utilisateurs.</p>
+</section>
+<section id="case-acces-reseau-accessible-sous-tous-les-statuts">
+<h3>5. Case accès réseau accessible sous tous les statuts<a class="headerlink" href="#case-acces-reseau-accessible-sous-tous-les-statuts" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/423">Ticket 423</a></p>
+<p>Quand on change un statut de fiche de « Brouillon » à « A valider », « validée » ou « votée », la partie principale de la fiche devient non modifiable ce qui bloquait aussi la case à cocher « accessible réseau ».
+Pour permettre de cocher cette case une fois la fiche validée, elle a été dissociée des blocages de statut.</p>
+<a class="reference internal image-reference" href="../../_images/Reseau_statut.png"><img alt="../../_images/Reseau_statut.png" src="../../_images/Reseau_statut.png" style="width: 400px;" /></a>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="../D%C3%A9veloppements-2024-04/index.html" class="btn btn-neutral float-left" title="Développements 2024 04" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2022, Lea Roumazeilles.
+      <span class="lastupdated">Mis à jour le 13 août 2024.
+      </span></p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
