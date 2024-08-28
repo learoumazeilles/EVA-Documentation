@@ -37,7 +37,7 @@ Autres colonnes possibles : Civilité, Couleur
 |         |         |                |                  |          |                |            |            |
 |         |         | d'utilisateur* |                  | passe    |                | email*     |            |
 +=========+=========+================+==================+==========+================+============+============+
-| *Texte* | *Texte* | *Texte*        | Nom du rôle      | *Texte*  | **M.** ou     | *Texte*    | Code hex   |
+| *Texte* | *Texte* | *Texte*        | Nom du rôle      | *Texte*  | **M.** ou      | *Texte*    | Code hex   |
 |         |         |                |                  |          |                |            |            |
 |         |         |                | prédéfini dans   |          | **Non binaire**| *format*   | example :  |
 |         |         |                |                  |          |                |            |            |

@@ -30,6 +30,9 @@ Détails du précédent déploiement dans la `documentation dédiée <https://do
 
 **ATTENTION CONCERNANT LE MODULE INDICATEUR IL RESTE DES ANOMALIES SUR LA MODIFICATION DES DATES. NE PAS UTILISER LES ANALYSES INDICATEURS POUR L'INSTANT !!!!**
 
+.. warning::
+   Pour l'instant, il faut faire attention lors de la modification de mesure de campagnes hors des campagnes (fiches et indicateurs). Car dans les campagnes, les mesures "cibles" et "réalisées" sont regroupées mais elles ne le sont pas dans les autres modules (indicateurs et fiches). Donc les champs dates, commentaires et sources sont unifiés dans les campagnes mais dans les autres modules. Si on remplit les champs commentaires, sources ou dates dans les mesures indicateurs avec des données différentes entre cible et réalisé, puis on modifie la mesure dans la campagne, les données vont être unifiées sur les deux lignes et donc il y a une modification non voulue par l'utilisateur qui peut faire perdre des informations. Pareil pour les suppressions de mesures cibles ou réalisées hors module campagne qui conduiront à la suppression du couple cible/réalisé dans la campagne mais en laisseront un présent hors campagne.
+
 Anomalies résolues
 ------------------
 
@@ -83,6 +86,11 @@ Fonctionnalités indicateurs
 La suppression des groupes d'indicateurs ne fonctionnait pas et le stylo dans les lignes s'affichaient alors que l'on ne pouvait pas éditer.
 
 **Corrigé : la supression est possible et le stylo ne s'affiche plus**
+
+`Ticket 555 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/555>`_
+On ne pouvait pas ajouter plusieurs documents d'un coup dans une mesure.
+
+**Corrigé : l'ajout des documents dans les mesures est rendu plus ergonomique**
 
 `Ticket 586 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/586>`_
 Dans les campagnes :

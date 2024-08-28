@@ -141,6 +141,10 @@
 <p>Détails du précédent déploiement dans la <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/D%C3%A9veloppements/D%C3%A9veloppements-2024-04/index.html#fonctionnalites-indicateurs">documentation dédiée</a></p>
 <p><strong>N’hésitez pas à me faire remonter toutes remarques ou anomalies sur ces nouvelles fonctionnalités indicateurs par mail lroumazeilles&#64;parcs-naturels-regionaux.fr</strong></p>
 <p><strong>ATTENTION CONCERNANT LE MODULE INDICATEUR IL RESTE DES ANOMALIES SUR LA MODIFICATION DES DATES. NE PAS UTILISER LES ANALYSES INDICATEURS POUR L’INSTANT !!!!</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Pour l’instant, il faut faire attention lors de la modification de mesure de campagnes hors des campagnes (fiches et indicateurs). Car dans les campagnes, les mesures « cibles » et « réalisées » sont regroupées mais elles ne le sont pas dans les autres modules (indicateurs et fiches). Donc les champs dates, commentaires et sources sont unifiés dans les campagnes mais dans les autres modules. Si on remplit les champs commentaires, sources ou dates dans les mesures indicateurs avec des données différentes entre cible et réalisé, puis on modifie la mesure dans la campagne, les données vont être unifiées sur les deux lignes et donc il y a une modification non voulue par l’utilisateur qui peut faire perdre des informations. Pareil pour les suppressions de mesures cibles ou réalisées hors module campagne qui conduiront à la suppression du couple cible/réalisé dans la campagne mais en laisseront un présent hors campagne.</p>
+</div>
 </section>
 </section>
 <section id="anomalies-resolues">
@@ -179,6 +183,9 @@ Pour certains comptes parcs (principalement PNX et PNM), le module budget affich
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/553">Ticket 553</a>
 La suppression des groupes d’indicateurs ne fonctionnait pas et le stylo dans les lignes s’affichaient alors que l’on ne pouvait pas éditer.</p>
 <p><strong>Corrigé : la supression est possible et le stylo ne s’affiche plus</strong></p>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/555">Ticket 555</a>
+On ne pouvait pas ajouter plusieurs documents d’un coup dans une mesure.</p>
+<p><strong>Corrigé : l’ajout des documents dans les mesures est rendu plus ergonomique</strong></p>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/586">Ticket 586</a>
 Dans les campagnes :</p>
 <ul class="simple">
@@ -249,7 +256,7 @@ Pour permettre de cocher cette case une fois la fiche validée, elle a été dis
 
   <div role="contentinfo">
     <p>&#169; Droits d'auteur 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 13 août 2024.
+      <span class="lastupdated">Mis à jour le 28 août 2024.
       </span></p>
   </div>
 
