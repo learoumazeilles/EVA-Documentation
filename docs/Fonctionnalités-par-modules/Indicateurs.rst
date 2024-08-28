@@ -12,7 +12,7 @@ Les groupes permettent de regrouper des indicateurs pour faire des agrégations,
 Une mesure d'indicateur peut donc être créée via le sous-module indicateur ou via l'onglet indicateur d'une fiche, une mesure définie dans une campagne peut être remplie via le module indicateur, l'onglet indicateur d'une fiche, le sous-module campagne, le sous-module groupe.
 
 .. warning::
-	Des améliorations sont à venir sur les analyses et possibilités d'agrégations.
+	Des améliorations sont à venir sur les analyses.
 
 .. image:: images/module_indicateur.png
    :width: 600
@@ -93,10 +93,8 @@ Le formulaire demande les informations suivantes :
 
 * **Territoires** : On peut associer des territoires aux mesures, ce qui permet d'ajouter de la finesse dans les mesures relevées pour l'indicateur
 
-* **Documents** : Il est possible d'ajouter des documents aux mesures, pour cela cliquer sur |uploader_document| puis remplir le nom du document et choisir le fichier.
+* **Documents** : Il est possible d'ajouter des documents aux mesures, pour cela cliquer sur |uploader_document| puis remplir le nom du document, choisir le fichier et cliquer sur ajouter
 
-.. warning::
-	À la création de la mesure pour enregistrer votre premier document, cliquer sur "Enregistrer la mesure" une première fois, ensuite vous pourrez revenir modifier la mesure et ajouter PLUSIEURS documents en cliquant sur "Enregistrer le document" puis "Enregistrer la mesure"
 
 .. note::
 	La notion de période (initiale, interméfiaire ou finale) a été modifiée lors du déploiement du mois d'avril 2024, elle n'est plus obligtoire car elle menait à des bugs en analyse et agrégation.
@@ -136,10 +134,10 @@ L'onglet **indicateurs** résume les différents indicateurs du groupe dans un t
 	Les indicateurs et mesures ne sont pas modifiables dans les groupes, il faut cliquer sur l'indicateur en question pour aller les modifier.
 
 .. warning::
-	Pour l'instant les capacités d'agrégation et d'analyses des groupes n'ont pas été complètement explorées et seront complétées par un autre développement.
+	Pour l'instant les capacités d'analyses des groupes n'ont pas été complètement explorées et seront complétées par un autre développement.
 
 .. warning::
-	Si on ajoute uultérieurement un indicateur à un groupe, si le groupe a déjà été ajouté à une campagne, cet indicateur ne fera pas parti de la campagne
+	Si on ajoute ultérieurement un indicateur à un groupe, si le groupe a déjà été ajouté à une campagne, cet indicateur ne fera pas parti de la campagne
 
 Campagne de mesures
 -------------------
@@ -206,7 +204,7 @@ Grâce à ces requêtes, il est possible de paramétrer des alertes, pour recevo
 
 
 .. warning::
-	Pour l'instant, il faut faire attention lors de la modification de mesure de campagnes hors des campagnes (fiches et indicateurs). Car dans les campagnes, les mesures "cibles" et "réalisées" sont regroupées mais elles ne le sont pas dans les autres modules (indicateurs et fiches). Donc les champs dates, commentaires et sources sont unifiés dans les campagnes mais dans les autres modules. Si on remplit les champs commentaires, sources ou dates dans les mesures indicateurs avec des données différentes entre cible et réalisé, puis on modifie la mesure dans la campagne, les données vont être unifiées sur les deux lignes et donc il y a une modification non voulue par l'utilisateur qui peut faire perdre des informations.
+	Pour l'instant, il faut faire attention lors de la modification de mesure de campagnes hors des campagnes (fiches et indicateurs). Car dans les campagnes, les mesures "cibles" et "réalisées" sont regroupées mais elles ne le sont pas dans les autres modules (indicateurs et fiches). Donc les champs dates, commentaires et sources sont unifiés dans les campagnes mais dans les autres modules. Si on remplit les champs commentaires, sources ou dates dans les mesures indicateurs avec des données différentes entre cible et réalisé, puis on modifie la mesure dans la campagne, les données vont être unifiées sur les deux lignes et donc il y a une modification non voulue par l'utilisateur qui peut faire perdre des informations. Pareil pour les suppressions de mesures cibles ou réalisées hors module campagne qui conduiront à la suppression du couple cible/réalisé dans la campagne mais en laisseront un présent hors campagne.
 
 
 
