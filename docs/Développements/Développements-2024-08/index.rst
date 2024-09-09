@@ -102,6 +102,7 @@ Dans les campagnes :
 
 `Ticket 589 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/589>`_
 Pour les mesures de campagnes :
+
 - quand une mesure n'est pas rempli elle doit indiquer "nr". Cependant, quand on vidait une valeur de mseure via la modification de la ligne dans la campagne, elle indiquait 0 au lieu de "nr"
 - il n'était pas possible de modifier ou supprimer les mesures en fin de ligne
 
@@ -112,7 +113,7 @@ Pour les mesures de campagnes :
 
 
 `Ticket 579 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/579>`_
-Avce les nouvelles fonctionnalités, les parcs peuvent remplir leurs mesures via les campagnes. Cependant, ces mesures devenaient non accessibles dans les instances réseaux même sur des indicateurs réseaux.
+Avec les nouvelles fonctionnalités, les parcs peuvent remplir leurs mesures via les campagnes. Cependant, ces mesures devenaient non accessibles dans les instances réseaux même sur des indicateurs réseaux.
 
 **Ceci a été partiellement corrigé mais des dernières corrections sont à venir**
 
