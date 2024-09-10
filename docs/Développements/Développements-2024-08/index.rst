@@ -118,6 +118,32 @@ Avec les nouvelles fonctionnalités, les parcs peuvent remplir leurs mesures via
 **Ceci a été partiellement corrigé mais des dernières corrections sont à venir**
 
 
+2. Améliorations
+################
+Ces tickets ont été livrés plus tardivement (30/08/2024).
+
+`Ticket 621 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/621>`_
+Il y avait un filtre par défaut dans les analyses indicateurs sur les fiches qui ne contenaient pas le statut "archivé". Ce filtre avait pour conséquence de ne pas afficher les mesures d'indicateurs qui n'étaient rattachées à aucune fiche. Comme les filtres par défaut ne sont pas toujours évident et que cela pouvait apporter des confusions, le filtre par défaut a été retiré.
+
+
+Aides à l'usage : `Ticket 618 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/618>`_
+1. Une infobulle a été ajouté au niveau des groupes d'indicateur pour bien informer du fait que si on ajoute créé un groupe d'indicateurs, que l'on ajoute ce groupe à une campagne, si on ajoute un nouvel indicateur par la suite dans ce groupe, il ne sera pas intégré dans la campagne.
+
+.. image:: images/Groupe_campagne_indic.png
+   :width: 600
+
+2. Il est très important de remplir la date de fin/réalisée pour une mesure de type réalisée car c'est elle qui conditionne les analyses par la suite. Cette date n'était pas pour l'instant obligatoire, elle a été rendue obligatoire si on remplit une valeur de mesure réalisée, une erreur s'affiche.
+
+.. image:: images/Date_fin_oblig.png
+   :width: 600
+
+
+Amélioration de la liaison avec le niveau national pour les nouvelles fonctionnalités : `Ticket 579 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/579>`_
+1. Accès en instance réseau aux mesures des indicateurs partagés remplies via les campagnes : les mesures sur les indicateurs partagés en réseau et remplit par les parcs via une campagne sont maintenant accessible en instance réseau.
+Cette amélioration a permis de reprendre plus largement le fonctionnement entre les données réseau et parc. Maintenant tout action (ajout, modification, suppression) d'un côté ou de l'autre (parc ou réseau) sur des valeurs de mesures sera répercuté dans les deux. **Il faut donc bien faire attention à ces mesures, notamment éviter de modifier la valeur structure, si on souhaite modifier le parc il vaut mieux supprimer la mesure et en recréer une nouvelle.**
+
+2. Les imports de mesures sont maintenant accessible aussi pour l'instance réseau, avec la colonne structure associée pour les parcs.
+
 Améliorations des fonctionnalités existantes
 --------------------------------------------
 
