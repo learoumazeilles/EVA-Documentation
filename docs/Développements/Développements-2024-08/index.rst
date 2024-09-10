@@ -127,6 +127,7 @@ Il y avait un filtre par défaut dans les analyses indicateurs sur les fiches qu
 
 
 Aides à l'usage : `Ticket 618 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/618>`_
+
 1. Une infobulle a été ajouté au niveau des groupes d'indicateur pour bien informer du fait que si on ajoute créé un groupe d'indicateurs, que l'on ajoute ce groupe à une campagne, si on ajoute un nouvel indicateur par la suite dans ce groupe, il ne sera pas intégré dans la campagne.
 
 .. image:: images/Groupe_campagne_indic.png
@@ -139,6 +140,7 @@ Aides à l'usage : `Ticket 618 <https://gitlab.com/logiciel-eva/logiciel-eva/-/i
 
 
 Amélioration de la liaison avec le niveau national pour les nouvelles fonctionnalités : `Ticket 579 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/579>`_
+
 1. Accès en instance réseau aux mesures des indicateurs partagés remplies via les campagnes : les mesures sur les indicateurs partagés en réseau et remplit par les parcs via une campagne sont maintenant accessible en instance réseau.
 Cette amélioration a permis de reprendre plus largement le fonctionnement entre les données réseau et parc. Maintenant tout action (ajout, modification, suppression) d'un côté ou de l'autre (parc ou réseau) sur des valeurs de mesures sera répercuté dans les deux. **Il faut donc bien faire attention à ces mesures, notamment éviter de modifier la valeur structure, si on souhaite modifier le parc il vaut mieux supprimer la mesure et en recréer une nouvelle.**
 

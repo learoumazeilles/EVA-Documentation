@@ -211,15 +211,17 @@ Avec les nouvelles fonctionnalités, les parcs peuvent remplir leurs mesures via
 <p>Ces tickets ont été livrés plus tardivement (30/08/2024).</p>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/621">Ticket 621</a>
 Il y avait un filtre par défaut dans les analyses indicateurs sur les fiches qui ne contenaient pas le statut « archivé ». Ce filtre avait pour conséquence de ne pas afficher les mesures d’indicateurs qui n’étaient rattachées à aucune fiche. Comme les filtres par défaut ne sont pas toujours évident et que cela pouvait apporter des confusions, le filtre par défaut a été retiré.</p>
-<p>Aides à l’usage : <a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/618">Ticket 618</a>
-1. Une infobulle a été ajouté au niveau des groupes d’indicateur pour bien informer du fait que si on ajoute créé un groupe d’indicateurs, que l’on ajoute ce groupe à une campagne, si on ajoute un nouvel indicateur par la suite dans ce groupe, il ne sera pas intégré dans la campagne.</p>
+<p>Aides à l’usage : <a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/618">Ticket 618</a></p>
+<ol class="arabic simple">
+<li><p>Une infobulle a été ajouté au niveau des groupes d’indicateur pour bien informer du fait que si on ajoute créé un groupe d’indicateurs, que l’on ajoute ce groupe à une campagne, si on ajoute un nouvel indicateur par la suite dans ce groupe, il ne sera pas intégré dans la campagne.</p></li>
+</ol>
 <a class="reference internal image-reference" href="../../_images/Groupe_campagne_indic.png"><img alt="../../_images/Groupe_campagne_indic.png" src="../../_images/Groupe_campagne_indic.png" style="width: 600px;" /></a>
 <ol class="arabic simple" start="2">
 <li><p>Il est très important de remplir la date de fin/réalisée pour une mesure de type réalisée car c’est elle qui conditionne les analyses par la suite. Cette date n’était pas pour l’instant obligatoire, elle a été rendue obligatoire si on remplit une valeur de mesure réalisée, une erreur s’affiche.</p></li>
 </ol>
 <a class="reference internal image-reference" href="../../_images/Date_fin_oblig.png"><img alt="../../_images/Date_fin_oblig.png" src="../../_images/Date_fin_oblig.png" style="width: 600px;" /></a>
-<p>Amélioration de la liaison avec le niveau national pour les nouvelles fonctionnalités : <a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/579">Ticket 579</a>
-1. Accès en instance réseau aux mesures des indicateurs partagés remplies via les campagnes : les mesures sur les indicateurs partagés en réseau et remplit par les parcs via une campagne sont maintenant accessible en instance réseau.
+<p>Amélioration de la liaison avec le niveau national pour les nouvelles fonctionnalités : <a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/579">Ticket 579</a></p>
+<p>1. Accès en instance réseau aux mesures des indicateurs partagés remplies via les campagnes : les mesures sur les indicateurs partagés en réseau et remplit par les parcs via une campagne sont maintenant accessible en instance réseau.
 Cette amélioration a permis de reprendre plus largement le fonctionnement entre les données réseau et parc. Maintenant tout action (ajout, modification, suppression) d’un côté ou de l’autre (parc ou réseau) sur des valeurs de mesures sera répercuté dans les deux. <strong>Il faut donc bien faire attention à ces mesures, notamment éviter de modifier la valeur structure, si on souhaite modifier le parc il vaut mieux supprimer la mesure et en recréer une nouvelle.</strong></p>
 <ol class="arabic simple" start="2">
 <li><p>Les imports de mesures sont maintenant accessible aussi pour l’instance réseau, avec la colonne structure associée pour les parcs.</p></li>
