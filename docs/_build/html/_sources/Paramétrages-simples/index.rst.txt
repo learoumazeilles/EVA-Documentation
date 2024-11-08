@@ -357,7 +357,7 @@ En cliquant sur |bouton_3_traits|, on peut créer une nouvelle alerte. Les champ
 Par exemple avec une requête sur les dates de caducité on peut envoyer des mails automatiques comme suit :
 
 
-.. image:: images/Alertes_ex.png
+.. image:: images/Alertes_ex2.png
 	:width: 700
 
 On peut **tester** l'envoi de l'alerte ou forcer son envoi en appuyant sur |envoi| en haut à droite, l'alerte s'envoi alors directement sans attendre la périodicité définie.

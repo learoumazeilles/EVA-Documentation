@@ -332,6 +332,8 @@ Par exemple avec une synchronisation hebdomadaire :
 .. image:: images/Temps_synchro_periode.png
   :width: 700
 
+.. warning::
+  Les règles de synchronisation ne peuvent pas être supprimées lorsqu'elles ont été utilisées. Il faudra faire une demande à l'assistance afin de modifier toutes les feuilles de temps importées à partir de ces règles en base de données.
 
 Synchronisations des absences
 -----------------------------

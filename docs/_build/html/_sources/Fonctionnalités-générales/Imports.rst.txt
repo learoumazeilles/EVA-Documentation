@@ -84,6 +84,8 @@ Colonnes obligatoires : Indicateur (ID ou nom exact), Type (Réalisé ou Cible),
 
 Autres colonnes possibles : Fiche (titre ou code ou ID), date début, commentaires, source, territoires
 
+Pour indiquer plusieurs territoires, les séparer par '--', ex : Commune1 -- Commune2
+
 
 +------------+-----------+-------------+---------+------------+------------+--------------+
 |Indicateur* | Type*     | Valeur*     | Fiche   | Date fin/  | Date       | Commentaires |
