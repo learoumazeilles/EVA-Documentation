@@ -100,7 +100,13 @@ Pour indiquer plusieurs territoires, les séparer par '--', ex : Commune1 -- Com
 +------------+-----------+-------------+---------+------------+------------+--------------+
 
 .. note::
-	Il n'est pas possible d'importer des mesures de campagne d'indicateur
+	Pour le lien à la fiche dans le document d'import dans la colonne, il faut indiquer fiche SOIT l'ID de la fiche, SOIT son code, SOIT son titre mais ne pas mélanger les références dans le même import. Ensuite, lors de l'import il faut spécifier dans cette colonne quelle référence a été utilisée.
+
+.. image:: images/import_mesures_fiches.png
+  :width: 400
+
+.. note::
+	Il n'est pas possible d'importer des mesures de campagne d'indicateur.
 
 .. warning::
 	Attention pour les mesures d'indicateurs de type "liste", il faut insérer le chiffre indiqué dans la liste des valeurs pour qu'il y ait une bonne adéquation. Par exemple, si vous avez défini que la valeur 100 voulait dire "Bon état", la valeur 50 = "moyen" et la valeur 0 = "mauvais" il faudra indiquer une de ces trois valeurs numériques exactement et non les équivalents texte.

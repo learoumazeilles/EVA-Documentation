@@ -12,7 +12,7 @@ Les groupes permettent de regrouper des indicateurs pour faire des agrégations,
 Une mesure d'indicateur peut donc être créée via le sous-module indicateur ou via l'onglet indicateur d'une fiche, une mesure définie dans une campagne peut être remplie via le module indicateur, l'onglet indicateur d'une fiche, le sous-module campagne, le sous-module groupe.
 
 .. warning::
-	Des améliorations sont à venir sur les analyses.
+	Des améliorations sont encours sur les analyses.
 
 .. image:: images/module_indicateur.png
    :width: 600
@@ -204,7 +204,9 @@ Grâce à ces requêtes, il est possible de paramétrer des alertes, pour recevo
 
 
 .. warning::
-	Pour l'instant, il faut faire attention lors de la modification de mesure de campagnes hors des campagnes (fiches et indicateurs). Car dans les campagnes, les mesures "cibles" et "réalisées" sont regroupées mais elles ne le sont pas dans les autres modules (indicateurs et fiches). Donc les champs dates, commentaires et sources sont unifiés dans les campagnes mais dans les autres modules. Si on remplit les champs commentaires, sources ou dates dans les mesures indicateurs avec des données différentes entre cible et réalisé, puis on modifie la mesure dans la campagne, les données vont être unifiées sur les deux lignes et donc il y a une modification non voulue par l'utilisateur qui peut faire perdre des informations. Pareil pour les suppressions de mesures cibles ou réalisées hors module campagne qui conduiront à la suppression du couple cible/réalisé dans la campagne mais en laisseront un présent hors campagne.
+	Dans les campagnes, les mesures "cibles" et "réalisées" sont regroupées mais elles ne le sont pas dans les autres modules (indicateurs et fiches). Un développement en novembre 2024 permet maintenant d'avoir accès à une fenêtre unique pour éditer les mesures de campagnes depuis les modules indicateurs et fiches. De même, la suppression d'une mesure cible d'une campagne depuis tous les modules entraînera la suppression de sa mesure réalisée et inversement.
+
+
 
 
 

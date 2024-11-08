@@ -100,6 +100,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2023-10/index.html">Développements 2023 10</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2024-04/index.html">Développements 2024 04</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2024-08/index.html">Développements 2024 08</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../D%C3%A9veloppements/D%C3%A9veloppements-2024-11/index.html">Développements 2024 11</a></li>
 </ul>
 
         </div>
@@ -136,7 +137,7 @@ Les groupes permettent de regrouper des indicateurs pour faire des agrégations,
 <p>Une mesure d’indicateur peut donc être créée via le sous-module indicateur ou via l’onglet indicateur d’une fiche, une mesure définie dans une campagne peut être remplie via le module indicateur, l’onglet indicateur d’une fiche, le sous-module campagne, le sous-module groupe.</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
-<p>Des améliorations sont à venir sur les analyses.</p>
+<p>Des améliorations sont encours sur les analyses.</p>
 </div>
 <a class="reference internal image-reference" href="../_images/module_indicateur.png"><img alt="../_images/module_indicateur.png" src="../_images/module_indicateur.png" style="width: 600px;" /></a>
 <section id="sous-module-indicateurs">
@@ -262,7 +263,7 @@ Les mesures sont pré-créées avec les informations renseignées dans l’ongle
 <p>Grâce à ces requêtes, il est possible de paramétrer des alertes, pour recevoir des mails automatiquement lorsque l’on doit remplir des mesures d’une campagne par exemple -&gt; voir la partie <a class="reference external" href="https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-simples/index.html#alertes-d-indicateurs">sur les alertes indicateurs</a></p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
-<p>Pour l’instant, il faut faire attention lors de la modification de mesure de campagnes hors des campagnes (fiches et indicateurs). Car dans les campagnes, les mesures « cibles » et « réalisées » sont regroupées mais elles ne le sont pas dans les autres modules (indicateurs et fiches). Donc les champs dates, commentaires et sources sont unifiés dans les campagnes mais dans les autres modules. Si on remplit les champs commentaires, sources ou dates dans les mesures indicateurs avec des données différentes entre cible et réalisé, puis on modifie la mesure dans la campagne, les données vont être unifiées sur les deux lignes et donc il y a une modification non voulue par l’utilisateur qui peut faire perdre des informations. Pareil pour les suppressions de mesures cibles ou réalisées hors module campagne qui conduiront à la suppression du couple cible/réalisé dans la campagne mais en laisseront un présent hors campagne.</p>
+<p>Dans les campagnes, les mesures « cibles » et « réalisées » sont regroupées mais elles ne le sont pas dans les autres modules (indicateurs et fiches). Un développement en novembre 2024 permet maintenant d’avoir accès à une fenêtre unique pour éditer les mesures de campagnes depuis les modules indicateurs et fiches. De même, la suppression d’une mesure cible d’une campagne depuis tous les modules entraînera la suppression de sa mesure réalisée et inversement.</p>
 </div>
 </section>
 </section>
@@ -280,7 +281,7 @@ Les mesures sont pré-créées avec les informations renseignées dans l’ongle
 
   <div role="contentinfo">
     <p>&#169; Droits d'auteur 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 28 août 2024.
+      <span class="lastupdated">Mis à jour le 08 nov. 2024.
       </span></p>
   </div>
 
