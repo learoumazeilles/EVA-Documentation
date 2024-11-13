@@ -53,7 +53,7 @@ Pour les **filtres de référentiels et mots clés** il est possible de cocher o
 	:width: 300
 
 .. note::
-	Entre les critères de recherche la règle et « ET » et entre les termes d’un même critères la règle et « OU ». Dans l’exemple ci-dessous, on obtiendra les fiches qui ont l’acteurs FSE OU FPNRF ET ne sont pas de statut archivée.
+	Entre les critères de recherche la règle est « ET » et entre les termes d’un même critères la règle est « OU ». Dans l’exemple ci-dessous, on obtiendra les fiches qui ont l’acteurs FSE OU FPNRF ET ne sont pas de statut archivée.
 
 .. image:: images/Exemple_combi_filtre.png
 	:width: 300
