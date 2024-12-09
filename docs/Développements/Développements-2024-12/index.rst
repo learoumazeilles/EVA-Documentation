@@ -1,11 +1,11 @@
 .. include:: ../../substitutions.rst
-Développements 2024 11
+Développements 2024 12
 ======================
 
-Contexte 2024 11
+Contexte 2024 12
 ----------------
 
-Un déploiement des derniers développements sur le logiciel EVA est à prévoir au mois de novembre 2024. *À date du 8 novembre il n'a pas encore eu lieu.* Il comprend des **résolutions d’anomalies**, des corrections sur les **nouvelles fonctionnalités pour les indicateurs** et leurs analyses et des **améliorations des fonctionnalités existantes**.
+Un déploiement des derniers développements sur le logiciel EVA est à prévoir au mois de novembre 2024 voir début décembre 2024. *À date du 9 décembre il n'a pas encore eu lieu.* Il comprend des **résolutions d’anomalies**, des corrections sur les **nouvelles fonctionnalités pour les indicateurs** et leurs analyses et des **améliorations des fonctionnalités existantes**.
 
 Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé et un mode d’emploi pour les nouveautés.
 
@@ -154,6 +154,21 @@ Les champs ajoutés (peuvent être nommés différemment dans votre EVA) :
 `Ticket 651 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/651>`_
 
 Dans les analyses budget, les calculs de solde et de ratio étaient parfois faux, cela a été corrigés.
+
+**Corrigé**
+
+
+Champs personnalisables
+-----------------------
+
+`Ticket 634 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/634>`_
+
+Le renseignement du modèle de fiche lors de la création d'un champ ne marchait pas, cela pouvait mener au masquage des champs dans les modèles de fiches après modification du champs.
+Précédemment le modèle de fiche pour un champ pouvait d'ajouter via le champs et via le modèle ce qui portait donc à confusion parfois.
+La correction permet maintenant de paramétrer le modèle de fiche directement lors de la création du groupe de champs et de ne plus le faire via le modèle.
+
+.. image:: images/Champs_modele.png
+   :width: 400
 
 **Corrigé**
 

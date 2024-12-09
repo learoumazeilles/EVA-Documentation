@@ -124,10 +124,10 @@ Dans l'onglet Fiche, on peut créer un nouveau groupe de champs en appuyant sur 
 
 Le groupe sera créé tout en bas de la page si vous avez déjà des groupes de champs paramétrés.
 
-Il faut insérer un titre, et un onglet de fiche ou le champ apparaîtra, on peut choisir à peu près tous les onglets, le champ aparaîtra en bas de page de l'onglet et dans l'ordre alphabétique avec les autres champs personnalisés. Si l'onglet n'est pas renseigné le champ apparaîtra par défaut dans l'onglet "champs personnalisables" des fiches.
+Il faut insérer un titre, choisir un modèle de fiche et un onglet de fiche ou le champ apparaîtra, on peut choisir à peu près tous les onglets, le champ aparaîtra en bas de page de l'onglet et dans l'ordre alphabétique avec les autres champs personnalisés. Si l'onglet n'est pas renseigné le champ apparaîtra par défaut dans l'onglet "champs personnalisables" des fiches.
 
 .. warning ::
-	Il faut enregistrer une première fois le groupe de champs pour pouvoir indiquer le paramètre "modèle de fiche" qui modifiera le modèle de fiche en question pour indiquer "afficher" pour ce groupe de champs. Attention car si le modèle est laissé blanc, toute modification du groupe de champs (le nom, l'onglet...) entraînera un masquage dans le modèle de fiche. Donc un groupe de champs ne peut être utilisé que pour un seul modèle de fiche.
+	Précédemment le champs pouvait être ajouté dans les modèles de fiches via le module administration > modèle de fiches, ça n'est plus le cas depuis le déploiement de décembre 2024.
 
 Les onglets les plus utilisés si ce sont des champs textes (comme les bilans) sont l'onglet **Fiche** et l'onglet **Champs personnalisables** qui peut avoir un nom différent dans votre EVA.
 
