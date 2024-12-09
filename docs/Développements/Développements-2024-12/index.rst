@@ -8,6 +8,7 @@ Contexte 2024 12
 Un déploiement des derniers développements sur le logiciel EVA est à prévoir au mois de novembre 2024 voir début décembre 2024. *À date du 9 décembre il n'a pas encore eu lieu.* Il comprend des **résolutions d’anomalies**, des corrections sur les **nouvelles fonctionnalités pour les indicateurs** et leurs analyses et des **améliorations des fonctionnalités existantes**.
 
 Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé et un mode d’emploi pour les nouveautés.
+Un café EVA sur le sujet a été enregistré et est disponible sur le centre de ressource via `ce lien <hhttps://fpnrf-my.sharepoint.com/:v:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/Ed65asZbG4xFqsS4I7XsdLQBV6hbjrAjJinhTkjRSEg9tg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=q9MeaG>`_
 
 
 Rappel nouvelles fonctionnalités indicateurs
