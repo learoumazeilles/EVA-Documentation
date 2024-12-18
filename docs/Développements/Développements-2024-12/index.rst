@@ -5,7 +5,7 @@ Développements 2024 12
 Contexte 2024 12
 ----------------
 
-Un déploiement des derniers développements sur le logiciel EVA est à prévoir au mois de novembre 2024 voir début décembre 2024. *À date du 9 décembre il n'a pas encore eu lieu.* Il comprend des **résolutions d’anomalies**, des corrections sur les **nouvelles fonctionnalités pour les indicateurs** et leurs analyses et des **améliorations des fonctionnalités existantes**.
+Un déploiement des derniers développements sur le logiciel EVA est à prévoir au mois de novembre 2024 voir début décembre 2024. *À date du 9 décembre il n'a pas encore eu lieu.* Il comprend des **résolutions d’anomalies**, des corrections sur les **nouvelles fonctionnalités pour les indicateurs** et leurs analyses et des **améliorations des fonctionnalités existantes**. Il comprend également la livraison de la plateforme permettant de faire la liaison avec certains logiciels comptables via un import automatisé. Pour l'instant ceci est en cours de paramétrage uniquement pour le logiciel comptable SIREPA donc vous pouvez ignorer les ajouts.
 
 Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé et un mode d’emploi pour les nouveautés.
 Un café EVA sur le sujet a été enregistré et est disponible sur le centre de ressource via `ce lien <https://fpnrf-my.sharepoint.com/:v:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/Ed65asZbG4xFqsS4I7XsdLQBV6hbjrAjJinhTkjRSEg9tg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=guLaaF>`_
@@ -96,7 +96,7 @@ Plusieurs choses ont été modifiées ou corrigées dans le module d'analyses in
 
 `Ticket 579 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/579>`_
 
-Il existe encore des dysfonctionnements pour le remplissage d'indicateur commun à un même réseau, par exemple pour le tableau de bord des PNx.
+Certains dysfonctionnement ont été résolus mais il reste l'impossibilité de modifier via le EVA national, une valeur de compagne créé dans un parc en local qui est à nr (non rempli).
 
 **En cours de correction**
 
@@ -158,13 +158,12 @@ Dans les analyses budget, les calculs de solde et de ratio étaient parfois faux
 
 **Corrigé**
 
-
 Champs personnalisables
 -----------------------
 
 `Ticket 634 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/634>`_
 
-Le renseignement du modèle de fiche lors de la création d'un gropue de champs ne marchait pas, cela pouvait mener au masquage des champs dans les modèles de fiches après modification du groupe de champs.
+Le renseignement du modèle de fiche lors de la création d'un groupe de champs ne marchait pas, cela pouvait mener au masquage des champs dans les modèles de fiches après modification du groupe de champs.
 Précédemment le modèle de fiche pour un groupe de champs pouvait être précisé via le champs ET via le modèle ce qui portait donc à confusion parfois.
 La correction permet maintenant de paramétrer le modèle de fiche directement lors de la création du groupe de champs et de ne plus le faire via le modèle.
 
@@ -172,4 +171,19 @@ La correction permet maintenant de paramétrer le modèle de fiche directement l
    :width: 400
 
 **Corrigé**
+
+Inport financier automatisé
+---------------------------
+
+`Ticket 625 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/625>`_
+
+Nous sommes en train de mettre en place les imports automatisés, cette procédure s'effectue en lien avec les éditeurs de logiciel comptable donc ils seront mis en place petit à petit. Pour l'instant cette liaison est en cours de paramétrage avec le logiciel SIREPA. Vous verrez donc apparaître la fenêtre ci-dessous dans la partie import budgétaire de votre EVA et la fonctionnalité "import finencier automatisé" dans les options du module budget. Mais vous pouvez les ignorer pour l'instant. Plus de documentation est à venir sur ce sujet quand la liaison sera effective.
+
+.. image:: images/Imports_budg_param.png
+   :width: 400
+
+.. image:: images/Imports_fin_module.png
+   :width: 400
+
+**À finaliser**
 

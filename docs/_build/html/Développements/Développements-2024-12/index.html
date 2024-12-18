@@ -98,6 +98,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#champs-personnalisables">Champs personnalisables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inport-financier-automatise">Inport financier automatisé</a></li>
 </ul>
 </li>
 </ul>
@@ -130,7 +131,7 @@
 <h1>Développements 2024 12<a class="headerlink" href="#developpements-2024-12" title="Lien vers cette rubrique"></a></h1>
 <section id="contexte-2024-12">
 <h2>Contexte 2024 12<a class="headerlink" href="#contexte-2024-12" title="Lien vers cette rubrique"></a></h2>
-<p>Un déploiement des derniers développements sur le logiciel EVA est à prévoir au mois de novembre 2024 voir début décembre 2024. <em>À date du 9 décembre il n’a pas encore eu lieu.</em> Il comprend des <strong>résolutions d’anomalies</strong>, des corrections sur les <strong>nouvelles fonctionnalités pour les indicateurs</strong> et leurs analyses et des <strong>améliorations des fonctionnalités existantes</strong>.</p>
+<p>Un déploiement des derniers développements sur le logiciel EVA est à prévoir au mois de novembre 2024 voir début décembre 2024. <em>À date du 9 décembre il n’a pas encore eu lieu.</em> Il comprend des <strong>résolutions d’anomalies</strong>, des corrections sur les <strong>nouvelles fonctionnalités pour les indicateurs</strong> et leurs analyses et des <strong>améliorations des fonctionnalités existantes</strong>. Il comprend également la livraison de la plateforme permettant de faire la liaison avec certains logiciels comptables via un import automatisé. Pour l’instant ceci est en cours de paramétrage uniquement pour le logiciel comptable SIREPA donc vous pouvez ignorer les ajouts.</p>
 <p>Les développements sont détaillés ci-après, avec le détail du ticket GitLab associé et un mode d’emploi pour les nouveautés.
 Un café EVA sur le sujet a été enregistré et est disponible sur le centre de ressource via <a class="reference external" href="https://fpnrf-my.sharepoint.com/:v:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/Ed65asZbG4xFqsS4I7XsdLQBV6hbjrAjJinhTkjRSEg9tg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=guLaaF">ce lien</a></p>
 <section id="rappel-nouvelles-fonctionnalites-indicateurs">
@@ -191,7 +192,7 @@ Un café EVA sur le sujet a été enregistré et est disponible sur le centre de
 <section id="liaison-indicateurs-reseau-et-parcs">
 <h3>5. Liaison indicateurs réseau et parcs<a class="headerlink" href="#liaison-indicateurs-reseau-et-parcs" title="Lien vers cette rubrique"></a></h3>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/579">Ticket 579</a></p>
-<p>Il existe encore des dysfonctionnements pour le remplissage d’indicateur commun à un même réseau, par exemple pour le tableau de bord des PNx.</p>
+<p>Certains dysfonctionnement ont été résolus mais il reste l’impossibilité de modifier via le EVA national, une valeur de compagne créé dans un parc en local qui est à nr (non rempli).</p>
 <p><strong>En cours de correction</strong></p>
 </section>
 </section>
@@ -242,11 +243,19 @@ Les champs ajoutés (peuvent être nommés différemment dans votre EVA) :</p>
 <section id="champs-personnalisables">
 <h2>Champs personnalisables<a class="headerlink" href="#champs-personnalisables" title="Lien vers cette rubrique"></a></h2>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/634">Ticket 634</a></p>
-<p>Le renseignement du modèle de fiche lors de la création d’un gropue de champs ne marchait pas, cela pouvait mener au masquage des champs dans les modèles de fiches après modification du groupe de champs.
+<p>Le renseignement du modèle de fiche lors de la création d’un groupe de champs ne marchait pas, cela pouvait mener au masquage des champs dans les modèles de fiches après modification du groupe de champs.
 Précédemment le modèle de fiche pour un groupe de champs pouvait être précisé via le champs ET via le modèle ce qui portait donc à confusion parfois.
 La correction permet maintenant de paramétrer le modèle de fiche directement lors de la création du groupe de champs et de ne plus le faire via le modèle.</p>
 <a class="reference internal image-reference" href="../../_images/Champs_modele.png"><img alt="../../_images/Champs_modele.png" src="../../_images/Champs_modele.png" style="width: 400px;" /></a>
 <p><strong>Corrigé</strong></p>
+</section>
+<section id="inport-financier-automatise">
+<h2>Inport financier automatisé<a class="headerlink" href="#inport-financier-automatise" title="Lien vers cette rubrique"></a></h2>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/625">Ticket 625</a></p>
+<p>Nous sommes en train de mettre en place les imports automatisés, cette procédure s’effectue en lien avec les éditeurs de logiciel comptable donc ils seront mis en place petit à petit. Pour l’instant cette liaison est en cours de paramétrage avec le logiciel SIREPA. Vous verrez donc apparaître la fenêtre ci-dessous dans la partie import budgétaire de votre EVA et la fonctionnalité « import finencier automatisé » dans les options du module budget. Mais vous pouvez les ignorer pour l’instant. Plus de documentation est à venir sur ce sujet quand la liaison sera effective.</p>
+<a class="reference internal image-reference" href="../../_images/Imports_budg_param.png"><img alt="../../_images/Imports_budg_param.png" src="../../_images/Imports_budg_param.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Imports_fin_module.png"><img alt="../../_images/Imports_fin_module.png" src="../../_images/Imports_fin_module.png" style="width: 400px;" /></a>
+<p><strong>À finaliser</strong></p>
 </section>
 </section>
 
@@ -261,7 +270,7 @@ La correction permet maintenant de paramétrer le modèle de fiche directement l
 
   <div role="contentinfo">
     <p>&#169; Droits d'auteur 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 09 déc. 2024.
+      <span class="lastupdated">Mis à jour le 18 déc. 2024.
       </span></p>
   </div>
 
