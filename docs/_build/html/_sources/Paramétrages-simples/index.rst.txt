@@ -426,7 +426,7 @@ Dans |administration| > |modele_fiches|, on peut paramétrer des modèles de fic
 
 Si aucun modèle de fiche n'est défini, un modèle par défaut est proposé avec tous les champs affichés.
 
-Un modèle de fiche peut être ajouté via |bouton_3_traits|, le formulaire permet de lui donner un nom puis de choisir les champs à afficher qui sont diviser en trois onglets : "Champs", "Champs personnalisables", "Mots-clés" .
+Un modèle de fiche peut être ajouté via |bouton_3_traits|, le formulaire permet de lui donner un nom puis de choisir les champs à afficher qui sont diviser en deux onglets : "Champs", et "Mots-clés" .
 
 .. note::
 	Par défaut les champs sont masqués, donc il faut changer pour afficher en dessous des champs que l'on souhaite afficher, si le champs est laissé blanc il sera masqué.
@@ -471,12 +471,6 @@ Voici les différents champs accessibles et les questions à se poser si l'on so
 
 .. warning::
 	"Membres de l'équipe" cette option masquer ou non n'a pas d'incidence, tout comme "Acteurs" et "Avancement"
-
-**Onglet Champs personnalisables**
-
-Ici vous trouverz les champs en plus qui ont été définis dans |administration| > |champs| (voir la `documentation <https://documentation-eva.readthedocs.io/fr/latest/Param%C3%A9trages-simples/index.html#champs>`_ à ce sujet).
-
-Peut-importe l'onglet auquel il a été rattaché, le champ apparaîtra ici dans champs personnalisables.
 
 **Onglet Mots-clés**
 

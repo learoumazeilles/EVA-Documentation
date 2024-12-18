@@ -11,9 +11,6 @@ Les groupes permettent de regrouper des indicateurs pour faire des agrégations,
 
 Une mesure d'indicateur peut donc être créée via le sous-module indicateur ou via l'onglet indicateur d'une fiche, une mesure définie dans une campagne peut être remplie via le module indicateur, l'onglet indicateur d'une fiche, le sous-module campagne, le sous-module groupe.
 
-.. warning::
-	Des améliorations sont encours sur les analyses.
-
 .. image:: images/module_indicateur.png
    :width: 600
 
@@ -134,9 +131,6 @@ L'onglet **indicateurs** résume les différents indicateurs du groupe dans un t
 	Les indicateurs et mesures ne sont pas modifiables dans les groupes, il faut cliquer sur l'indicateur en question pour aller les modifier.
 
 .. warning::
-	Pour l'instant les capacités d'analyses des groupes n'ont pas été complètement explorées et seront complétées par un autre développement.
-
-.. warning::
 	Si on ajoute ultérieurement un indicateur à un groupe, si le groupe a déjà été ajouté à une campagne, cet indicateur ne fera pas parti de la campagne
 
 Campagne de mesures
@@ -204,7 +198,7 @@ Grâce à ces requêtes, il est possible de paramétrer des alertes, pour recevo
 
 
 .. warning::
-	Dans les campagnes, les mesures "cibles" et "réalisées" sont regroupées mais elles ne le sont pas dans les autres modules (indicateurs et fiches). Un développement en novembre 2024 permet maintenant d'avoir accès à une fenêtre unique pour éditer les mesures de campagnes depuis les modules indicateurs et fiches. De même, la suppression d'une mesure cible d'une campagne depuis tous les modules entraînera la suppression de sa mesure réalisée et inversement.
+	Depuis le développement en décembre 2024, on peut maintenant avoir accès à une fenêtre unique pour éditer les mesures de campagnes depuis les modules indicateurs et fiches. De même, la suppression d'une mesure cible d'une campagne depuis tous les modules entraîne la suppression de sa mesure réalisée et inversement. Attention, par contre à cette édition depuis l'instance nationale (concerne FPNRF et OFB) qui n'est pas encore totalement unifiée.
 
 
 
