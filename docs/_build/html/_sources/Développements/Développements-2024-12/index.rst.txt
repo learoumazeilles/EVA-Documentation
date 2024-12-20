@@ -167,6 +167,8 @@ Le renseignement du modèle de fiche lors de la création d'un groupe de champs 
 Précédemment le modèle de fiche pour un groupe de champs pouvait être précisé via le champs ET via le modèle ce qui portait donc à confusion parfois.
 La correction permet maintenant de paramétrer le modèle de fiche directement lors de la création du groupe de champs et de ne plus le faire via le modèle.
 
+ATTENTION : si vos champs ne s'affichent plus dans vos modèles c'est dû à l'anomalie précédente, donc vous pouvez maintenant les réassocier via le module champs.
+
 .. image:: images/Champs_modele.png
    :width: 400
 
