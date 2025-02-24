@@ -82,8 +82,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#liaison-indicateurs-reseau-et-parcs">2. Liaison indicateurs réseau et parcs</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#synchronisations-des-temps-022025">Synchronisations des temps 022025</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#synchronisations-des-temps-et-analyses-temps">Synchronisations des temps et analyses temps</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#modification-des-titres-de-synchronisations">Modification des titres de synchronisations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bugs-sur-les-synchronisations">Bugs sur les synchronisations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#latence-sur-les-analyses-temps">Latence sur les analyses temps</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#autres-corrections">Autres corrections</a></li>
@@ -158,11 +160,11 @@
 <td><p>Oui</p></td>
 <td><p>Oui</p></td>
 </tr>
-<tr class="row-odd"><td><p>Ajout</p></td>
+<tr class="row-odd"><td><p>Modification</p></td>
 <td><p>Oui</p></td>
 <td><p>Oui</p></td>
 </tr>
-<tr class="row-even"><td><p>Ajout</p></td>
+<tr class="row-even"><td><p>Suppression</p></td>
 <td><p>Oui</p></td>
 <td><p>Oui</p></td>
 </tr>
@@ -182,11 +184,11 @@
 <td><p>Oui</p></td>
 <td><p>Oui</p></td>
 </tr>
-<tr class="row-odd"><td><p>Ajout</p></td>
+<tr class="row-odd"><td><p>Modification</p></td>
 <td><p>Oui</p></td>
 <td><p>Oui</p></td>
 </tr>
-<tr class="row-even"><td><p>Ajout</p></td>
+<tr class="row-even"><td><p>Suppression</p></td>
 <td><p>Oui</p></td>
 <td><p>Oui</p></td>
 </tr>
@@ -202,16 +204,36 @@
 <li><p>campagne de mesures</p></li>
 <li><p>date attendues</p></li>
 </ul>
+<p><strong>-&gt; Il reste quelques dysfonctionnements à corriger sur le nom donné aux parcs entre parc et réseau</strong></p>
 </section>
 </section>
-<section id="synchronisations-des-temps-022025">
-<h2>Synchronisations des temps 022025<a class="headerlink" href="#synchronisations-des-temps-022025" title="Lien vers cette rubrique"></a></h2>
+<section id="synchronisations-des-temps-et-analyses-temps">
+<h2>Synchronisations des temps et analyses temps<a class="headerlink" href="#synchronisations-des-temps-et-analyses-temps" title="Lien vers cette rubrique"></a></h2>
 <section id="modification-des-titres-de-synchronisations">
 <h3>Modification des titres de synchronisations<a class="headerlink" href="#modification-des-titres-de-synchronisations" title="Lien vers cette rubrique"></a></h3>
 <p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/666">Ticket 666</a></p>
 <p>Certains titres de synchronisations des temps n’étaient pas modifiables depuis la vue tableau, leur modification et sauvegarde donnait une erreur. Il est maintenant possible de les modifier sans erreur.</p>
 <p><strong>Corrigé</strong></p>
-<p>D’autres corrections sont à venir sur les synchronisations.</p>
+</section>
+<section id="bugs-sur-les-synchronisations">
+<h3>Bugs sur les synchronisations<a class="headerlink" href="#bugs-sur-les-synchronisations" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/608">Ticket 608</a> &amp; <a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/684">Ticket 684</a></p>
+<p>Des bugs sur les synchronisations étaient apparus lors du dernier déploiement, ils ont maintenant été corrigés.</p>
+<p><strong>Corrigé</strong></p>
+</section>
+<section id="latence-sur-les-analyses-temps">
+<h3>Latence sur les analyses temps<a class="headerlink" href="#latence-sur-les-analyses-temps" title="Lien vers cette rubrique"></a></h3>
+<p><a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/677">Ticket 677</a> &amp; <a class="reference external" href="https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/700">Ticket 700</a></p>
+<p>Chez certains parcs qui ont beaucoup de temps insérés dans EVA, la latence de chargement des pages de temps et d’analyses temps pouvait être très longue voir bloquer complètement le logiciel. Le chargement de certaines pages a été améliorées :</p>
+<ul class="simple">
+<li><p>module temps : feuilles de temps</p></li>
+<li><p>module analyses : feuilles de temps, répartition par utilisateurs, répartition par mois, répartition par mots-clés</p></li>
+</ul>
+<p>D’autres pages restent à reprendre :
+- modules analyses : répartition par fiche, répartition par mots-clés fiches -&gt; le tableau récapitulatif s’affiche, le graphique peut ne ne pas s’afficher chez certains parcs, ne pas hésiter à changer de graphique si besoin
+- module analyses : répartition par territoire -&gt; affichage à reprendre complètement</p>
+<p>Cette reprise des analyses avait entraîné une suppression des filtres par défaut dans les feuilles de temps qui a été remis.</p>
+<p><strong>Correction à compléter</strong></p>
 </section>
 </section>
 <section id="autres-corrections">
@@ -236,7 +258,7 @@
 
   <div role="contentinfo">
     <p>&#169; Droits d'auteur 2022, Lea Roumazeilles.
-      <span class="lastupdated">Mis à jour le 17 févr. 2025.
+      <span class="lastupdated">Mis à jour le 24 févr. 2025.
       </span></p>
   </div>
 
