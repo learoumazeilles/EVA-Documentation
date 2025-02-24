@@ -84,9 +84,10 @@ Les données non transmises entre locale et nationale (car pas de liaison là-de
 - campagne de mesures
 - date attendues
 
+**-> Il reste quelques dysfonctionnements à corriger sur le nom donné aux parcs entre parc et réseau**
 
-Synchronisations des temps 022025
----------------------------------
+Synchronisations des temps et analyses temps
+--------------------------------------------
 
 Modification des titres de synchronisations
 ###########################################
@@ -97,7 +98,32 @@ Certains titres de synchronisations des temps n'étaient pas modifiables depuis 
 
 **Corrigé**
 
-D'autres corrections sont à venir sur les synchronisations.
+Bugs sur les synchronisations
+#############################
+
+`Ticket 608 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/608>`_ & `Ticket 684 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/684>`_
+
+Des bugs sur les synchronisations étaient apparus lors du dernier déploiement, ils ont maintenant été corrigés.
+
+**Corrigé**
+
+Latence sur les analyses temps
+##############################
+
+`Ticket 677 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/677>`_ & `Ticket 700 <https://gitlab.com/logiciel-eva/logiciel-eva/-/issues/700>`_
+
+Chez certains parcs qui ont beaucoup de temps insérés dans EVA, la latence de chargement des pages de temps et d'analyses temps pouvait être très longue voir bloquer complètement le logiciel. Le chargement de certaines pages a été améliorées :
+
+- module temps : feuilles de temps
+- module analyses : feuilles de temps, répartition par utilisateurs, répartition par mois, répartition par mots-clés
+
+D'autres pages restent à reprendre :
+- modules analyses : répartition par fiche, répartition par mots-clés fiches -> le tableau récapitulatif s'affiche, le graphique peut ne ne pas s'afficher chez certains parcs, ne pas hésiter à changer de graphique si besoin
+- module analyses : répartition par territoire -> affichage à reprendre complètement
+
+Cette reprise des analyses avait entraîné une suppression des filtres par défaut dans les feuilles de temps qui a été remis.
+
+**Correction à compléter**
 
 Autres corrections
 ------------------
