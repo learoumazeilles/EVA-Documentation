@@ -51,13 +51,13 @@ Pour des indicateurs hors campagne locale :
 +================+==================================+==================================+
 | Ajout          | Oui                              | Oui                              |
 +----------------+----------------------------------+----------------------------------+
-| Modification   | Oui                              | Oui                              |
+| Modification   | Oui MAIS                         | Oui                              |
 +----------------+----------------------------------+----------------------------------+
-| Suppression    | Oui                              | Oui                              |
+| Suppression    | Oui MAIS                         | Oui                              |
 +----------------+----------------------------------+----------------------------------+
 
 
-Mais pas possible de supprimer ou modifier une mesure insérée au niveau nationale depuis le locale
+MAIS pas possible de supprimer ou modifier une mesure insérée au niveau nationale depuis le locale
 
 
 Pour des indicateurs inclus dans une campagne locale :
@@ -66,12 +66,16 @@ Pour des indicateurs inclus dans une campagne locale :
 |Action          | action parc -> impact national   | Action national -> impact parc   |
 |                |                                  |                                  |
 +================+==================================+==================================+
-| Ajout          | Oui                              | Oui                              |
+| Ajout          | Oui                              | NON                              |
 +----------------+----------------------------------+----------------------------------+
 | Modification   | Oui                              | Oui                              |
 +----------------+----------------------------------+----------------------------------+
-| Suppression    | Oui                              | Oui                              |
+| Suppression    | Oui                              | Oui MAIS                         |
 +----------------+----------------------------------+----------------------------------+
+
+MAIS les campagnes n'étant pas reprises au niveau national, le couple mesure cible - mesure réalisé d'une campagne n'est pas associé dans l'instance national donc si on supprime une mesure cible via l'instance nationale il faudra bien supprimer la mesure réalisée aussi ou bien simplement vider les deux valeurs.
+
+Les campagnes n'étant pas reprises au niveau national, il n'est pas possible d'ajouter de nouvelles mesures à des campagnes locales depuis l'instance nationale, uniquement de renseigner les mesures déjà attendues issues de la campagne.
 
 
 Les données non transmises entre locale et nationale (car pas de liaison là-dessus) :
@@ -84,7 +88,7 @@ Les données non transmises entre locale et nationale (car pas de liaison là-de
 - campagne de mesures
 - date attendues
 
-**-> Il reste quelques dysfonctionnements à corriger sur le nom donné aux parcs entre parc et réseau**
+**-> Corrigé mais à surveiller**
 
 Synchronisations des temps et analyses temps
 --------------------------------------------
