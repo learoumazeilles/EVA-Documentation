@@ -16,7 +16,7 @@ La précédure pour les imports est similaire dans la majorité des cas (exeptio
 Quelles colonnes pour chaque import ?
 #####################################
 
--> -> **Des exemples de fichiers Excel et csv** sont disponibles `ICI <https://fpnrf-my.sharepoint.com/:f:/g/personal/lroumazeilles_parcs-naturels-regionaux_fr/ElO1DP6dPJ1Mm2rn9hXL_MIBlJX3-IA-uYKlfkxfk9xGwA?e=QuNBOP>`_ <-- <--
+-> -> **Des exemples de fichiers Excel et csv** sont disponibles `DANS CE DOSSIER <https://fpnrf.sharepoint.com/:f:/s/OuiFede/IgAELULNAKfMQqxbkJxj1jLpAdYfD7t0f0ArS5mU5Dhm6xA?e=mWs4BT>`_ <-- <--
 
 
 * L’ordre des colonnes n’a pas d’importance, certaines cases peuvent être vides si elles ne sont pas dans les colonnes de champs obligatoires.
